@@ -26,7 +26,7 @@ observation.
 |---|---|---|
 | `data/` | `audit.py` | **Append-only.** Never edit or delete a snapshot — they are the historical record and the only way to say "this got worse". |
 | `reports/` | `report.py` | **Generated.** Never hand-edit; the next run destroys it. Wrong output means `report.py` or the rubric is wrong. |
-| `site/` | `build_site.py` | **Generated** from the newest snapshot. Edit `site/template.html`, not `site/index.html`. |
+| `index.md` | `build_site.py` | **Generated** from the newest snapshot. Edit `scripts/templates/index.md`, never `index.md`. |
 | `notes/` | **a human** | **Never generate these.** See below. |
 | `docs/` | a human | Changes when upstream Pythia guidance changes. |
 
@@ -39,6 +39,22 @@ metadata) that no script can check.
 A machine-written note would be indistinguishable from a real one and would quietly poison the
 conclusions the project exists to produce. If asked to fill one in, gather evidence, quote what
 the cookbook actually says, and leave the judgment to the human.
+
+## The site is the repo
+
+The published site is a [MyST](https://mystmd.org) build of this repo's own markdown: `myst.yml`
+pulls `reports/` and `docs/` directly into the table of contents, so anything written there renders
+as HTML with no separate authoring step. Adding a page means adding a file and listing it in
+`myst.yml`'s `toc`.
+
+Two things to preserve:
+
+- **`myst.yml` deliberately does not extend `projectpythia/pythia-config`.** That shared config
+  carries Pythia's logo, favicon, Google Analytics measurement ID, and the NSF funding disclaimer.
+  This is an independent assessment, not an official Pythia product, and must not be dressed as
+  one. Link to Pythia; don't wear its branding.
+- **The Pages build needs `BASE_URL`.** It is a project site served from `/<repo-name>/`, so
+  without that prefix every asset and internal link 404s. The workflow sets it from the repo name.
 
 ## Getting the pinning check right
 

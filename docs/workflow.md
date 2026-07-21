@@ -80,8 +80,14 @@ a proposal to the Pythia community about the state of the cookbook collection.
 |---|---|---|
 | `data/` | `audit.py` | append-only, committed — the historical record |
 | `reports/` | `report.py` | regenerated, overwritten freely |
+| `index.md` | `build_site.py` | regenerated; edit `scripts/templates/index.md` instead |
 | `notes/` | **a human** | hand-written, never generated |
 | `docs/` | a human | changes when upstream Pythia guidance changes |
+
+Everything in `reports/` and `docs/` is also a page on the [published site][site] — `myst.yml`
+pulls them straight into the table of contents, so writing markdown here is publishing.
+
+[site]: https://jmunroe.github.io/pythia-cookbook-review/
 
 The reason `notes/` is never generated: the whole value of this exercise is human judgment about
 teaching quality. A machine-written note would look identical to a real one and quietly poison the

@@ -52,12 +52,26 @@ Needs `gh` (authenticated), Python 3.9+, and `PyYAML`.
 ```bash
 python scripts/audit.py          # collect  -> data/snapshot-YYYY-MM-DD.json
 python scripts/report.py         # present  -> reports/*.md
-python scripts/build_site.py     # refresh the summary site -> site/index.html
+python scripts/build_site.py     # refresh the site landing page -> index.md
 ./scripts/sync-clones.sh <name>  # clone a cookbook locally for deep reading
 cp notes/_template.md notes/<name>.md   # then write the review
 ```
 
-Committing a new snapshot to `main` republishes the summary site automatically.
+Pushing to `main` rebuilds and republishes the site automatically.
+
+### Previewing the site
+
+The published site is a [MyST][myst] build of this repo's own markdown — `reports/` and `docs/`
+render as HTML with no transformation step. Needs `mystmd` (`npm install -g mystmd`):
+
+```bash
+python scripts/build_site.py && myst start    # live preview at localhost:3000
+```
+
+Only `index.md` is generated; edit `scripts/templates/index.md` instead. Everything else in the
+site is a file you can read directly on GitHub.
+
+[myst]: https://mystmd.org
 
 Start with [`reports/by-tier.md`](reports/by-tier.md) — it groups cookbooks by health and spells
 out the specific failing checks for each.
@@ -80,8 +94,10 @@ Tiers never penalise a cookbook for being small or unfinished — only for being
 ## Layout
 
 ```
+index.md    site landing page — generated from the newest snapshot
+myst.yml    site config: pulls reports/ and docs/ into the published site
 docs/       criteria (the bar), rubric (made checkable), methodology (where metrics lie), workflow
-scripts/    audit.py (collect), report.py (present), sync-clones.sh (fetch repos locally)
+scripts/    audit.py (collect), report.py (present), build_site.py, sync-clones.sh
 data/       dated JSON snapshots — append-only, the historical record
 reports/    generated markdown — regenerated freely, never hand-edited
 notes/      per-cookbook human review — hand-written, never generated

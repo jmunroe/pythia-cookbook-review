@@ -1,127 +1,122 @@
 #!/usr/bin/env python3
-"""Render the GitHub Pages summary from the newest snapshot.
+"""Render index.md, the landing page of the MyST site, from the newest snapshot.
 
-site/template.html holds the page; this fills in the numbers so the published
-summary can never drift from the data. Edit the template, never site/index.html.
+scripts/templates/index.md holds the prose; this fills in the numbers so the
+published summary can never drift from the data. Edit the template, never the
+generated index.md.
+
+The rest of the site is the repo's own markdown -- myst.yml pulls reports/ and
+docs/ straight into the table of contents, so those render as HTML without any
+transformation step.
 
 Usage:
     python scripts/build_site.py
-    python scripts/build_site.py --repo https://github.com/<user>/<repo>
+    myst build --html          # then build the site itself
 """
 
 import argparse
-import html
 import json
 import pathlib
-import subprocess
 
 import report
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SITE = ROOT / "site"
+TEMPLATE = ROOT / "scripts" / "templates" / "index.md"
+OUT = ROOT / "index.md"
 NOTES = ROOT / "notes"
 
-DEFAULT_REPO = "https://github.com/jmunroe/pythia-cookbook-review"
-
 TIER_LABEL = {
-    "stale": "published, stopped deploying",
-    "degraded": "published, but slipping",
-    "abandoned": "real content, quiet over a year",
-    "incubating": "real content, not yet published",
-    "healthy": "working and citable",
-    "not-a-cookbook": "scaffold, sandbox, or archived",
+    "stale": "Published, but the book has stopped deploying",
+    "degraded": "Published but slipping: failing CI, lagging deploy, or thin citation metadata",
+    "abandoned": "Real content, never published, quiet for over a year",
+    "incubating": "Real content, not yet in the gallery, still active",
+    "healthy": "Working and citable",
+    "not-a-cookbook": "Scaffold, sandbox, or archived",
 }
 
 
-def git_remote():
-    """The origin remote as a browsable https URL, or None."""
-    result = subprocess.run(
-        ["git", "-C", str(ROOT), "remote", "get-url", "origin"],
-        capture_output=True,
-        text=True,
-    )
-    if result.returncode != 0:
-        return None
-    url = result.stdout.strip()
-    if url.startswith("git@github.com:"):
-        url = "https://github.com/" + url[len("git@github.com:") :]
-    return url.removesuffix(".git") or None
+def tier_table(counts):
+    """Tier counts as a markdown table, ordered worst-first like the reports."""
+    rows = [
+        "| Tier | Count | Meaning |",
+        "|---|---|---|",
+    ]
+    rows += [
+        f"| [`{t}`](docs/rubric.md) | {counts[t]} | {TIER_LABEL[t]} |"
+        for t in report.TIER_ORDER
+        if counts[t]
+    ]
+    return "\n".join(rows)
+
+
+def gap_table(live, gallery):
+    """Headline cross-cutting findings, with their denominators."""
+
+    def share(label, predicate, population):
+        n = sum(1 for b in population if predicate(b))
+        return f"| {label} | {n} of {len(population)} |"
+
+    rows = [
+        "| Finding | Count |",
+        "|---|---|",
+        share(
+            "Published cookbooks that have stopped deploying",
+            # A deploy age of 0 is falsy -- test for None explicitly.
+            lambda b: b["build"]["days_since_deploy"] is None
+            or b["build"]["days_since_deploy"] > 30,
+            gallery,
+        ),
+        share(
+            "Cookbooks with a failing or absent nightly build",
+            lambda b: b["build"]["nightly_conclusion"] != "success",
+            live,
+        ),
+        share(
+            "Cookbooks with undocumented version pins",
+            lambda b: b["environment"]["pinned_count"]
+            and not b["environment"]["has_comments"],
+            live,
+        ),
+        share(
+            "Cookbooks pulling dependencies from pip rather than conda-forge",
+            lambda b: b["environment"]["pip_dep_count"] > 0,
+            live,
+        ),
+        share(
+            "Published cookbooks without a Zenodo DOI",
+            lambda b: not b["metadata"]["has_doi"],
+            gallery,
+        ),
+        share(
+            "Repositories still carrying pre-MyST Sphinx config",
+            lambda b: bool(b["maintenance"]["sphinx_leftovers"]),
+            live,
+        ),
+        share(
+            "Repositories still linking back to the cookbook template",
+            lambda b: b["maintenance"]["template_links"],
+            live,
+        ),
+    ]
+    return "\n".join(rows)
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--snapshot", type=pathlib.Path)
-    parser.add_argument("--repo", help="repo URL to link back to")
     args = parser.parse_args()
 
     path = args.snapshot or report.newest_snapshot()
-    data = json.loads(path.read_text())
-    books = data["cookbooks"]
+    books = json.loads(path.read_text())["cookbooks"]
     for book in books:
         book["_tier"] = report.tier(book)
 
     counts = {t: sum(1 for b in books if b["_tier"] == t) for t in report.TIER_ORDER}
     live = [b for b in books if b["_tier"] != "not-a-cookbook"]
     gallery = [b for b in live if b["discoverability"]["in_gallery"]]
-
-    tier_rows = "\n".join(
-        f'  <li class="t-{t}"><span class="n">{counts[t]}</span>'
-        f'<span class="name">{t}</span>'
-        f'<span class="what">{html.escape(TIER_LABEL[t])}</span></li>'
-        for t in report.TIER_ORDER
-        if counts[t]
-    )
-
-    def share(predicate, population, label):
-        n = sum(1 for b in population if predicate(b))
-        return f"    <tr><td>{label}</td><td>{n} of {len(population)}</td></tr>"
-
-    gap_rows = "\n".join(
-        [
-            share(
-                lambda b: b["build"]["days_since_deploy"] is None
-                or b["build"]["days_since_deploy"] > 30,
-                gallery,
-                "Published cookbooks that have stopped deploying",
-            ),
-            share(
-                lambda b: b["build"]["nightly_conclusion"] != "success",
-                live,
-                "Cookbooks with a failing or absent nightly build",
-            ),
-            share(
-                lambda b: b["environment"]["pinned_count"]
-                and not b["environment"]["has_comments"],
-                live,
-                "Cookbooks with undocumented version pins",
-            ),
-            share(
-                lambda b: b["environment"]["pip_dep_count"] > 0,
-                live,
-                "Cookbooks pulling dependencies from pip rather than conda-forge",
-            ),
-            share(
-                lambda b: not b["metadata"]["has_doi"],
-                gallery,
-                "Published cookbooks without a Zenodo DOI",
-            ),
-            share(
-                lambda b: bool(b["maintenance"]["sphinx_leftovers"]),
-                live,
-                "Repositories still carrying pre-MyST Sphinx config",
-            ),
-            share(
-                lambda b: b["maintenance"]["template_links"],
-                live,
-                "Repositories still linking back to the cookbook template",
-            ),
-        ]
-    )
-
-    repo = args.repo or git_remote() or DEFAULT_REPO
     reviewed = len([p for p in NOTES.glob("*.md") if not p.name.startswith("_")])
 
-    rendered = (SITE / "template.html").read_text()
+    rendered = TEMPLATE.read_text()
     for key, value in {
         "DATE": path.stem.replace("snapshot-", ""),
         "SNAPSHOT": path.name,
@@ -129,16 +124,19 @@ def main():
         "GALLERY": len(gallery),
         "NEEDS_ATTENTION": counts["stale"] + counts["degraded"],
         "REVIEWED": reviewed,
-        "TIER_ROWS": tier_rows,
-        "GAP_ROWS": gap_rows,
-        "REPO": repo,
-        "REPO_SHORT": repo.replace("https://github.com/", ""),
+        "TIER_TABLE": tier_table(counts),
+        "GAP_TABLE": gap_table(live, gallery),
+        # Must sit below the frontmatter -- MyST needs that block at the very
+        # top of the file.
+        "GENERATED_NOTE": (
+            f"<!-- Generated by scripts/build_site.py from data/{path.name}."
+            " Edit scripts/templates/index.md instead. -->"
+        ),
     }.items():
         rendered = rendered.replace("{{" + key + "}}", str(value))
 
-    out = SITE / "index.html"
-    out.write_text(rendered)
-    print(f"Wrote {out} from {path.name}")
+    OUT.write_text(rendered)
+    print(f"Wrote {OUT} from {path.name}")
 
 
 if __name__ == "__main__":

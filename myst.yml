@@ -1,0 +1,69 @@
+# MyST site config. Builds this repo's reports and docs into the published site
+# at https://jmunroe.github.io/pythia-cookbook-review/
+#
+# Deliberately NOT extending projectpythia/pythia-config: that config carries
+# Pythia's logo, favicon, Google Analytics ID and NSF funding disclaimer. This
+# is an independent assessment, not an official Project Pythia product, and it
+# should not be dressed as one. We link to Pythia rather than wear its branding.
+version: 1
+
+project:
+  id: pythia-cookbook-review
+  title: Project Pythia Cookbook Review
+  description: >-
+    A repeatable status assessment of every Project Pythia cookbook, measured
+    against the community's own publication criteria.
+  github: https://github.com/jmunroe/pythia-cookbook-review
+  license:
+    content: CC-BY-4.0
+    code: MIT
+  authors:
+    - name: James Munroe
+      github: jmunroe
+
+  # README.md is the GitHub landing page and CLAUDE.md is agent guidance --
+  # neither belongs in the built site. index.md carries the same introduction
+  # for readers arriving on the web.
+  exclude:
+    - README.md
+    - CLAUDE.md
+    - notes/_template.md
+    - data/**
+    - site/**
+
+  toc:
+    - file: index.md
+    - title: Findings
+      children:
+        - file: reports/by-tier.md
+        - file: reports/dashboard.md
+        - file: reports/gaps.md
+    - title: Method
+      children:
+        - file: docs/criteria.md
+        - file: docs/rubric.md
+        - file: docs/methodology.md
+        - file: docs/workflow.md
+
+  error_rules:
+    # Notes are written by hand over time; the reports link to ones that may
+    # not exist yet. A missing note is expected, not a build failure.
+    - rule: link-resolves
+      severity: warn
+
+site:
+  template: book-theme
+  options:
+    folders: true
+  nav:
+    - title: Project Pythia
+      url: https://projectpythia.org
+    - title: Cookbook Gallery
+      url: https://cookbooks.projectpythia.org/
+    - title: Foundations
+      url: https://foundations.projectpythia.org/
+    - title: Cookbook Guide
+      url: https://projectpythia.org/cookbook-guide
+  actions:
+    - title: Source on GitHub
+      url: https://github.com/jmunroe/pythia-cookbook-review
