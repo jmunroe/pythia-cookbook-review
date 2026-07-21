@@ -1,0 +1,141 @@
+{
+  "cookbook": "radar-cookbook",
+  "env_injection": {
+    "attempted": true,
+    "ok": true,
+    "reason": null,
+    "variables": [
+      "ARM_PASSWORD",
+      "ARM_USERNAME"
+    ]
+  },
+  "started_at": "2026-07-21T21:46:19.853106+00:00",
+  "hub": "https://binder.projectpythia.org",
+  "ref": "main",
+  "toc_notebooks": [
+    "notebooks/example-workflows/cacti-data-quality-example.ipynb",
+    "notebooks/example-workflows/echo_top_height.ipynb",
+    "notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb",
+    "notebooks/example-workflows/kdp-comparison.ipynb",
+    "notebooks/example-workflows/moore-oklahoma-tornado.ipynb",
+    "notebooks/example-workflows/tracer-example.ipynb",
+    "notebooks/foundations/interactive-radar-visualization.ipynb",
+    "notebooks/foundations/pyart-basics.ipynb",
+    "notebooks/foundations/pyart-corrections.ipynb",
+    "notebooks/foundations/pyart-gridding.ipynb",
+    "notebooks/radar-basics/radar-basics.ipynb"
+  ],
+  "build": {
+    "hub": "https://binder.projectpythia.org",
+    "ref": "main",
+    "seconds": 7.16,
+    "exit_code": 0,
+    "failed": false,
+    "image_cached": true,
+    "log": [
+      {
+        "t": 1.07,
+        "line": "Found built image, launching..."
+      },
+      {
+        "t": 1.28,
+        "line": "Server requested"
+      },
+      {
+        "t": 2.23,
+        "line": "2026-07-21T21:46:21.189716Z [Normal] Successfully assigned binderhub/jupyter-projectpythia-radar-cookbook-3veximyf to binder-pythia-cluster-d7vpq4idy5va-user-m3-large-fdpj2-g79tz"
+      },
+      {
+        "t": 3.23,
+        "line": "2026-07-21T21:46:22Z [Normal] Container image \"quay.io/jupyterhub/k8s-network-tools:4.1.0\" already present on machine"
+      },
+      {
+        "t": 4.23,
+        "line": "2026-07-21T21:46:23Z [Normal] Container image \"quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2dradar-2dcookbook-8d1057:e4e4dc2fc49da166de75ed77c70d30c6ce3423c0\" already present on machine"
+      },
+      {
+        "t": 4.23,
+        "line": "2026-07-21T21:46:23Z [Normal] Started container notebook"
+      }
+    ],
+    "log_lines_total": 6,
+    "log_truncated": false
+  },
+  "execution": {
+    "seconds": 414.12,
+    "exit_code": 0,
+    "failed": false,
+    "cache_cleared": false,
+    "page_seconds": [
+      {
+        "page": "notebooks/radar-basics/radar-basics.ipynb",
+        "seconds": 0.11
+      },
+      {
+        "page": "myst.yml#site.parts.footer",
+        "seconds": 0.07
+      },
+      {
+        "page": "notebooks/how-to-cite.md",
+        "seconds": 1.08
+      },
+      {
+        "page": "README.md",
+        "seconds": 1.3
+      },
+      {
+        "page": "notebooks/example-workflows/moore-oklahoma-tornado.ipynb",
+        "seconds": 9.71
+      },
+      {
+        "page": "notebooks/example-workflows/echo_top_height.ipynb",
+        "seconds": 11.0
+      },
+      {
+        "page": "notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb",
+        "seconds": 13.0
+      },
+      {
+        "page": "notebooks/foundations/interactive-radar-visualization.ipynb",
+        "seconds": 27.0
+      }
+    ],
+    "stdout_tail": "g WebSocket: wss://hub.projectpythia.org/user/projectpythia-radar-cookbook-3veximyf/api/kernels/a17bffd2-9934-4ab4-aef2-691c9494b2fc\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-radar-cookbook-3veximyf/api/kernels/89409435-c15d-449d-b46f-20d0cc0e31c9\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-radar-cookbook-3veximyf/api/kernels/47717355-d721-4fc9-ba33-f5a7a5110420\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-radar-cookbook-3veximyf/api/kernels/e6a72365-b07e-43e5-8eaa-cbafd96c6841\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-radar-cookbook-3veximyf/api/kernels/a64dacde-4291-4aa3-9d54-33ce1ae8a035\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-radar-cookbook-3veximyf/api/kernels/fd765aed-58a2-4f15-b69e-a8236a8f7ed9\n\ud83d\udcd6 Built notebooks/how-to-cite.md in 1.08 s.\n\ud83d\udcd6 Built README.md in 1.3 s.\n\ud83d\udcd6 Built notebooks/example-workflows/moore-oklahoma-tornado.ipynb in 9.71 s.\n\ud83e\ude84  Linked 2 DOIs from doi.org in 694 ms for notebooks/example-workflows/echo_top_height.ipynb\n\ud83d\udcd6 Built notebooks/example-workflows/echo_top_height.ipynb in 11 s.\n\ud83e\ude84  Linked 3 DOIs from doi.org in 992 ms for notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb\n\ud83d\udcd6 Built notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb in 13 s.\n\ud83d\udcd6 Built notebooks/foundations/interactive-radar-visualization.ipynb in 27 s.\n\ud83d\udcd6 Built notebooks/example-workflows/tracer-example.ipynb in 2.9 min.\n\ud83d\udcd6 Built notebooks/foundations/pyart-gridding.ipynb in 3.07 min.\n\ud83d\udcd6 Built notebooks/foundations/pyart-basics.ipynb in 3.17 min.\n\ud83d\udcd6 Built notebooks/example-workflows/cacti-data-quality-example.ipynb in 3.32 min.\n\ud83d\udcd6 Built notebooks/example-workflows/kdp-comparison.ipynb in 3.77 min.\n\ud83d\udcd6 Built notebooks/foundations/pyart-corrections.ipynb in 6.78 min.\n\ud83e\ude84 Updated link text for 3 external MyST references in 274 ms\n\ud83d\udcda Built 13 pages for project in 6.85 min.\n\n\n\t\u2728\u2728\u2728  Starting Book Theme  \u2728\u2728\u2728\n\n\n\n\ud83d\udd0c Server started on port 3000!  \ud83e\udd73 \ud83c\udf89\n\n\n\t\ud83d\udc49  http://localhost:3000  \ud83d\udc48\n\n\n\ud83d\udc8c GET  /notebooks/foundations/pyart-corrections 200 - - 44.881 ms\nUnknown width 250/ in getImageWidth\n\ud83d\udc8c GET  /notebooks/how-to-cite 200 - - 102.376 ms\nGET /notebooks/radar-basics/radar-basics 200 - - 23.510 ms\nGET / 200 - - 130.045 ms\nGET /notebooks/foundations/pyart-basics 200 - - 115.838 ms\n\ud83d\udc8c GET  /notebooks/foundations/pyart-gridding 200 - - 65.699 ms\nGET /notebooks/foundations/interactive-radar-visualization 200 - - 31.420 ms\n\ud83d\udc8c GET  /notebooks/example-workflows/moore-oklahoma-tornado 200 - - 45.053 ms\n\ud83d\udc8c GET  /notebooks/example-workflows/tracer-example 200 - - 60.049 ms\nGET /notebooks/example-workflows/kdp-comparison 200 - - 43.064 ms\n\ud83d\udc8c GET  /notebooks/example-workflows/cacti-data-quality-example 200 - - 43.678 ms\nGET /notebooks/example-workflows/fastbarnes-interpolation-rhi 200 - - 28.291 ms\n\ud83d\udc8c GET  /index.json 200 - - 25.762 ms\nGET /notebooks/example-workflows/echo-top-height 200 - - 34.126 ms\n\ud83d\udc8c GET  /notebooks.how-to-cite.json 200 - - 19.056 ms\n\ud83d\udc8c GET  /notebooks.radar-basics.radar-basics.json 200 - - 11.330 ms\nGET /notebooks.foundations.pyart-basics.json 200 - - 11.268 ms\n\ud83d\udc8c GET  /notebooks.foundations.pyart-corrections.json 200 - - 11.106 ms\n\ud83d\udc8c GET  /notebooks.foundations.pyart-gridding.json 200 - - 11.067 ms\n\ud83d\udc8c GET  /notebooks.example-workflows.moore-oklahoma-tornado.json 200 - - 8.865 ms\nGET /notebooks.foundations.interactive-radar-visualization.json 200 - - 12.271 ms\n\ud83d\udc8c GET  /notebooks.example-workflows.tracer-example.json 200 - - 9.320 ms\nGET /notebooks.example-workflows.kdp-comparison.json 200 - - 9.970 ms\n\ud83d\udc8c GET  /robots.txt 200 - - 0.659 ms\nGET /notebooks.example-workflows.cacti-data-quality-example.json 200 - - 13.446 ms\n\ud83d\udc8c GET  /myst-theme.css 200 - - 6.713 ms\n\ud83d\udc8c GET  /notebooks.example-workflows.fastbarnes-interpolation-rhi.json 200 - - 10.023 ms\nGET /sitemap.xml 200 - - 3.495 ms\nGET /sitemap_style.xsl 200 - - 0.530 ms\n\ud83d\udc8c GET  /notebooks.example-workflows.echo-top-height.json 200 - - 11.562 ms\n\ud83d\udc8c GET  /favicon.ico 200 - - 3.443 ms\n",
+    "stderr_tail": "ent call last)\nCell \u001b[0;32mIn[8], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m grid_ds \u001b[38;5;241m=\u001b[39m \u001b[43mgrid_rhi\u001b[49m\u001b[43m(\u001b[49m\u001b[43mradar_file\u001b[49m\u001b[43m)\u001b[49m\n\nCell \u001b[0;32mIn[7], line 63\u001b[0m, in \u001b[0;36mgrid_rhi\u001b[0;34m(file, z_res, rng_res, z_limits, rng_limits, fields)\u001b[0m\n\u001b[1;32m     60\u001b[0m     data \u001b[38;5;241m=\u001b[39m deepcopy(np\u001b[38;5;241m.\u001b[39marray(radar\u001b[38;5;241m.\u001b[39mfields[fields[j]][\u001b[38;5;124m'\u001b[39m\u001b[38;5;124mdata\u001b[39m\u001b[38;5;124m'\u001b[39m]))\n\u001b[1;32m     61\u001b[0m     \u001b[38;5;66;03m# data = data.filled(np.nan)\u001b[39;00m\n\u001b[0;32m---> 63\u001b[0m     res_field[:,:,j] \u001b[38;5;241m=\u001b[39m \u001b[43mbarnes\u001b[49m\u001b[43m(\u001b[49m\u001b[43mnp\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43masarray\u001b[49m\u001b[43m(\u001b[49m\u001b[43m[\u001b[49m\u001b[43mrg_loc\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mravel\u001b[49m\u001b[43m(\u001b[49m\u001b[43m)\u001b[49m\u001b[43m,\u001b[49m\u001b[43mradar\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mgate_altitude\u001b[49m\u001b[43m[\u001b[49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[38;5;124;43mdata\u001b[39;49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[43m]\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mravel\u001b[49m\u001b[43m(\u001b[49m\u001b[43m)\u001b[49m\u001b[43m]\u001b[49m\u001b[43m)\u001b[49m\u001b[43m,\u001b[49m\n\u001b[1;32m     64\u001b[0m \u001b[43m                       \u001b[49m\u001b[43mdata\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mravel\u001b[49m\u001b[43m(\u001b[49m\u001b[43m)\u001b[49m\u001b[43m,\u001b[49m\n\u001b[1;32m     65\u001b[0m \u001b[43m                       \u001b[49m\u001b[38;5;241;43m100\u001b[39;49m\u001b[43m,\u001b[49m\n\u001b[1;32m     66\u001b[0m \u001b[43m                       \u001b[49m\u001b[43mnp\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43masarray\u001b[49m\u001b[43m(\u001b[49m\u001b[43m[\u001b[49m\u001b[38;5;241;43m0\u001b[39;49m\u001b[43m,\u001b[49m\u001b[38;5;241;43m0\u001b[39;49m\u001b[43m]\u001b[49m\u001b[43m)\u001b[49m\u001b[43m,\u001b[49m\n\u001b[1;32m     67\u001b[0m \u001b[43m                       \u001b[49m\u001b[38;5;241;43m100\u001b[39;49m\u001b[43m,\u001b[49m\n\u001b[1;32m     68\u001b[0m \u001b[43m                       \u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mlen\u001b[39;49m\u001b[43m(\u001b[49m\u001b[43mz_pts\u001b[49m\u001b[43m)\u001b[49m\u001b[43m,\u001b[49m\u001b[38;5;28;43mlen\u001b[39;49m\u001b[43m(\u001b[49m\u001b[43mrng_pts\u001b[49m\u001b[43m)\u001b[49m\u001b[43m)\u001b[49m\u001b[43m,\u001b[49m\n\u001b[1;32m     69\u001b[0m \u001b[43m                       \u001b[49m\u001b[43mmethod\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mmethod\u001b[49m\u001b[43m,\u001b[49m\n\u001b[1;32m     70\u001b[0m \u001b[43m                       \u001b[49m\u001b[43mnum_iter\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43m \u001b[49m\u001b[43mnum_iter\u001b[49m\u001b[43m,\u001b[49m\n\u001b[1;32m     71\u001b[0m \u001b[43m                       \u001b[49m\u001b[43mmin_weight\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[38;5;241;43m0.0002\u001b[39;49m\n\u001b[1;32m     72\u001b[0m \u001b[43m                      \u001b[49m\u001b[43m)\u001b[49m\n\u001b[1;32m     75\u001b[0m data_dict \u001b[38;5;241m=\u001b[39m {}\n\u001b[1;32m     76\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m k \u001b[38;5;129;01min\u001b[39;00m \u001b[38;5;28mrange\u001b[39m(\u001b[38;5;28mlen\u001b[39m(fields)):\n\nFile \u001b[0;32m/srv/conda/envs/notebook/lib/python3.12/site-packages/fastbarnes/interpolation.py:115\u001b[0m, in \u001b[0;36mbarnes\u001b[0;34m(pts, val, sigma, x0, step, size, method, num_iter, max_dist, min_weight)\u001b[0m\n\u001b[1;32m    113\u001b[0m dim \u001b[38;5;241m=\u001b[39m pts\u001b[38;5;241m.\u001b[39mshape[\u001b[38;5;241m1\u001b[39m]\n\u001b[1;32m    114\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m dim \u001b[38;5;241m<\u001b[39m \u001b[38;5;241m1\u001b[39m \u001b[38;5;129;01mor\u001b[39;00m dim \u001b[38;5;241m>\u001b[39m \u001b[38;5;241m3\u001b[39m:\n\u001b[0;32m--> 115\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m \u001b[38;5;167;01mRuntimeError\u001b[39;00m(\u001b[38;5;124m'\u001b[39m\u001b[38;5;124mBarnes interpolation supports only sample points in dimensions 1, 2 or 3\u001b[39m\u001b[38;5;124m'\u001b[39m)\n\u001b[1;32m    117\u001b[0m \u001b[38;5;66;03m# check structure of sample values array val\u001b[39;00m\n\u001b[1;32m    118\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;129;01mnot\u001b[39;00m \u001b[38;5;28misinstance\u001b[39m(val, np\u001b[38;5;241m.\u001b[39mndarray):\n\n\u001b[0;31mRuntimeError\u001b[0m: Barnes interpolation supports only sample points in dimensions 1, 2 or 3\n\u26a0\ufe0f  notebooks/example-workflows/kdp-comparison.ipynb Removing matplotlib string from outputs\n   <matplotlib.colorbar.Colorbar at 0x7f178ac6aea0>\n   Fix: Put a semicolon on the last line of your cell or add \"output_matplotlib_strings: remove\" to the project settings.\n\u26a0\ufe0f  notebooks/foundations/pyart-corrections.ipynb Removing matplotlib string from outputs\n   <matplotlib.legend.Legend at 0x7fe86072bce0>\n   Fix: Put a semicolon on the last line of your cell or add \"output_matplotlib_strings: remove\" to the project settings.\n\u26d4\ufe0f notebooks/example-workflows/tracer-example.ipynb Cannot find image \"storm-animation.gif\" in notebooks/example-workflows\n"
+  },
+  "resources": {
+    "available": true,
+    "sample_count": 114,
+    "sample_seconds": 3,
+    "peak_rss_bytes": 16965562368,
+    "peak_pss_bytes": 7965704192,
+    "limit_basis": "pss",
+    "peak_against_limit_bytes": 7965704192,
+    "memory_limit_bytes": 8589934592,
+    "peak_fraction_of_limit": 0.9273,
+    "peak_cpu_percent": null,
+    "cpu_count": null
+  },
+  "errors": [
+    {
+      "source": "site/content/notebooks.example-workflows.echo-top-height.json",
+      "ename": "PermissionError",
+      "evalue": "Forbidden",
+      "traceback": "---------------------------------------------------------------------------\nClientError                               Traceback (most recent call last)\nFile /srv/conda/envs/notebook/lib/python3.12/site-packages/s3fs/core.py:114, in _error_wrapper(func, args, kwargs, retries)\n    113 try:\n--> 114     return await func(*args, **kwargs)\n    115 except S3_RETRYABLE_ERRORS as e:\n\nFile /srv/conda/envs/notebook/lib/python3.12/site-packages/aiobotocore/context.py:36, in with_current_context.<locals>.decorator.<locals>.wrapper(*args, **kwargs)\n     35     await resolve_awaitable(hook())\n---> 36 return await func(*args, **kwargs)\n\nFile /srv/conda/envs/notebook/lib/python3.12/site-packages/aiobotocore/client.py:424, in AioBaseClient._make_api_call(self, operation_name, api_params)\n    423     error_class = self.exceptions.from_code(error_code)\n--> 424     raise error_class(parsed_response, operation_name)\n    425 else:\n\nClientError: An error occurred (403) when calling the HeadObject operation: Forbidden\n\nThe above exception was the direct cause of the following exception:\n\nPermissionError                           Traceback (most recent call last)\nCell In[3], line 5\n      1 aws_nexrad_level2_file = (\n      2     \"s3://noaa-nexrad-level2/2022/03/22/KHGX/KHGX20220322_120125_V06\"\n      3 )\n----> 5 radar = pyart.io.read_nexrad_archive(aws_nexrad_level2_file)\n      8 fig = plt.figure(figsize=(12, 4))\n      9 display = pyart.graph.RadarMapDisplay(radar)\n\nFile /srv/conda/envs/notebook/lib/python3.12/site-packages/pyart/io/nexrad_archive.py:126, in read_nexrad_archive(filename, field_names, additional_metadata, file_field_names, exclude_fields, include_fields, delay_field_loading, station, scans, linear_interp, storage_options, **kwargs)\n    115 filemetadata = FileMetadata(\n    116     \"nexrad_archive\",\n    117     field_names,\n   (...)\n    121     include_fields,\n    122 )\n    124 # open the file and retrieve scan information\n    125 nfile = NEXRADLevel2File(\n--> 126     prepare_for"
+    },
+    {
+      "source": "site/content/notebooks.example-workflows.fastbarnes-interpolation-rhi.json",
+      "ename": "RuntimeError",
+      "evalue": "Barnes interpolation supports only sample points in dimensions 1, 2 or 3",
+      "traceback": "---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\nCell In[8], line 1\n----> 1 grid_ds = grid_rhi(radar_file)\n\nCell In[7], line 63, in grid_rhi(file, z_res, rng_res, z_limits, rng_limits, fields)\n     60     data = deepcopy(np.array(radar.fields[fields[j]]['data']))\n     61     # data = data.filled(np.nan)\n---> 63     res_field[:,:,j] = barnes(np.asarray([rg_loc.ravel(),radar.gate_altitude['data'].ravel()]),\n     64                        data.ravel(),\n     65                        100,\n     66                        np.asarray([0,0]),\n     67                        100,\n     68                        (len(z_pts),len(rng_pts)),\n     69                        method=method,\n     70                        num_iter = num_iter,\n     71                        min_weight=0.0002\n     72                       )\n     75 data_dict = {}\n     76 for k in range(len(fields)):\n\nFile /srv/conda/envs/notebook/lib/python3.12/site-packages/fastbarnes/interpolation.py:115, in barnes(pts, val, sigma, x0, step, size, method, num_iter, max_dist, min_weight)\n    113 dim = pts.shape[1]\n    114 if dim < 1 or dim > 3:\n--> 115     raise RuntimeError('Barnes interpolation supports only sample points in dimensions 1, 2 or 3')\n    117 # check structure of sample values array val\n    118 if not isinstance(val, np.ndarray):\n\nRuntimeError: Barnes interpolation supports only sample points in dimensions 1, 2 or 3"
+    },
+    {
+      "source": "site/content/notebooks.example-workflows.moore-oklahoma-tornado.json",
+      "ename": "PermissionError",
+      "evalue": "Access Denied",
+      "traceback": "---------------------------------------------------------------------------\nClientError                               Traceback (most recent call last)\nFile /srv/conda/envs/notebook/lib/python3.12/site-packages/s3fs/core.py:755, in S3FileSystem._lsdir(self, path, refresh, max_items, delimiter, prefix, versions)\n    754 files = []\n--> 755 async for c in self._iterdir(\n    756     bucket,\n    757     max_items=max_items,\n    758     delimiter=delimiter,\n    759     prefix=prefix,\n    760     versions=versions,\n    761 ):\n    762     if c[\"type\"] == \"directory\":\n\nFile /srv/conda/envs/notebook/lib/python3.12/site-packages/s3fs/core.py:805, in S3FileSystem._iterdir(self, bucket, max_items, delimiter, prefix, versions)\n    798 it = pag.paginate(\n    799     Bucket=bucket,\n    800     Prefix=prefix,\n   (...)\n    803     **self.req_kw,\n    804 )\n--> 805 async for i in it:\n    806     for l in i.get(\"CommonPrefixes\", []):\n\nFile /srv/conda/envs/notebook/lib/python3.12/site-packages/aiobotocore/paginate.py:39, in AioPageIterator.__anext__(self)\n     38 while True:\n---> 39     response = await self._make_request(current_kwargs)\n     40     parsed = self._extract_parsed_response(response)\n\nFile /srv/conda/envs/notebook/lib/python3.12/site-packages/aiobotocore/context.py:36, in with_current_context.<locals>.decorator.<locals>.wrapper(*args, **kwargs)\n     35     await resolve_awaitable(hook())\n---> 36 return await func(*args, **kwargs)\n\nFile /srv/conda/envs/notebook/lib/python3.12/site-packages/aiobotocore/paginate.py:19, in AioPageIterator._make_request(self, current_kwargs)\n     17 @with_current_context(partial(register_feature_id, 'PAGINATOR'))\n     18 async def _make_request(self, current_kwargs):\n---> 19     return await self._method(**current_kwargs)\n\nFile /srv/conda/envs/notebook/lib/python3.12/site-packages/aiobotocore/context.py:36, in with_current_context.<locals>.decorator.<locals>.wrapper(*args, **kwargs)\n     35     await resolve_awaitable(hook())\n---> 36 return awai"
+    }
+  ],
+  "finished_at": "2026-07-21T21:53:23.145177+00:00",
+  "build_artifacts": null
+}

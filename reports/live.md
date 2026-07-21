@@ -12,7 +12,7 @@ Read [the method and its limitations](../docs/live-assessment.md) before quoting
 | [eofs-cookbook](#eofs-cookbook) | ran clean | `healthy` | 81.46s (cached) | 44.02s | 1.43 of 8.6 GB | 0 |
 | [esgf-cookbook](#esgf-cookbook) | build failed | `stale` | 416.52s | —s | — | 0 |
 | [landsat-ml-cookbook](#landsat-ml-cookbook) | ran with errors | `stale` | 469.24s | 34.69s | 0.95 of 8.6 GB | 3 |
-| [radar-cookbook](#radar-cookbook) | ran with errors | `stale` | 7.89s (cached) | 410.53s | 3.83 of 8.6 GB | 5 |
+| [radar-cookbook](#radar-cookbook) | ran with errors | `stale` | 7.16s (cached) | 414.12s | 7.97 of 8.6 GB | 3 |
 
 Where the live outcome and the static tier disagree, the live result is the more direct evidence — but read it as one sample of a network-dependent workflow, not a verdict. See [the limitations](../docs/live-assessment.md#limitations).
 
@@ -230,67 +230,39 @@ KeyError: 'proj:epsg'
 
 ## radar-cookbook
 
-Run 2026-07-21 21:11:20 UTC against [https://binder.projectpythia.org](https://binder.projectpythia.org), building [radar-cookbook](https://github.com/ProjectPythia/radar-cookbook) at ref [`main`](https://github.com/ProjectPythia/radar-cookbook/tree/main).
+Run 2026-07-21 21:46:19 UTC against [https://binder.projectpythia.org](https://binder.projectpythia.org), building [radar-cookbook](https://github.com/ProjectPythia/radar-cookbook) at ref [`main`](https://github.com/ProjectPythia/radar-cookbook/tree/main).
 
 :::{warning} Cached image
-BinderHub reused an existing image, so the 7.89s is a pod launch and image pull. It does **not** test whether `environment.yml` still solves.
+BinderHub reused an existing image, so the 7.16s is a pod launch and image pull. It does **not** test whether `environment.yml` still solves.
 :::
 
 | Measure | Value |
 |---|---|
 | Live outcome | **ran with errors** |
 | Static tier | `stale` |
-| Time to a ready session | 7.89s (cached image) |
+| Time to a ready session | 7.16s (cached image) |
 | Build succeeded | yes |
-| Notebook execution | 410.53s |
+| Notebook execution | 414.12s |
 | Build command exit code | 0 (zero despite cell errors) |
 | Notebooks ran clean | no |
 | Execution cache | **reused — timing is not execution** |
-| Peak memory (pss) | 3.83 GB |
+| Peak memory (pss) | 7.97 GB |
 | Pod memory limit | 8.59 GB |
-| Peak as share of limit | 44.5% |
-| Peak rss (upper bound, shared pages double-counted) | 13.08 GB |
-| Errors raised | 5 |
+| Peak as share of limit | 92.7% |
+| Peak rss (upper bound, shared pages double-counted) | 16.97 GB |
+| Errors raised | 3 |
 
 | Notebook | Execute + render |
 |---|---|
-| [`notebooks/radar-basics/radar-basics.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/radar-basics/radar-basics.ipynb) | 0.15s |
-| [`notebooks/example-workflows/cacti-data-quality-example.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/cacti-data-quality-example.ipynb) | 10.0s |
-| [`notebooks/example-workflows/moore-oklahoma-tornado.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/moore-oklahoma-tornado.ipynb) | 10.0s |
-| [`notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb) | 11.0s |
-| [`notebooks/example-workflows/tracer-example.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/tracer-example.ipynb) | 11.0s |
+| [`notebooks/radar-basics/radar-basics.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/radar-basics/radar-basics.ipynb) | 0.11s |
+| [`notebooks/example-workflows/moore-oklahoma-tornado.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/moore-oklahoma-tornado.ipynb) | 9.71s |
 | [`notebooks/example-workflows/echo_top_height.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/echo_top_height.ipynb) | 11.0s |
-| [`notebooks/foundations/interactive-radar-visualization.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/interactive-radar-visualization.ipynb) | 29.0s |
+| [`notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb) | 13.0s |
+| [`notebooks/foundations/interactive-radar-visualization.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/interactive-radar-visualization.ipynb) | 27.0s |
 
 Executed 11 notebook(s) from the project toc: [`notebooks/example-workflows/cacti-data-quality-example.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/cacti-data-quality-example.ipynb), [`notebooks/example-workflows/echo_top_height.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/echo_top_height.ipynb), [`notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb), [`notebooks/example-workflows/kdp-comparison.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/kdp-comparison.ipynb), [`notebooks/example-workflows/moore-oklahoma-tornado.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/moore-oklahoma-tornado.ipynb), [`notebooks/example-workflows/tracer-example.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/tracer-example.ipynb), [`notebooks/foundations/interactive-radar-visualization.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/interactive-radar-visualization.ipynb), [`notebooks/foundations/pyart-basics.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/pyart-basics.ipynb), [`notebooks/foundations/pyart-corrections.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/pyart-corrections.ipynb), [`notebooks/foundations/pyart-gridding.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/pyart-gridding.ipynb), [`notebooks/radar-basics/radar-basics.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/radar-basics/radar-basics.ipynb). Notebooks not listed in [`myst.yml`](https://github.com/ProjectPythia/radar-cookbook/blob/main/myst.yml) are never executed by a build, so a repo can carry notebooks no build ever touches.
 
 ### Errors
-
-**`InvalidURL`** — URL can't contain control characters. '/armlive/data/query?user=jmunroe:6d50bb06f016d9a6 ' (found at least ' ')
-
-in `site/content/notebooks.example-workflows.tracer-example.json`
-
-```
----------------------------------------------------------------------------
-InvalidURL                                Traceback (most recent call last)
-Cell In[4], line 1
-----> 1 june2_csapr_files = act.discovery.download_arm_data(arm_username,
-      2                                                 arm_password,
-      3                                                 datastream,
-      4                                                 start_date,
-      5                                                 end_date,
-      6                                                )
-
-File /srv/conda/envs/notebook/lib/python3.12/site-packages/act/discovery/arm.py:121, in download_arm_data(username, token, datastream, startdate, enddate, time, output)
-    118 req = Request(query_url, None, headers)
-    119 # get url response, read the body of the message,
-    120 # and decode from bytes type to utf-8 string
---> 121 response_body = urlopen(req).read().decode('utf-8')
-    122 # if the response is an html doc, then there was an error with the user
-    123 if response_body[1:14] == '!DOCTYPE html':
-
-File /srv/conda/envs/notebook/lib/python3.12/urllib/request.py:215, in urlopen(url, data, timeout, cafile
-```
 
 **`PermissionError`** — Forbidden
 
@@ -322,31 +294,35 @@ Cell In[3], line 5
       1 aws_nexrad_level2
 ```
 
-**`InvalidURL`** — URL can't contain control characters. '/armlive/data/query?user=jmunroe:6d50bb06f016d9a6 ' (found at least ' ')
+**`RuntimeError`** — Barnes interpolation supports only sample points in dimensions 1, 2 or 3
 
 in `site/content/notebooks.example-workflows.fastbarnes-interpolation-rhi.json`
 
 ```
 ---------------------------------------------------------------------------
-InvalidURL                                Traceback (most recent call last)
-Cell In[3], line 1
-----> 1 aug7_csapr_files = act.discovery.download_arm_data(arm_username,
-      2                                                arm_password,
-      3                                                datastream,
-      4                                                start_date,
-      5                                                end_date)
+RuntimeError                              Traceback (most recent call last)
+Cell In[8], line 1
+----> 1 grid_ds = grid_rhi(radar_file)
 
-File /srv/conda/envs/notebook/lib/python3.12/site-packages/act/discovery/arm.py:121, in download_arm_data(username, token, datastream, startdate, enddate, time, output)
-    118 req = Request(query_url, None, headers)
-    119 # get url response, read the body of the message,
-    120 # and decode from bytes type to utf-8 string
---> 121 response_body = urlopen(req).read().decode('utf-8')
-    122 # if the response is an html doc, then there was an error with the user
-    123 if response_body[1:14] == '!DOCTYPE html':
+Cell In[7], line 63, in grid_rhi(file, z_res, rng_res, z_limits, rng_limits, fields)
+     60     data = deepcopy(np.array(radar.fields[fields[j]]['data']))
+     61     # data = data.filled(np.nan)
+---> 63     res_field[:,:,j] = barnes(np.asarray([rg_loc.ravel(),radar.gate_altitude['data'].ravel()]),
+     64                        data.ravel(),
+     65                        100,
+     66                        np.asarray([0,0]),
+     67                        100,
+     68                        (len(z_pts),len(rng_pts)),
+     69                        method=method,
+     70                        num_iter = num_iter,
+     71                        min_weight=0.0002
+     72                       )
+     75 data_dict = {}
+     76 for k in range(len(fields)):
 
-File /srv/conda/envs/notebook/lib/python3.12/urllib/request.py:215, in urlopen(url, data, timeout, cafile, capath, cadefault, context)
-    213 else:
-    214     opener
+File /srv/conda/envs/notebook/lib/python3.12/site-packages/fastbarnes/interpolation.py:115, in barnes(pts, val, sigma, x0, step, size, method, num_iter, max_dist, min_weight)
+    113 dim = pts.shape[1]
+    114 if dim < 1 or
 ```
 
 **`PermissionError`** — Access Denied
@@ -383,32 +359,5 @@ File /srv/conda/envs/notebook/lib/python3.12/site-packages/aiobotocore/paginate.
      40     parsed = self._extract_parsed_response(response)
 
 File
-```
-
-**`InvalidURL`** — URL can't contain control characters. '/armlive/data/query?user=jmunroe:6d50bb06f016d9a6 ' (found at least ' ')
-
-in `site/content/notebooks.example-workflows.cacti-data-quality-example.json`
-
-```
----------------------------------------------------------------------------
-InvalidURL                                Traceback (most recent call last)
-Cell In[3], line 1
-----> 1 csapr_files = act.discovery.download_arm_data(arm_username,
-      2                                           arm_password,
-      3                                           datastream,
-      4                                           start_date,
-      5                                           end_date,
-      6                                          )
-
-File /srv/conda/envs/notebook/lib/python3.12/site-packages/act/discovery/arm.py:121, in download_arm_data(username, token, datastream, startdate, enddate, time, output)
-    118 req = Request(query_url, None, headers)
-    119 # get url response, read the body of the message,
-    120 # and decode from bytes type to utf-8 string
---> 121 response_body = urlopen(req).read().decode('utf-8')
-    122 # if the response is an html doc, then there was an error with the user
-    123 if response_body[1:14] == '!DOCTYPE html':
-
-File /srv/conda/envs/notebook/lib/python3.12/urllib/request.py:215, in urlopen(url, data, timeout, cafile, capath, cadefault, context)
-    21
 ```
 
