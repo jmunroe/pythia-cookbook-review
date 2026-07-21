@@ -20,6 +20,7 @@ project:
   authors:
     - name: James Munroe
       github: jmunroe
+      orcid: 0000-0001-9098-6309
 
   # README.md is the GitHub landing page and CLAUDE.md is agent guidance --
   # neither belongs in the built site. index.md carries the same introduction
