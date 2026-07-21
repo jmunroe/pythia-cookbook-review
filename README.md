@@ -2,6 +2,9 @@
 
 A workspace for assessing the overall status of every [Project Pythia][pythia] cookbook.
 
+**📊 Summary site: <https://jmunroe.github.io/pythia-cookbook-review/>** — a shareable overview of
+what this project is, the criteria it measures against, and where the collection currently stands.
+
 [pythia]: https://projectpythia.org
 
 ## Why
@@ -49,9 +52,12 @@ Needs `gh` (authenticated), Python 3.9+, and `PyYAML`.
 ```bash
 python scripts/audit.py          # collect  -> data/snapshot-YYYY-MM-DD.json
 python scripts/report.py         # present  -> reports/*.md
+python scripts/build_site.py     # refresh the summary site -> site/index.html
 ./scripts/sync-clones.sh <name>  # clone a cookbook locally for deep reading
 cp notes/_template.md notes/<name>.md   # then write the review
 ```
+
+Committing a new snapshot to `main` republishes the summary site automatically.
 
 Start with [`reports/by-tier.md`](reports/by-tier.md) — it groups cookbooks by health and spells
 out the specific failing checks for each.
