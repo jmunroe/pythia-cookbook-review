@@ -14,7 +14,7 @@ Generated from `snapshot-2026-07-21.json` (collected 2026-07-21). Do not edit â€
 | [interactive-sentinel-2-cookbook](https://github.com/ProjectPythia/interactive-sentinel-2-cookbook) | `degraded` | yes | success | 0d | 0d | no | 1 | 0 |  |
 | [Aerosol-Cloud-Interactions-cookbook](https://github.com/ProjectPythia/Aerosol-Cloud-Interactions-cookbook) | `incubating` | no | success | 0d | 0d | yes | 5 | 0 |  |
 | [api-cookbook](https://github.com/ProjectPythia/api-cookbook) | `incubating` | no | success | 0d | 0d | yes | 6 | 1 |  |
-| [arm-field-site-cookbook](https://github.com/ProjectPythia/arm-field-site-cookbook) | `incubating` | no | failure | 238d | 238d | yes | 16 | 0 |  |
+| [arm-field-site-cookbook](https://github.com/ProjectPythia/arm-field-site-cookbook) | `incubating` | no | failure | 239d | 239d | yes | 16 | 0 |  |
 | [armss2024-sail-cookbook](https://github.com/ProjectPythia/armss2024-sail-cookbook) | `incubating` | no | failure | 241d | 239d | yes | 16 | 4 |  |
 | [atmos-modeling-cookbook](https://github.com/ProjectPythia/atmos-modeling-cookbook) | `incubating` | no | success | 80d | 80d | yes | 14 | 9 |  |
 | [AtmosCol-2023](https://github.com/ProjectPythia/AtmosCol-2023) | `incubating` | no | failure | 225d | 225d | yes | 18 | 3 |  |
@@ -78,6 +78,6 @@ Generated from `snapshot-2026-07-21.json` (collected 2026-07-21). Do not edit â€
 | [pythia-cookbook](https://github.com/ProjectPythia/pythia-cookbook) | `not-a-cookbook` | no | â€” | 1729d | 1729d | no | 1 | 3 |  |
 | [storm-tracking-cookbook](https://github.com/ProjectPythia/storm-tracking-cookbook) | `not-a-cookbook` | no | success | 80d | 80d | yes | 1 | 0 |  |
 | [test-actions-cookbook](https://github.com/ProjectPythia/test-actions-cookbook) | `not-a-cookbook` | no | success | never | 64d | yes | 1 | 0 |  |
-| [test2025-cmip6-visus-cookbook](https://github.com/ProjectPythia/test2025-cmip6-visus-cookbook) | `not-a-cookbook` | no | â€” | never | 349d | yes | 1 | 0 |  |
+| [test2025-cmip6-visus-cookbook](https://github.com/ProjectPythia/test2025-cmip6-visus-cookbook) | `not-a-cookbook` | no | â€” | never | 350d | yes | 1 | 0 |  |
 | [test2025-cookbook](https://github.com/ProjectPythia/test2025-cookbook) | `not-a-cookbook` | no | failure | 152d | 152d | no | 1 | 1 |  |
 | [xgcm-cookbook](https://github.com/ProjectPythia/xgcm-cookbook) | `not-a-cookbook` | no | success | 321d | 321d | yes | 1 | 0 |  |

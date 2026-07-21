@@ -136,6 +136,12 @@ def failures(book):
             out.append(f"{env['pip_dep_count']} pip dep(s) — prefer conda-forge")
         if env["pinned_count"] and not env["has_comments"]:
             out.append(f"{env['pinned_count']} version pin(s), undocumented")
+        if env.get("sphinx_deps"):
+            out.append(
+                f"{len(env['sphinx_deps'])} Sphinx-era package(s) in environment.yml: "
+                + ", ".join(f"`{d}`" for d in env["sphinx_deps"][:4])
+                + (" …" if len(env["sphinx_deps"]) > 4 else "")
+            )
 
     if disc["in_gallery"]:
         if not disc["has_gallery_info"]:
@@ -302,6 +308,15 @@ def write_gaps(snapshot, books, out):
             count(live, lambda b: bool(b["maintenance"]["sphinx_leftovers"])),
             len(live),
             "`_config.yml`/`_toc.yml` means the MyST migration never reached this cookbook.",
+        ),
+        (
+            "Cookbooks with Sphinx packages in environment.yml",
+            count(live, lambda b: bool(b["environment"].get("sphinx_deps"))),
+            len(live),
+            "Cookbooks build with MyST now, so a Sphinx toolchain in the environment is dead "
+            "weight from before the migration. It is rarely harmless: these entries are usually "
+            "tightly pinned, and a live check found they can stop the Binder image building at "
+            "all — see the live report.",
         ),
         (
             "Repos still linking to cookbook-template",

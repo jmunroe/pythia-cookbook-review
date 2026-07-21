@@ -47,6 +47,10 @@ DEFAULT_HUB = "https://binder.projectpythia.org"
 # Short enough to catch a plateau, long enough not to be a nuisance.
 SAMPLE_SECONDS = 3
 
+# Build-log lines kept in the record. The error is always at the tail, and a
+# failed fresh build can emit thousands of lines of repo2docker output.
+LOG_TAIL_LINES = 300
+
 # BinderHub says this when it can reuse an existing image instead of building
 # one. Distinguishing the two is the difference between a build time that means
 # something and one that means nothing at all.
@@ -126,6 +130,11 @@ def start_session(hub, repo, ref, build_token, timeout):
     elapsed = round(time.monotonic() - started, 2)
     text = "\n".join(entry["line"] for entry in lines)
 
+    # A failed fresh build emits the whole repo2docker log -- thousands of lines,
+    # ~200 KB. The tail is where the actual error is, and these records are
+    # committed and accumulate per run, so keep a bounded window.
+    kept = lines[-LOG_TAIL_LINES:]
+
     build = {
         "hub": hub,
         "ref": ref,
@@ -136,7 +145,9 @@ def start_session(hub, repo, ref, build_token, timeout):
         # about it. Never read a duration without this flag.
         "image_cached": any(m in text for m in CACHED_MARKERS)
         and not any(m in text for m in BUILDING_MARKERS),
-        "log": lines,
+        "log": kept,
+        "log_lines_total": len(lines),
+        "log_truncated": len(kept) < len(lines),
     }
 
     session = None
@@ -234,6 +245,13 @@ class ResourceSampler(threading.Thread):
             if isinstance(candidate, int) and candidate > 0:
                 limit = candidate
         peak_rss = peak("rss")
+        peak_pss = peak("pss")
+        # rss is summed over the server and every child, so shared pages are
+        # counted once per process -- radar-cookbook read 12.2 GB against an
+        # 8.6 GB cgroup limit it never actually breached. pss apportions shared
+        # memory and is the figure to compare against the limit; rss is kept as
+        # an upper bound.
+        against_limit = peak_pss if peak_pss else peak_rss
 
         # cpu_percent and disk are only present if the hub enabled tracking;
         # report them when they exist rather than inventing zeros.
@@ -244,10 +262,14 @@ class ResourceSampler(threading.Thread):
             "sample_count": len(self.samples),
             "sample_seconds": SAMPLE_SECONDS,
             "peak_rss_bytes": peak_rss,
-            "peak_pss_bytes": peak("pss"),
+            "peak_pss_bytes": peak_pss,
+            # Which figure the fraction below is based on, so a reader never has
+            # to guess whether shared memory was double-counted.
+            "limit_basis": "pss" if peak_pss else "rss",
+            "peak_against_limit_bytes": against_limit,
             "memory_limit_bytes": limit,
             "peak_fraction_of_limit": (
-                round(peak_rss / limit, 4) if peak_rss and limit else None
+                round(against_limit / limit, 4) if against_limit and limit else None
             ),
             "peak_cpu_percent": max(cpu) if cpu else None,
             "cpu_count": self.samples[-1].get("cpu_count"),
@@ -361,8 +383,15 @@ def collect_errors(clone):
     if not build.is_dir():
         return []
 
+    # MyST writes each page's AST twice -- once under site/content and again
+    # under html. Scanning both counts every error twice, so prefer the
+    # canonical copy and only fall back to a full walk if it is absent.
+    canonical = build / "site" / "content"
+    roots = [canonical] if canonical.is_dir() else [build]
+
     errors = []
-    for path in build.rglob("*.json"):
+    seen = set()
+    for path in (p for root in roots for p in root.rglob("*.json")):
         try:
             data = json.loads(path.read_text())
         except (json.JSONDecodeError, OSError, UnicodeDecodeError):
@@ -387,13 +416,18 @@ def collect_errors(clone):
             traceback = node.get("traceback") or []
             if isinstance(traceback, list):
                 traceback = "\n".join(str(t) for t in traceback)
+            clean = re.sub(r"\x1b\[[0-9;]*m", "", str(traceback))[:2000]
+            key = (path.name, node.get("ename"), node.get("evalue"), clean[:200])
+            if key in seen:
+                continue
+            seen.add(key)
             errors.append(
                 {
                     "source": str(path.relative_to(build)),
                     "ename": node.get("ename"),
                     "evalue": node.get("evalue"),
                     # Tracebacks carry ANSI colour codes; strip for readability.
-                    "traceback": re.sub(r"\x1b\[[0-9;]*m", "", str(traceback))[:2000],
+                    "traceback": clean,
                 }
             )
     return errors
@@ -434,7 +468,8 @@ def executed_notebooks(clone):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("cookbook", help="repo name, e.g. HRRR-AWS-cookbook")
+    parser.add_argument("cookbook", nargs="+",
+                        help="repo name(s), e.g. HRRR-AWS-cookbook; run in sequence")
     parser.add_argument("--hub", default=DEFAULT_HUB)
     parser.add_argument("--ref", default="main")
     parser.add_argument("--build-token", default=os.environ.get("BINDER_BUILD_TOKEN"))
@@ -448,28 +483,45 @@ def main():
     parser.add_argument("--out", type=pathlib.Path)
     args = parser.parse_args()
 
-    clone = PARENT / args.cookbook
     if args.dry_run:
-        print(f"clone:   {clone} (exists: {clone.is_dir()})")
-        print(f"toc notebooks: {executed_notebooks(clone) if clone.is_dir() else '?'}")
-        print(
-            "start:   binderbot start "
-            f"{args.hub} --github-repo {ORG}/{args.cookbook} "
-            f"--github-ref {args.ref} --json"
-        )
-        print(f"sample:  GET <session>/api/metrics/v1 every {SAMPLE_SECONDS}s")
-        print("execute: myst build --execute --html")
-        print("stop:    binderbot stop <url> <token>")
+        for name in args.cookbook:
+            clone = PARENT / name
+            print(f"--- {name}")
+            print(f"clone:   {clone} (exists: {clone.is_dir()})")
+            print(f"toc notebooks: {executed_notebooks(clone) if clone.is_dir() else '?'}")
+            print(
+                "start:   binderbot start "
+                f"{args.hub} --github-repo {ORG}/{name} "
+                f"--github-ref {args.ref} --json"
+            )
+            print(f"sample:  GET <session>/api/metrics/v1 every {SAMPLE_SECONDS}s")
+            print("execute: myst build --execute --html")
+            print("stop:    binderbot stop <url> <token>")
         return 0
 
     for tool in ("binderbot", "myst"):
         if not shutil.which(tool):
             raise SystemExit(f"{tool} not found on PATH (npm install -g binderbot mystmd)")
+
+    # Strictly one session at a time: several cookbooks in flight would multiply
+    # our footprint on a hub that exists for learners.
+    worst = 0
+    for index, name in enumerate(args.cookbook, 1):
+        if len(args.cookbook) > 1:
+            log("")
+            log(f"===== [{index}/{len(args.cookbook)}] {name}")
+        worst = max(worst, check_one(name, args))
+    return worst
+
+
+def check_one(name, args):
+    """Live-check a single cookbook. Returns 0 if it built and ran cleanly."""
+    clone = PARENT / name
     if not clone.is_dir():
-        raise SystemExit(f"{clone} missing -- run ./scripts/sync-clones.sh {args.cookbook}")
+        raise SystemExit(f"{clone} missing -- run ./scripts/sync-clones.sh {name}")
 
     record = {
-        "cookbook": args.cookbook,
+        "cookbook": name,
         "started_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         "hub": args.hub,
         "ref": args.ref,
@@ -480,7 +532,7 @@ def main():
     sampler = None
     try:
         session, record["build"] = start_session(
-            args.hub, args.cookbook, args.ref, args.build_token, args.build_timeout
+            args.hub, name, args.ref, args.build_token, args.build_timeout
         )
         if session is None:
             log("Build failed; nothing to execute.")
@@ -523,7 +575,7 @@ def main():
         record["build_artifacts"] = None
 
     today = datetime.date.today().isoformat()
-    out = args.out or LIVE / f"{args.cookbook}-{today}.json"
+    out = args.out or LIVE / f"{name}-{today}.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(record, indent=2) + "\n")
     log(f"Wrote {out}")

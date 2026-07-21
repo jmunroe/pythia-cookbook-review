@@ -1,0 +1,1236 @@
+{
+  "cookbook": "esgf-cookbook",
+  "started_at": "2026-07-21T19:13:12.752067+00:00",
+  "hub": "https://binder.projectpythia.org",
+  "ref": "main",
+  "toc_notebooks": [
+    "notebooks/complex-search.ipynb",
+    "notebooks/complex-search2-and-analysis.ipynb",
+    "notebooks/ex-regrid-plot.ipynb",
+    "notebooks/intro-search.ipynb",
+    "notebooks/rooki.ipynb",
+    "notebooks/rooki_enso_nonlinear.ipynb",
+    "notebooks/use-intake-esgf-with-rooki.ipynb"
+  ],
+  "build": {
+    "hub": "https://binder.projectpythia.org",
+    "ref": "main",
+    "seconds": 416.52,
+    "exit_code": 1,
+    "failed": true,
+    "image_cached": false,
+    "log": [
+      {
+        "t": 387.01,
+        "line": "#20 58.86 Unlinking jsonschema-4.25.1-pyhe01879c_0"
+      },
+      {
+        "t": 387.01,
+        "line": "#20 58.87 Unlinking rfc3339-validator-0.1.4-pyhd8ed1ab_1"
+      },
+      {
+        "t": 387.01,
+        "line": "#20 58.87 Unlinking rfc3986-validator-0.1.1-pyh9f0ad1d_0"
+      },
+      {
+        "t": 387.12,
+        "line": "#20 58.90 Unlinking python-json-logger-2.0.7-pyhd8ed1ab_0"
+      },
+      {
+        "t": 387.26,
+        "line": "#20 58.98 Unlinking pandocfilters-1.5.0-pyhd8ed1ab_0"
+      },
+      {
+        "t": 387.38,
+        "line": "#20 59.14 Unlinking jupyter-offlinenotebook-0.3.2-pyh9692d8f_0"
+      },
+      {
+        "t": 387.38,
+        "line": "#20 59.15 Unlinking jupyter-resource-usage-1.2.0-pyhd8ed1ab_0"
+      },
+      {
+        "t": 387.38,
+        "line": "#20 59.16 Unlinking pyjwt-2.10.1-pyhd8ed1ab_0"
+      },
+      {
+        "t": 387.38,
+        "line": "#20 59.16 Unlinking oauthlib-3.3.1-pyhd8ed1ab_0"
+      },
+      {
+        "t": 387.38,
+        "line": "#20 59.19 Unlinking pamela-1.2.0-pyhd8ed1ab_1"
+      },
+      {
+        "t": 387.38,
+        "line": "#20 59.19 Unlinking typing-inspection-0.4.2-pyhd8ed1ab_0"
+      },
+      {
+        "t": 387.38,
+        "line": "#20 59.20 Unlinking pydantic-2.12.2-pyh3cfb1c2_0"
+      },
+      {
+        "t": 387.38,
+        "line": "#20 59.23 Unlinking pysocks-1.7.1-pyha55dd90_7"
+      },
+      {
+        "t": 387.54,
+        "line": "#20 59.25 Unlinking requests-2.32.5-pyhd8ed1ab_0"
+      },
+      {
+        "t": 398.13,
+        "line": "#20 70.04 Unlinking jupyterlab_server-2.27.3-pyhd8ed1ab_1"
+      },
+      {
+        "t": 398.29,
+        "line": "#20 70.06 Unlinking setuptools-80.9.0-pyhff2d567_0"
+      },
+      {
+        "t": 398.29,
+        "line": "#20 70.20 Unlinking jupyterlab-4.4.9-pyhd8ed1ab_0"
+      },
+      {
+        "t": 398.61,
+        "line": "#20 70.53 Unlinking notebook-7.4.7-pyhd8ed1ab_0"
+      },
+      {
+        "t": 399.14,
+        "line": "#20 70.91 Unlinking pip-25.2-pyh8b19718_0"
+      },
+      {
+        "t": 399.14,
+        "line": "#20 71.06 Linking libzlib-1.3.2-h25fd6f3_2"
+      },
+      {
+        "t": 399.29,
+        "line": "#20 71.06 Linking liblzma-5.8.3-hb03c661_0"
+      },
+      {
+        "t": 399.29,
+        "line": "#20 71.06 Linking ncurses-6.6-hdb14827_0"
+      },
+      {
+        "t": 400.43,
+        "line": "#20 72.35 Linking libexpat-2.8.1-hecca717_1"
+      },
+      {
+        "t": 400.6,
+        "line": "#20 72.35 Linking libuuid-2.42.2-h5347b49_0"
+      },
+      {
+        "t": 400.6,
+        "line": "#20 72.35 Linking openssl-3.6.3-h35e630c_0"
+      },
+      {
+        "t": 400.71,
+        "line": "#20 72.52 Linking geos-3.14.1-h480dda7_0"
+      },
+      {
+        "t": 400.71,
+        "line": "#20 72.57 Linking libwebp-base-1.6.0-hd42ef1d_0"
+      },
+      {
+        "t": 400.71,
+        "line": "#20 72.58 Linking libjpeg-turbo-3.2.0-hb03c661_0"
+      },
+      {
+        "t": 400.71,
+        "line": "#20 72.58 Linking muparser-2.3.5-h5888daf_0"
+      },
+      {
+        "t": 400.71,
+        "line": "#20 72.59 Linking libcrc32c-1.1.2-h9c3ff4c_0"
+      },
+      {
+        "t": 400.71,
+        "line": "#20 72.59 Linking libopentelemetry-cpp-headers-1.27.0-ha770c72_0"
+      },
+      {
+        "t": 400.71,
+        "line": "#20 72.63 Linking libutf8proc-2.11.3-hfe17d71_0"
+      },
+      {
+        "t": 400.81,
+        "line": "#20 72.63 Linking lz4-c-1.10.0-h5888daf_1"
+      },
+      {
+        "t": 400.81,
+        "line": "#20 72.72 Linking xorg-libxau-1.0.12-hb03c661_1"
+      },
+      {
+        "t": 400.81,
+        "line": "#20 72.72 Linking xorg-libxdmcp-1.1.5-hb03c661_1"
+      },
+      {
+        "t": 400.81,
+        "line": "#20 72.73 Linking nlohmann_json-3.12.0-h54a6638_1"
+      },
+      {
+        "t": 400.81,
+        "line": "#20 72.73 Linking libev-4.33-hd590300_2"
+      },
+      {
+        "t": 400.92,
+        "line": "#20 72.73 Linking uriparser-0.9.8-hac33072_0"
+      },
+      {
+        "t": 400.92,
+        "line": "#20 72.73 Linking gflags-2.3.0-h54a6638_0"
+      },
+      {
+        "t": 400.92,
+        "line": "#20 72.73 Linking lzo-2.10-h280c20c_1002"
+      },
+      {
+        "t": 400.92,
+        "line": "#20 72.74 Linking pixman-0.46.4-h54a6638_2"
+      },
+      {
+        "t": 400.92,
+        "line": "#20 72.74 Linking libglvnd-1.7.0-ha4b6fd6_3"
+      },
+      {
+        "t": 400.92,
+        "line": "#20 72.74 Linking double-conversion-3.4.0-hecca717_0"
+      },
+      {
+        "t": 400.92,
+        "line": "#20 72.74 Linking libpciaccess-0.19-hb03c661_0"
+      },
+      {
+        "t": 400.92,
+        "line": "#20 72.74 Linking xorg-xorgproto-2025.1-hb03c661_0"
+      },
+      {
+        "t": 400.92,
+        "line": "#20 72.76 Linking alsa-lib-1.2.16.1-hb03c661_0"
+      },
+      {
+        "t": 400.92,
+        "line": "#20 72.78 Linking libntlm-1.8-hb9d3cd8_0"
+      },
+      {
+        "t": 400.92,
+        "line": "#20 72.78 Linking libhwy-1.4.0-h3a9caae_0"
+      },
+      {
+        "t": 400.92,
+        "line": "#20 72.78 Linking pcre2-10.47-haa7fec5_0"
+      },
+      {
+        "t": 401.07,
+        "line": "#20 72.85 Linking s2n-1.7.5-h7e3ee7f_1"
+      },
+      {
+        "t": 401.28,
+        "line": "#20 73.09 Linking blosc-1.21.6-he440d0b_1"
+      },
+      {
+        "t": 401.28,
+        "line": "#20 73.13 Linking libkml-1.3.0-haa4a5bd_1023"
+      },
+      {
+        "t": 401.28,
+        "line": "#20 73.13 Linking glog-0.7.1-hb7133d2_1"
+      },
+      {
+        "t": 401.28,
+        "line": "#20 73.13 Linking libopengl-1.7.0-ha4b6fd6_3"
+      },
+      {
+        "t": 401.28,
+        "line": "#20 73.13 Linking libegl-1.7.0-ha4b6fd6_3"
+      },
+      {
+        "t": 401.28,
+        "line": "#20 73.14 Linking libdrm-2.4.127-hb03c661_0"
+      },
+      {
+        "t": 401.28,
+        "line": "#20 73.14 Linking libglib-2.88.2-h0d30a3d_0"
+      },
+      {
+        "t": 401.33,
+        "line": "#20 73.20 Linking libfreetype6-2.14.3-h73754d4_0"
+      },
+      {
+        "t": 401.44,
+        "line": "#20 73.20 Linking python-3.11.15-h7508c33_1_cpython"
+      },
+      {
+        "t": 401.85,
+        "line": "#20 73.53 Linking libcups-2.3.3-h7a8fb5f_6"
+      },
+      {
+        "t": 401.85,
+        "line": "#20 73.54 Linking zeromq-4.3.5-h09e67af_11"
+      },
+      {
+        "t": 401.85,
+        "line": "#20 73.55 Linking orc-2.3.0-h21090e2_0"
+      },
+      {
+        "t": 401.85,
+        "line": "#20 73.56 Linking re2-2025.11.05-h5301d42_1"
+      },
+      {
+        "t": 401.85,
+        "line": "#20 73.56 Linking brotli-bin-1.2.0-hb03c661_1"
+      },
+      {
+        "t": 401.85,
+        "line": "#20 73.56 Linking libjxl-0.12.0-h174a0a3_1"
+      },
+      {
+        "t": 401.85,
+        "line": "#20 73.56 Linking libopenblas-0.3.33-pthreads_h94d23a6_0"
+      },
+      {
+        "t": 401.85,
+        "line": "#20 73.56 Linking lcms2-2.19.1-h0c24ade_1"
+      },
+      {
+        "t": 401.85,
+        "line": "#20 73.56 Linking openjpeg-2.5.4-h55fea9a_0"
+      },
+      {
+        "t": 401.85,
+        "line": "#20 73.57 Linking aws-c-io-0.27.3-h6f4d18d_1"
+      },
+      {
+        "t": 401.85,
+        "line": "#20 73.57 Linking freexl-2.0.0-h9dce30a_2"
+      },
+      {
+        "t": 401.85,
+        "line": "#20 73.57 Linking libxml2-2.15.3-h49c6c72_0"
+      },
+      {
+        "t": 401.85,
+        "line": "#20 73.57 Linking xcb-util-0.4.1-h4f16b4b_2"
+      },
+      {
+        "t": 401.85,
+        "line": "#20 73.57 Linking xcb-util-wm-0.4.2-hb711507_0"
+      },
+      {
+        "t": 401.89,
+        "line": "#20 73.58 Linking xcb-util-renderutil-0.3.10-hb711507_0"
+      },
+      {
+        "t": 401.89,
+        "line": "#20 73.58 Linking xcb-util-keysyms-0.4.1-hb711507_0"
+      },
+      {
+        "t": 401.89,
+        "line": "#20 73.58 Linking xorg-libx11-1.8.13-he1eb515_0"
+      },
+      {
+        "t": 401.89,
+        "line": "#20 73.60 Linking libcurl-8.21.0-hae6b9f4_2"
+      },
+      {
+        "t": 401.97,
+        "line": "#20 73.79 Linking libfreetype-2.14.3-ha770c72_0"
+      },
+      {
+        "t": 402.09,
+        "line": "#20 73.95 Linking aws-c-event-stream-0.7.1-h6ffeea8_4"
+      },
+      {
+        "t": 402.09,
+        "line": "#20 73.96 Linking libxml2-devel-2.15.3-h49c6c72_0"
+      },
+      {
+        "t": 402.09,
+        "line": "#20 73.96 Linking libarchive-3.8.8-gpl_hc2c16d8_100"
+      },
+      {
+        "t": 402.09,
+        "line": "#20 73.97 Linking libxslt-1.1.43-h711ed8c_1"
+      },
+      {
+        "t": 402.09,
+        "line": "#20 73.98 Linking xcb-util-image-0.4.0-hb711507_2"
+      },
+      {
+        "t": 402.27,
+        "line": "#20 74.00 Linking libglx-1.7.0-ha4b6fd6_3"
+      },
+      {
+        "t": 402.27,
+        "line": "#20 74.00 Linking xorg-libxext-1.3.7-hb03c661_0"
+      },
+      {
+        "t": 402.27,
+        "line": "#20 74.01 Linking xorg-libxrender-0.9.12-hb9d3cd8_0"
+      },
+      {
+        "t": 402.28,
+        "line": "#20 74.01 Linking prometheus-cpp-1.3.0-ha5d0236_0"
+      },
+      {
+        "t": 402.28,
+        "line": "#20 74.01 Linking azure-core-cpp-1.16.3-h206d751_0"
+      },
+      {
+        "t": 402.28,
+        "line": "#20 74.06 Linking proj-9.8.1-he0df7b0_0"
+      },
+      {
+        "t": 402.28,
+        "line": "#20 74.08 Linking fontconfig-2.18.1-h27c8c51_0"
+      },
+      {
+        "t": 402.28,
+        "line": "#20 74.09 Linking freetype-2.14.3-ha770c72_0"
+      },
+      {
+        "t": 402.28,
+        "line": "#20 74.10 Linking libpq-18.4-hd5a49e9_1"
+      },
+      {
+        "t": 402.28,
+        "line": "#20 74.18 Linking libcblas-3.11.0-8_h0358290_openblas"
+      },
+      {
+        "t": 402.41,
+        "line": "#20 74.25 Linking liblapack-3.11.0-8_h47877c9_openblas"
+      },
+      {
+        "t": 402.41,
+        "line": "#20 74.32 Linking aws-c-mqtt-0.16.0-h21f4ec5_2"
+      },
+      {
+        "t": 402.81,
+        "line": "#20 74.32 Linking aws-c-auth-0.10.4-hb7a77c6_1"
+      },
+      {
+        "t": 402.81,
+        "line": "#20 74.32 Linking libclang-cpp22.1-22.1.8-default_h6c227bf_3"
+      },
+      {
+        "t": 402.81,
+        "line": "#20 74.34 Linking xorg-libxi-1.8.3-hb03c661_0"
+      },
+      {
+        "t": 402.81,
+        "line": "#20 74.34 Linking xorg-libxxf86vm-1.1.7-hb03c661_0"
+      },
+      {
+        "t": 402.81,
+        "line": "#20 74.34 Linking xorg-libxdamage-1.1.6-hb9d3cd8_0"
+      },
+      {
+        "t": 402.85,
+        "line": "#20 74.36 Linking aws-c-s3-0.12.8-h46fcd08_1"
+      },
+      {
+        "t": 402.85,
+        "line": "#20 74.36 Linking libclang13-22.1.8-default_h9692865_3"
+      },
+      {
+        "t": 402.85,
+        "line": "#20 74.36 Linking libgl-devel-1.7.0-ha4b6fd6_3"
+      },
+      {
+        "t": 402.85,
+        "line": "#20 74.36 Linking xorg-libxtst-1.2.5-hb9d3cd8_3"
+      },
+      {
+        "t": 402.85,
+        "line": "#20 74.37 Linking libvulkan-loader-1.4.341.0-h5279c79_0"
+      },
+      {
+        "t": 402.85,
+        "line": "#20 74.37 Linking libgoogle-cloud-3.6.0-h8d2ee43_0"
+      },
+      {
+        "t": 402.85,
+        "line": "#20 74.40 Linking azure-storage-blobs-cpp-12.18.0-h74b55db_1"
+      },
+      {
+        "t": 402.85,
+        "line": "#20 74.41 Linking libgdal-core-3.13.1-hd345f60_8"
+      },
+      {
+        "t": 402.85,
+        "line": "#20 74.74 Linking aws-crt-cpp-0.40.1-h102d43b_3"
+      },
+      {
+        "t": 403.03,
+        "line": "#20 74.74 Linking hdf5-2.1.0-nompi_h654f344_110"
+      },
+      {
+        "t": 403.03,
+        "line": "#20 74.78 Linking libegl-devel-1.7.0-ha4b6fd6_3"
+      },
+      {
+        "t": 403.03,
+        "line": "#20 74.78 Linking libgoogle-cloud-storage-3.6.0-hdbdcf42_0"
+      },
+      {
+        "t": 403.03,
+        "line": "#20 74.78 Linking azure-storage-files-datalake-cpp-12.16.0-h1f05bef_1"
+      },
+      {
+        "t": 403.03,
+        "line": "#20 74.78 Linking aws-sdk-cpp-1.11.833-hc7390e0_9"
+      },
+      {
+        "t": 403.21,
+        "line": "#20 75.11 Linking libnetcdf-4.10.1-nompi_he3e3c8e_201"
+      },
+      {
+        "t": 403.34,
+        "line": "#20 75.21 Linking netcdf-fortran-4.6.3-nompi_hd5f62d4_101"
+      },
+      {
+        "t": 403.42,
+        "line": "#20 75.22 Linking esmf-8.9.1-nompi_h39d0119_4"
+      },
+      {
+        "t": 403.42,
+        "line": "#20 75.29 Linking cattrs-26.1.0-pyhcf101f3_1"
+      },
+      {
+        "t": 403.42,
+        "line": "#20 75.29 Linking pyasn1-0.6.4-pyhcf101f3_0"
+      },
+      {
+        "t": 403.42,
+        "line": "#20 75.30 Linking legacy-cgi-2.6.4-pyhcf101f3_0"
+      },
+      {
+        "t": 403.56,
+        "line": "#20 75.32 Linking python-multipart-0.0.32-pyhcf101f3_0"
+      },
+      {
+        "t": 403.56,
+        "line": "#20 75.46 Linking aiohappyeyeballs-2.7.1-pyhd8ed1ab_0"
+      },
+      {
+        "t": 403.71,
+        "line": "#20 75.46 Linking pyshp-3.1.4-pyhcf101f3_0"
+      },
+      {
+        "t": 403.72,
+        "line": "#20 75.47 Linking cycler-0.12.1-pyhcf101f3_2"
+      },
+      {
+        "t": 403.72,
+        "line": "#20 75.47 Linking threadpoolctl-3.6.0-pyhecae5ae_0"
+      },
+      {
+        "t": 403.72,
+        "line": "#20 75.47 Linking joblib-1.5.3-pyhd8ed1ab_0"
+      },
+      {
+        "t": 403.72,
+        "line": "#20 75.48 Linking backports-1.0-pyhd8ed1ab_5"
+      },
+      {
+        "t": 403.72,
+        "line": "#20 75.48 Linking funcsigs-1.0.2-pyhcf101f3_5"
+      },
+      {
+        "t": 403.72,
+        "line": "#20 75.48 Linking boltons-26.0.0-pyhd8ed1ab_0"
+      },
+      {
+        "t": 403.72,
+        "line": "#20 75.49 Linking crashtest-0.4.1-pyhd8ed1ab_1"
+      },
+      {
+        "t": 403.72,
+        "line": "#20 75.49 Linking roocs-grids-0.1.2-pyhd8ed1ab_1"
+      },
+      {
+        "t": 403.72,
+        "line": "#20 75.50 Linking cloudpickle-3.1.2-pyhcf101f3_1"
+      },
+      {
+        "t": 403.72,
+        "line": "#20 75.51 Linking fastcore-2.1.4-pyhc364b38_0"
+      },
+      {
+        "t": 403.72,
+        "line": "#20 75.51 Linking branca-0.8.2-pyhd8ed1ab_0"
+      },
+      {
+        "t": 403.72,
+        "line": "#20 75.51 Linking xyzservices-2026.3.0-pyhd8ed1ab_0"
+      },
+      {
+        "t": 403.72,
+        "line": "#20 75.51 Linking types-cachetools-7.0.0.20260713-pyhcf101f3_0"
+      },
+      {
+        "t": 403.72,
+        "line": "#20 75.53 Linking narwhals-2.24.0-pyhcf101f3_0"
+      },
+      {
+        "t": 403.72,
+        "line": "#20 75.54 Linking param-2.4.1-pyhc455866_0"
+      },
+      {
+        "t": 403.72,
+        "line": "#20 75.55 Linking colorcet-3.2.1-pyhd8ed1ab_0"
+      },
+      {
+        "t": 403.72,
+        "line": "#20 75.55 Linking networkx-3.6.1-pyhcf101f3_0"
+      },
+      {
+        "t": 403.72,
+        "line": "#20 75.61 Linking more-itertools-11.1.0-pyhcf101f3_0"
+      },
+      {
+        "t": 403.82,
+        "line": "#20 75.61 Linking jeepney-0.9.0-pyhd8ed1ab_0"
+      },
+      {
+        "t": 403.82,
+        "line": "#20 75.61 Linking importlib_resources-7.1.0-pyhd8ed1ab_0"
+      },
+      {
+        "t": 403.82,
+        "line": "#20 75.62 Linking typeguard-4.5.2-pyhcf101f3_0"
+      },
+      {
+        "t": 403.82,
+        "line": "#20 75.62 Linking filelock-3.31.2-pyhd8ed1ab_0"
+      },
+      {
+        "t": 403.82,
+        "line": "#20 75.62 Linking sortedcontainers-2.4.0-pyhd8ed1ab_1"
+      },
+      {
+        "t": 403.82,
+        "line": "#20 75.63 Linking dill-0.3.9-pyhd8ed1ab_1"
+      },
+      {
+        "t": 403.82,
+        "line": "#20 75.63 Linking trove-classifiers-2026.6.1.19-pyhcf101f3_0"
+      },
+      {
+        "t": 403.82,
+        "line": "#20 75.63 Linking tomlkit-0.15.1-pyhcf101f3_0"
+      },
+      {
+        "t": 403.82,
+        "line": "#20 75.64 Linking shellingham-1.5.4-pyhd8ed1ab_2"
+      },
+      {
+        "t": 403.82,
+        "line": "#20 75.65 Linking pymetalink-6.5.3-pyhd8ed1ab_0"
+      },
+      {
+        "t": 403.82,
+        "line": "#20 75.70 Linking mystmd-1.10.1-pyhcf101f3_0"
+      },
+      {
+        "t": 403.82,
+        "line": "#20 75.70 Linking jupyter-book-2.1.6-pyhcf101f3_0"
+      },
+      {
+        "t": 403.82,
+        "line": "#20 75.70 Linking cpython-3.11.15-py311hd8ed1ab_1"
+      },
+      {
+        "t": 403.82,
+        "line": "#20 75.71 Linking fonts-conda-forge-1-hc364b38_1"
+      },
+      {
+        "t": 403.82,
+        "line": "#20 75.71 Linking rsa-4.9.1-pyhd8ed1ab_0"
+      },
+      {
+        "t": 403.82,
+        "line": "#20 75.71 Linking pyasn1-modules-0.4.2-pyhd8ed1ab_0"
+      },
+      {
+        "t": 403.92,
+        "line": "#20 75.74 Linking pyviz_comms-3.0.6-pyhd8ed1ab_0"
+      },
+      {
+        "t": 403.92,
+        "line": "#20 75.76 Linking click-option-group-0.5.6-pyhd8ed1ab_0"
+      },
+      {
+        "t": 403.92,
+        "line": "#20 75.77 Linking python-gil-3.11.15-hd8ed1ab_1"
+      },
+      {
+        "t": 403.92,
+        "line": "#20 75.77 Linking fonts-conda-ecosystem-1-0"
+      },
+      {
+        "t": 403.92,
+        "line": "#20 75.79 Linking globus-identity-mapping-0.5.0-pyhcf101f3_1"
+      },
+      {
+        "t": 403.92,
+        "line": "#20 75.79 Linking virtualenv-21.7.0-pyhcf101f3_0"
+      },
+      {
+        "t": 403.92,
+        "line": "#20 75.80 Linking _python_abi3_support-1.0-hd8ed1ab_3"
+      },
+      {
+        "t": 403.92,
+        "line": "#20 75.81 Linking protobuf-6.33.5-py311h3f0a9aa_2"
+      },
+      {
+        "t": 404.1,
+        "line": "#20 75.82 Linking google-crc32c-1.8.0-py311h2702b87_1"
+      },
+      {
+        "t": 404.1,
+        "line": "#20 75.83 Linking kiwisolver-1.5.0-py311h724c32c_0"
+      },
+      {
+        "t": 404.1,
+        "line": "#20 75.83 Linking llvmlite-0.48.0-py311h9d99eea_1"
+      },
+      {
+        "t": 404.1,
+        "line": "#20 75.84 Linking grpcio-1.78.1-py311h3aa0767_0"
+      },
+      {
+        "t": 404.1,
+        "line": "#20 75.85 Linking frozenlist-1.8.0-py311h52bc045_0"
+      },
+      {
+        "t": 404.1,
+        "line": "#20 75.87 Linking pyarrow-core-24.0.0-py311h66caee6_0_cpu"
+      },
+      {
+        "t": 404.1,
+        "line": "#20 75.99 Linking lz4-4.4.5-py311h1c460e0_1"
+      },
+      {
+        "t": 404.23,
+        "line": "#20 75.99 Linking msgpack-python-1.2.1-py311h724c32c_1"
+      },
+      {
+        "t": 404.23,
+        "line": "#20 76.04 Linking psutil-5.9.8-py311h459d7ec_0"
+      },
+      {
+        "t": 404.52,
+        "line": "#20 76.12 Linking cffi-2.1.0-py311h03d9500_0"
+      },
+      {
+        "t": 404.6,
+        "line": "#20 76.49 Linking cytoolz-1.1.0-py311h49ec1c0_2"
+      },
+      {
+        "t": 404.72,
+        "line": "#20 76.50 Linking nh3-0.3.6-py310hd8a072f_0"
+      },
+      {
+        "t": 404.73,
+        "line": "#20 76.53 Linking fonttools-4.63.0-py311h3778330_0"
+      },
+      {
+        "t": 404.89,
+        "line": "#20 76.61 Linking sqlalchemy-2.0.51-py311haee01d2_0"
+      },
+      {
+        "t": 405.12,
+        "line": "#20 77.01 Linking shapely-2.1.2-py311h8a92878_2"
+      },
+      {
+        "t": 405.32,
+        "line": "#20 77.03 Linking numba-0.66.0-py311hcdb8226_0"
+      },
+      {
+        "t": 405.32,
+        "line": "#20 77.22 Linking libharfbuzz-14.2.1-h17a8019_1"
+      },
+      {
+        "t": 405.47,
+        "line": "#20 77.23 Linking scikit-learn-1.9.0-np2py311ha15b03d_0"
+      },
+      {
+        "t": 405.47,
+        "line": "#20 77.36 Linking libharfbuzz-devel-14.2.1-h17a8019_1"
+      },
+      {
+        "t": 405.69,
+        "line": "#20 77.37 Linking libraqm-0.10.5-h6406941_1"
+      },
+      {
+        "t": 405.69,
+        "line": "#20 77.37 Linking harfbuzz-14.2.1-ha770c72_1"
+      },
+      {
+        "t": 405.69,
+        "line": "#20 77.37 Linking matplotlib-base-3.11.1-py311h0a88c4d_0"
+      },
+      {
+        "t": 405.69,
+        "line": "#20 77.43 Linking qt6-main-6.11.1-pl5321h16c4a6b_1"
+      },
+      {
+        "t": 407.75,
+        "line": "#20 79.63 Linking cartopy-0.25.0-py311hed34c8f_1"
+      },
+      {
+        "t": 407.84,
+        "line": "#20 79.73 Linking aiosignal-1.4.0-pyhd8ed1ab_0"
+      },
+      {
+        "t": 407.96,
+        "line": "#20 79.74 Linking cachecontrol-0.14.4-pyha770c72_0"
+      },
+      {
+        "t": 408.06,
+        "line": "#20 79.84 Linking donfig-0.8.1.post1-pyhd8ed1ab_1"
+      },
+      {
+        "t": 408.06,
+        "line": "#20 79.85 Linking owslib-0.35.0-pyhd8ed1ab_0"
+      },
+      {
+        "t": 408.06,
+        "line": "#20 79.86 Linking intake-2.0.9-pyhd8ed1ab_0"
+      },
+      {
+        "t": 408.06,
+        "line": "#20 79.86 Linking dask-core-2026.7.1-pyhc364b38_0"
+      },
+      {
+        "t": 408.06,
+        "line": "#20 79.90 Linking parsl-2026.4.20-pyhcf101f3_0"
+      },
+      {
+        "t": 408.24,
+        "line": "#20 79.95 Linking esmpy-8.9.1-pyhdfbf58e_0"
+      },
+      {
+        "t": 408.24,
+        "line": "#20 80.00 Linking bokeh-3.9.1-pyhd8ed1ab_0"
+      },
+      {
+        "t": 408.24,
+        "line": "#20 80.12 Linking cleo-2.1.0-pyhd8ed1ab_1"
+      },
+      {
+        "t": 408.33,
+        "line": "#20 80.13 Linking xarray-2026.7.0-pyhc364b38_0"
+      },
+      {
+        "t": 408.33,
+        "line": "#20 80.17 Linking keyring-25.7.0-pyha804496_0"
+      },
+      {
+        "t": 408.33,
+        "line": "#20 80.17 Linking mapclassify-2.10.0-pyhd8ed1ab_1"
+      },
+      {
+        "t": 408.33,
+        "line": "#20 80.18 Linking googleapis-common-protos-grpc-1.75.0-pyhcf101f3_0"
+      },
+      {
+        "t": 408.33,
+        "line": "#20 80.18 Linking grpcio-status-1.78.1-pyhcf101f3_0"
+      },
+      {
+        "t": 408.33,
+        "line": "#20 80.18 Linking cachecontrol-with-filecache-0.14.4-pyhd8ed1ab_0"
+      },
+      {
+        "t": 408.33,
+        "line": "#20 80.18 Linking pydap-3.5.9-pyhc455866_0"
+      },
+      {
+        "t": 408.33,
+        "line": "#20 80.20 Linking distributed-2026.7.1-pyhc364b38_0"
+      },
+      {
+        "t": 408.33,
+        "line": "#20 80.22 Linking globus-compute-sdk-4.15.0-pyhd8ed1ab_0"
+      },
+      {
+        "t": 408.51,
+        "line": "#20 80.40 Linking datashader-0.19.1-pyhd8ed1ab_0"
+      },
+      {
+        "t": 408.62,
+        "line": "#20 80.44 Linking xarray-datatree-0.0.14-pyhd8ed1ab_0"
+      },
+      {
+        "t": 408.75,
+        "line": "#20 80.57 Linking rooki-0.6.5-pyhd8ed1ab_0"
+      },
+      {
+        "t": 408.75,
+        "line": "#20 80.57 Linking xesmf-0.8.2-pyhd8ed1ab_0"
+      },
+      {
+        "t": 408.75,
+        "line": "#20 80.58 Linking fastprogress-1.1.6-pyhd8ed1ab_0"
+      },
+      {
+        "t": 408.75,
+        "line": "#20 80.58 Linking panel-1.9.3-pyhd8ed1ab_0"
+      },
+      {
+        "t": 408.75,
+        "line": "#20 80.58 Linking holoviews-1.23.1-pyhd8ed1ab_0"
+      },
+      {
+        "t": 408.75,
+        "line": "#20 80.64 Linking hvplot-0.12.2-pyhd8ed1ab_0"
+      },
+      {
+        "t": 408.96,
+        "line": "#20 80.66 Linking geoviews-1.15.1-pyhd8ed1ab_0"
+      },
+      {
+        "t": 408.96,
+        "line": "#20 80.66 Linking aiohttp-3.14.2-py311h55b9665_0"
+      },
+      {
+        "t": 408.96,
+        "line": "#20 80.68 Linking numcodecs-0.16.5-py311hed34c8f_0"
+      },
+      {
+        "t": 408.96,
+        "line": "#20 80.69 Linking statsmodels-0.14.6-py311h0372a8f_0"
+      },
+      {
+        "t": 409.14,
+        "line": "#20 80.93 Linking zarr-3.1.6-pyhc364b38_0"
+      },
+      {
+        "t": 409.14,
+        "line": "#20 80.96 Linking google-auth-oauthlib-1.4.0-pyhd8ed1ab_0"
+      },
+      {
+        "t": 409.14,
+        "line": "#20 80.96 Linking kerchunk-0.2.10-pyhd8ed1ab_0"
+      },
+      {
+        "t": 409.14,
+        "line": "#20 80.97 Linking xeofs-2.4.1-pyhd8ed1ab_0"
+      },
+      {
+        "t": 409.14,
+        "line": "#20 80.98 Linking clisops-0.16.2-pyhd8ed1ab_0"
+      },
+      {
+        "t": 409.14,
+        "line": "#20 81.00 Linking importlib-metadata-8.7.0-pyhe01879c_1"
+      },
+      {
+        "t": 409.14,
+        "line": "#20 81.01 Linking mako-1.3.10-pyhd8ed1ab_0"
+      },
+      {
+        "t": 409.14,
+        "line": "#20 81.01 Linking tomli-2.3.0-pyhcf101f3_0"
+      },
+      {
+        "t": 409.14,
+        "line": "#20 81.01 Linking alembic-1.17.0-pyhd8ed1ab_0"
+      },
+      {
+        "t": 409.14,
+        "line": "#20 81.02 Linking annotated-types-0.7.0-pyhd8ed1ab_1"
+      },
+      {
+        "t": 409.14,
+        "line": "#20 81.02 Linking exceptiongroup-1.3.0-pyhd8ed1ab_0"
+      },
+      {
+        "t": 409.14,
+        "line": "#20 81.02 Linking idna-3.11-pyhd8ed1ab_0"
+      },
+      {
+        "t": 409.28,
+        "line": "#20 81.03 Linking pycparser-2.22-pyh29332c3_1"
+      },
+      {
+        "t": 409.28,
+        "line": "#20 81.04 Linking argon2-cffi-25.1.0-pyhd8ed1ab_0"
+      },
+      {
+        "t": 409.28,
+        "line": "#20 81.04 Linking six-1.17.0-pyhe01879c_1"
+      },
+      {
+        "t": 409.28,
+        "line": "#20 81.04 Linking python-dateutil-2.9.0.post0-pyhe01879c_2"
+      },
+      {
+        "t": 409.28,
+        "line": "#20 81.05 Linking types-python-dateutil-2.9.0.20251008-pyhd8ed1ab_0"
+      },
+      {
+        "t": 409.28,
+        "line": "#20 81.05 Linking arrow-1.3.0-pyhd8ed1ab_1"
+      },
+      {
+        "t": 409.28,
+        "line": "#20 81.05 Linking asttokens-3.0.0-pyhd8ed1ab_1"
+      },
+      {
+        "t": 409.28,
+        "line": "#20 81.05 Linking async-lru-2.0.5-pyh29332c3_0"
+      },
+      {
+        "t": 409.28,
+        "line": "#20 81.05 Linking async_generator-1.10-pyhd8ed1ab_2"
+      },
+      {
+        "t": 409.28,
+        "line": "#20 81.06 Linking attrs-25.4.0-pyh71513ae_0"
+      },
+      {
+        "t": 409.28,
+        "line": "#20 81.06 Linking pytz-2025.2-pyhd8ed1ab_0"
+      },
+      {
+        "t": 409.28,
+        "line": "#20 81.09 Linking babel-2.17.0-pyhd8ed1ab_0"
+      },
+      {
+        "t": 409.28,
+        "line": "#20 81.17 Linking soupsieve-2.8-pyhd8ed1ab_0"
+      },
+      {
+        "t": 409.62,
+        "line": "#20 81.17 Linking beautifulsoup4-4.14.2-pyha770c72_0"
+      },
+      {
+        "t": 409.62,
+        "line": "#20 81.17 Linking webencodings-0.5.1-pyhd8ed1ab_3"
+      },
+      {
+        "t": 409.62,
+        "line": "#20 81.17 Linking bleach-6.2.0-pyh29332c3_4"
+      },
+      {
+        "t": 409.62,
+        "line": "#20 81.18 Linking tinycss2-1.4.0-pyhd8ed1ab_0"
+      },
+      {
+        "t": 409.62,
+        "line": "#20 81.18 Linking blinker-1.9.0-pyhff2d567_0"
+      },
+      {
+        "t": 409.62,
+        "line": "#20 81.20 Linking hyperframe-6.1.0-pyhd8ed1ab_0"
+      },
+      {
+        "t": 409.62,
+        "line": "#20 81.20 Linking h2-4.3.0-pyhcf101f3_0"
+      },
+      {
+        "t": 409.62,
+        "line": "#20 81.20 Linking httpcore-1.0.9-pyh29332c3_0"
+      },
+      {
+        "t": 409.62,
+        "line": "#20 81.20 Linking httpx-0.28.1-pyhd8ed1ab_0"
+      },
+      {
+        "t": 409.62,
+        "line": "#20 81.21 Linking parso-0.8.5-pyhcf101f3_0"
+      },
+      {
+        "t": 409.62,
+        "line": "#20 81.21 Linking jedi-0.19.2-pyhd8ed1ab_1"
+      },
+      {
+        "t": 409.7,
+        "line": "#20 81.59 Linking traitlets-5.14.3-pyhd8ed1ab_1"
+      },
+      {
+        "t": 409.8,
+        "line": "#20 81.60 Linking matplotlib-inline-0.1.7-pyhd8ed1ab_1"
+      },
+      {
+        "t": 409.8,
+        "line": "#20 81.60 Linking ptyprocess-0.7.0-pyhd8ed1ab_1"
+      },
+      {
+        "t": 409.8,
+        "line": "#20 81.60 Linking pexpect-4.9.0-pyhd8ed1ab_1"
+      },
+      {
+        "t": 409.8,
+        "line": "#20 81.60 Linking pickleshare-0.7.5-pyhd8ed1ab_1004"
+      },
+      {
+        "t": 409.8,
+        "line": "#20 81.60 Linking wcwidth-0.2.14-pyhd8ed1ab_0"
+      },
+      {
+        "t": 409.8,
+        "line": "#20 81.60 Linking prompt-toolkit-3.0.52-pyha770c72_0"
+      },
+      {
+        "t": 409.8,
+        "line": "#20 81.62 Linking pygments-2.19.2-pyhd8ed1ab_0"
+      },
+      {
+        "t": 409.8,
+        "line": "#20 81.64 Linking pure_eval-0.2.3-pyhd8ed1ab_1"
+      },
+      {
+        "t": 409.8,
+        "line": "#20 81.67 Linking packaging-25.0-pyh29332c3_1"
+      },
+      {
+        "t": 409.8,
+        "line": "#20 81.67 Linking ipykernel-7.0.1-pyha191276_0"
+      },
+      {
+        "t": 409.8,
+        "line": "#20 81.68 Linking jupyterlab_widgets-3.0.15-pyhd8ed1ab_0"
+      },
+      {
+        "t": 409.8,
+        "line": "#20 81.68 Linking widgetsnbextension-4.0.14-pyhd8ed1ab_0"
+      },
+      {
+        "t": 409.91,
+        "line": "#20 81.70 Linking json5-0.12.1-pyhd8ed1ab_0"
+      },
+      {
+        "t": 409.91,
+        "line": "#20 81.74 Linking webcolors-24.11.1-pyhd8ed1ab_0"
+      },
+      {
+        "t": 409.91,
+        "line": "#20 81.74 Linking python-json-logger-2.0.7-pyhd8ed1ab_0"
+      },
+      {
+        "t": 409.91,
+        "line": "#20 81.75 Linking jupyter_events-0.12.0-pyh29332c3_0"
+      },
+      {
+        "t": 409.91,
+        "line": "#20 81.75 Linking terminado-0.18.1-pyh0d859eb_0"
+      },
+      {
+        "t": 409.91,
+        "line": "#20 81.75 Linking jupyter_server_terminals-0.5.3-pyhd8ed1ab_1"
+      },
+      {
+        "t": 409.91,
+        "line": "#20 81.75 Linking jupyterlab_pygments-0.3.0-pyhd8ed1ab_2"
+      },
+      {
+        "t": 409.91,
+        "line": "#20 81.75 Linking mistune-3.1.4-pyhcf101f3_0"
+      },
+      {
+        "t": 409.91,
+        "line": "#20 81.77 Linking nbformat-5.10.4-pyhd8ed1ab_1"
+      },
+      {
+        "t": 409.91,
+        "line": "#20 81.77 Linking pandocfilters-1.5.0-pyhd8ed1ab_0"
+      },
+      {
+        "t": 409.91,
+        "line": "#20 81.78 Linking nbconvert-core-7.16.6-pyh29332c3_0"
+      },
+      {
+        "t": 410.11,
+        "line": "#20 81.80 Linking jupyter_server-2.17.0-pyhcf101f3_0"
+      },
+      {
+        "t": 410.11,
+        "line": "#20 81.84 Linking pamela-1.2.0-pyhd8ed1ab_1"
+      },
+      {
+        "t": 410.11,
+        "line": "#20 81.84 Linking typing-inspection-0.4.2-pyhd8ed1ab_0"
+      },
+      {
+        "t": 410.11,
+        "line": "#20 81.84 Linking pydantic-2.12.2-pyh3cfb1c2_0"
+      },
+      {
+        "t": 410.64,
+        "line": "#20 82.54 Linking jupyterlab_server-2.27.3-pyhd8ed1ab_1"
+      },
+      {
+        "t": 410.77,
+        "line": "#20 82.66 Linking notebook-7.4.7-pyhd8ed1ab_0"
+      },
+      {
+        "t": 410.96,
+        "line": "#20 82.70 Linking wheel-0.45.1-pyhd8ed1ab_1"
+      },
+      {
+        "t": 411.13,
+        "line": "#20 83.03 warning  libmamba You are using 'pip' as an additional package manager."
+      },
+      {
+        "t": 411.29,
+        "line": "#20 83.04"
+      },
+      {
+        "t": 411.29,
+        "line": "#20 83.04 Updating pip packages: sphinx-pythia-theme, sphinx==4.5.0, sphinxcontrib-applehelp<1.0.7, sphinxcontrib-devhelp<1.0.5, sphinxcontrib-htmlhelp<2.0.4, sphinxcontrib-qthelp<1.0.6, sphinxcontrib-serializinghtml<1.1.9, pydata-sphinx-theme<=0.8, docutils==0.16, git+https://github.com/esgf2-us/intake-esgf"
+      },
+      {
+        "t": 415.39,
+        "line": "#20 87.30 critical libmamba pip failed to update packages"
+      },
+      {
+        "t": 416.32,
+        "line": "#20 ERROR: process \"/bin/sh -c TIMEFORMAT='time: %3R' bash -c 'time ${MAMBA_EXE} env update -p ${NB_PYTHON_PREFIX} --file \\\"environment.yml\\\" && time ${MAMBA_EXE} clean --all -f -y && ${MAMBA_EXE} list -p ${NB_PYTHON_PREFIX} '\" did not complete successfully: exit code: 1"
+      },
+      {
+        "t": 416.46,
+        "line": "82.86"
+      },
+      {
+        "t": 416.46,
+        "line": "Dockerfile:131"
+      },
+      {
+        "t": 416.46,
+        "line": "--------------------"
+      },
+      {
+        "t": 416.52,
+        "line": " 134 | >>> ${MAMBA_EXE} list -p ${NB_PYTHON_PREFIX} \\"
+      },
+      {
+        "t": 416.52,
+        "line": " 135 | >>> '"
+      },
+      {
+        "t": 416.52,
+        "line": " 136 |"
+      },
+      {
+        "t": 416.52,
+        "line": "Error during build: Command '['docker', 'buildx', 'build', '--progress', 'plain', '--push', '--build-arg', 'NB_USER=jovyan', '--build-arg', 'NB_UID=1000', '--tag', 'quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2desgf-2dcookbook-523f4c:fb5ed9a2491993e7383e5fe0cc9a7ed76c5c3c3e', '--platform', 'linux/amd64', '/tmp/tmpmzhuo8oz']' returned non-zero exit status 1."
+      },
+      {
+        "t": 416.52,
+        "line": "Error during build: Command '['docker', 'buildx', 'build', '--progress', 'plain', '--push', '--build-arg', 'NB_USER=jovyan', '--build-arg', 'NB_UID=1000', '--tag', 'quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2desgf-2dcookbook-523f4c:fb5ed9a2491993e7383e5fe0cc9a7ed76c5c3c3e', '--platform', 'linux/amd64', '/tmp/tmpmzhuo8oz']' returned non-zero exit status 1."
+      }
+    ],
+    "log_lines_total": 1573,
+    "log_truncated": true
+  },
+  "execution": null,
+  "resources": null,
+  "errors": [],
+  "finished_at": "2026-07-21T19:20:10.143966+00:00",
+  "build_artifacts": {
+    "path": "/home/jmunroe/src/projectpythia/esgf-cookbook/_build",
+    "bytes": 0,
+    "kept_because": "run failed"
+  }
+}

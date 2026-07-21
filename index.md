@@ -113,7 +113,11 @@ run until a learner's kernel dies.
 
 | Cookbook | Session | Execution | Peak memory | Errors |
 |---|---|---|---|---|
-| HRRR-AWS-cookbook | 6.4s (cached) | 78.53s | 0.63 of 8.6 GB | 0 |
+| HRRR-AWS-cookbook | 6.49s (cached) | 27.53s | 0.62 of 8.6 GB | 0 |
+| eofs-cookbook | 81.46s (cached) | 44.02s | 1.43 of 8.6 GB | 0 |
+| esgf-cookbook | 416.52s | —s | — | 0 |
+| landsat-ml-cookbook | 469.24s | 34.69s | 0.95 of 8.6 GB | 3 |
+| radar-cookbook | 120.72s (cached) | 413.13s | 2.97 of 8.6 GB | 5 |
 
 Results and method: [](reports/live.md) · [](docs/live-assessment.md)
 

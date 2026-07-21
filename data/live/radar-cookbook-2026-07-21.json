@@ -1,0 +1,162 @@
+{
+  "cookbook": "radar-cookbook",
+  "started_at": "2026-07-21T19:20:10.147717+00:00",
+  "hub": "https://binder.projectpythia.org",
+  "ref": "main",
+  "toc_notebooks": [
+    "notebooks/example-workflows/cacti-data-quality-example.ipynb",
+    "notebooks/example-workflows/echo_top_height.ipynb",
+    "notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb",
+    "notebooks/example-workflows/kdp-comparison.ipynb",
+    "notebooks/example-workflows/moore-oklahoma-tornado.ipynb",
+    "notebooks/example-workflows/tracer-example.ipynb",
+    "notebooks/foundations/interactive-radar-visualization.ipynb",
+    "notebooks/foundations/pyart-basics.ipynb",
+    "notebooks/foundations/pyart-corrections.ipynb",
+    "notebooks/foundations/pyart-gridding.ipynb",
+    "notebooks/radar-basics/radar-basics.ipynb"
+  ],
+  "build": {
+    "hub": "https://binder.projectpythia.org",
+    "ref": "main",
+    "seconds": 120.72,
+    "exit_code": 0,
+    "failed": false,
+    "image_cached": true,
+    "log": [
+      {
+        "t": 1.11,
+        "line": "Found built image, launching..."
+      },
+      {
+        "t": 2.27,
+        "line": "2026-07-21T19:20:11.540201Z [Normal] Successfully assigned binderhub/jupyter-projectpythia-radar-cookbook-f6vi4eb8 to binder-pythia-cluster-d7vpq4idy5va-user-m3-large-fdpj2-g79tz"
+      },
+      {
+        "t": 3.27,
+        "line": "2026-07-21T19:20:13Z [Normal] Pulling image \"quay.io/jupyterhub/k8s-network-tools:4.3.3\""
+      },
+      {
+        "t": 11.24,
+        "line": "2026-07-21T19:20:20Z [Normal] Successfully pulled image \"quay.io/jupyterhub/k8s-network-tools:4.3.3\" in 7.407s (7.407s including waiting). Image size: 3896334 bytes."
+      },
+      {
+        "t": 11.24,
+        "line": "2026-07-21T19:20:20Z [Normal] Created container: block-cloud-metadata"
+      },
+      {
+        "t": 12.23,
+        "line": "2026-07-21T19:20:21Z [Normal] Created container: block-nfs-access"
+      },
+      {
+        "t": 117.16,
+        "line": "2026-07-21T19:22:06Z [Normal] Created container: notebook"
+      },
+      {
+        "t": 117.16,
+        "line": "2026-07-21T19:22:06Z [Normal] Started container notebook"
+      },
+      {
+        "t": 120.71,
+        "line": "Server ready at /user/projectpythia-radar-cookbook-f6vi4eb8/"
+      }
+    ]
+  },
+  "execution": {
+    "seconds": 413.13,
+    "exit_code": 0,
+    "failed": false,
+    "cache_cleared": false,
+    "page_seconds": [
+      {
+        "page": "notebooks/radar-basics/radar-basics.ipynb",
+        "seconds": 0.13
+      },
+      {
+        "page": "myst.yml#site.parts.footer",
+        "seconds": 0.08
+      },
+      {
+        "page": "notebooks/how-to-cite.md",
+        "seconds": 0.93
+      },
+      {
+        "page": "README.md",
+        "seconds": 1.16
+      },
+      {
+        "page": "notebooks/example-workflows/moore-oklahoma-tornado.ipynb",
+        "seconds": 10.0
+      },
+      {
+        "page": "notebooks/example-workflows/cacti-data-quality-example.ipynb",
+        "seconds": 10.0
+      },
+      {
+        "page": "notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb",
+        "seconds": 11.0
+      },
+      {
+        "page": "notebooks/example-workflows/tracer-example.ipynb",
+        "seconds": 11.0
+      },
+      {
+        "page": "notebooks/example-workflows/echo_top_height.ipynb",
+        "seconds": 11.0
+      },
+      {
+        "page": "notebooks/foundations/interactive-radar-visualization.ipynb",
+        "seconds": 28.0
+      }
+    ],
+    "stdout_tail": "a-radar-cookbook-f6vi4eb8/api/kernels/7b8ea483-7e2b-4310-acf2-71dadbf0b17f\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-radar-cookbook-f6vi4eb8/api/kernels/896e4f7b-1cb0-46d8-8dc9-b8fdf42de139\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-radar-cookbook-f6vi4eb8/api/kernels/b205dc75-ab95-400e-82a8-0cefd1696591\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-radar-cookbook-f6vi4eb8/api/kernels/1c0fcf48-3181-4b88-836a-c0d7a73bab44\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-radar-cookbook-f6vi4eb8/api/kernels/f6fd75e5-5e06-4e49-bd37-3043934d4f85\n\ud83d\udcd6 Built notebooks/how-to-cite.md in 933 ms.\n\ud83d\udcd6 Built README.md in 1.16 s.\n\ud83d\udcd6 Built notebooks/example-workflows/moore-oklahoma-tornado.ipynb in 10 s.\n\ud83e\ude84  Linked 3 DOIs from doi.org in 1.02 s for notebooks/example-workflows/cacti-data-quality-example.ipynb\n\ud83d\udcd6 Built notebooks/example-workflows/cacti-data-quality-example.ipynb in 10 s.\n\ud83e\ude84  Linked 1 DOI from doi.org in 1.11 s for notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb\n\ud83d\udcd6 Built notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb in 11 s.\n\ud83e\ude84  Linked 2 DOIs from doi.org in 1.26 s for notebooks/example-workflows/tracer-example.ipynb\n\ud83d\udcd6 Built notebooks/example-workflows/tracer-example.ipynb in 11 s.\n\ud83e\ude84  Linked 1 DOI from doi.org in 466 ms for notebooks/example-workflows/echo_top_height.ipynb\n\ud83d\udcd6 Built notebooks/example-workflows/echo_top_height.ipynb in 11 s.\n\ud83d\udcd6 Built notebooks/foundations/interactive-radar-visualization.ipynb in 28 s.\n\ud83d\udcd6 Built notebooks/foundations/pyart-gridding.ipynb in 2.53 min.\n\ud83d\udcd6 Built notebooks/foundations/pyart-basics.ipynb in 2.62 min.\n\ud83d\udcd6 Built notebooks/example-workflows/kdp-comparison.ipynb in 3.07 min.\n\ud83d\udcd6 Built notebooks/foundations/pyart-corrections.ipynb in 6.68 min.\n\ud83e\ude84 Updated link text for 3 external MyST references in 223 ms\n\ud83d\udcda Built 13 pages for project in 6.73 min.\n\n\n\t\u2728\u2728\u2728  Starting Book Theme  \u2728\u2728\u2728\n\n\n\n\ud83d\udd0c Server started on port 3000!  \ud83e\udd73 \ud83c\udf89\n\n\n\t\ud83d\udc49  http://localhost:3000  \ud83d\udc48\n\n\n\ud83d\udc8c GET  /notebooks/foundations/pyart-basics 200 - - 48.144 ms\nUnknown width 250/ in getImageWidth\n\ud83d\udc8c GET  /notebooks/how-to-cite 200 - - 123.323 ms\nGET /notebooks/foundations/pyart-corrections 200 - - 28.672 ms\nGET /notebooks/radar-basics/radar-basics 200 - - 111.223 ms\nGET / 200 - - 147.749 ms\n\ud83d\udc8c GET  /notebooks/foundations/pyart-gridding 200 - - 56.339 ms\n\ud83d\udc8c GET  /notebooks/example-workflows/tracer-example 200 - - 19.333 ms\nGET /notebooks/example-workflows/moore-oklahoma-tornado 200 - - 44.989 ms\n\ud83d\udc8c GET  /notebooks/foundations/interactive-radar-visualization 200 - - 35.330 ms\n\ud83d\udc8c GET  /notebooks/example-workflows/kdp-comparison 200 - - 54.570 ms\n\ud83d\udc8c GET  /notebooks/example-workflows/cacti-data-quality-example 200 - - 65.981 ms\n\ud83d\udc8c GET  /index.json 200 - - 35.749 ms\nGET /notebooks/example-workflows/fastbarnes-interpolation-rhi 200 - - 26.782 ms\nGET /notebooks/example-workflows/echo-top-height 200 - - 35.422 ms\n\ud83d\udc8c GET  /notebooks.how-to-cite.json 200 - - 7.888 ms\n\ud83d\udc8c GET  /notebooks.radar-basics.radar-basics.json 200 - - 8.540 ms\n\ud83d\udc8c GET  /notebooks.foundations.pyart-basics.json 200 - - 9.999 ms\n\ud83d\udc8c GET  /notebooks.foundations.pyart-corrections.json 200 - - 12.367 ms\n\ud83d\udc8c GET  /notebooks.foundations.pyart-gridding.json 200 - - 10.656 ms\n\ud83d\udc8c GET  /notebooks.example-workflows.moore-oklahoma-tornado.json 200 - - 9.682 ms\n\ud83d\udc8c GET  /notebooks.example-workflows.tracer-example.json 200 - - 9.348 ms\nGET /notebooks.foundations.interactive-radar-visualization.json 200 - - 12.489 ms\n\ud83d\udc8c GET  /notebooks.example-workflows.kdp-comparison.json 200 - - 11.732 ms\n\ud83d\udc8c GET  /robots.txt 200 - - 1.066 ms\n\ud83d\udc8c GET  /notebooks.example-workflows.cacti-data-quality-example.json 200 - - 11.024 ms\n\ud83d\udc8c GET  /notebooks.example-workflows.fastbarnes-interpolation-rhi.json 200 - - 11.306 ms\n\ud83d\udc8c GET  /sitemap_style.xsl 200 - - 0.533 ms\n\ud83d\udc8c GET  /sitemap.xml 200 - - 4.266 ms\nGET /notebooks.example-workflows.echo-top-height.json 200 - - 11.851 ms\nGET /myst-theme.css 200 - - 6.533 ms\n\ud83d\udc8c GET  /favicon.ico 200 - - 4.511 ms\n",
+    "stderr_tail": "241m.\u001b[39mwait_for(coro, timeout\u001b[38;5;241m=\u001b[39mtimeout)\n\u001b[1;32m     55\u001b[0m \u001b[38;5;28;01mtry\u001b[39;00m:\n\u001b[0;32m---> 56\u001b[0m     result[\u001b[38;5;241m0\u001b[39m] \u001b[38;5;241m=\u001b[39m \u001b[38;5;28;01mawait\u001b[39;00m coro\n\u001b[1;32m     57\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mException\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m ex:\n\u001b[1;32m     58\u001b[0m     result[\u001b[38;5;241m0\u001b[39m] \u001b[38;5;241m=\u001b[39m ex\n\nFile \u001b[0;32m/srv/conda/envs/notebook/lib/python3.12/site-packages/s3fs/core.py:1445\u001b[0m, in \u001b[0;36mS3FileSystem._info\u001b[0;34m(self, path, bucket, key, refresh, version_id)\u001b[0m\n\u001b[1;32m   1443\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m key:\n\u001b[1;32m   1444\u001b[0m     \u001b[38;5;28;01mtry\u001b[39;00m:\n\u001b[0;32m-> 1445\u001b[0m         out \u001b[38;5;241m=\u001b[39m \u001b[38;5;28;01mawait\u001b[39;00m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_call_s3(\n\u001b[1;32m   1446\u001b[0m             \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mhead_object\u001b[39m\u001b[38;5;124m\"\u001b[39m,\n\u001b[1;32m   1447\u001b[0m             \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mkwargs,\n\u001b[1;32m   1448\u001b[0m             Bucket\u001b[38;5;241m=\u001b[39mbucket,\n\u001b[1;32m   1449\u001b[0m             Key\u001b[38;5;241m=\u001b[39mkey,\n\u001b[1;32m   1450\u001b[0m             \u001b[38;5;241m*\u001b[39m\u001b[38;5;241m*\u001b[39mversion_id_kw(version_id),\n\u001b[1;32m   1451\u001b[0m             \u001b[38;5;241m*\u001b[39m\u001b[38;5;241m*\u001b[39m\u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mreq_kw,\n\u001b[1;32m   1452\u001b[0m         )\n\u001b[1;32m   1453\u001b[0m         \u001b[38;5;28;01mreturn\u001b[39;00m {\n\u001b[1;32m   1454\u001b[0m             \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mETag\u001b[39m\u001b[38;5;124m\"\u001b[39m: out\u001b[38;5;241m.\u001b[39mget(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mETag\u001b[39m\u001b[38;5;124m\"\u001b[39m, \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124m\"\u001b[39m),\n\u001b[1;32m   1455\u001b[0m             \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mLastModified\u001b[39m\u001b[38;5;124m\"\u001b[39m: out\u001b[38;5;241m.\u001b[39mget(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mLastModified\u001b[39m\u001b[38;5;124m\"\u001b[39m, \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124m\"\u001b[39m),\n\u001b[0;32m   (...)\u001b[0m\n\u001b[1;32m   1461\u001b[0m             \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mContentType\u001b[39m\u001b[38;5;124m\"\u001b[39m: out\u001b[38;5;241m.\u001b[39mget(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mContentType\u001b[39m\u001b[38;5;124m\"\u001b[39m),\n\u001b[1;32m   1462\u001b[0m         }\n\u001b[1;32m   1463\u001b[0m     \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mFileNotFoundError\u001b[39;00m:\n\nFile \u001b[0;32m/srv/conda/envs/notebook/lib/python3.12/site-packages/s3fs/core.py:371\u001b[0m, in \u001b[0;36mS3FileSystem._call_s3\u001b[0;34m(self, method, *akwarglist, **kwargs)\u001b[0m\n\u001b[1;32m    369\u001b[0m logger\u001b[38;5;241m.\u001b[39mdebug(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mCALL: \u001b[39m\u001b[38;5;132;01m%s\u001b[39;00m\u001b[38;5;124m - \u001b[39m\u001b[38;5;132;01m%s\u001b[39;00m\u001b[38;5;124m - \u001b[39m\u001b[38;5;132;01m%s\u001b[39;00m\u001b[38;5;124m\"\u001b[39m, method\u001b[38;5;241m.\u001b[39m\u001b[38;5;18m__name__\u001b[39m, akwarglist, kw2)\n\u001b[1;32m    370\u001b[0m additional_kwargs \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_get_s3_method_kwargs(method, \u001b[38;5;241m*\u001b[39makwarglist, \u001b[38;5;241m*\u001b[39m\u001b[38;5;241m*\u001b[39mkwargs)\n\u001b[0;32m--> 371\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;01mawait\u001b[39;00m _error_wrapper(\n\u001b[1;32m    372\u001b[0m     method, kwargs\u001b[38;5;241m=\u001b[39madditional_kwargs, retries\u001b[38;5;241m=\u001b[39m\u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mretries\n\u001b[1;32m    373\u001b[0m )\n\nFile \u001b[0;32m/srv/conda/envs/notebook/lib/python3.12/site-packages/s3fs/core.py:146\u001b[0m, in \u001b[0;36m_error_wrapper\u001b[0;34m(func, args, kwargs, retries)\u001b[0m\n\u001b[1;32m    144\u001b[0m         err \u001b[38;5;241m=\u001b[39m e\n\u001b[1;32m    145\u001b[0m err \u001b[38;5;241m=\u001b[39m translate_boto_error(err)\n\u001b[0;32m--> 146\u001b[0m \u001b[38;5;28;01mraise\u001b[39;00m err\n\n\u001b[0;31mPermissionError\u001b[0m: Forbidden\n\u26a0\ufe0f  notebooks/example-workflows/kdp-comparison.ipynb Removing matplotlib string from outputs\n   <matplotlib.colorbar.Colorbar at 0x7fc982a13230>\n   Fix: Put a semicolon on the last line of your cell or add \"output_matplotlib_strings: remove\" to the project settings.\n\u26a0\ufe0f  notebooks/foundations/pyart-corrections.ipynb Removing matplotlib string from outputs\n   <matplotlib.legend.Legend at 0x7fb865f26570>\n   Fix: Put a semicolon on the last line of your cell or add \"output_matplotlib_strings: remove\" to the project settings.\n\u26d4\ufe0f notebooks/example-workflows/tracer-example.ipynb Cannot find image \"storm-animation.gif\" in notebooks/example-workflows\n"
+  },
+  "resources": {
+    "available": true,
+    "sample_count": 122,
+    "sample_seconds": 3,
+    "peak_rss_bytes": 12245569536,
+    "peak_pss_bytes": 2974109696,
+    "memory_limit_bytes": 8589934592,
+    "peak_fraction_of_limit": 0.3462,
+    "peak_cpu_percent": null,
+    "cpu_count": null,
+    "limit_basis": "pss",
+    "peak_against_limit_bytes": 2974109696
+  },
+  "errors": [
+    {
+      "source": "html/notebooks.example-workflows.tracer-example.json",
+      "ename": "TypeError",
+      "evalue": "object of type 'NoneType' has no len()",
+      "traceback": "---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\nCell In[3], line 9\n      6 start_date = \"2022-06-02T11:30:00\"\n      7 end_date = \"2022-06-02T11:40:00\"\n----> 9 print(len(arm_username), len(arm_password))\n\nTypeError: object of type 'NoneType' has no len()"
+    },
+    {
+      "source": "html/notebooks.example-workflows.echo-top-height.json",
+      "ename": "PermissionError",
+      "evalue": "Forbidden",
+      "traceback": "---------------------------------------------------------------------------\nClientError                               Traceback (most recent call last)\nFile /srv/conda/envs/notebook/lib/python3.12/site-packages/s3fs/core.py:114, in _error_wrapper(func, args, kwargs, retries)\n    113 try:\n--> 114     return await func(*args, **kwargs)\n    115 except S3_RETRYABLE_ERRORS as e:\n\nFile /srv/conda/envs/notebook/lib/python3.12/site-packages/aiobotocore/context.py:36, in with_current_context.<locals>.decorator.<locals>.wrapper(*args, **kwargs)\n     35     await resolve_awaitable(hook())\n---> 36 return await func(*args, **kwargs)\n\nFile /srv/conda/envs/notebook/lib/python3.12/site-packages/aiobotocore/client.py:424, in AioBaseClient._make_api_call(self, operation_name, api_params)\n    423     error_class = self.exceptions.from_code(error_code)\n--> 424     raise error_class(parsed_response, operation_name)\n    425 else:\n\nClientError: An error occurred (403) when calling the HeadObject operation: Forbidden\n\nThe above exception was the direct cause of the following exception:\n\nPermissionError                           Traceback (most recent call last)\nCell In[3], line 5\n      1 aws_nexrad_level2_file = (\n      2     \"s3://noaa-nexrad-level2/2022/03/22/KHGX/KHGX20220322_120125_V06\"\n      3 )\n----> 5 radar = pyart.io.read_nexrad_archive(aws_nexrad_level2_file)\n      8 fig = plt.figure(figsize=(12, 4))\n      9 display = pyart.graph.RadarMapDisplay(radar)\n\nFile /srv/conda/envs/notebook/lib/python3.12/site-packages/pyart/io/nexrad_archive.py:126, in read_nexrad_archive(filename, field_names, additional_metadata, file_field_names, exclude_fields, include_fields, delay_field_loading, station, scans, linear_interp, storage_options, **kwargs)\n    115 filemetadata = FileMetadata(\n    116     \"nexrad_archive\",\n    117     field_names,\n   (...)\n    121     include_fields,\n    122 )\n    124 # open the file and retrieve scan information\n    125 nfile = NEXRADLevel2File(\n--> 126     prepare_for"
+    },
+    {
+      "source": "html/notebooks.example-workflows.fastbarnes-interpolation-rhi.json",
+      "ename": "TypeError",
+      "evalue": "sequence item 0: expected str instance, NoneType found",
+      "traceback": "---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\nCell In[3], line 1\n----> 1 aug7_csapr_files = act.discovery.download_arm_data(arm_username,\n      2                                                arm_password,\n      3                                                datastream,\n      4                                                start_date,\n      5                                                end_date)\n\nFile /srv/conda/envs/notebook/lib/python3.12/site-packages/act/discovery/arm.py:112, in download_arm_data(username, token, datastream, startdate, enddate, time, output)\n    108     end = f'&end={end}'\n    109 # build the url to query the web service using the arguments provided\n    110 query_url = (\n    111     'https://adc.arm.gov/armlive/data/query?' + 'user={0}&ds={1}{2}{3}&wt=json'\n--> 112 ).format(':'.join([username, token]), datastream, start, end)\n    114 headers = {\n    115     'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',\n    116 }\n    118 req = Request(query_url, None, headers)\n\nTypeError: sequence item 0: expected str instance, NoneType found"
+    },
+    {
+      "source": "html/notebooks.example-workflows.moore-oklahoma-tornado.json",
+      "ename": "PermissionError",
+      "evalue": "Access Denied",
+      "traceback": "---------------------------------------------------------------------------\nClientError                               Traceback (most recent call last)\nFile /srv/conda/envs/notebook/lib/python3.12/site-packages/s3fs/core.py:755, in S3FileSystem._lsdir(self, path, refresh, max_items, delimiter, prefix, versions)\n    754 files = []\n--> 755 async for c in self._iterdir(\n    756     bucket,\n    757     max_items=max_items,\n    758     delimiter=delimiter,\n    759     prefix=prefix,\n    760     versions=versions,\n    761 ):\n    762     if c[\"type\"] == \"directory\":\n\nFile /srv/conda/envs/notebook/lib/python3.12/site-packages/s3fs/core.py:805, in S3FileSystem._iterdir(self, bucket, max_items, delimiter, prefix, versions)\n    798 it = pag.paginate(\n    799     Bucket=bucket,\n    800     Prefix=prefix,\n   (...)\n    803     **self.req_kw,\n    804 )\n--> 805 async for i in it:\n    806     for l in i.get(\"CommonPrefixes\", []):\n\nFile /srv/conda/envs/notebook/lib/python3.12/site-packages/aiobotocore/paginate.py:39, in AioPageIterator.__anext__(self)\n     38 while True:\n---> 39     response = await self._make_request(current_kwargs)\n     40     parsed = self._extract_parsed_response(response)\n\nFile /srv/conda/envs/notebook/lib/python3.12/site-packages/aiobotocore/context.py:36, in with_current_context.<locals>.decorator.<locals>.wrapper(*args, **kwargs)\n     35     await resolve_awaitable(hook())\n---> 36 return await func(*args, **kwargs)\n\nFile /srv/conda/envs/notebook/lib/python3.12/site-packages/aiobotocore/paginate.py:19, in AioPageIterator._make_request(self, current_kwargs)\n     17 @with_current_context(partial(register_feature_id, 'PAGINATOR'))\n     18 async def _make_request(self, current_kwargs):\n---> 19     return await self._method(**current_kwargs)\n\nFile /srv/conda/envs/notebook/lib/python3.12/site-packages/aiobotocore/context.py:36, in with_current_context.<locals>.decorator.<locals>.wrapper(*args, **kwargs)\n     35     await resolve_awaitable(hook())\n---> 36 return awai"
+    },
+    {
+      "source": "html/notebooks.example-workflows.cacti-data-quality-example.json",
+      "ename": "TypeError",
+      "evalue": "sequence item 0: expected str instance, NoneType found",
+      "traceback": "---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\nCell In[3], line 1\n----> 1 csapr_files = act.discovery.download_arm_data(arm_username,\n      2                                           arm_password,\n      3                                           datastream,\n      4                                           start_date,\n      5                                           end_date,\n      6                                          )\n\nFile /srv/conda/envs/notebook/lib/python3.12/site-packages/act/discovery/arm.py:112, in download_arm_data(username, token, datastream, startdate, enddate, time, output)\n    108     end = f'&end={end}'\n    109 # build the url to query the web service using the arguments provided\n    110 query_url = (\n    111     'https://adc.arm.gov/armlive/data/query?' + 'user={0}&ds={1}{2}{3}&wt=json'\n--> 112 ).format(':'.join([username, token]), datastream, start, end)\n    114 headers = {\n    115     'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',\n    116 }\n    118 req = Request(query_url, None, headers)\n\nTypeError: sequence item 0: expected str instance, NoneType found"
+    }
+  ],
+  "finished_at": "2026-07-21T19:29:05.384683+00:00",
+  "build_artifacts": null
+}

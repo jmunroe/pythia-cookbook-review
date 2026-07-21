@@ -15,6 +15,7 @@ Published, but the book has stopped deploying. A learner arriving from the galle
 - no deploy in 238 days
 - nightly build: failure
 - 10 pip dep(s) — prefer conda-forge
+- 9 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`, `sphinx==4.5.0`, `sphinxcontrib-applehelp<1.0.7`, `sphinxcontrib-devhelp<1.0.5` …
 
 ### landsat-ml-cookbook
 
@@ -24,6 +25,7 @@ Published, but the book has stopped deploying. A learner arriving from the galle
 - nightly build: failure
 - 6 pip dep(s) — prefer conda-forge
 - 7 version pin(s), undocumented
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 
 ### radar-cookbook
 
@@ -33,11 +35,13 @@ Published, but the book has stopped deploying. A learner arriving from the galle
 - nightly build: cancelled
 - 3 pip dep(s) — prefer conda-forge
 - 3 version pin(s), undocumented
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 
 ### xbatcher-ML-1-cookbook
 
 - no deploy in 147 days
 - nightly build: cancelled
+- 9 Sphinx-era package(s) in environment.yml: `sphinx`, `sphinxcontrib-applehelp`, `sphinxcontrib-devhelp`, `sphinxcontrib-htmlhelp` …
 
 ## `degraded` — 2
 
@@ -50,6 +54,7 @@ Published but slipping: failing CI, a lagging deploy, or incomplete citation met
 - nightly build: cancelled
 - 1 pip dep(s) — prefer conda-forge
 - 2 version pin(s), undocumented
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 
 ### interactive-sentinel-2-cookbook
 
@@ -57,6 +62,7 @@ Published but slipping: failing CI, a lagging deploy, or incomplete citation met
 
 - no Zenodo DOI
 - 1 version pin(s), undocumented
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 
 ## `incubating` — 38
 
@@ -70,6 +76,7 @@ Real work, not yet in the gallery, still active. Does it need an advocate to rea
 - no CITATION.cff
 - placeholder/missing title in myst.yml
 - 2 version pin(s), undocumented
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 - still links to cookbook-template (trigger-replace-links never run)
 
 ### api-cookbook
@@ -79,12 +86,13 @@ Real work, not yet in the gallery, still active. Does it need an advocate to rea
 - no tagged release
 - placeholder/missing abstract
 - 1 pip dep(s) — prefer conda-forge
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 
 ### arm-field-site-cookbook
 
 > Cookbook for working with observations and simulations from the U.S. DOE ARM user facility
 
-- no deploy in 238 days
+- no deploy in 239 days
 - nightly build: failure
 - no tagged release
 - placeholder/missing abstract
@@ -96,6 +104,7 @@ Real work, not yet in the gallery, still active. Does it need an advocate to rea
 
 - no deploy in 241 days
 - nightly build: failure
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 - still links to cookbook-template (trigger-replace-links never run)
 
 ### atmos-modeling-cookbook
@@ -136,6 +145,7 @@ Real work, not yet in the gallery, still active. Does it need an advocate to rea
 - nightly build: never run
 - placeholder/missing title in myst.yml
 - myst.yml does not extend pythia-config
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 - Sphinx leftovers: _config.yml, _toc.yml
 - still links to cookbook-template (trigger-replace-links never run)
 
@@ -145,6 +155,7 @@ Real work, not yet in the gallery, still active. Does it need an advocate to rea
 
 - no deploy in 80 days
 - no tagged release
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 
 ### climate-variability-cookbook
 
@@ -152,6 +163,7 @@ Real work, not yet in the gallery, still active. Does it need an advocate to rea
 - no tagged release
 - placeholder/missing abstract
 - 1 pip dep(s) — prefer conda-forge
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 
 ### data-science-ai-teammate-cookbook
 
@@ -167,6 +179,7 @@ Real work, not yet in the gallery, still active. Does it need an advocate to rea
 - no deploy in 80 days
 - no tagged release
 - placeholder/missing abstract
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 
 ### extreme-weather-events-cookbook
 
@@ -176,6 +189,7 @@ Real work, not yet in the gallery, still active. Does it need an advocate to rea
 - placeholder/missing title in myst.yml
 - myst.yml does not extend pythia-config
 - 2 version pin(s), undocumented
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 - Sphinx leftovers: _config.yml, _toc.yml
 
 ### geomorphology-cookbook
@@ -189,12 +203,14 @@ Real work, not yet in the gallery, still active. Does it need an advocate to rea
 
 - no deploy in 80 days
 - no tagged release
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 
 ### geostationary-cookbook
 
 > 2024 Pythia Hackathon for Geostationary satellites
 
 - no deploy in 80 days
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 
 ### great-circle-cookbook
 
@@ -212,6 +228,7 @@ Real work, not yet in the gallery, still active. Does it need an advocate to rea
 - placeholder/missing abstract
 - placeholder/missing title in myst.yml
 - myst.yml does not extend pythia-config
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 - Sphinx leftovers: _config.yml, _toc.yml
 
 ### icesat2-cookbook
@@ -230,6 +247,7 @@ Real work, not yet in the gallery, still active. Does it need an advocate to rea
 - nightly build: failure
 - no tagged release
 - 3 version pin(s), undocumented
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 
 ### landsatproduct-cookbook
 
@@ -247,11 +265,13 @@ Real work, not yet in the gallery, still active. Does it need an advocate to rea
 - no deploy in 239 days
 - nightly build: failure
 - placeholder/missing title in myst.yml
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 
 ### marine-heatwave-cookbook
 
 - last deploy 28 days ago
 - 1 version pin(s), undocumented
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 
 ### METAR_archive-cookbook
 
@@ -298,6 +318,7 @@ Real work, not yet in the gallery, still active. Does it need an advocate to rea
 
 - no deploy in 80 days
 - no CITATION.cff
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 
 ### physical-oceanography-cookbook
 
@@ -305,6 +326,7 @@ Real work, not yet in the gallery, still active. Does it need an advocate to rea
 
 - no CITATION.cff
 - 1 version pin(s), undocumented
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 
 ### ptype-ml-cookbook
 
@@ -312,6 +334,7 @@ Real work, not yet in the gallery, still active. Does it need an advocate to rea
 
 - no tagged release
 - placeholder/missing abstract
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 - still links to cookbook-template (trigger-replace-links never run)
 
 ### radiative-feedback-cookbook
@@ -328,6 +351,7 @@ Real work, not yet in the gallery, still active. Does it need an advocate to rea
 - no deploy in 80 days
 - no tagged release
 - 2 pip dep(s) — prefer conda-forge
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 
 ### spectral-analysis-cookbook
 
@@ -344,6 +368,7 @@ Real work, not yet in the gallery, still active. Does it need an advocate to rea
 - placeholder/missing title in myst.yml
 - myst.yml does not extend pythia-config
 - 1 version pin(s), undocumented
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 - Sphinx leftovers: _config.yml, _toc.yml
 - still links to cookbook-template (trigger-replace-links never run)
 
@@ -389,6 +414,7 @@ Working and citable. Sample a few to keep the harness honest; otherwise leave al
 
 - no author ORCID
 - 1 version pin(s), undocumented
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 
 ### eo-datascience-cookbook
 
@@ -428,6 +454,7 @@ Working and citable. Sample a few to keep the harness honest; otherwise leave al
 
 - 1 pip dep(s) — prefer conda-forge
 - 1 version pin(s), undocumented
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 
 ### healpix-cookbook
 
@@ -447,6 +474,7 @@ Working and citable. Sample a few to keep the harness honest; otherwise leave al
 
 - 2 pip dep(s) — prefer conda-forge
 - 2 version pin(s), undocumented
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 
 ### metpy-cookbook
 
@@ -464,7 +492,7 @@ Working and citable. Sample a few to keep the harness honest; otherwise leave al
 
 > Project Pythia Cookbook for NA-CORDEX data visualization
 
-- no automated findings
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 
 ### ocean-bgc-cookbook
 
@@ -498,19 +526,21 @@ Working and citable. Sample a few to keep the harness honest; otherwise leave al
 > Cookbook showcasing workflows & techniques for visualizing unstructured grids using the UXarray python package
 
 - 1 pip dep(s) — prefer conda-forge
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 
 ### vapor-python-cookbook
 
 > Getting started with vapor python
 
 - no author ORCID
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 - still links to cookbook-template (trigger-replace-links never run)
 
 ### wavelet-cookbook
 
 > Wavelet Analysis in Python for Geoscience
 
-- no automated findings
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 
 ### web-map-feature-services-cookbook
 
@@ -548,6 +578,7 @@ Scaffold, sandbox, or archived. Listed so the counts reconcile.
 
 - no deploy in 80 days
 - no tagged release
+- 1 Sphinx-era package(s) in environment.yml: `sphinx-pythia-theme`
 
 ### test-actions-cookbook
 

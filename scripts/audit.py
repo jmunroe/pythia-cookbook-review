@@ -344,6 +344,17 @@ def check_environment(files):
     pinned = [d for d in conda_deps if re.search(r"[=<>~!]", d)]
     channels = environment.get("channels") or []
 
+    # Cookbooks build with MyST now, so a Sphinx toolchain in environment.yml is
+    # dead weight from before the migration -- and because those entries tend to
+    # be tightly pinned, they are a common reason an image stops building at all.
+    # (esgf-cookbook, 2026-07-21: pip could not resolve sphinx==4.5.0 and friends,
+    # so its Binder image fails outright. See docs/live-assessment.md.)
+    sphinx_deps = [
+        d
+        for d in conda_deps + pip_deps
+        if re.match(r"(sphinx|pydata-sphinx|nbsphinx|docutils)", d.strip().lower())
+    ]
+
     return {
         "has_environment": bool(environment),
         "channels": channels,
@@ -355,6 +366,7 @@ def check_environment(files):
         "pip_deps": pip_deps,
         "pinned_deps": pinned,
         "pinned_count": len(pinned),
+        "sphinx_deps": sphinx_deps,
         # Any comment in the file is weak evidence that pins were explained.
         # A human confirms whether the explanation is real.
         "has_comments": any(line.lstrip().startswith("#") for line in raw.splitlines()),

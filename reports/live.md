@@ -4,23 +4,40 @@ What happens when a cookbook is actually built and run on [Project Pythia's Bind
 
 Read [the method and its limitations](../docs/live-assessment.md) before quoting any number here. In particular, a cached image makes build time meaningless, and a single failed run of a network-dependent notebook is a prompt to re-run rather than a finding.
 
+## At a glance
+
+| Cookbook | Live outcome | Static tier | Session | Execution | Peak memory | Errors |
+|---|---|---|---|---|---|---|
+| [HRRR-AWS-cookbook](#hrrr-aws-cookbook) | ran clean | `healthy` | 6.49s (cached) | 27.53s | 0.62 of 8.6 GB | 0 |
+| [eofs-cookbook](#eofs-cookbook) | ran clean | `healthy` | 81.46s (cached) | 44.02s | 1.43 of 8.6 GB | 0 |
+| [esgf-cookbook](#esgf-cookbook) | build failed | `stale` | 416.52s | —s | — | 0 |
+| [landsat-ml-cookbook](#landsat-ml-cookbook) | ran with errors | `stale` | 469.24s | 34.69s | 0.95 of 8.6 GB | 3 |
+| [radar-cookbook](#radar-cookbook) | ran with errors | `stale` | 120.72s (cached) | 413.13s | 2.97 of 8.6 GB | 5 |
+
+Where the live outcome and the static tier disagree, the live result is the more direct evidence — but read it as one sample of a network-dependent workflow, not a verdict. See [the limitations](../docs/live-assessment.md#limitations).
+
 ## HRRR-AWS-cookbook
 
-Run 2026-07-21 18:16:28 UTC against [https://binder.projectpythia.org](https://binder.projectpythia.org), building [HRRR-AWS-cookbook](https://github.com/ProjectPythia/HRRR-AWS-cookbook) at ref [`main`](https://github.com/ProjectPythia/HRRR-AWS-cookbook/tree/main).
+Run 2026-07-21 19:10:32 UTC against [https://binder.projectpythia.org](https://binder.projectpythia.org), building [HRRR-AWS-cookbook](https://github.com/ProjectPythia/HRRR-AWS-cookbook) at ref [`main`](https://github.com/ProjectPythia/HRRR-AWS-cookbook/tree/main).
 
 :::{warning} Cached image
-BinderHub reused an existing image, so the 6.4s is a pod launch and image pull. It does **not** test whether `environment.yml` still solves.
+BinderHub reused an existing image, so the 6.49s is a pod launch and image pull. It does **not** test whether `environment.yml` still solves.
 :::
 
 | Measure | Value |
 |---|---|
-| Time to a ready session | 6.4s (cached image) |
+| Live outcome | **ran clean** |
+| Static tier | `healthy` |
+| Time to a ready session | 6.49s (cached image) |
 | Build succeeded | yes |
-| Notebook execution | 78.53s |
-| Execution succeeded | yes |
-| Peak memory (rss) | 0.63 GB |
+| Notebook execution | 27.53s |
+| Build command exit code | 0 |
+| Notebooks ran clean | yes |
+| Execution cache | **reused — timing is not execution** |
+| Peak memory (pss) | 0.62 GB |
 | Pod memory limit | 8.59 GB |
-| Peak as share of limit | 7.4% |
+| Peak as share of limit | 7.2% |
+| Peak rss (upper bound, shared pages double-counted) | 0.63 GB |
 | Errors raised | 0 |
 
 | Notebook | Execute + render |
@@ -28,4 +45,360 @@ BinderHub reused an existing image, so the 6.4s is a pod launch and image pull. 
 | [`notebooks/example-workflows/plot-2mt.ipynb`](https://github.com/ProjectPythia/HRRR-AWS-cookbook/blob/main/notebooks/example-workflows/plot-2mt.ipynb) | 22.0s |
 
 Executed 1 notebook(s) from the project toc: [`notebooks/example-workflows/plot-2mt.ipynb`](https://github.com/ProjectPythia/HRRR-AWS-cookbook/blob/main/notebooks/example-workflows/plot-2mt.ipynb). Notebooks not listed in [`myst.yml`](https://github.com/ProjectPythia/HRRR-AWS-cookbook/blob/main/myst.yml) are never executed by a build, so a repo can carry notebooks no build ever touches.
+
+## eofs-cookbook
+
+Run 2026-07-21 19:11:06 UTC against [https://binder.projectpythia.org](https://binder.projectpythia.org), building [eofs-cookbook](https://github.com/ProjectPythia/eofs-cookbook) at ref [`main`](https://github.com/ProjectPythia/eofs-cookbook/tree/main).
+
+:::{warning} Cached image
+BinderHub reused an existing image, so the 81.46s is a pod launch and image pull. It does **not** test whether `environment.yml` still solves.
+:::
+
+| Measure | Value |
+|---|---|
+| Live outcome | **ran clean** |
+| Static tier | `healthy` |
+| Time to a ready session | 81.46s (cached image) |
+| Build succeeded | yes |
+| Notebook execution | 44.02s |
+| Build command exit code | 0 |
+| Notebooks ran clean | yes |
+| Execution cache | **reused — timing is not execution** |
+| Peak memory (pss) | 1.43 GB |
+| Pod memory limit | 8.59 GB |
+| Peak as share of limit | 16.7% |
+| Peak rss (upper bound, shared pages double-counted) | 1.45 GB |
+| Errors raised | 0 |
+
+| Notebook | Execute + render |
+|---|---|
+| [`notebooks/eof-intro.ipynb`](https://github.com/ProjectPythia/eofs-cookbook/blob/main/notebooks/eof-intro.ipynb) | 0.18s |
+| [`notebooks/numpy-eofs.ipynb`](https://github.com/ProjectPythia/eofs-cookbook/blob/main/notebooks/numpy-eofs.ipynb) | 9.15s |
+| [`notebooks/climate-modes-xeofs.ipynb`](https://github.com/ProjectPythia/eofs-cookbook/blob/main/notebooks/climate-modes-xeofs.ipynb) | 29.0s |
+
+Executed 3 notebook(s) from the project toc: [`notebooks/climate-modes-xeofs.ipynb`](https://github.com/ProjectPythia/eofs-cookbook/blob/main/notebooks/climate-modes-xeofs.ipynb), [`notebooks/eof-intro.ipynb`](https://github.com/ProjectPythia/eofs-cookbook/blob/main/notebooks/eof-intro.ipynb), [`notebooks/numpy-eofs.ipynb`](https://github.com/ProjectPythia/eofs-cookbook/blob/main/notebooks/numpy-eofs.ipynb). Notebooks not listed in [`myst.yml`](https://github.com/ProjectPythia/eofs-cookbook/blob/main/myst.yml) are never executed by a build, so a repo can carry notebooks no build ever touches.
+
+## esgf-cookbook
+
+Run 2026-07-21 19:13:12 UTC against [https://binder.projectpythia.org](https://binder.projectpythia.org), building [esgf-cookbook](https://github.com/ProjectPythia/esgf-cookbook) at ref [`main`](https://github.com/ProjectPythia/esgf-cookbook/tree/main).
+
+| Measure | Value |
+|---|---|
+| Live outcome | **build failed** |
+| Static tier | `stale` |
+| Time to a ready session | 416.52s (fresh build) |
+| Build succeeded | no |
+| Resource metrics | unavailable: unknown |
+| Errors raised | 0 |
+
+Executed 7 notebook(s) from the project toc: [`notebooks/complex-search.ipynb`](https://github.com/ProjectPythia/esgf-cookbook/blob/main/notebooks/complex-search.ipynb), [`notebooks/complex-search2-and-analysis.ipynb`](https://github.com/ProjectPythia/esgf-cookbook/blob/main/notebooks/complex-search2-and-analysis.ipynb), [`notebooks/ex-regrid-plot.ipynb`](https://github.com/ProjectPythia/esgf-cookbook/blob/main/notebooks/ex-regrid-plot.ipynb), [`notebooks/intro-search.ipynb`](https://github.com/ProjectPythia/esgf-cookbook/blob/main/notebooks/intro-search.ipynb), [`notebooks/rooki.ipynb`](https://github.com/ProjectPythia/esgf-cookbook/blob/main/notebooks/rooki.ipynb), [`notebooks/rooki_enso_nonlinear.ipynb`](https://github.com/ProjectPythia/esgf-cookbook/blob/main/notebooks/rooki_enso_nonlinear.ipynb), [`notebooks/use-intake-esgf-with-rooki.ipynb`](https://github.com/ProjectPythia/esgf-cookbook/blob/main/notebooks/use-intake-esgf-with-rooki.ipynb). Notebooks not listed in [`myst.yml`](https://github.com/ProjectPythia/esgf-cookbook/blob/main/myst.yml) are never executed by a build, so a repo can carry notebooks no build ever touches.
+
+### Build log (tail)
+
+```
+[  409.91s] #20 81.75 Linking jupyterlab_pygments-0.3.0-pyhd8ed1ab_2
+[  409.91s] #20 81.75 Linking mistune-3.1.4-pyhcf101f3_0
+[  409.91s] #20 81.77 Linking nbformat-5.10.4-pyhd8ed1ab_1
+[  409.91s] #20 81.77 Linking pandocfilters-1.5.0-pyhd8ed1ab_0
+[  409.91s] #20 81.78 Linking nbconvert-core-7.16.6-pyh29332c3_0
+[  410.11s] #20 81.80 Linking jupyter_server-2.17.0-pyhcf101f3_0
+[  410.11s] #20 81.84 Linking pamela-1.2.0-pyhd8ed1ab_1
+[  410.11s] #20 81.84 Linking typing-inspection-0.4.2-pyhd8ed1ab_0
+[  410.11s] #20 81.84 Linking pydantic-2.12.2-pyh3cfb1c2_0
+[  410.64s] #20 82.54 Linking jupyterlab_server-2.27.3-pyhd8ed1ab_1
+[  410.77s] #20 82.66 Linking notebook-7.4.7-pyhd8ed1ab_0
+[  410.96s] #20 82.70 Linking wheel-0.45.1-pyhd8ed1ab_1
+[  411.13s] #20 83.03 warning  libmamba You are using 'pip' as an additional package manager.
+[  411.29s] #20 83.04
+[  411.29s] #20 83.04 Updating pip packages: sphinx-pythia-theme, sphinx==4.5.0, sphinxcontrib-applehelp<1.0.7, sphinxcontrib-devhelp<1.0.5, sphinxcontrib-htmlhelp<2.0.4, sphinxcontrib-qthelp<1.0.6, sphinxcontrib-serializinghtml<1.1.9, pydata-sphinx-theme<=0.8, docutils==0.16, git+https://github.com/esgf2-us/intake-esgf
+[  415.39s] #20 87.30 critical libmamba pip failed to update packages
+[  416.32s] #20 ERROR: process "/bin/sh -c TIMEFORMAT='time: %3R' bash -c 'time ${MAMBA_EXE} env update -p ${NB_PYTHON_PREFIX} --file \"environment.yml\" && time ${MAMBA_EXE} clean --all -f -y && ${MAMBA_EXE} list -p ${NB_PYTHON_PREFIX} '" did not complete successfully: exit code: 1
+[  416.46s] 82.86
+[  416.46s] Dockerfile:131
+[  416.46s] --------------------
+[  416.52s]  134 | >>> ${MAMBA_EXE} list -p ${NB_PYTHON_PREFIX} \
+[  416.52s]  135 | >>> '
+[  416.52s]  136 |
+[  416.52s] Error during build: Command '['docker', 'buildx', 'build', '--progress', 'plain', '--push', '--build-arg', 'NB_USER=jovyan', '--build-arg', 'NB_UID=1000', '--tag', 'quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2desgf-2dcookbook-523f4c:fb5ed9a2491993e7383e5fe0cc9a7ed76c5c3c3e', '--platform', 'linux/amd64', '/tmp/tmpmzhuo8oz']' returned non-zero exit status 1.
+[  416.52s] Error during build: Command '['docker', 'buildx', 'build', '--progress', 'plain', '--push', '--build-arg', 'NB_USER=jovyan', '--build-arg', 'NB_UID=1000', '--tag', 'quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2desgf-2dcookbook-523f4c:fb5ed9a2491993e7383e5fe0cc9a7ed76c5c3c3e', '--platform', 'linux/amd64', '/tmp/tmpmzhuo8oz']' returned non-zero exit status 1.
+```
+
+## landsat-ml-cookbook
+
+Run 2026-07-21 19:29:05 UTC against [https://binder.projectpythia.org](https://binder.projectpythia.org), building [landsat-ml-cookbook](https://github.com/ProjectPythia/landsat-ml-cookbook) at ref [`main`](https://github.com/ProjectPythia/landsat-ml-cookbook/tree/main).
+
+| Measure | Value |
+|---|---|
+| Live outcome | **ran with errors** |
+| Static tier | `stale` |
+| Time to a ready session | 469.24s (fresh build) |
+| Build succeeded | yes |
+| Notebook execution | 34.69s |
+| Build command exit code | 0 (zero despite cell errors) |
+| Notebooks ran clean | no |
+| Execution cache | **reused — timing is not execution** |
+| Peak memory (pss) | 0.95 GB |
+| Pod memory limit | 8.59 GB |
+| Peak as share of limit | 11.0% |
+| Peak rss (upper bound, shared pages double-counted) | 1.16 GB |
+| Errors raised | 3 |
+
+| Notebook | Execute + render |
+|---|---|
+| [`notebooks/0.0_Intro_Landsat.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/0.0_Intro_Landsat.ipynb) | 0.03s |
+| [`notebooks/2.0_Spectral_Clustering_PC.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/2.0_Spectral_Clustering_PC.ipynb) | 7.56s |
+| [`notebooks/1.1_Data_Ingestion-General.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/1.1_Data_Ingestion-General.ipynb) | 10.0s |
+| [`notebooks/1.0_Data_Ingestion-Geospatial.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/1.0_Data_Ingestion-Geospatial.ipynb) | 21.0s |
+
+Executed 4 notebook(s) from the project toc: [`notebooks/0.0_Intro_Landsat.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/0.0_Intro_Landsat.ipynb), [`notebooks/1.0_Data_Ingestion-Geospatial.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/1.0_Data_Ingestion-Geospatial.ipynb), [`notebooks/1.1_Data_Ingestion-General.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/1.1_Data_Ingestion-General.ipynb), [`notebooks/2.0_Spectral_Clustering_PC.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/2.0_Spectral_Clustering_PC.ipynb). Notebooks not listed in [`myst.yml`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/myst.yml) are never executed by a build, so a repo can carry notebooks no build ever touches.
+
+### Errors
+
+**`ImportError`** — cannot import name 'collections_to_dsk' from 'dask.base' (/srv/conda/envs/notebook/lib/python3.10/site-packages/dask/base.py)
+
+in `html/notebooks.spectral-clustering-pc.json`
+
+```
+---------------------------------------------------------------------------
+ImportError                               Traceback (most recent call last)
+Cell In[1], line 7
+      5 import pystac_client
+      6 import xarray as xr
+----> 7 from dask.distributed import Client
+      8 from pystac.extensions.eo import EOExtension as eo
+      9 from dask_ml.cluster import SpectralClustering
+
+File /srv/conda/envs/notebook/lib/python3.10/site-packages/dask/distributed.py:11
+      3 _import_error_message = (
+      4     "dask.distributed is not installed.\n\n"
+      5     "Please either conda or pip install distributed:\n\n"
+      6     "  conda install dask distributed             # either conda install\n"
+      7     '  python -m pip install "dask[distributed]" --upgrade    # or pip install'
+      8 )
+     10 try:
+---> 11     from distributed import *  # noqa: F403
+     12 except ImportError as e:
+     13     if e.msg == "No module named 'distributed'":
+
+File /srv/conda/envs/notebook/lib/python3.10/site-packages/distributed/__init__.py:23
+     20 from dask.config import config  # type: ignore
+     22 from distributed._version import get_versions
+---> 23 from distributed.actor import Actor, 
+```
+
+**`ClientPayloadError`** — 400, message:
+  Can not decode content-encoding: br
+
+in `html/notebooks.data-ingestion-general.json`
+
+```
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+File /srv/conda/envs/notebook/lib/python3.10/site-packages/aiohttp/http_parser.py:1197, in DeflateBuffer.feed_data(self, chunk, size)
+   1196 try:
+-> 1197     chunk = self.decompressor.decompress_sync(chunk, max_length=max_length)
+   1198 except Exception:
+
+File /srv/conda/envs/notebook/lib/python3.10/site-packages/aiohttp/compression_utils.py:371, in BrotliDecompressor.decompress_sync(self, data, max_length)
+    370     else:
+--> 371         result = cast(bytes, self._obj.process(data, max_length))
+    372 # Only way to know that brotli has no further data is checking we get no output
+
+TypeError: process() takes exactly 1 argument (2 given)
+
+During handling of the above exception, another exception occurred:
+
+ContentEncodingError                      Traceback (most recent call last)
+File /srv/conda/envs/notebook/lib/python3.10/site-packages/aiohttp/_http_parser.pyx:894, in aiohttp._http_parser.cb_on_body()
+
+File /srv/conda/envs/notebook/lib/python3.10/site-packages/aiohttp/http_parser.py:1199, in DeflateBuffer.feed_data(self, chun
+```
+
+**`KeyError`** — 'proj:epsg'
+
+in `html/notebooks.data-ingestion-geospatial.json`
+
+```
+---------------------------------------------------------------------------
+KeyError                                  Traceback (most recent call last)
+Cell In[18], line 1
+----> 1 da.attrs["crs"] = f"epsg:{selected_item.properties['proj:epsg']}"
+      2 da.attrs["crs"]
+
+KeyError: 'proj:epsg'
+```
+
+## radar-cookbook
+
+Run 2026-07-21 19:20:10 UTC against [https://binder.projectpythia.org](https://binder.projectpythia.org), building [radar-cookbook](https://github.com/ProjectPythia/radar-cookbook) at ref [`main`](https://github.com/ProjectPythia/radar-cookbook/tree/main).
+
+:::{warning} Cached image
+BinderHub reused an existing image, so the 120.72s is a pod launch and image pull. It does **not** test whether `environment.yml` still solves.
+:::
+
+| Measure | Value |
+|---|---|
+| Live outcome | **ran with errors** |
+| Static tier | `stale` |
+| Time to a ready session | 120.72s (cached image) |
+| Build succeeded | yes |
+| Notebook execution | 413.13s |
+| Build command exit code | 0 (zero despite cell errors) |
+| Notebooks ran clean | no |
+| Execution cache | **reused — timing is not execution** |
+| Peak memory (pss) | 2.97 GB |
+| Pod memory limit | 8.59 GB |
+| Peak as share of limit | 34.6% |
+| Peak rss (upper bound, shared pages double-counted) | 12.25 GB |
+| Errors raised | 5 |
+
+| Notebook | Execute + render |
+|---|---|
+| [`notebooks/radar-basics/radar-basics.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/radar-basics/radar-basics.ipynb) | 0.13s |
+| [`notebooks/example-workflows/moore-oklahoma-tornado.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/moore-oklahoma-tornado.ipynb) | 10.0s |
+| [`notebooks/example-workflows/cacti-data-quality-example.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/cacti-data-quality-example.ipynb) | 10.0s |
+| [`notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb) | 11.0s |
+| [`notebooks/example-workflows/tracer-example.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/tracer-example.ipynb) | 11.0s |
+| [`notebooks/example-workflows/echo_top_height.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/echo_top_height.ipynb) | 11.0s |
+| [`notebooks/foundations/interactive-radar-visualization.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/interactive-radar-visualization.ipynb) | 28.0s |
+
+Executed 11 notebook(s) from the project toc: [`notebooks/example-workflows/cacti-data-quality-example.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/cacti-data-quality-example.ipynb), [`notebooks/example-workflows/echo_top_height.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/echo_top_height.ipynb), [`notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb), [`notebooks/example-workflows/kdp-comparison.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/kdp-comparison.ipynb), [`notebooks/example-workflows/moore-oklahoma-tornado.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/moore-oklahoma-tornado.ipynb), [`notebooks/example-workflows/tracer-example.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/tracer-example.ipynb), [`notebooks/foundations/interactive-radar-visualization.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/interactive-radar-visualization.ipynb), [`notebooks/foundations/pyart-basics.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/pyart-basics.ipynb), [`notebooks/foundations/pyart-corrections.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/pyart-corrections.ipynb), [`notebooks/foundations/pyart-gridding.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/pyart-gridding.ipynb), [`notebooks/radar-basics/radar-basics.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/radar-basics/radar-basics.ipynb). Notebooks not listed in [`myst.yml`](https://github.com/ProjectPythia/radar-cookbook/blob/main/myst.yml) are never executed by a build, so a repo can carry notebooks no build ever touches.
+
+### Errors
+
+**`TypeError`** — object of type 'NoneType' has no len()
+
+in `html/notebooks.example-workflows.tracer-example.json`
+
+```
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Cell In[3], line 9
+      6 start_date = "2022-06-02T11:30:00"
+      7 end_date = "2022-06-02T11:40:00"
+----> 9 print(len(arm_username), len(arm_password))
+
+TypeError: object of type 'NoneType' has no len()
+```
+
+**`PermissionError`** — Forbidden
+
+in `html/notebooks.example-workflows.echo-top-height.json`
+
+```
+---------------------------------------------------------------------------
+ClientError                               Traceback (most recent call last)
+File /srv/conda/envs/notebook/lib/python3.12/site-packages/s3fs/core.py:114, in _error_wrapper(func, args, kwargs, retries)
+    113 try:
+--> 114     return await func(*args, **kwargs)
+    115 except S3_RETRYABLE_ERRORS as e:
+
+File /srv/conda/envs/notebook/lib/python3.12/site-packages/aiobotocore/context.py:36, in with_current_context.<locals>.decorator.<locals>.wrapper(*args, **kwargs)
+     35     await resolve_awaitable(hook())
+---> 36 return await func(*args, **kwargs)
+
+File /srv/conda/envs/notebook/lib/python3.12/site-packages/aiobotocore/client.py:424, in AioBaseClient._make_api_call(self, operation_name, api_params)
+    423     error_class = self.exceptions.from_code(error_code)
+--> 424     raise error_class(parsed_response, operation_name)
+    425 else:
+
+ClientError: An error occurred (403) when calling the HeadObject operation: Forbidden
+
+The above exception was the direct cause of the following exception:
+
+PermissionError                           Traceback (most recent call last)
+Cell In[3], line 5
+      1 aws_nexrad_level2
+```
+
+**`TypeError`** — sequence item 0: expected str instance, NoneType found
+
+in `html/notebooks.example-workflows.fastbarnes-interpolation-rhi.json`
+
+```
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Cell In[3], line 1
+----> 1 aug7_csapr_files = act.discovery.download_arm_data(arm_username,
+      2                                                arm_password,
+      3                                                datastream,
+      4                                                start_date,
+      5                                                end_date)
+
+File /srv/conda/envs/notebook/lib/python3.12/site-packages/act/discovery/arm.py:112, in download_arm_data(username, token, datastream, startdate, enddate, time, output)
+    108     end = f'&end={end}'
+    109 # build the url to query the web service using the arguments provided
+    110 query_url = (
+    111     'https://adc.arm.gov/armlive/data/query?' + 'user={0}&ds={1}{2}{3}&wt=json'
+--> 112 ).format(':'.join([username, token]), datastream, start, end)
+    114 headers = {
+    115     'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+    116 }
+    118 req = Request(query_url, None, headers)
+
+TypeError: sequ
+```
+
+**`PermissionError`** — Access Denied
+
+in `html/notebooks.example-workflows.moore-oklahoma-tornado.json`
+
+```
+---------------------------------------------------------------------------
+ClientError                               Traceback (most recent call last)
+File /srv/conda/envs/notebook/lib/python3.12/site-packages/s3fs/core.py:755, in S3FileSystem._lsdir(self, path, refresh, max_items, delimiter, prefix, versions)
+    754 files = []
+--> 755 async for c in self._iterdir(
+    756     bucket,
+    757     max_items=max_items,
+    758     delimiter=delimiter,
+    759     prefix=prefix,
+    760     versions=versions,
+    761 ):
+    762     if c["type"] == "directory":
+
+File /srv/conda/envs/notebook/lib/python3.12/site-packages/s3fs/core.py:805, in S3FileSystem._iterdir(self, bucket, max_items, delimiter, prefix, versions)
+    798 it = pag.paginate(
+    799     Bucket=bucket,
+    800     Prefix=prefix,
+   (...)
+    803     **self.req_kw,
+    804 )
+--> 805 async for i in it:
+    806     for l in i.get("CommonPrefixes", []):
+
+File /srv/conda/envs/notebook/lib/python3.12/site-packages/aiobotocore/paginate.py:39, in AioPageIterator.__anext__(self)
+     38 while True:
+---> 39     response = await self._make_request(current_kwargs)
+     40     parsed = self._extract_parsed_response(response)
+
+File
+```
+
+**`TypeError`** — sequence item 0: expected str instance, NoneType found
+
+in `html/notebooks.example-workflows.cacti-data-quality-example.json`
+
+```
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Cell In[3], line 1
+----> 1 csapr_files = act.discovery.download_arm_data(arm_username,
+      2                                           arm_password,
+      3                                           datastream,
+      4                                           start_date,
+      5                                           end_date,
+      6                                          )
+
+File /srv/conda/envs/notebook/lib/python3.12/site-packages/act/discovery/arm.py:112, in download_arm_data(username, token, datastream, startdate, enddate, time, output)
+    108     end = f'&end={end}'
+    109 # build the url to query the web service using the arguments provided
+    110 query_url = (
+    111     'https://adc.arm.gov/armlive/data/query?' + 'user={0}&ds={1}{2}{3}&wt=json'
+--> 112 ).format(':'.join([username, token]), datastream, start, end)
+    114 headers = {
+    115     'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+    116 }
+    118 req = Request(query_url, None,
+```
 

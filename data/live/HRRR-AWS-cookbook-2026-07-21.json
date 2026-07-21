@@ -1,6 +1,6 @@
 {
   "cookbook": "HRRR-AWS-cookbook",
-  "started_at": "2026-07-21T18:16:28.382684+00:00",
+  "started_at": "2026-07-21T19:10:32.325605+00:00",
   "hub": "https://binder.projectpythia.org",
   "ref": "main",
   "toc_notebooks": [
@@ -9,56 +9,58 @@
   "build": {
     "hub": "https://binder.projectpythia.org",
     "ref": "main",
-    "seconds": 6.4,
+    "seconds": 6.49,
     "exit_code": 0,
     "failed": false,
     "image_cached": true,
     "log": [
       {
-        "t": 0.99,
+        "t": 1.1,
         "line": "Found built image, launching..."
       },
       {
-        "t": 0.99,
+        "t": 1.1,
         "line": "Launching server..."
       },
       {
-        "t": 1.2,
-        "line": "Server requested"
+        "t": 2.28,
+        "line": "2026-07-21T19:10:33.688242Z [Normal] Successfully assigned binderhub/jupyter-projectpythia-hrrr-aws-cookbook-46bvuf7f to binder-pythia-cluster-d7vpq4idy5va-user-m3-large-fdpj2-4jtjk"
       },
       {
-        "t": 2.15,
-        "line": "2026-07-21T18:16:30Z [Normal] Started container block-cloud-metadata"
+        "t": 2.28,
+        "line": "2026-07-21T19:10:34Z [Normal] Created container: block-cloud-metadata"
       },
       {
-        "t": 3.15,
-        "line": "2026-07-21T18:16:31Z [Normal] Container image \"quay.io/jupyterhub/k8s-network-tools:4.1.0\" already present on machine"
+        "t": 3.27,
+        "line": "2026-07-21T19:10:34Z [Normal] Container image \"quay.io/jupyterhub/k8s-network-tools:4.1.0\" already present on machine"
       },
       {
-        "t": 4.15,
-        "line": "2026-07-21T18:16:32Z [Normal] Container image \"quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2dhrrr-2daws-2dcookbook-39dc29:41e11e1ea94130c30690766d6dc719be2ab2f25f\" already present on machine"
+        "t": 4.27,
+        "line": "2026-07-21T19:10:35Z [Normal] Container image \"quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2dhrrr-2daws-2dcookbook-39dc29:41e11e1ea94130c30690766d6dc719be2ab2f25f\" already present on machine"
       },
       {
-        "t": 4.15,
-        "line": "2026-07-21T18:16:32Z [Normal] Created container: notebook"
+        "t": 4.27,
+        "line": "2026-07-21T19:10:36Z [Normal] Created container: notebook"
       },
       {
-        "t": 4.15,
-        "line": "2026-07-21T18:16:32Z [Normal] Started container notebook"
+        "t": 4.27,
+        "line": "2026-07-21T19:10:36Z [Normal] Started container notebook"
+      },
+      {
+        "t": 6.48,
+        "line": "server running at https://hub.projectpythia.org/user/projectpythia-hrrr-aws-cookbook-46bvuf7f/"
       }
     ]
   },
   "execution": {
-    "seconds": 78.53,
+    "seconds": 27.53,
     "exit_code": 0,
     "failed": false,
-    "cache_cleared": true,
-    "stdout_tail": "building myst-cli session with API URL: https://api.mystmd.org\n\ud83c\udf61 Execution parallelism set to: 19\n\ud83c\udf0e Building MyST site\n\ud83d\udd0d Querying template metadata from https://api.mystmd.org/templates/site/myst/book-theme\n\ud83d\udc15 Fetching template from https://github.com/myst-templates/book-theme/archive/refs/heads/main.zip\n\ud83d\udcbe Saved template to path _build/templates/site/myst/book-theme\nBuilding the base site.\nTo set a baseurl (e.g. GitHub pages) use \"BASE_URL\" environment variable.\n\u2935\ufe0f  Installing web libraries (can take up to 60 s)\n\ud83d\udce6 Installed web libraries in 876 ms\n\ud83c\udfeb Read 665 myst references for \"foundations\" in 415 ms.\n\ud83c\udfeb Read 9803 intersphinx references for \"xarray\" in 397 ms.\n\ud83c\udfeb Read 11399 intersphinx references for \"matplotlib\" in 392 ms.\n\ud83c\udfeb Read 19285 intersphinx references for \"python\" in 503 ms.\n\ud83d\udcbf Executing notebook (notebooks/example-workflows/plot-2mt.ipynb) [no execution cache found]\n\ud83d\udcd6 Built myst.yml#site.parts.footer in 35 ms.\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-hrrr-aws-cookbook-yfasis38/api/kernels/e222af1c-c834-4b23-a251-815ee2a099f9\n\ud83d\udcd6 Built notebooks/how-to-cite.md in 812 ms.\n\ud83d\udcd6 Built README.md in 1.09 s.\n\ud83d\udcd6 Built notebooks/example-workflows/plot-2mt.ipynb in 22 s.\n\u23f3 Waiting for response from https://zenodo.org/badge/507993773.svg\n\u23f3 Waiting for response from https://zenodo.org/badge/507993773.svg\n\ud83d\udcda Built 3 pages for project in 1 min.\n\n\n\t\u2728\u2728\u2728  Starting Book Theme  \u2728\u2728\u2728\n\n\n\n\ud83d\udd0c Server started on port 3000!  \ud83e\udd73 \ud83c\udf89\n\n\n\t\ud83d\udc49  http://localhost:3000  \ud83d\udc48\n\n\n\ud83d\udc8c GET  /index.json 200 - - 9.973 ms\n\ud83d\udc8c GET  / 200 - - 92.943 ms\n\ud83d\udc8c GET  /notebooks.example-workflows.plot-2mt.json 200 - - 37.487 ms\nGET /robots.txt 200 - - 0.721 ms\n\ud83d\udc8c GET  /notebooks.how-to-cite.json 200 - - 11.463 ms\n\ud83d\udc8c GET  /notebooks/how-to-cite 200 - - 85.968 ms\n\ud83d\udc8c GET  /sitemap_style.xsl 200 - - 0.765 ms\n\ud83d\udc8c GET  /sitemap.xml 200 - - 3.909 ms\nGET /notebooks/example-workflows/plot-2mt 200 - - 127.394 ms\n\ud83d\udc8c GET  /myst-theme.css 200 - - 32.887 ms\n\ud83d\udc8c GET  /favicon.ico 200 - - 5.041 ms\n",
-    "stderr_tail": "\u26a0\ufe0f  myst.yml 'nav.1' extra key ignored: open_in_same_tab (at myst.yml#config.site)\n\u26a0\ufe0f  myst.yml 'nav.2' extra key ignored: open_in_same_tab (at myst.yml#config.site)\n\u26a0\ufe0f  notebooks/example-workflows/plot-2mt.ipynb Removing matplotlib string from outputs\n   <matplotlib.collections.QuadMesh at 0x7f821c27cd30>\n   Fix: Put a semicolon on the last line of your cell or add \"output_matplotlib_strings: remove\" to the project settings.\n\u26d4\ufe0f 0cb0af82ea70c72f8cab43ec567a7015 Error saving image \"https://zenodo.org/badge/507993773.svg\": https://zenodo.org/badge/507993773.svg content-type \"text/html\" is not an image\n\u26d4\ufe0f README.md:5 Unsupported image extension \"<no extension>\" may not correctly render.\n",
+    "cache_cleared": false,
     "page_seconds": [
       {
         "page": "myst.yml#site.parts.footer",
-        "seconds": 0.04
+        "seconds": 0.03
       },
       {
         "page": "notebooks/how-to-cite.md",
@@ -66,25 +68,30 @@
       },
       {
         "page": "README.md",
-        "seconds": 1.09
+        "seconds": 0.84
       },
       {
         "page": "notebooks/example-workflows/plot-2mt.ipynb",
         "seconds": 22.0
       }
-    ]
+    ],
+    "stdout_tail": "building myst-cli session with API URL: https://api.mystmd.org\n\ud83c\udf61 Execution parallelism set to: 19\n\ud83c\udf0e Building MyST site\nBuilding the base site.\nTo set a baseurl (e.g. GitHub pages) use \"BASE_URL\" environment variable.\n\ud83c\udfeb Read 665 myst references for \"foundations\" in 194 ms.\n\ud83c\udfeb Read 11399 intersphinx references for \"matplotlib\" in 230 ms.\n\ud83c\udfeb Read 19285 intersphinx references for \"python\" in 272 ms.\n\ud83c\udfeb Read 9803 intersphinx references for \"xarray\" in 298 ms.\n\ud83d\udcbf Executing notebook (notebooks/example-workflows/plot-2mt.ipynb) [no execution cache found]\n\ud83d\udcd6 Built myst.yml#site.parts.footer in 34 ms.\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-hrrr-aws-cookbook-46bvuf7f/api/kernels/17467186-bed2-401d-8978-8d536021dca8\n\ud83d\udcd6 Built notebooks/how-to-cite.md in 813 ms.\n\ud83d\udcd6 Built README.md in 842 ms.\n\ud83d\udcd6 Built notebooks/example-workflows/plot-2mt.ipynb in 22 s.\n\ud83d\udcda Built 3 pages for project in 25 s.\n\n\n\t\u2728\u2728\u2728  Starting Book Theme  \u2728\u2728\u2728\n\n\n\n\ud83d\udd0c Server started on port 3000!  \ud83e\udd73 \ud83c\udf89\n\n\n\t\ud83d\udc49  http://localhost:3000  \ud83d\udc48\n\n\n\ud83d\udc8c GET  /notebooks.how-to-cite.json 200 - - 7.260 ms\n\ud83d\udc8c GET  /notebooks/how-to-cite 200 - - 77.687 ms\n\ud83d\udc8c GET  /notebooks.example-workflows.plot-2mt.json 200 - - 30.435 ms\n\ud83d\udc8c GET  /robots.txt 200 - - 1.089 ms\n\ud83d\udc8c GET  /index.json 200 - - 14.429 ms\n\ud83d\udc8c GET  / 200 - - 111.786 ms\n\ud83d\udc8c GET  /sitemap_style.xsl 200 - - 0.918 ms\nGET /notebooks/example-workflows/plot-2mt 200 - - 107.897 ms\n\ud83d\udc8c GET  /myst-theme.css 200 - - 39.400 ms\n\ud83d\udc8c GET  /sitemap.xml 200 - - 4.382 ms\n\ud83d\udc8c GET  /favicon.ico 200 - - 4.617 ms\n",
+    "stderr_tail": "\u26a0\ufe0f  myst.yml 'nav.1' extra key ignored: open_in_same_tab (at myst.yml#config.site)\n\u26a0\ufe0f  myst.yml 'nav.2' extra key ignored: open_in_same_tab (at myst.yml#config.site)\n\u26a0\ufe0f  notebooks/example-workflows/plot-2mt.ipynb Removing matplotlib string from outputs\n   <matplotlib.collections.QuadMesh at 0x7fea013c4400>\n   Fix: Put a semicolon on the last line of your cell or add \"output_matplotlib_strings: remove\" to the project settings.\n"
   },
   "resources": {
     "available": true,
-    "sample_count": 25,
+    "sample_count": 9,
     "sample_seconds": 3,
-    "peak_rss_bytes": 633532416,
-    "peak_pss_bytes": 615303168,
+    "peak_rss_bytes": 633552896,
+    "peak_pss_bytes": 615208960,
     "memory_limit_bytes": 8589934592,
-    "peak_fraction_of_limit": 0.0738,
+    "peak_fraction_of_limit": 0.0716,
     "peak_cpu_percent": null,
-    "cpu_count": null
+    "cpu_count": null,
+    "limit_basis": "pss",
+    "peak_against_limit_bytes": 615208960
   },
   "errors": [],
-  "finished_at": "2026-07-21T18:17:53.844560+00:00"
+  "finished_at": "2026-07-21T19:11:06.700874+00:00",
+  "build_artifacts": null
 }

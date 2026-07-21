@@ -14,6 +14,7 @@ Denominators exclude the `not-a-cookbook` tier (7 of 75 repos).
 | Cookbooks pulling deps from pip | 23 | 68 |
 | Cookbooks with no environment.yml | 0 | 68 |
 | Repos still carrying Sphinx config | 5 | 68 |
+| Cookbooks with Sphinx packages in environment.yml | 32 | 68 |
 | Repos still linking to cookbook-template | 18 | 68 |
 | Cookbooks with no author ORCID | 7 | 68 |
 
@@ -40,6 +41,10 @@ conda-forge is preferred wherever possible; pip is a flag for human review, not 
 ## Repos still carrying Sphinx config — 5/68
 
 `_config.yml`/`_toc.yml` means the MyST migration never reached this cookbook.
+
+## Cookbooks with Sphinx packages in environment.yml — 32/68
+
+Cookbooks build with MyST now, so a Sphinx toolchain in the environment is dead weight from before the migration. It is rarely harmless: these entries are usually tightly pinned, and a live check found they can stop the Binder image building at all — see the live report.
 
 ## Repos still linking to cookbook-template — 18/68
 

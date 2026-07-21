@@ -70,6 +70,52 @@ including the kernel doing the work — plus `limits.memory.rss`, the pod's `MEM
 Results land in `data/live/<cookbook>-<date>.json`, alongside the static snapshots and under the
 same append-only rule.
 
+## What the first sample found
+
+The pilot deliberately mixed cookbooks the static checks called healthy with ones they called
+stale, to see whether a live run adds anything. It did — and it fed a finding back into the static
+audit.
+
+`esgf-cookbook` was the first cookbook to get a **fresh** image build rather than a cached one, so
+its `environment.yml` was genuinely exercised for the first time. It failed after ~7 minutes:
+`pip failed to update packages`, resolving `sphinx==4.5.0`, `pydata-sphinx-theme<=0.8`,
+`docutils==0.16` and five pinned `sphinxcontrib-*` entries. Those are **Sphinx-era dependencies
+that the MyST migration should have removed** — the cookbook builds with MyST now and needs none of
+them. Their pins are what make the environment unsolvable, so the Binder image cannot build at all.
+
+That is the community's "avoid version pins except where needed" rule failing in the most concrete
+way available: a learner clicking the launch button gets nothing.
+
+Generalising it turned up something larger. The static audit now checks for Sphinx-era packages in
+`environment.yml`, and **33 cookbooks carry them — 13 of those in the gallery**. All 33 depend on
+[`sphinx-pythia-theme`][theme], **a repository Project Pythia archived in March 2026**. Most carry
+only that one entry and still build; `esgf-cookbook` and `xbatcher-ML-1-cookbook` carry the whole
+nine-package Sphinx stack, and both are in the `stale` tier.
+
+This is the pattern worth reporting upstream: the MyST migration moved the build, but left the old
+toolchain behind in the environment, where it is at best dead weight and at worst fatal.
+
+[theme]: https://github.com/ProjectPythia/sphinx-pythia-theme
+
+## `myst build --execute` exits 0 when cells raise
+
+`radar-cookbook` executed with **five cell errors and an exit code of 0**. The build command does
+not fail because a notebook raised; the error is recorded in the page output and the build carries
+on to render it.
+
+That matters beyond this project, because `myst build --execute --html` is exactly the default
+build command in Pythia's `cookbook-actions`. A cookbook whose notebooks throw can therefore show a
+**green nightly**, since the workflow checks the command's exit status. MyST does have configurable
+`error_rules`, so a project can choose to fail on execution errors — but nothing in the shared
+cookbook configuration appears to set that.
+
+This is worth confirming with the Pythia maintainers before acting on it. If it holds, "the nightly
+is green" is a weaker guarantee than the [static rubric](./rubric.md) currently assumes, and the
+live check is the only thing in this project that would notice.
+
+Concretely: never report a live run's health from the exit code alone. The report shows the exit
+code and a separate *notebooks ran clean* row for this reason.
+
 ## What is kept, and what is not
 
 The measurements are the result. The things the build produced are not.
@@ -105,7 +151,24 @@ touches. The pilot is a live example: `HRRR-AWS-cookbook` has two notebooks in t
 never notebooks *present*.
 
 **Sampled memory is a floor, not a true peak.** A three-second poll can miss a short allocation
-spike, and `rss` covers the server plus every child process, not just the notebook's kernel.
+spike, and the figures cover the server plus every child process, not just the notebook's kernel.
+
+**Compare `pss` to the limit, not `rss`.** `rss` is summed over every process, so pages shared
+between the server and its kernels are counted once each. `radar-cookbook` read **12.2 GB of `rss`
+against an 8.6 GB pod limit it never actually breached**; its `pss` — which apportions shared
+pages — was 3.0 GB, or 35% of the limit. The report headlines `pss` where the endpoint provides it,
+labels which basis it used, and shows `rss` only as an upper bound. A "memory" number above 100% of
+a hard cgroup limit is a measurement artefact, not a finding.
+
+**Errors are per-cell, and MyST writes each page twice.** Its AST is emitted under both
+`_build/site/content` and `_build/html`, so a naive walk counts every error twice — radar's five
+errors first read as ten. The collector reads the canonical copy and de-duplicates.
+
+**A missing credential looks like a cookbook defect.** Some cookbooks need secrets that
+`cookbook-actions` injects and this check does not: `radar-cookbook` produced `PermissionError:
+Forbidden` and `Access Denied` reaching ARM data, because we have no `ARM_USERNAME` /
+`ARM_PASSWORD`. That is an environment gap on our side, not a broken cookbook. Check the secrets
+list in [`build-book.yaml`][buildbook] before calling a credential error a finding.
 
 **Hitting the memory limit looks like an execution error, not a resource metric.** The kernel is
 killed, so expect a dead-kernel failure rather than a clean out-of-memory signal.

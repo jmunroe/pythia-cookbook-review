@@ -13,9 +13,25 @@ import argparse
 import json
 import pathlib
 
+import report
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 LIVE = ROOT / "data" / "live"
 REPORTS = ROOT / "reports"
+
+
+def static_tiers():
+    """Each cookbook's tier from the newest static snapshot, for comparison.
+
+    The interesting cases are the disagreements: a cookbook the static checks
+    call healthy that will not actually run, or one they call stale that runs
+    fine and is simply not being redeployed.
+    """
+    try:
+        snapshot = json.loads(report.newest_snapshot().read_text())
+    except (SystemExit, OSError, json.JSONDecodeError):
+        return {}
+    return {b["name"]: report.tier(b) for b in snapshot["cookbooks"]}
 
 
 def newest_per_cookbook():
@@ -46,7 +62,54 @@ def blob(record, path):
     )
 
 
-def describe(record):
+def verdict(record):
+    """A one-word live outcome, independent of the static tier."""
+    if (record.get("build") or {}).get("failed"):
+        return "build failed"
+    execution = record.get("execution") or {}
+    if execution.get("failed"):
+        return "execution failed"
+    if record.get("errors"):
+        return "ran with errors"
+    return "ran clean"
+
+
+def summary_table(latest, tiers):
+    """All live-checked cookbooks at a glance, beside their static tier."""
+    lines = [
+        "## At a glance",
+        "",
+        "| Cookbook | Live outcome | Static tier | Session | Execution | Peak memory | Errors |",
+        "|---|---|---|---|---|---|---|",
+    ]
+    for name, (_, record) in sorted(latest.items()):
+        build = record.get("build") or {}
+        execution = record.get("execution") or {}
+        resources = record.get("resources") or {}
+        # pss where available -- rss double-counts shared pages (see describe()).
+        peak = resources.get("peak_against_limit_bytes") or resources.get("peak_rss_bytes")
+        limit = resources.get("memory_limit_bytes")
+        lines.append(
+            f"| [{name}](#{name.lower()}) "
+            f"| {verdict(record)} "
+            f"| `{tiers.get(name, '—')}` "
+            f"| {build.get('seconds')}s"
+            f"{' (cached)' if build.get('image_cached') else ''} "
+            f"| {execution.get('seconds', '—')}s "
+            f"| {f'{peak / 1e9:.2f} of {limit / 1e9:.1f} GB' if peak and limit else '—'} "
+            f"| {len(record.get('errors') or [])} |"
+        )
+    lines += [
+        "",
+        "Where the live outcome and the static tier disagree, the live result is the more "
+        "direct evidence — but read it as one sample of a network-dependent workflow, not a "
+        "verdict. See [the limitations](../docs/live-assessment.md#limitations).",
+        "",
+    ]
+    return lines
+
+
+def describe(record, tiers):
     """One cookbook's result as markdown lines."""
     build = record.get("build") or {}
     execution = record.get("execution")
@@ -75,28 +138,46 @@ def describe(record):
             "",
         ]
 
+    tier = tiers.get(record["cookbook"])
     rows = [
         "| Measure | Value |",
         "|---|---|",
+        f"| Live outcome | **{verdict(record)}** |",
+        f"| Static tier | `{tier}` |" if tier else "| Static tier | — |",
         f"| Time to a ready session | {build.get('seconds')}s"
         f"{' (cached image)' if build.get('image_cached') else ' (fresh build)'} |",
         f"| Build succeeded | {'no' if build.get('failed') else 'yes'} |",
     ]
     if execution:
+        # `myst build --execute` exits 0 even when cells raise, so the exit code
+        # alone would call a run with ten tracebacks a success. Report both.
+        clean = not execution.get("failed") and not errors
         rows += [
             f"| Notebook execution | {execution.get('seconds')}s |",
-            f"| Execution succeeded | {'no' if execution.get('failed') else 'yes'} |",
+            f"| Build command exit code | {execution.get('exit_code')}"
+            + (" (zero despite cell errors)" if execution.get("exit_code") == 0 and errors else "")
+            + " |",
+            f"| Notebooks ran clean | {'yes' if clean else 'no'} |",
         ]
         if not execution.get("cache_cleared", True):
             rows.append("| Execution cache | **reused — timing is not execution** |")
     if resources.get("available"):
+        basis = resources.get("limit_basis", "rss")
         rows += [
-            f"| Peak memory (rss) | {gb(resources.get('peak_rss_bytes'))} |",
+            f"| Peak memory ({basis}) | {gb(resources.get('peak_against_limit_bytes'))} |",
             f"| Pod memory limit | {gb(resources.get('memory_limit_bytes'))} |",
         ]
         fraction = resources.get("peak_fraction_of_limit")
         if fraction is not None:
             rows.append(f"| Peak as share of limit | {fraction:.1%} |")
+        # rss double-counts pages shared between the server and its kernels, so
+        # it can read above a limit the pod never breached. Show it as the upper
+        # bound it is, not as the headline.
+        if basis == "pss" and resources.get("peak_rss_bytes"):
+            rows.append(
+                f"| Peak rss (upper bound, shared pages double-counted) "
+                f"| {gb(resources['peak_rss_bytes'])} |"
+            )
         if resources.get("peak_cpu_percent") is not None:
             rows.append(f"| Peak CPU | {resources['peak_cpu_percent']}% |")
     else:
@@ -161,6 +242,7 @@ def main():
     parser.parse_args()
 
     latest = newest_per_cookbook()
+    tiers = static_tiers()
     lines = [
         "# Live checks",
         "",
@@ -177,8 +259,9 @@ def main():
     if not latest:
         lines += ["No live checks recorded yet. Run `python scripts/live_check.py <cookbook>`.", ""]
     else:
+        lines += summary_table(latest, tiers)
         for _, record in sorted(latest.items()):
-            lines += describe(record[1])
+            lines += describe(record[1], tiers)
 
     REPORTS.mkdir(parents=True, exist_ok=True)
     out = REPORTS / "live.md"

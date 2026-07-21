@@ -120,7 +120,10 @@ def live_summary():
         build = record.get("build") or {}
         execution = record.get("execution") or {}
         resources = record.get("resources") or {}
-        peak, limit = resources.get("peak_rss_bytes"), resources.get("memory_limit_bytes")
+        # pss where available -- rss double-counts pages shared between the
+        # server and its kernels, and can read above a limit never breached.
+        peak = resources.get("peak_against_limit_bytes") or resources.get("peak_rss_bytes")
+        limit = resources.get("memory_limit_bytes")
         memory = (
             f"{peak / 1e9:.2f} of {limit / 1e9:.1f} GB" if peak and limit else "—"
         )
