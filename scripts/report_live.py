@@ -34,6 +34,18 @@ def gb(value):
     return f"{value / 1e9:.2f} GB" if isinstance(value, (int, float)) else "—"
 
 
+def blob(record, path):
+    """Link a repo-relative path to the exact ref that was built.
+
+    Pinning to `ref` rather than main means the link still shows what was
+    actually executed, even after the cookbook moves on.
+    """
+    return (
+        f"https://github.com/ProjectPythia/{record['cookbook']}"
+        f"/blob/{record['ref']}/{path}"
+    )
+
+
 def describe(record):
     """One cookbook's result as markdown lines."""
     build = record.get("build") or {}
@@ -41,10 +53,13 @@ def describe(record):
     resources = record.get("resources") or {}
     errors = record.get("errors") or []
 
+    repo = f"https://github.com/ProjectPythia/{record['cookbook']}"
     lines = [f"## {record['cookbook']}", ""]
     lines.append(
         f"Run {record['started_at'][:19].replace('T', ' ')} UTC "
-        f"against [{record['hub']}]({record['hub']}), ref `{record['ref']}`."
+        f"against [{record['hub']}]({record['hub']}), building "
+        f"[{record['cookbook']}]({repo}) at ref "
+        f"[`{record['ref']}`]({repo}/tree/{record['ref']})."
     )
     lines.append("")
 
@@ -100,14 +115,22 @@ def describe(record):
     ]
     if pages:
         lines += ["| Notebook | Execute + render |", "|---|---|"]
-        lines += [f"| `{p['page']}` | {p['seconds']}s |" for p in pages]
+        lines += [
+            f"| [`{p['page']}`]({blob(record, p['page'])}) | {p['seconds']}s |"
+            for p in pages
+        ]
         lines.append("")
 
     notebooks = record.get("toc_notebooks") or []
+    listed = (
+        ", ".join(f"[`{n}`]({blob(record, n)})" for n in notebooks)
+        if notebooks
+        else "none"
+    )
     lines.append(
-        f"Executed {len(notebooks)} notebook(s) from the project toc: "
-        + (", ".join(f"`{n}`" for n in notebooks) if notebooks else "none")
-        + ". Notebooks not listed in `myst.yml` are never executed by a build."
+        f"Executed {len(notebooks)} notebook(s) from the project toc: {listed}. "
+        f"Notebooks not listed in [`myst.yml`]({blob(record, 'myst.yml')}) are never "
+        "executed by a build, so a repo can carry notebooks no build ever touches."
     )
     lines.append("")
 

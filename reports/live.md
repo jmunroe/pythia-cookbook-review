@@ -6,7 +6,7 @@ Read [the method and its limitations](../docs/live-assessment.md) before quoting
 
 ## HRRR-AWS-cookbook
 
-Run 2026-07-21 18:16:28 UTC against [https://binder.projectpythia.org](https://binder.projectpythia.org), ref `main`.
+Run 2026-07-21 18:16:28 UTC against [https://binder.projectpythia.org](https://binder.projectpythia.org), building [HRRR-AWS-cookbook](https://github.com/ProjectPythia/HRRR-AWS-cookbook) at ref [`main`](https://github.com/ProjectPythia/HRRR-AWS-cookbook/tree/main).
 
 :::{warning} Cached image
 BinderHub reused an existing image, so the 6.4s is a pod launch and image pull. It does **not** test whether `environment.yml` still solves.
@@ -25,7 +25,7 @@ BinderHub reused an existing image, so the 6.4s is a pod launch and image pull. 
 
 | Notebook | Execute + render |
 |---|---|
-| `notebooks/example-workflows/plot-2mt.ipynb` | 22.0s |
+| [`notebooks/example-workflows/plot-2mt.ipynb`](https://github.com/ProjectPythia/HRRR-AWS-cookbook/blob/main/notebooks/example-workflows/plot-2mt.ipynb) | 22.0s |
 
-Executed 1 notebook(s) from the project toc: `notebooks/example-workflows/plot-2mt.ipynb`. Notebooks not listed in `myst.yml` are never executed by a build.
+Executed 1 notebook(s) from the project toc: [`notebooks/example-workflows/plot-2mt.ipynb`](https://github.com/ProjectPythia/HRRR-AWS-cookbook/blob/main/notebooks/example-workflows/plot-2mt.ipynb). Notebooks not listed in [`myst.yml`](https://github.com/ProjectPythia/HRRR-AWS-cookbook/blob/main/myst.yml) are never executed by a build, so a repo can carry notebooks no build ever touches.
 

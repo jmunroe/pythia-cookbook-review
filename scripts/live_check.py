@@ -259,6 +259,34 @@ class ResourceSampler(threading.Thread):
 # --------------------------------------------------------------------------
 
 
+def build_size(clone):
+    """Bytes currently sitting in the clone's _build, or 0."""
+    build = clone / "_build"
+    if not build.is_dir():
+        return 0
+    return sum(f.stat().st_size for f in build.rglob("*") if f.is_file())
+
+
+def clear_build(clone):
+    """Empty the clone's _build, keeping MyST's downloaded themes.
+
+    _build/templates is ~130 MB of theme that MyST would otherwise re-download
+    every run; it has no bearing on whether notebooks re-execute. Everything
+    else -- execute/, site/, html/, cache/ -- goes, which is what forces a real
+    execution rather than a cached replay.
+    """
+    build = clone / "_build"
+    if not build.is_dir():
+        return False
+    removed = False
+    for child in build.iterdir():
+        if child.name == "templates":
+            continue
+        shutil.rmtree(child) if child.is_dir() else child.unlink()
+        removed = True
+    return removed
+
+
 def execute_notebooks(clone, session, timeout, keep_cache=False):
     """Build the cookbook with its notebooks executed on the Binder session.
 
@@ -270,12 +298,11 @@ def execute_notebooks(clone, session, timeout, keep_cache=False):
     run reports a fast "execution" that executed nothing -- the same trap as a
     cached Binder image. So we clear it by default and record that we did.
     """
-    cache = clone / "_build"
     cleared = False
-    if cache.is_dir() and not keep_cache:
-        shutil.rmtree(cache)
-        cleared = True
-        log(f"Cleared {cache} so notebooks really execute")
+    if not keep_cache:
+        cleared = clear_build(clone)
+        if cleared:
+            log("Cleared _build (kept templates) so notebooks really execute")
 
     env = dict(os.environ)
     env["JUPYTER_BASE_URL"] = session["url"]
@@ -413,6 +440,8 @@ def main():
     parser.add_argument("--build-token", default=os.environ.get("BINDER_BUILD_TOKEN"))
     parser.add_argument("--build-timeout", type=int, default=1800)
     parser.add_argument("--execute-timeout", type=int, default=1800)
+    parser.add_argument("--keep-build", action="store_true",
+                        help="keep the rendered output even on success")
     parser.add_argument("--keep-cache", action="store_true",
                         help="do not clear _build first (execution may be reused)")
     parser.add_argument("--dry-run", action="store_true", help="print the plan only")
@@ -475,6 +504,23 @@ def main():
         stop_session(session)
 
     record["finished_at"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
+
+    # Nothing the build produced is part of the result -- the record holds the
+    # measurements. Keep the rendered output only when something failed and
+    # there is a post-mortem to do; otherwise drop a few hundred MB per run.
+    failed = record["build"]["failed"] or (
+        record.get("execution") or {}
+    ).get("failed")
+    if failed or args.keep_build:
+        record["build_artifacts"] = {
+            "path": str(clone / "_build"),
+            "bytes": build_size(clone),
+            "kept_because": "run failed" if failed else "--keep-build",
+        }
+        log(f"Kept build output in {clone / '_build'} for inspection")
+    else:
+        clear_build(clone)
+        record["build_artifacts"] = None
 
     today = datetime.date.today().isoformat()
     out = args.out or LIVE / f"{args.cookbook}-{today}.json"

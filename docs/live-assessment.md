@@ -70,6 +70,24 @@ including the kernel doing the work — plus `limits.memory.rss`, the pod's `MEM
 Results land in `data/live/<cookbook>-<date>.json`, alongside the static snapshots and under the
 same append-only rule.
 
+## What is kept, and what is not
+
+The measurements are the result. The things the build produced are not.
+
+- **Nothing is retained on the hub.** `binderbot stop` destroys the pod, in a `finally`, so a
+  crash or a Ctrl-C cannot strand one.
+- **Committed to this repo:** only `data/live/<cookbook>-<date>.json` — timings, resource samples,
+  error details, and the timestamped BinderHub log text. No notebooks, no rendered HTML, no
+  images. **Never a session token**; those records are public.
+- **Left on your disk:** `myst build` writes a few hundred MB into `../<cookbook>/_build`
+  (executed outputs, rendered HTML, site JSON, MyST themes). It is gitignored by the cookbook, so
+  it is never committed anywhere — but it is real disk.
+
+On a **successful** run the script deletes that output, keeping only `_build/templates` (~130 MB
+of MyST theme that would otherwise be re-downloaded every run and has no bearing on execution). On
+a **failed** run it is kept so you can inspect what went wrong, and the record's
+`build_artifacts` field says where it is and how large. `--keep-build` keeps it either way.
+
 ## Limitations
 
 These decide whether a number means anything. Read them before quoting one.
@@ -116,6 +134,19 @@ The design keeps each run deliberate:
 Please do not add a cron trigger to the live-check workflow.
 
 [hub]: https://binder.projectpythia.org
+
+## Idea: tracking a cookbook over time
+
+Not built yet, noted so it is not lost. `data/live/` is already dated, append-only, one file per
+run per cookbook — the substrate for a history exists. What is undecided is where the *series*
+should live and how it should be presented: repeated JSON records are fine for a handful of runs
+and awkward for hundreds.
+
+The questions worth answering before building it: which fields are worth trending (execution
+seconds and peak memory, almost certainly; build seconds only for fresh builds, since cached ones
+are noise), how to keep comparisons honest across changing hub hardware and image contents, and
+whether the series belongs in this repo at all versus something built for time series. Decide that
+before accumulating a lot of data in a shape that turns out to be wrong.
 
 ## Relationship to tiering
 
