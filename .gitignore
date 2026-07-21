@@ -4,3 +4,9 @@ __pycache__/
 data/_cache/
 _build/
 node_modules/
+
+# Credential files for live checks (--env-file). Keep them outside the repo if
+# you can; this is a backstop, not permission.
+*.env
+.env
+secrets/

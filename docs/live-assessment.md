@@ -122,6 +122,44 @@ and this is a finding about the shared build configuration rather than about any
 Concretely: never report a live run's health from the exit code alone. The report shows the exit
 code and a separate *notebooks ran clean* row for this reason.
 
+## Credentialed cookbooks
+
+Some cookbooks read credentials that Pythia's CI supplies as repository secrets and a Binder
+session does not have. `radar-cookbook` is the example: three of its notebooks call
+`os.getenv("ARM_USERNAME")` / `ARM_PASSWORD` and die on `len(None)` without them.
+
+Exporting the variables before running the check does nothing, because the notebooks execute **on
+the Binder pod**, not here. BinderBot's own test suite documents this — it asserts
+`"CI" not in os.environ` for exactly this reason.
+
+So `live_check.py` seeds them into the session:
+
+```bash
+python scripts/live_check.py radar-cookbook --env ARM_USERNAME --env ARM_PASSWORD
+python scripts/live_check.py radar-cookbook --env-file ~/.config/pythia-cookbook-review/arm.env
+```
+
+It works by uploading an IPython startup script
+(`~/.ipython/profile_default/startup/00-live-check-env.py`) through the Jupyter contents API in the
+window between the session becoming ready and MyST starting its first kernel. IPython runs
+everything in that directory at kernel startup, so every kernel inherits the variables.
+
+**Secrets discipline.** `--env` takes variable *names* and reads values from this process — never
+from the command line, which is visible in `ps` and echoed into CI logs. Only the **names** are
+written to `data/live/*.json` and only names are logged; values never touch the repository. Keep
+any `--env-file` outside the repo (`.gitignore` blocks `*.env` as a backstop, not as permission).
+The uploaded file lives on a single-user pod that is destroyed when the session stops.
+
+Two limits: it only reaches **Python** kernels, and it depends on the hub allowing writes to hidden
+paths (`ContentsManager.allow_hidden` defaults to `False`; Pythia's hub permits it). A refused
+upload is reported loudly rather than swallowed, because silently skipping it reproduces the
+baffling `len(None)` failure this exists to fix.
+
+This capability existed in the old `pangeo-gallery/binderbot` as `--pass-env-var` and was lost in
+2i2c's rewrite, which delegates execution to MyST. Filed upstream as
+[2i2c-org/binderbot#15](https://github.com/2i2c-org/binderbot/issues/15), with an offer to
+contribute the implementation — the ordering it depends on is something only BinderBot can own.
+
 ## What is kept, and what is not
 
 The measurements are the result. The things the build produced are not.

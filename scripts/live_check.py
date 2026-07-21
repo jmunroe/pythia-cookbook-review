@@ -281,6 +281,104 @@ class ResourceSampler(threading.Thread):
 # --------------------------------------------------------------------------
 
 
+def collect_env(names, env_file):
+    """Values for the variables to inject, from our own environment or a file.
+
+    Values are never taken from the command line: argv is visible to anyone
+    running `ps` and is echoed into CI logs. `--env NAME` reads NAME from our
+    environment; `--env-file` reads KEY=VALUE lines.
+    """
+    variables = {}
+    if env_file:
+        for line in pathlib.Path(env_file).read_text().splitlines():
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, _, value = line.partition("=")
+            variables[key.strip()] = value.strip().strip("'\"")
+    for name in names or []:
+        value = os.environ.get(name)
+        if value is None:
+            log(f"WARNING: --env {name} requested but not set in this environment")
+            continue
+        variables[name] = value
+    return variables
+
+
+def seed_environment(session, variables):
+    """Put variables into every kernel the session will later start.
+
+    Notebooks read credentials with os.getenv, and that runs on the Binder pod --
+    exporting a variable here does nothing, because the code executes there. The
+    local environment genuinely does not cross over; binderbot's own test asserts
+    exactly that ("CI" not in os.environ).
+
+    IPython executes any .py file in ~/.ipython/profile_default/startup/ when a
+    kernel starts, and the Jupyter contents API can write into the session's home
+    directory. Doing that *before* MyST starts any kernel is the whole trick, and
+    this is the one moment we control it.
+
+    Caveats worth keeping in view: this only reaches Python kernels, and it
+    depends on the hub allowing writes to hidden paths (ContentsManager
+    .allow_hidden defaults to False, though Pythia's hub permits it). A failure
+    here is reported loudly rather than swallowed -- silently skipping it
+    produces baffling downstream errors like len(None).
+    """
+    if not variables:
+        return {"attempted": False}
+
+    def put(path, payload):
+        url = session["url"].rstrip("/") + "/api/contents/" + path
+        request = urllib.request.Request(
+            url, data=json.dumps(payload).encode(), method="PUT"
+        )
+        request.add_header("Authorization", f"token {session['token']}")
+        request.add_header("Content-Type", "application/json")
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                return response.status, None
+        except urllib.error.HTTPError as err:
+            return err.code, err.read().decode()[:200]
+        except (urllib.error.URLError, OSError) as err:
+            return None, str(err)
+
+    for directory in (
+        ".ipython",
+        ".ipython/profile_default",
+        ".ipython/profile_default/startup",
+    ):
+        status, detail = put(directory, {"type": "directory"})
+        if status not in (200, 201):
+            log(f"WARNING: could not create {directory} on the session: {status} {detail}")
+            return {
+                "attempted": True,
+                "ok": False,
+                "reason": f"creating {directory} returned {status}: {detail}",
+                "variables": sorted(variables),
+            }
+
+    body = "import os\n" + "".join(
+        f"os.environ[{k!r}] = {v!r}\n" for k, v in sorted(variables.items())
+    )
+    status, detail = put(
+        ".ipython/profile_default/startup/00-live-check-env.py",
+        {"type": "file", "format": "text", "content": body},
+    )
+    ok = status in (200, 201)
+    # Log the names only. The values are secrets and must never reach a log, a
+    # record, or the repository.
+    log(
+        f"{'Injected' if ok else 'FAILED to inject'} "
+        f"{', '.join(sorted(variables))} into the session"
+    )
+    return {
+        "attempted": True,
+        "ok": ok,
+        "reason": None if ok else f"upload returned {status}: {detail}",
+        "variables": sorted(variables),
+    }
+
+
 def build_size(clone):
     """Bytes currently sitting in the clone's _build, or 0."""
     build = clone / "_build"
@@ -475,6 +573,12 @@ def main():
     parser.add_argument("--build-token", default=os.environ.get("BINDER_BUILD_TOKEN"))
     parser.add_argument("--build-timeout", type=int, default=1800)
     parser.add_argument("--execute-timeout", type=int, default=1800)
+    parser.add_argument("--env", action="append", metavar="NAME",
+                        help="inject NAME from this environment into the session's "
+                             "kernels (value is read from here, never from argv)")
+    parser.add_argument("--env-file", metavar="PATH",
+                        help="inject KEY=VALUE lines from PATH; keep this file "
+                             "outside the repository")
     parser.add_argument("--keep-build", action="store_true",
                         help="keep the rendered output even on success")
     parser.add_argument("--keep-cache", action="store_true",
@@ -505,16 +609,19 @@ def main():
 
     # Strictly one session at a time: several cookbooks in flight would multiply
     # our footprint on a hub that exists for learners.
+    # Resolved once, so a missing variable is reported before any session starts.
+    variables = collect_env(args.env, args.env_file)
+
     worst = 0
     for index, name in enumerate(args.cookbook, 1):
         if len(args.cookbook) > 1:
             log("")
             log(f"===== [{index}/{len(args.cookbook)}] {name}")
-        worst = max(worst, check_one(name, args))
+        worst = max(worst, check_one(name, args, variables))
     return worst
 
 
-def check_one(name, args):
+def check_one(name, args, variables=None):
     """Live-check a single cookbook. Returns 0 if it built and ran cleanly."""
     clone = PARENT / name
     if not clone.is_dir():
@@ -522,6 +629,7 @@ def check_one(name, args):
 
     record = {
         "cookbook": name,
+        "env_injection": {"attempted": False},
         "started_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         "hub": args.hub,
         "ref": args.ref,
@@ -541,6 +649,7 @@ def check_one(name, args):
             record["errors"] = []
         else:
             log(f"Session ready at {session['url']}")
+            record["env_injection"] = seed_environment(session, variables)
             sampler = ResourceSampler(session)
             sampler.start()
             record["execution"] = execute_notebooks(
