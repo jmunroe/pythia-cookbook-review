@@ -122,7 +122,11 @@ def live_summary():
             record = json.loads(path.read_text())
         except (json.JSONDecodeError, OSError):
             continue
-        latest[record["cookbook"]] = record
+        previous = latest.get(record["cookbook"])
+        if previous is None or record.get("started_at", "") >= previous.get(
+            "started_at", ""
+        ):
+            latest[record["cookbook"]] = record
 
     if not latest:
         return "*No cookbooks have been live-checked yet.*"

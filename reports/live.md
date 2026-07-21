@@ -12,7 +12,7 @@ Read [the method and its limitations](../docs/live-assessment.md) before quoting
 | [eofs-cookbook](#eofs-cookbook) | ran clean | `healthy` | 81.46s (cached) | 44.02s | 1.43 of 8.6 GB | 0 |
 | [esgf-cookbook](#esgf-cookbook) | build failed | `stale` | 416.52s | —s | — | 0 |
 | [landsat-ml-cookbook](#landsat-ml-cookbook) | ran with errors | `stale` | 469.24s | 34.69s | 0.95 of 8.6 GB | 3 |
-| [radar-cookbook](#radar-cookbook) | ran with errors | `stale` | 120.72s (cached) | 413.13s | 2.97 of 8.6 GB | 5 |
+| [radar-cookbook](#radar-cookbook) | ran with errors | `stale` | 617.14s (cached) | 438.04s | 3.14 of 8.6 GB | 5 |
 
 Where the live outcome and the static tier disagree, the live result is the more direct evidence — but read it as one sample of a network-dependent workflow, not a verdict. See [the limitations](../docs/live-assessment.md#limitations).
 
@@ -230,60 +230,71 @@ KeyError: 'proj:epsg'
 
 ## radar-cookbook
 
-Run 2026-07-21 19:20:10 UTC against [https://binder.projectpythia.org](https://binder.projectpythia.org), building [radar-cookbook](https://github.com/ProjectPythia/radar-cookbook) at ref [`main`](https://github.com/ProjectPythia/radar-cookbook/tree/main).
+Run 2026-07-21 20:28:36 UTC against [https://binder.projectpythia.org](https://binder.projectpythia.org), building [radar-cookbook](https://github.com/ProjectPythia/radar-cookbook) at ref [`main`](https://github.com/ProjectPythia/radar-cookbook/tree/main).
 
 :::{warning} Cached image
-BinderHub reused an existing image, so the 120.72s is a pod launch and image pull. It does **not** test whether `environment.yml` still solves.
+BinderHub reused an existing image, so the 617.14s is a pod launch and image pull. It does **not** test whether `environment.yml` still solves.
 :::
 
 | Measure | Value |
 |---|---|
 | Live outcome | **ran with errors** |
 | Static tier | `stale` |
-| Time to a ready session | 120.72s (cached image) |
+| Time to a ready session | 617.14s (cached image) |
 | Build succeeded | yes |
-| Notebook execution | 413.13s |
+| Notebook execution | 438.04s |
 | Build command exit code | 0 (zero despite cell errors) |
 | Notebooks ran clean | no |
 | Execution cache | **reused — timing is not execution** |
-| Peak memory (pss) | 2.97 GB |
+| Peak memory (pss) | 3.14 GB |
 | Pod memory limit | 8.59 GB |
-| Peak as share of limit | 34.6% |
+| Peak as share of limit | 36.5% |
 | Peak rss (upper bound, shared pages double-counted) | 12.25 GB |
 | Errors raised | 5 |
 
 | Notebook | Execute + render |
 |---|---|
-| [`notebooks/radar-basics/radar-basics.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/radar-basics/radar-basics.ipynb) | 0.13s |
-| [`notebooks/example-workflows/moore-oklahoma-tornado.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/moore-oklahoma-tornado.ipynb) | 10.0s |
-| [`notebooks/example-workflows/cacti-data-quality-example.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/cacti-data-quality-example.ipynb) | 10.0s |
-| [`notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb) | 11.0s |
-| [`notebooks/example-workflows/tracer-example.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/tracer-example.ipynb) | 11.0s |
-| [`notebooks/example-workflows/echo_top_height.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/echo_top_height.ipynb) | 11.0s |
+| [`notebooks/radar-basics/radar-basics.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/radar-basics/radar-basics.ipynb) | 0.15s |
+| [`notebooks/example-workflows/moore-oklahoma-tornado.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/moore-oklahoma-tornado.ipynb) | 12.0s |
+| [`notebooks/example-workflows/cacti-data-quality-example.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/cacti-data-quality-example.ipynb) | 12.0s |
+| [`notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb) | 12.0s |
+| [`notebooks/example-workflows/tracer-example.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/tracer-example.ipynb) | 13.0s |
+| [`notebooks/example-workflows/echo_top_height.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/echo_top_height.ipynb) | 13.0s |
 | [`notebooks/foundations/interactive-radar-visualization.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/interactive-radar-visualization.ipynb) | 28.0s |
 
 Executed 11 notebook(s) from the project toc: [`notebooks/example-workflows/cacti-data-quality-example.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/cacti-data-quality-example.ipynb), [`notebooks/example-workflows/echo_top_height.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/echo_top_height.ipynb), [`notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb), [`notebooks/example-workflows/kdp-comparison.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/kdp-comparison.ipynb), [`notebooks/example-workflows/moore-oklahoma-tornado.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/moore-oklahoma-tornado.ipynb), [`notebooks/example-workflows/tracer-example.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/tracer-example.ipynb), [`notebooks/foundations/interactive-radar-visualization.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/interactive-radar-visualization.ipynb), [`notebooks/foundations/pyart-basics.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/pyart-basics.ipynb), [`notebooks/foundations/pyart-corrections.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/pyart-corrections.ipynb), [`notebooks/foundations/pyart-gridding.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/pyart-gridding.ipynb), [`notebooks/radar-basics/radar-basics.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/radar-basics/radar-basics.ipynb). Notebooks not listed in [`myst.yml`](https://github.com/ProjectPythia/radar-cookbook/blob/main/myst.yml) are never executed by a build, so a repo can carry notebooks no build ever touches.
 
 ### Errors
 
-**`TypeError`** — object of type 'NoneType' has no len()
+**`HTTPError`** — HTTP Error 400: 
 
-in `html/notebooks.example-workflows.tracer-example.json`
+in `site/content/notebooks.example-workflows.tracer-example.json`
 
 ```
 ---------------------------------------------------------------------------
-TypeError                                 Traceback (most recent call last)
-Cell In[3], line 9
-      6 start_date = "2022-06-02T11:30:00"
-      7 end_date = "2022-06-02T11:40:00"
-----> 9 print(len(arm_username), len(arm_password))
+HTTPError                                 Traceback (most recent call last)
+Cell In[4], line 1
+----> 1 june2_csapr_files = act.discovery.download_arm_data(arm_username,
+      2                                                 arm_password,
+      3                                                 datastream,
+      4                                                 start_date,
+      5                                                 end_date,
+      6                                                )
 
-TypeError: object of type 'NoneType' has no len()
+File /srv/conda/envs/notebook/lib/python3.12/site-packages/act/discovery/arm.py:121, in download_arm_data(username, token, datastream, startdate, enddate, time, output)
+    118 req = Request(query_url, None, headers)
+    119 # get url response, read the body of the message,
+    120 # and decode from bytes type to utf-8 string
+--> 121 response_body = urlopen(req).read().decode('utf-8')
+    122 # if the response is an html doc, then there was an error with the user
+    123 if response_body[1:14] == '!DOCTYPE html':
+
+File /srv/conda/envs/notebook/lib/python3.12/urllib/request.py:215, in urlopen(url, data, timeout, cafile
 ```
 
 **`PermissionError`** — Forbidden
 
-in `html/notebooks.example-workflows.echo-top-height.json`
+in `site/content/notebooks.example-workflows.echo-top-height.json`
 
 ```
 ---------------------------------------------------------------------------
@@ -311,13 +322,13 @@ Cell In[3], line 5
       1 aws_nexrad_level2
 ```
 
-**`TypeError`** — sequence item 0: expected str instance, NoneType found
+**`HTTPError`** — HTTP Error 400: 
 
-in `html/notebooks.example-workflows.fastbarnes-interpolation-rhi.json`
+in `site/content/notebooks.example-workflows.fastbarnes-interpolation-rhi.json`
 
 ```
 ---------------------------------------------------------------------------
-TypeError                                 Traceback (most recent call last)
+HTTPError                                 Traceback (most recent call last)
 Cell In[3], line 1
 ----> 1 aug7_csapr_files = act.discovery.download_arm_data(arm_username,
       2                                                arm_password,
@@ -325,23 +336,22 @@ Cell In[3], line 1
       4                                                start_date,
       5                                                end_date)
 
-File /srv/conda/envs/notebook/lib/python3.12/site-packages/act/discovery/arm.py:112, in download_arm_data(username, token, datastream, startdate, enddate, time, output)
-    108     end = f'&end={end}'
-    109 # build the url to query the web service using the arguments provided
-    110 query_url = (
-    111     'https://adc.arm.gov/armlive/data/query?' + 'user={0}&ds={1}{2}{3}&wt=json'
---> 112 ).format(':'.join([username, token]), datastream, start, end)
-    114 headers = {
-    115     'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
-    116 }
+File /srv/conda/envs/notebook/lib/python3.12/site-packages/act/discovery/arm.py:121, in download_arm_data(username, token, datastream, startdate, enddate, time, output)
     118 req = Request(query_url, None, headers)
+    119 # get url response, read the body of the message,
+    120 # and decode from bytes type to utf-8 string
+--> 121 response_body = urlopen(req).read().decode('utf-8')
+    122 # if the response is an html doc, then there was an error with the user
+    123 if response_body[1:14] == '!DOCTYPE html':
 
-TypeError: sequ
+File /srv/conda/envs/notebook/lib/python3.12/urllib/request.py:215, in urlopen(url, data, timeout, cafile, capath, cadefault, context)
+    213 else:
+    214     opener
 ```
 
 **`PermissionError`** — Access Denied
 
-in `html/notebooks.example-workflows.moore-oklahoma-tornado.json`
+in `site/content/notebooks.example-workflows.moore-oklahoma-tornado.json`
 
 ```
 ---------------------------------------------------------------------------
@@ -375,13 +385,13 @@ File /srv/conda/envs/notebook/lib/python3.12/site-packages/aiobotocore/paginate.
 File
 ```
 
-**`TypeError`** — sequence item 0: expected str instance, NoneType found
+**`HTTPError`** — HTTP Error 400: 
 
-in `html/notebooks.example-workflows.cacti-data-quality-example.json`
+in `site/content/notebooks.example-workflows.cacti-data-quality-example.json`
 
 ```
 ---------------------------------------------------------------------------
-TypeError                                 Traceback (most recent call last)
+HTTPError                                 Traceback (most recent call last)
 Cell In[3], line 1
 ----> 1 csapr_files = act.discovery.download_arm_data(arm_username,
       2                                           arm_password,
@@ -390,15 +400,15 @@ Cell In[3], line 1
       5                                           end_date,
       6                                          )
 
-File /srv/conda/envs/notebook/lib/python3.12/site-packages/act/discovery/arm.py:112, in download_arm_data(username, token, datastream, startdate, enddate, time, output)
-    108     end = f'&end={end}'
-    109 # build the url to query the web service using the arguments provided
-    110 query_url = (
-    111     'https://adc.arm.gov/armlive/data/query?' + 'user={0}&ds={1}{2}{3}&wt=json'
---> 112 ).format(':'.join([username, token]), datastream, start, end)
-    114 headers = {
-    115     'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
-    116 }
-    118 req = Request(query_url, None,
+File /srv/conda/envs/notebook/lib/python3.12/site-packages/act/discovery/arm.py:121, in download_arm_data(username, token, datastream, startdate, enddate, time, output)
+    118 req = Request(query_url, None, headers)
+    119 # get url response, read the body of the message,
+    120 # and decode from bytes type to utf-8 string
+--> 121 response_body = urlopen(req).read().decode('utf-8')
+    122 # if the response is an html doc, then there was an error with the user
+    123 if response_body[1:14] == '!DOCTYPE html':
+
+File /srv/conda/envs/notebook/lib/python3.12/urllib/request.py:215, in urlopen(url, data, timeout, cafile, capath, cadefault, context)
+    21
 ```
 

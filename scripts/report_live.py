@@ -42,7 +42,11 @@ def newest_per_cookbook():
             record = json.loads(path.read_text())
         except (json.JSONDecodeError, OSError):
             continue
-        latest[record["cookbook"]] = (path, record)
+        previous = latest.get(record["cookbook"])
+        if previous is None or record.get("started_at", "") >= previous[1].get(
+            "started_at", ""
+        ):
+            latest[record["cookbook"]] = (path, record)
     return latest
 
 

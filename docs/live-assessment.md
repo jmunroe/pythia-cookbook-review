@@ -150,6 +150,13 @@ written to `data/live/*.json` and only names are logged; values never touch the 
 any `--env-file` outside the repo (`.gitignore` blocks `*.env` as a backstop, not as permission).
 The uploaded file lives on a single-user pod that is destroyed when the session stops.
 
+**`ARM_PASSWORD` wants a token, not a password.** The radar notebooks pass it to ACT's
+`download_arm_data(username, token, ...)`, whose second argument is an **access token** issued by
+<https://adc.arm.gov/armlive/> — the variable name is misleading. With a token in place the ARM
+calls proceed; with an account password they return `HTTPError: HTTP Error 400`, which is how to
+tell the two apart. Note that the error *changing* from `TypeError: len(None)` to an HTTP status is
+itself the signal that injection worked and the credential reached the notebook.
+
 Two limits: it only reaches **Python** kernels, and it depends on the hub allowing writes to hidden
 paths (`ContentsManager.allow_hidden` defaults to `False`; Pythia's hub permits it). A refused
 upload is reported loudly rather than swallowed, because silently skipping it reproduces the

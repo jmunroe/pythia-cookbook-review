@@ -683,8 +683,11 @@ def check_one(name, args, variables=None):
         clear_build(clone)
         record["build_artifacts"] = None
 
-    today = datetime.date.today().isoformat()
-    out = args.out or LIVE / f"{name}-{today}.json"
+    # Second-resolution, because a same-day re-run is the normal case (fixing a
+    # credential, re-testing a flaky network failure) and must not destroy the
+    # earlier result.
+    stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H%M%SZ")
+    out = args.out or LIVE / f"{name}-{stamp}.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(record, indent=2) + "\n")
     log(f"Wrote {out}")
@@ -699,9 +702,10 @@ def check_one(name, args, variables=None):
             f"{' FAILED' if execution['failed'] else ''}")
         resources = record["resources"]
         if resources.get("available"):
-            peak = resources["peak_rss_bytes"]
+            peak = resources.get("peak_against_limit_bytes") or resources["peak_rss_bytes"]
             limit = resources["memory_limit_bytes"]
-            log(f"  peak rss   {peak / 1e9:.2f} GB"
+            basis = resources.get("limit_basis", "rss")
+            log(f"  peak {basis:<5} {peak / 1e9:.2f} GB"
                 + (f" of {limit / 1e9:.2f} GB limit" if limit else " (no limit reported)"))
         else:
             log(f"  resources  unavailable: {resources.get('reason')}")
