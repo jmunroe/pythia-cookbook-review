@@ -27,6 +27,8 @@ observation.
 | `data/` | `audit.py` | **Append-only.** Never edit or delete a snapshot — they are the historical record and the only way to say "this got worse". |
 | `reports/` | `report.py` | **Generated.** Never hand-edit; the next run destroys it. Wrong output means `report.py` or the rubric is wrong. |
 | `index.md` | `build_site.py` | **Generated** from the newest snapshot. Edit `scripts/templates/index.md`, never `index.md`. |
+| `data/live/` | `live_check.py` | **Append-only**, like snapshots. Never contains session tokens. |
+| `reports/live.md` | `report_live.py` | **Generated.** |
 | `notes/` | **a human** | **Never generate these.** See below. |
 | `docs/` | a human | Changes when upstream Pythia guidance changes. |
 
@@ -55,6 +57,24 @@ Two things to preserve:
   one. Link to Pythia; don't wear its branding.
 - **The Pages build needs `BASE_URL`.** It is a project site served from `/<repo-name>/`, so
   without that prefix every asset and internal link 404s. The workflow sets it from the repo name.
+
+## Live checks consume shared capacity
+
+`scripts/live_check.py` builds a cookbook for real on Project Pythia's BinderHub (NSF-funded
+Jetstream2). It is manual by design — a local command or `workflow_dispatch`, never a schedule, one
+cookbook per run, with `binderbot stop` in a `finally` so no pod is ever stranded. **Do not add a
+cron trigger, do not add a gallery-wide sweep, and never make it run on `pull_request`** (a fork PR
+could then execute arbitrary code on Pythia's hub).
+
+Two measurement traps, both documented in `docs/live-assessment.md`, both already handled — do not
+"simplify" them away:
+
+- **A cached Binder image makes build time meaningless.** `image_cached` must travel with every
+  duration.
+- **MyST caches executed outputs in `_build/execute`.** The script clears `_build` before executing
+  so notebooks really run; `cache_cleared: false` means the timing is rendering, not execution.
+
+Never write a session token into `data/live/` — those records are public.
 
 ## Getting the pinning check right
 

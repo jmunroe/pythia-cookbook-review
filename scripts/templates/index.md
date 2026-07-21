@@ -84,6 +84,23 @@ small or unfinished**; only for being broken or invisible. Full definitions in [
 
 The detail behind each of these, cookbook by cookbook, is in [](reports/gaps.md).
 
+## Live checks
+
+The numbers above come from reading configuration and CI state. A separate,
+[live assessment](docs/live-assessment.md) actually builds a cookbook on
+[Project Pythia's BinderHub](https://binder.projectpythia.org) — the environment its launch button
+sends learners to — and records how long it takes, what errors it raises, and how much memory it
+needs.
+
+This matters because Pythia's own builds no longer touch Binder: the binderbot steps in
+`cookbook-actions` are gated behind a Sphinx-era `_config.yml` that MyST cookbooks no longer have,
+so notebooks execute on a GitHub runner instead. Nothing else measures what a cookbook costs to
+run until a learner's kernel dies.
+
+{{LIVE_SUMMARY}}
+
+Results and method: [](reports/live.md) · [](docs/live-assessment.md)
+
 ## Read the findings
 
 ::::{grid} 1 1 3 3

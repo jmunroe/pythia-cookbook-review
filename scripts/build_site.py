@@ -101,6 +101,40 @@ def gap_table(live, gallery):
     return "\n".join(rows)
 
 
+def live_summary():
+    """One line per cookbook that has been live-checked, or a placeholder."""
+    live = ROOT / "data" / "live"
+    latest = {}
+    for path in sorted(live.glob("*.json")):
+        try:
+            record = json.loads(path.read_text())
+        except (json.JSONDecodeError, OSError):
+            continue
+        latest[record["cookbook"]] = record
+
+    if not latest:
+        return "*No cookbooks have been live-checked yet.*"
+
+    rows = ["| Cookbook | Session | Execution | Peak memory | Errors |", "|---|---|---|---|---|"]
+    for name, record in sorted(latest.items()):
+        build = record.get("build") or {}
+        execution = record.get("execution") or {}
+        resources = record.get("resources") or {}
+        peak, limit = resources.get("peak_rss_bytes"), resources.get("memory_limit_bytes")
+        memory = (
+            f"{peak / 1e9:.2f} of {limit / 1e9:.1f} GB" if peak and limit else "—"
+        )
+        rows.append(
+            f"| {name} "
+            f"| {build.get('seconds')}s"
+            f"{' (cached)' if build.get('image_cached') else ''} "
+            f"| {execution.get('seconds', '—')}s "
+            f"| {memory} "
+            f"| {len(record.get('errors') or [])} |"
+        )
+    return "\n".join(rows)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--snapshot", type=pathlib.Path)
@@ -126,6 +160,7 @@ def main():
         "REVIEWED": reviewed,
         "TIER_TABLE": tier_table(counts),
         "GAP_TABLE": gap_table(live, gallery),
+        "LIVE_SUMMARY": live_summary(),
         # Must sit below the frontmatter -- MyST needs that block at the very
         # top of the file.
         "GENERATED_NOTE": (

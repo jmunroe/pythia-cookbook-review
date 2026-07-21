@@ -1,0 +1,85 @@
+name: Live check a cookbook
+
+# Builds one cookbook for real on Project Pythia's BinderHub and records what it
+# cost. See docs/live-assessment.md.
+#
+# MANUAL ONLY, BY DESIGN. Each run consumes shared BinderHub capacity on
+# NSF-funded Jetstream2 that exists for learners. Please do not add a schedule
+# trigger, and do not make this run on pull_request -- a fork PR would be able
+# to execute arbitrary code on Pythia's hub.
+
+on:
+  workflow_dispatch:
+    inputs:
+      cookbook:
+        description: Cookbook repo name in the ProjectPythia org
+        required: true
+        default: HRRR-AWS-cookbook
+      hub:
+        description: BinderHub URL
+        required: false
+        default: https://binder.projectpythia.org
+      ref:
+        description: Git ref of the cookbook to build
+        required: false
+        default: main
+
+permissions:
+  contents: write
+
+# One live check at a time, so a second trigger cannot double up on hub capacity.
+concurrency:
+  group: live-check
+  cancel-in-progress: false
+
+jobs:
+  live-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # We drive the binderbot CLI rather than 2i2c-org/binderbot@action-v1:
+      # the action starts the session for us, which would hide the build timing
+      # this check exists to measure.
+      - run: npm install -g binderbot mystmd
+
+      - name: Clone the cookbook
+        run: ./scripts/sync-clones.sh "${{ inputs.cookbook }}"
+
+      - name: Run the live check
+        env:
+          BINDER_BUILD_TOKEN: ${{ secrets.BINDER_BUILD_TOKEN }}
+        run: |
+          python scripts/live_check.py "${{ inputs.cookbook }}" \
+            --hub "${{ inputs.hub }}" --ref "${{ inputs.ref }}"
+
+      - name: Regenerate the live report
+        # Runs even on a failed check -- a failure is a result worth recording.
+        if: always()
+        run: |
+          python scripts/report_live.py
+          python scripts/build_site.py
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: live-check-${{ inputs.cookbook }}
+          path: data/live/
+
+      - name: Commit the result
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/live reports/live.md index.md
+          git diff --staged --quiet || git commit -m "Live check: ${{ inputs.cookbook }}"
+          git push

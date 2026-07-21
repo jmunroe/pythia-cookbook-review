@@ -39,11 +39,13 @@ project:
         - file: reports/by-tier.md
         - file: reports/dashboard.md
         - file: reports/gaps.md
+        - file: reports/live.md
     - title: Method
       children:
         - file: docs/criteria.md
         - file: docs/rubric.md
         - file: docs/methodology.md
+        - file: docs/live-assessment.md
         - file: docs/workflow.md
 
   error_rules:

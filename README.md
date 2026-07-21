@@ -59,6 +59,23 @@ cp notes/_template.md notes/<name>.md   # then write the review
 
 Pushing to `main` rebuilds and republishes the site automatically.
 
+### Live checks
+
+Static analysis reads configuration; a **live check** actually builds a cookbook on
+[Project Pythia's BinderHub](https://binder.projectpythia.org) and records build time, execution
+errors, and peak memory against the pod's limit. Needs `binderbot` and `mystmd`
+(`npm install -g binderbot mystmd`):
+
+```bash
+python scripts/live_check.py HRRR-AWS-cookbook --dry-run   # show the plan
+python scripts/live_check.py HRRR-AWS-cookbook             # real session
+python scripts/report_live.py                              # -> reports/live.md
+```
+
+Each run uses shared capacity that exists for learners, so it is manual, one cookbook at a time,
+and always releases the session. Read [`docs/live-assessment.md`](docs/live-assessment.md) before
+quoting a number — particularly the part about cached images.
+
 ### Previewing the site
 
 The published site is a [MyST][myst] build of this repo's own markdown — `reports/` and `docs/`
