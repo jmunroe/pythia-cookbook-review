@@ -117,7 +117,7 @@ run until a learner's kernel dies.
 | eofs-cookbook | 81.46s (cached) | 44.02s | 1.43 of 8.6 GB | 0 |
 | esgf-cookbook | 416.52s | —s | — | 0 |
 | landsat-ml-cookbook | 469.24s | 34.69s | 0.95 of 8.6 GB | 3 |
-| radar-cookbook | 617.14s (cached) | 438.04s | 3.14 of 8.6 GB | 5 |
+| radar-cookbook | 7.89s (cached) | 410.53s | 3.83 of 8.6 GB | 5 |
 
 :::{danger} A passing badge does not mean the notebooks ran
 Chasing a discrepancy the live checks turned up, we read Project Pythia's own nightly logs:

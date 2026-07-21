@@ -12,7 +12,7 @@ Read [the method and its limitations](../docs/live-assessment.md) before quoting
 | [eofs-cookbook](#eofs-cookbook) | ran clean | `healthy` | 81.46s (cached) | 44.02s | 1.43 of 8.6 GB | 0 |
 | [esgf-cookbook](#esgf-cookbook) | build failed | `stale` | 416.52s | —s | — | 0 |
 | [landsat-ml-cookbook](#landsat-ml-cookbook) | ran with errors | `stale` | 469.24s | 34.69s | 0.95 of 8.6 GB | 3 |
-| [radar-cookbook](#radar-cookbook) | ran with errors | `stale` | 617.14s (cached) | 438.04s | 3.14 of 8.6 GB | 5 |
+| [radar-cookbook](#radar-cookbook) | ran with errors | `stale` | 7.89s (cached) | 410.53s | 3.83 of 8.6 GB | 5 |
 
 Where the live outcome and the static tier disagree, the live result is the more direct evidence — but read it as one sample of a network-dependent workflow, not a verdict. See [the limitations](../docs/live-assessment.md#limitations).
 
@@ -230,49 +230,49 @@ KeyError: 'proj:epsg'
 
 ## radar-cookbook
 
-Run 2026-07-21 20:28:36 UTC against [https://binder.projectpythia.org](https://binder.projectpythia.org), building [radar-cookbook](https://github.com/ProjectPythia/radar-cookbook) at ref [`main`](https://github.com/ProjectPythia/radar-cookbook/tree/main).
+Run 2026-07-21 21:11:20 UTC against [https://binder.projectpythia.org](https://binder.projectpythia.org), building [radar-cookbook](https://github.com/ProjectPythia/radar-cookbook) at ref [`main`](https://github.com/ProjectPythia/radar-cookbook/tree/main).
 
 :::{warning} Cached image
-BinderHub reused an existing image, so the 617.14s is a pod launch and image pull. It does **not** test whether `environment.yml` still solves.
+BinderHub reused an existing image, so the 7.89s is a pod launch and image pull. It does **not** test whether `environment.yml` still solves.
 :::
 
 | Measure | Value |
 |---|---|
 | Live outcome | **ran with errors** |
 | Static tier | `stale` |
-| Time to a ready session | 617.14s (cached image) |
+| Time to a ready session | 7.89s (cached image) |
 | Build succeeded | yes |
-| Notebook execution | 438.04s |
+| Notebook execution | 410.53s |
 | Build command exit code | 0 (zero despite cell errors) |
 | Notebooks ran clean | no |
 | Execution cache | **reused — timing is not execution** |
-| Peak memory (pss) | 3.14 GB |
+| Peak memory (pss) | 3.83 GB |
 | Pod memory limit | 8.59 GB |
-| Peak as share of limit | 36.5% |
-| Peak rss (upper bound, shared pages double-counted) | 12.25 GB |
+| Peak as share of limit | 44.5% |
+| Peak rss (upper bound, shared pages double-counted) | 13.08 GB |
 | Errors raised | 5 |
 
 | Notebook | Execute + render |
 |---|---|
 | [`notebooks/radar-basics/radar-basics.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/radar-basics/radar-basics.ipynb) | 0.15s |
-| [`notebooks/example-workflows/moore-oklahoma-tornado.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/moore-oklahoma-tornado.ipynb) | 12.0s |
-| [`notebooks/example-workflows/cacti-data-quality-example.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/cacti-data-quality-example.ipynb) | 12.0s |
-| [`notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb) | 12.0s |
-| [`notebooks/example-workflows/tracer-example.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/tracer-example.ipynb) | 13.0s |
-| [`notebooks/example-workflows/echo_top_height.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/echo_top_height.ipynb) | 13.0s |
-| [`notebooks/foundations/interactive-radar-visualization.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/interactive-radar-visualization.ipynb) | 28.0s |
+| [`notebooks/example-workflows/cacti-data-quality-example.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/cacti-data-quality-example.ipynb) | 10.0s |
+| [`notebooks/example-workflows/moore-oklahoma-tornado.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/moore-oklahoma-tornado.ipynb) | 10.0s |
+| [`notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb) | 11.0s |
+| [`notebooks/example-workflows/tracer-example.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/tracer-example.ipynb) | 11.0s |
+| [`notebooks/example-workflows/echo_top_height.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/echo_top_height.ipynb) | 11.0s |
+| [`notebooks/foundations/interactive-radar-visualization.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/interactive-radar-visualization.ipynb) | 29.0s |
 
 Executed 11 notebook(s) from the project toc: [`notebooks/example-workflows/cacti-data-quality-example.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/cacti-data-quality-example.ipynb), [`notebooks/example-workflows/echo_top_height.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/echo_top_height.ipynb), [`notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb), [`notebooks/example-workflows/kdp-comparison.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/kdp-comparison.ipynb), [`notebooks/example-workflows/moore-oklahoma-tornado.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/moore-oklahoma-tornado.ipynb), [`notebooks/example-workflows/tracer-example.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/tracer-example.ipynb), [`notebooks/foundations/interactive-radar-visualization.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/interactive-radar-visualization.ipynb), [`notebooks/foundations/pyart-basics.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/pyart-basics.ipynb), [`notebooks/foundations/pyart-corrections.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/pyart-corrections.ipynb), [`notebooks/foundations/pyart-gridding.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/pyart-gridding.ipynb), [`notebooks/radar-basics/radar-basics.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/radar-basics/radar-basics.ipynb). Notebooks not listed in [`myst.yml`](https://github.com/ProjectPythia/radar-cookbook/blob/main/myst.yml) are never executed by a build, so a repo can carry notebooks no build ever touches.
 
 ### Errors
 
-**`HTTPError`** — HTTP Error 400: 
+**`InvalidURL`** — URL can't contain control characters. '/armlive/data/query?user=jmunroe:6d50bb06f016d9a6 ' (found at least ' ')
 
 in `site/content/notebooks.example-workflows.tracer-example.json`
 
 ```
 ---------------------------------------------------------------------------
-HTTPError                                 Traceback (most recent call last)
+InvalidURL                                Traceback (most recent call last)
 Cell In[4], line 1
 ----> 1 june2_csapr_files = act.discovery.download_arm_data(arm_username,
       2                                                 arm_password,
@@ -322,13 +322,13 @@ Cell In[3], line 5
       1 aws_nexrad_level2
 ```
 
-**`HTTPError`** — HTTP Error 400: 
+**`InvalidURL`** — URL can't contain control characters. '/armlive/data/query?user=jmunroe:6d50bb06f016d9a6 ' (found at least ' ')
 
 in `site/content/notebooks.example-workflows.fastbarnes-interpolation-rhi.json`
 
 ```
 ---------------------------------------------------------------------------
-HTTPError                                 Traceback (most recent call last)
+InvalidURL                                Traceback (most recent call last)
 Cell In[3], line 1
 ----> 1 aug7_csapr_files = act.discovery.download_arm_data(arm_username,
       2                                                arm_password,
@@ -385,13 +385,13 @@ File /srv/conda/envs/notebook/lib/python3.12/site-packages/aiobotocore/paginate.
 File
 ```
 
-**`HTTPError`** — HTTP Error 400: 
+**`InvalidURL`** — URL can't contain control characters. '/armlive/data/query?user=jmunroe:6d50bb06f016d9a6 ' (found at least ' ')
 
 in `site/content/notebooks.example-workflows.cacti-data-quality-example.json`
 
 ```
 ---------------------------------------------------------------------------
-HTTPError                                 Traceback (most recent call last)
+InvalidURL                                Traceback (most recent call last)
 Cell In[3], line 1
 ----> 1 csapr_files = act.discovery.download_arm_data(arm_username,
       2                                           arm_password,

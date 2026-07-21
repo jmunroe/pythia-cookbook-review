@@ -302,6 +302,20 @@ def collect_env(names, env_file):
             log(f"WARNING: --env {name} requested but not set in this environment")
             continue
         variables[name] = value
+
+    # Cheap sanity check: a credential with whitespace in it usually means a
+    # paste picked up surrounding text. Python's http.client rejects every
+    # character in [\x00-\x20\x7f] -- which includes a plain space -- and
+    # reports it as "URL can't contain control characters", so the resulting
+    # failure points nowhere near the real cause. Warn rather than refuse: a
+    # value may legitimately contain spaces for uses other than a URL.
+    for name, value in variables.items():
+        if any(c.isspace() for c in value):
+            log(
+                f"WARNING: {name} contains whitespace. If it is used in a URL "
+                "this will fail as \"URL can't contain control characters\". "
+                "Check for text copied along with the value."
+            )
     return variables
 
 
