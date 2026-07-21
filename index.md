@@ -119,6 +119,16 @@ run until a learner's kernel dies.
 | landsat-ml-cookbook | 469.24s | 34.69s | 0.95 of 8.6 GB | 3 |
 | radar-cookbook | 120.72s (cached) | 413.13s | 2.97 of 8.6 GB | 5 |
 
+:::{danger} A passing badge does not mean the notebooks ran
+Chasing a discrepancy the live checks turned up, we read Project Pythia's own nightly logs:
+**12 of 30 gallery cookbooks** had notebooks raise an exception during
+their most recent nightly — and the build reported success anyway, because
+`myst build --execute` exits 0 when a cell fails. Everything after the failing cell is skipped,
+so the published page is silently truncated.
+
+[The full list and what to do about it](reports/ci-errors.md)
+:::
+
 Results and method: [](reports/live.md) · [](docs/live-assessment.md)
 
 ## Read the findings

@@ -99,6 +99,16 @@ run until a learner's kernel dies.
 
 {{LIVE_SUMMARY}}
 
+:::{danger} A passing badge does not mean the notebooks ran
+Chasing a discrepancy the live checks turned up, we read Project Pythia's own nightly logs:
+**{{CI_AFFECTED}} of {{CI_SCANNED}} gallery cookbooks** had notebooks raise an exception during
+their most recent nightly — and the build reported success anyway, because
+`myst build --execute` exits 0 when a cell fails. Everything after the failing cell is skipped,
+so the published page is silently truncated.
+
+[The full list and what to do about it](reports/ci-errors.md)
+:::
+
 Results and method: [](reports/live.md) · [](docs/live-assessment.md)
 
 ## Read the findings

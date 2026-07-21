@@ -1,0 +1,602 @@
+{
+  "collected_at": "2026-07-21T20:00:33.541623+00:00",
+  "scanned": 30,
+  "green_with_errors": 12,
+  "published_as_passing_with_errors": 12,
+  "results": [
+    {
+      "cookbook": "cesm-lens-aws-cookbook",
+      "run": {
+        "conclusion": "success",
+        "createdAt": "2026-07-21T02:52:04Z",
+        "databaseId": 29796962137,
+        "url": "https://github.com/ProjectPythia/cesm-lens-aws-cookbook/actions/runs/29796962137"
+      },
+      "notebooks": [],
+      "reason": null,
+      "published_as_passing": true
+    },
+    {
+      "cookbook": "cmip6-cookbook",
+      "run": {
+        "conclusion": "success",
+        "createdAt": "2026-07-21T02:06:28Z",
+        "databaseId": 29794953825,
+        "url": "https://github.com/ProjectPythia/cmip6-cookbook/actions/runs/29794953825"
+      },
+      "notebooks": [],
+      "reason": null,
+      "published_as_passing": true
+    },
+    {
+      "cookbook": "HRRR-AWS-cookbook",
+      "run": {
+        "conclusion": "success",
+        "createdAt": "2026-07-21T01:22:02Z",
+        "databaseId": 29792923673,
+        "url": "https://github.com/ProjectPythia/HRRR-AWS-cookbook/actions/runs/29792923673"
+      },
+      "notebooks": [],
+      "reason": null,
+      "published_as_passing": true
+    },
+    {
+      "cookbook": "radar-cookbook",
+      "run": {
+        "conclusion": "cancelled",
+        "createdAt": "2026-07-21T02:10:00Z",
+        "databaseId": 29795110376,
+        "url": "https://github.com/ProjectPythia/radar-cookbook/actions/runs/29795110376"
+      },
+      "notebooks": [
+        {
+          "notebook": "notebooks/example-workflows/cacti-data-quality-example.ipynb",
+          "ename": "GEOSException"
+        },
+        {
+          "notebook": "notebooks/example-workflows/echo_top_height.ipynb",
+          "ename": "ClientError"
+        },
+        {
+          "notebook": "notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb",
+          "ename": "RuntimeError"
+        },
+        {
+          "notebook": "notebooks/example-workflows/moore-oklahoma-tornado.ipynb",
+          "ename": null
+        }
+      ],
+      "reason": null,
+      "published_as_passing": false
+    },
+    {
+      "cookbook": "intake-cookbook",
+      "run": {
+        "conclusion": "cancelled",
+        "createdAt": "2026-07-21T02:22:22Z",
+        "databaseId": 29795660345,
+        "url": "https://github.com/ProjectPythia/intake-cookbook/actions/runs/29795660345"
+      },
+      "notebooks": [
+        {
+          "notebook": "notebooks/creating_catalogs.ipynb",
+          "ename": "AttributeError"
+        },
+        {
+          "notebook": "notebooks/intake_introduction.ipynb",
+          "ename": null
+        }
+      ],
+      "reason": null,
+      "published_as_passing": false
+    },
+    {
+      "cookbook": "landsat-ml-cookbook",
+      "run": {
+        "conclusion": "failure",
+        "createdAt": "2026-07-21T02:23:24Z",
+        "databaseId": 29795705442,
+        "url": "https://github.com/ProjectPythia/landsat-ml-cookbook/actions/runs/29795705442"
+      },
+      "notebooks": [],
+      "reason": null,
+      "published_as_passing": false
+    },
+    {
+      "cookbook": "kerchunk-cookbook",
+      "run": {
+        "conclusion": "success",
+        "createdAt": "2026-07-21T02:02:52Z",
+        "databaseId": 29794780631,
+        "url": "https://github.com/ProjectPythia/kerchunk-cookbook/actions/runs/29794780631"
+      },
+      "notebooks": [
+        {
+          "notebook": "notebooks/advanced/Parquet_Reference_Storage.ipynb",
+          "ename": null
+        },
+        {
+          "notebook": "notebooks/advanced/appending.ipynb",
+          "ename": null
+        },
+        {
+          "notebook": "notebooks/foundations/01_kerchunk_basics.ipynb",
+          "ename": "TypeError"
+        },
+        {
+          "notebook": "notebooks/foundations/02_kerchunk_multi_file.ipynb",
+          "ename": null
+        },
+        {
+          "notebook": "notebooks/foundations/03_kerchunk_dask.ipynb",
+          "ename": null
+        },
+        {
+          "notebook": "notebooks/generating_references/GRIB2.ipynb",
+          "ename": null
+        },
+        {
+          "notebook": "notebooks/generating_references/GeoTIFF.ipynb",
+          "ename": null
+        },
+        {
+          "notebook": "notebooks/generating_references/NetCDF.ipynb",
+          "ename": null
+        },
+        {
+          "notebook": "notebooks/using_references/Datatree.ipynb",
+          "ename": null
+        },
+        {
+          "notebook": "notebooks/using_references/Xarray.ipynb",
+          "ename": null
+        }
+      ],
+      "reason": null,
+      "published_as_passing": true
+    },
+    {
+      "cookbook": "xbatcher-ML-1-cookbook",
+      "run": {
+        "conclusion": "cancelled",
+        "createdAt": "2026-07-21T02:05:23Z",
+        "databaseId": 29794901337,
+        "url": "https://github.com/ProjectPythia/xbatcher-ML-1-cookbook/actions/runs/29794901337"
+      },
+      "notebooks": [],
+      "reason": null,
+      "published_as_passing": false
+    },
+    {
+      "cookbook": "dask-cookbook",
+      "run": {
+        "conclusion": "success",
+        "createdAt": "2026-07-21T02:44:34Z",
+        "databaseId": 29796632919,
+        "url": "https://github.com/ProjectPythia/dask-cookbook/actions/runs/29796632919"
+      },
+      "notebooks": [],
+      "reason": null,
+      "published_as_passing": true
+    },
+    {
+      "cookbook": "ERA5_interactive-cookbook",
+      "run": {
+        "conclusion": "success",
+        "createdAt": "2026-07-21T03:29:18Z",
+        "databaseId": 29798652074,
+        "url": "https://github.com/ProjectPythia/ERA5_interactive-cookbook/actions/runs/29798652074"
+      },
+      "notebooks": [
+        {
+          "notebook": "notebooks/06_era5_anomaly.ipynb",
+          "ename": null
+        }
+      ],
+      "reason": null,
+      "published_as_passing": true
+    },
+    {
+      "cookbook": "web-map-feature-services-cookbook",
+      "run": {
+        "conclusion": "success",
+        "createdAt": "2026-07-21T02:55:33Z",
+        "databaseId": 29797117781,
+        "url": "https://github.com/ProjectPythia/web-map-feature-services-cookbook/actions/runs/29797117781"
+      },
+      "notebooks": [],
+      "reason": null,
+      "published_as_passing": true
+    },
+    {
+      "cookbook": "interactive-sentinel-2-cookbook",
+      "run": {
+        "conclusion": "success",
+        "createdAt": "2026-07-21T02:07:31Z",
+        "databaseId": 29795000748,
+        "url": "https://github.com/ProjectPythia/interactive-sentinel-2-cookbook/actions/runs/29795000748"
+      },
+      "notebooks": [
+        {
+          "notebook": "notebooks/data-intake-ms-planetary-computer.ipynb",
+          "ename": "HTTPError"
+        }
+      ],
+      "reason": null,
+      "published_as_passing": true
+    },
+    {
+      "cookbook": "gridding-cookbook",
+      "run": {
+        "conclusion": "success",
+        "createdAt": "2026-07-21T03:22:16Z",
+        "databaseId": 29798352643,
+        "url": "https://github.com/ProjectPythia/gridding-cookbook/actions/runs/29798352643"
+      },
+      "notebooks": [],
+      "reason": null,
+      "published_as_passing": true
+    },
+    {
+      "cookbook": "vapor-python-cookbook",
+      "run": {
+        "conclusion": "success",
+        "createdAt": "2026-07-21T01:48:40Z",
+        "databaseId": 29794132854,
+        "url": "https://github.com/ProjectPythia/vapor-python-cookbook/actions/runs/29794132854"
+      },
+      "notebooks": [
+        {
+          "notebook": "notebooks/AGU_2023_example.ipynb",
+          "ename": "ModuleNotFoundError"
+        },
+        {
+          "notebook": "notebooks/animation_example.ipynb",
+          "ename": null
+        },
+        {
+          "notebook": "notebooks/annotation_example.ipynb",
+          "ename": null
+        },
+        {
+          "notebook": "notebooks/camera_example.ipynb",
+          "ename": null
+        },
+        {
+          "notebook": "notebooks/cloudfield_visualizer.ipynb",
+          "ename": "ModuleNotFoundError"
+        },
+        {
+          "notebook": "notebooks/custom_images_example.ipynb",
+          "ename": null
+        },
+        {
+          "notebook": "notebooks/dataset_example.ipynb",
+          "ename": null
+        },
+        {
+          "notebook": "notebooks/flow_example.ipynb",
+          "ename": null
+        },
+        {
+          "notebook": "notebooks/keyframing_example.ipynb",
+          "ename": "ModuleNotFoundError"
+        },
+        {
+          "notebook": "notebooks/numpy_example.ipynb",
+          "ename": "ModuleNotFoundError"
+        },
+        {
+          "notebook": "notebooks/quickstart.ipynb",
+          "ename": "ModuleNotFoundError"
+        },
+        {
+          "notebook": "notebooks/transfer_function_example.ipynb",
+          "ename": null
+        },
+        {
+          "notebook": "notebooks/visualizer_widget_example.ipynb",
+          "ename": "ModuleNotFoundError"
+        },
+        {
+          "notebook": "notebooks/workflow_example.ipynb",
+          "ename": "ModuleNotFoundError"
+        },
+        {
+          "notebook": "notebooks/xarray_example.ipynb",
+          "ename": "SSLCertVerificationError"
+        }
+      ],
+      "reason": null,
+      "published_as_passing": true
+    },
+    {
+      "cookbook": "advanced-viz-cookbook",
+      "run": {
+        "conclusion": "success",
+        "createdAt": "2026-07-21T02:25:10Z",
+        "databaseId": 29795781034,
+        "url": "https://github.com/ProjectPythia/advanced-viz-cookbook/actions/runs/29795781034"
+      },
+      "notebooks": [
+        {
+          "notebook": "notebooks/6-spaghetti.ipynb",
+          "ename": "ModuleNotFoundError"
+        }
+      ],
+      "reason": null,
+      "published_as_passing": true
+    },
+    {
+      "cookbook": "unstructured-grid-viz-cookbook",
+      "run": {
+        "conclusion": "success",
+        "createdAt": "2026-07-21T02:11:43Z",
+        "databaseId": 29795188896,
+        "url": "https://github.com/ProjectPythia/unstructured-grid-viz-cookbook/actions/runs/29795188896"
+      },
+      "notebooks": [
+        {
+          "notebook": "notebooks/04-recipes/mpas-atmo.ipynb",
+          "ename": "ValueError"
+        }
+      ],
+      "reason": null,
+      "published_as_passing": true
+    },
+    {
+      "cookbook": "na-cordex-viz-cookbook",
+      "run": {
+        "conclusion": "success",
+        "createdAt": "2026-07-19T02:05:30Z",
+        "databaseId": 29669634167,
+        "url": "https://github.com/ProjectPythia/na-cordex-viz-cookbook/actions/runs/29669634167"
+      },
+      "notebooks": [],
+      "reason": null,
+      "published_as_passing": true
+    },
+    {
+      "cookbook": "eofs-cookbook",
+      "run": {
+        "conclusion": "success",
+        "createdAt": "2026-07-21T02:00:49Z",
+        "databaseId": 29794684486,
+        "url": "https://github.com/ProjectPythia/eofs-cookbook/actions/runs/29794684486"
+      },
+      "notebooks": [],
+      "reason": null,
+      "published_as_passing": true
+    },
+    {
+      "cookbook": "ocean-bgc-cookbook",
+      "run": {
+        "conclusion": "success",
+        "createdAt": "2026-07-21T01:23:21Z",
+        "databaseId": 29792982708,
+        "url": "https://github.com/ProjectPythia/ocean-bgc-cookbook/actions/runs/29792982708"
+      },
+      "notebooks": [
+        {
+          "notebook": "notebooks/ocn-carbonfluxes.ipynb",
+          "ename": "ModuleNotFoundError"
+        },
+        {
+          "notebook": "notebooks/ocn-iron.ipynb",
+          "ename": "ModuleNotFoundError"
+        },
+        {
+          "notebook": "notebooks/ocn-macronuts.ipynb",
+          "ename": "ModuleNotFoundError"
+        },
+        {
+          "notebook": "notebooks/ocn-phyto-biomass.ipynb",
+          "ename": "ModuleNotFoundError"
+        },
+        {
+          "notebook": "notebooks/ocn-phyto-lims.ipynb",
+          "ename": "ModuleNotFoundError"
+        },
+        {
+          "notebook": "notebooks/ocn-tracer-views.ipynb",
+          "ename": null
+        },
+        {
+          "notebook": "notebooks/ocn-zoo.ipynb",
+          "ename": "ModuleNotFoundError"
+        }
+      ],
+      "reason": null,
+      "published_as_passing": true
+    },
+    {
+      "cookbook": "paleoPCA-cookbook",
+      "run": {
+        "conclusion": "success",
+        "createdAt": "2026-07-21T01:22:29Z",
+        "databaseId": 29792943000,
+        "url": "https://github.com/ProjectPythia/paleoPCA-cookbook/actions/runs/29792943000"
+      },
+      "notebooks": [],
+      "reason": null,
+      "published_as_passing": true
+    },
+    {
+      "cookbook": "esgf-cookbook",
+      "run": {
+        "conclusion": "failure",
+        "createdAt": "2026-07-21T03:13:22Z",
+        "databaseId": 29797953624,
+        "url": "https://github.com/ProjectPythia/esgf-cookbook/actions/runs/29797953624"
+      },
+      "notebooks": [],
+      "reason": null,
+      "published_as_passing": false
+    },
+    {
+      "cookbook": "wavelet-cookbook",
+      "run": {
+        "conclusion": "success",
+        "createdAt": "2026-07-21T02:50:49Z",
+        "databaseId": 29796907498,
+        "url": "https://github.com/ProjectPythia/wavelet-cookbook/actions/runs/29796907498"
+      },
+      "notebooks": [],
+      "reason": null,
+      "published_as_passing": true
+    },
+    {
+      "cookbook": "eo-datascience-cookbook",
+      "run": {
+        "conclusion": "success",
+        "createdAt": "2026-07-21T03:30:49Z",
+        "databaseId": 29798721119,
+        "url": "https://github.com/ProjectPythia/eo-datascience-cookbook/actions/runs/29798721119"
+      },
+      "notebooks": [
+        {
+          "notebook": "notebooks/courses/microwave-remote-sensing/unit_03/09_in_class_exercise.ipynb",
+          "ename": "AttributeError"
+        }
+      ],
+      "reason": null,
+      "published_as_passing": true
+    },
+    {
+      "cookbook": "healpix-cookbook",
+      "run": {
+        "conclusion": "success",
+        "createdAt": "2026-07-21T02:54:36Z",
+        "databaseId": 29797074376,
+        "url": "https://github.com/ProjectPythia/healpix-cookbook/actions/runs/29797074376"
+      },
+      "notebooks": [
+        {
+          "notebook": "notebooks/01-easygems.ipynb",
+          "ename": "GroupNotFoundError"
+        },
+        {
+          "notebook": "notebooks/02-uxarray.ipynb",
+          "ename": "GroupNotFoundError"
+        },
+        {
+          "notebook": "notebooks/03-uxarray-advanced.ipynb",
+          "ename": "GroupNotFoundError"
+        }
+      ],
+      "reason": null,
+      "published_as_passing": true
+    },
+    {
+      "cookbook": "metpy-cookbook",
+      "run": {
+        "conclusion": "success",
+        "createdAt": "2026-07-21T02:12:28Z",
+        "databaseId": 29795223462,
+        "url": "https://github.com/ProjectPythia/metpy-cookbook/actions/runs/29795223462"
+      },
+      "notebooks": [
+        {
+          "notebook": "notebooks/skewt/Skew-T_Analysis.ipynb",
+          "ename": null
+        },
+        {
+          "notebook": "notebooks/skewt/Sounding_Plotter.ipynb",
+          "ename": null
+        },
+        {
+          "notebook": "notebooks/specialty/Observational_Data_Cross_Section.ipynb",
+          "ename": "HTTPError"
+        },
+        {
+          "notebook": "notebooks/synoptic/250hPa_Hemispheric_Plot.ipynb",
+          "ename": "AttributeError"
+        }
+      ],
+      "reason": null,
+      "published_as_passing": true
+    },
+    {
+      "cookbook": "osdf-cookbook",
+      "run": {
+        "conclusion": "success",
+        "createdAt": "2026-07-21T02:48:57Z",
+        "databaseId": 29796824021,
+        "url": "https://github.com/ProjectPythia/osdf-cookbook/actions/runs/29796824021"
+      },
+      "notebooks": [
+        {
+          "notebook": "notebooks/01_pelicanfs.ipynb",
+          "ename": "HTTPError"
+        },
+        {
+          "notebook": "notebooks/03_EnviStor_Technical.ipynb",
+          "ename": null
+        },
+        {
+          "notebook": "notebooks/04_SonarAI_Technical.ipynb",
+          "ename": null
+        }
+      ],
+      "reason": null,
+      "published_as_passing": true
+    },
+    {
+      "cookbook": "snow-observations-cookbook",
+      "run": {
+        "conclusion": "success",
+        "createdAt": "2026-07-21T01:48:21Z",
+        "databaseId": 29794118591,
+        "url": "https://github.com/ProjectPythia/snow-observations-cookbook/actions/runs/29794118591"
+      },
+      "notebooks": [],
+      "reason": null,
+      "published_as_passing": true
+    },
+    {
+      "cookbook": "gdex-cookbook",
+      "run": {
+        "conclusion": "success",
+        "createdAt": "2026-07-21T02:01:20Z",
+        "databaseId": 29794709429,
+        "url": "https://github.com/ProjectPythia/gdex-cookbook/actions/runs/29794709429"
+      },
+      "notebooks": [
+        {
+          "notebook": "notebooks/workflows/data_fusion.ipynb",
+          "ename": null
+        },
+        {
+          "notebook": "notebooks/workflows/na-cordex.ipynb",
+          "ename": null
+        }
+      ],
+      "reason": null,
+      "published_as_passing": true
+    },
+    {
+      "cookbook": "feature-tracking-cookbook",
+      "run": {
+        "conclusion": "success",
+        "createdAt": "2026-07-21T02:48:03Z",
+        "databaseId": 29796785693,
+        "url": "https://github.com/ProjectPythia/feature-tracking-cookbook/actions/runs/29796785693"
+      },
+      "notebooks": [],
+      "reason": null,
+      "published_as_passing": true
+    },
+    {
+      "cookbook": "mpas-jedi-cookbook",
+      "run": {
+        "conclusion": "success",
+        "createdAt": "2026-07-21T02:57:16Z",
+        "databaseId": 29797191847,
+        "url": "https://github.com/ProjectPythia/mpas-jedi-cookbook/actions/runs/29797191847"
+      },
+      "notebooks": [],
+      "reason": null,
+      "published_as_passing": true
+    }
+  ]
+}

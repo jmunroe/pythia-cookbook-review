@@ -101,6 +101,18 @@ def gap_table(live, gallery):
     return "\n".join(rows)
 
 
+def ci_counts():
+    """Headline numbers from the newest green-nightly-with-errors scan."""
+    scans = sorted((ROOT / "data").glob("ci-errors-*.json"))
+    if not scans:
+        return {"CI_AFFECTED": 0, "CI_SCANNED": 0}
+    data = json.loads(scans[-1].read_text())
+    return {
+        "CI_AFFECTED": data.get("green_with_errors", 0),
+        "CI_SCANNED": data.get("scanned", 0),
+    }
+
+
 def live_summary():
     """One line per cookbook that has been live-checked, or a placeholder."""
     live = ROOT / "data" / "live"
@@ -164,6 +176,7 @@ def main():
         "TIER_TABLE": tier_table(counts),
         "GAP_TABLE": gap_table(live, gallery),
         "LIVE_SUMMARY": live_summary(),
+        **ci_counts(),
         # Must sit below the frontmatter -- MyST needs that block at the very
         # top of the file.
         "GENERATED_NOTE": (

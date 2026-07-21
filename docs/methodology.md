@@ -35,7 +35,15 @@ with "⚠️ no longer updating" when there has been no deploy in a week. We que
 the real latest run instead of the badge, which gives us the *timestamp* too — but the same rule
 applies: **trust the deploy date over the build status.**
 
-**A green nightly does not mean the notebooks are correct.** It means they executed without raising.
+**A green nightly does not even mean the notebooks ran.** This turned out to be far worse than
+first written here. `myst build --execute` — the default build command in `cookbook-actions` —
+**exits 0 when a cell raises**: the exception is captured into the page and the build carries on.
+Scanning Pythia's own nightly logs found **12 of 30 gallery cookbooks with notebooks raising
+exceptions in a run that reported success**, all of them published as passing. See
+[the report](../reports/ci-errors.md). Treat `nightly_conclusion == "success"` as "the build
+command returned", nothing stronger.
+
+**And a green nightly certainly does not mean the notebooks are correct.**
 Silently wrong science, stale scientific guidance, dead-but-still-200 data endpoints, and figures
 that no longer show what the prose claims all pass CI. This is the single largest gap between what
 the harness measures and what matters, and it is the entire justification for `notes/`.

@@ -109,9 +109,15 @@ build command in Pythia's `cookbook-actions`. A cookbook whose notebooks throw c
 `error_rules`, so a project can choose to fail on execution errors — but nothing in the shared
 cookbook configuration appears to set that.
 
-This is worth confirming with the Pythia maintainers before acting on it. If it holds, "the nightly
-is green" is a weaker guarantee than the [static rubric](./rubric.md) currently assumes, and the
-live check is the only thing in this project that would notice.
+**Confirmed, and it is widespread.** `scripts/ci_errors.py` reads each gallery cookbook's own
+nightly log from the Actions API — Pythia's real CI, so there is no Binder-versus-runner confound —
+and looks for MyST's `⛔️ … An exception occurred during code execution` marker. On 2026-07-21,
+**12 of the 30 gallery cookbooks had notebooks raise in a run that reported success**, every one of
+them published as passing. `vapor-python-cookbook` had all 15. Full list in
+[the report](../reports/ci-errors.md).
+
+So "the nightly is green" is a much weaker guarantee than the [static rubric](./rubric.md) assumed,
+and this is a finding about the shared build configuration rather than about any one cookbook.
 
 Concretely: never report a live run's health from the exit code alone. The report shows the exit
 code and a separate *notebooks ran clean* row for this reason.

@@ -40,6 +40,7 @@ project:
         - file: reports/dashboard.md
         - file: reports/gaps.md
         - file: reports/live.md
+        - file: reports/ci-errors.md
     - title: Method
       children:
         - file: docs/criteria.md
