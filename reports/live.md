@@ -8,19 +8,19 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 ## Coverage
 
-**55 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
+**56 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
 
 | Outcome | Cookbooks |
 |---|---|
-| build failed | 15 |
+| build failed | 16 |
 | execution failed | 8 |
 | ran with errors | 13 |
 | ran clean | 19 |
-| not yet checked | 13 |
+| not yet checked | 12 |
 
 ## Results
 
-### build failed — 15
+### build failed — 16
 
 The Binder image would not build, so the launch button gives a learner nothing. The most direct failure there is.
 
@@ -37,6 +37,7 @@ The Binder image would not build, so the launch button gives a learner nothing. 
 | [marine-heatwave-cookbook](live/marine-heatwave-cookbook.md) | `incubating` | 11m 25s | — | — | 0 | 2026-07-22 |
 | [METAR_archive-cookbook](live/METAR_archive-cookbook.md) | `incubating` | 1m 56s | — | — | 0 | 2026-07-22 |
 | [metpy-cookbook](live/metpy-cookbook.md) | `healthy` | 10m 53s | — | — | 0 | 2026-07-22 |
+| [ml-hurricane-intensity](live/ml-hurricane-intensity.md) | `incubating` | 3m 36s | — | — | 0 | 2026-07-22 |
 | [mpas-jedi-cookbook](live/mpas-jedi-cookbook.md) | `healthy` | 2m 45s | — | — | 0 | 2026-07-22 |
 | [osdf-cookbook](live/osdf-cookbook.md) | `healthy` | 1m 49s | — | — | 0 | 2026-07-22 |
 | [snow-observations-cookbook](live/snow-observations-cookbook.md) | `healthy` | 1m 03s | — | — | 0 | 2026-07-22 |

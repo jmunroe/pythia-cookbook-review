@@ -1,0 +1,227 @@
+{
+  "cookbook": "ml-hurricane-intensity",
+  "env_injection": {
+    "attempted": false
+  },
+  "started_at": "2026-07-22T16:10:13.108567+00:00",
+  "hub": "https://binder.projectpythia.org",
+  "ref": "main",
+  "toc_notebooks": [
+    "notebooks/Model.ipynb",
+    "notebooks/era5_preprocessing.ipynb",
+    "notebooks/ibtrack_preprocessing.ipynb"
+  ],
+  "build": {
+    "hub": "https://binder.projectpythia.org",
+    "ref": "main",
+    "seconds": 215.99,
+    "exit_code": 1,
+    "failed": true,
+    "image_cached": false,
+    "log": [
+      {
+        "t": 0.97,
+        "line": "Waiting for build to start..."
+      },
+      {
+        "t": 2.11,
+        "line": "Unknown phase \"undefined\" from builder"
+      },
+      {
+        "t": 2.11,
+        "line": "Cloning into '/tmp/repo2dockerfsj7oice'..."
+      },
+      {
+        "t": 87.69,
+        "line": "Filtering content: 100% (2/2), 1023.11 MiB | 13.71 MiB/s"
+      },
+      {
+        "t": 87.69,
+        "line": "Filtering content: 100% (2/2), 1023.11 MiB | 13.60 MiB/s, done."
+      },
+      {
+        "t": 87.86,
+        "line": "Unknown phase \"undefined\" from builder"
+      },
+      {
+        "t": 96.76,
+        "line": "#0 building with \"default\" instance using docker driver"
+      },
+      {
+        "t": 96.94,
+        "line": "#1 transferring dockerfile: 5.78kB done"
+      },
+      {
+        "t": 96.94,
+        "line": ""
+      },
+      {
+        "t": 96.94,
+        "line": "#2 [internal] load metadata for docker.io/library/buildpack-deps:24.04"
+      },
+      {
+        "t": 97.14,
+        "line": ""
+      },
+      {
+        "t": 97.14,
+        "line": ""
+      },
+      {
+        "t": 97.14,
+        "line": "#5 [ 2/19] RUN apt-get -qq update &&     apt-get -qq install --yes --no-install-recommends locales > /dev/null &&     apt-get -qq purge &&     apt-get -qq clean &&     rm -rf /var/lib/apt/lists/*"
+      },
+      {
+        "t": 97.14,
+        "line": "#5 CACHED"
+      },
+      {
+        "t": 97.18,
+        "line": "#7 [ 4/19] RUN if getent group 1000; then       GROUP_1000=\"$(getent group 1000 | cut -d: -f1)\";       if [ \"$GROUP_1000\" != \"jovyan\" ]; then         groupmod --new-name jovyan \"$GROUP_1000\";       fi;     else       groupadd --gid 1000 jovyan;     fi"
+      },
+      {
+        "t": 97.18,
+        "line": "#7 CACHED"
+      },
+      {
+        "t": 97.18,
+        "line": ""
+      },
+      {
+        "t": 97.18,
+        "line": "#8 [ 5/19] RUN if id 1000; then       USER_1000=\"$(id 1000 -un)\";       if [ \"$USER_1000\" != \"jovyan\" ]; then         usermod --home \"/home/jovyan\" --login \"jovyan\" --move-home \"$USER_1000\";       fi;     else       useradd         --comment \"Default user\"         --create-home         --gid 1000         --no-log-init         --shell /bin/bash         --uid 1000         jovyan;     fi"
+      },
+      {
+        "t": 97.18,
+        "line": "#8 CACHED"
+      },
+      {
+        "t": 97.18,
+        "line": ""
+      },
+      {
+        "t": 97.18,
+        "line": "#9 [internal] load build context"
+      },
+      {
+        "t": 102.45,
+        "line": "#9 transferring context: 1.13GB 4.9s"
+      },
+      {
+        "t": 107.99,
+        "line": "#10 [ 6/19] RUN apt-get -qq update &&     apt-get -qq install --yes --no-install-recommends        gettext-base        less        unzip        > /dev/null &&     apt-get -qq purge &&     apt-get -qq clean &&     rm -rf /var/lib/apt/lists/*"
+      },
+      {
+        "t": 108.21,
+        "line": "#10 ..."
+      },
+      {
+        "t": 108.76,
+        "line": "#9 transferring context: 2.24GB 10.4s done"
+      },
+      {
+        "t": 109.69,
+        "line": "#9 DONE 11.6s"
+      },
+      {
+        "t": 109.69,
+        "line": ""
+      },
+      {
+        "t": 215.24,
+        "line": "#10 109.1 W: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/noble-updates/InRelease  Could not connect to archive.ubuntu.com:80 (91.189.92.23), connection timed out Could not connect to archive.ubuntu.com:80 (91.189.92.22), connection timed out Could not connect to archive.ubuntu.com:80 (185.125.190.83), connection timed out Could not connect to archive.ubuntu.com:80 (91.189.92.24), connection timed out Could not connect to archive.ubuntu.com:80 (185.125.190.82), connection timed out Could not connect to archive.ubuntu.com:80 (185.125.190.81), connection timed out [IP: 185.125.190.81 80]"
+      },
+      {
+        "t": 215.24,
+        "line": "#10 109.1 W: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/noble-backports/InRelease  Unable to connect to archive.ubuntu.com:http: [IP: 185.125.190.81 80]"
+      },
+      {
+        "t": 215.24,
+        "line": "#10 109.1 W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/noble-security/InRelease  Could not connect to security.ubuntu.com:80 (185.125.190.83), connection timed out Could not connect to security.ubuntu.com:80 (91.189.92.22), connection timed out Could not connect to security.ubuntu.com:80 (91.189.92.24), connection timed out Could not connect to security.ubuntu.com:80 (91.189.92.23), connection timed out Could not connect to security.ubuntu.com:80 (185.125.190.81), connection timed out Could not connect to security.ubuntu.com:80 (185.125.190.82), connection timed out"
+      },
+      {
+        "t": 215.24,
+        "line": "#10 109.1 W: Some index files failed to download. They have been ignored, or old ones used instead."
+      },
+      {
+        "t": 215.35,
+        "line": "#10 109.1 E: Package 'gettext-base' has no installation candidate"
+      },
+      {
+        "t": 215.35,
+        "line": "#10 ERROR: process \"/bin/sh -c apt-get -qq update &&     apt-get -qq install --yes --no-install-recommends        gettext-base        less        unzip        > /dev/null &&     apt-get -qq purge &&     apt-get -qq clean &&     rm -rf /var/lib/apt/lists/*\" did not complete successfully: exit code: 100"
+      },
+      {
+        "t": 215.54,
+        "line": "------"
+      },
+      {
+        "t": 215.54,
+        "line": "109.1 W: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/noble/InRelease  Connection failed [IP: 185.125.190.81 80]"
+      },
+      {
+        "t": 215.54,
+        "line": "109.1 W: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/noble-updates/InRelease  Could not connect to archive.ubuntu.com:80 (91.189.92.23), connection timed out Could not connect to archive.ubuntu.com:80 (91.189.92.22), connection timed out Could not connect to archive.ubuntu.com:80 (185.125.190.83), connection timed out Could not connect to archive.ubuntu.com:80 (91.189.92.24), connection timed out Could not connect to archive.ubuntu.com:80 (185.125.190.82), connection timed out Could not connect to archive.ubuntu.com:80 (185.125.190.81), connection timed out [IP: 185.125.190.81 80]"
+      },
+      {
+        "t": 215.54,
+        "line": "109.1 W: Some index files failed to download. They have been ignored, or old ones used instead."
+      },
+      {
+        "t": 215.54,
+        "line": "109.1 E: Package 'gettext-base' has no installation candidate"
+      },
+      {
+        "t": 215.54,
+        "line": "Dockerfile:57"
+      },
+      {
+        "t": 215.54,
+        "line": "--------------------"
+      },
+      {
+        "t": 215.58,
+        "line": "  57 | >>> RUN apt-get -qq update && \\"
+      },
+      {
+        "t": 215.58,
+        "line": "  61 | >>>        unzip \\"
+      },
+      {
+        "t": 215.58,
+        "line": "  65 | >>>     rm -rf /var/lib/apt/lists/*"
+      },
+      {
+        "t": 215.58,
+        "line": "  66 |"
+      },
+      {
+        "t": 215.58,
+        "line": "--------------------"
+      },
+      {
+        "t": 215.58,
+        "line": "ERROR: failed to solve: process \"/bin/sh -c apt-get -qq update &&     apt-get -qq install --yes --no-install-recommends        gettext-base        less        unzip        > /dev/null &&     apt-get -qq purge &&     apt-get -qq clean &&     rm -rf /var/lib/apt/lists/*\" did not complete successfully: exit code: 100"
+      },
+      {
+        "t": 215.98,
+        "line": "Error during build: Command '['docker', 'buildx', 'build', '--progress', 'plain', '--push', '--build-arg', 'NB_USER=jovyan', '--build-arg', 'NB_UID=1000', '--tag', 'quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2dml-2dhurricane-2dintensity-2bb351:2f121838b7386c35a7aa374ff296cfa746bd81c7', '--platform', 'linux/amd64', '/tmp/tmp5hy6n3xq']' returned non-zero exit status 1."
+      },
+      {
+        "t": 215.98,
+        "line": "Error during build: Command '['docker', 'buildx', 'build', '--progress', 'plain', '--push', '--build-arg', 'NB_USER=jovyan', '--build-arg', 'NB_UID=1000', '--tag', 'quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2dml-2dhurricane-2dintensity-2bb351:2f121838b7386c35a7aa374ff296cfa746bd81c7', '--platform', 'linux/amd64', '/tmp/tmp5hy6n3xq']' returned non-zero exit status 1."
+      }
+    ],
+    "log_lines_total": 48,
+    "log_truncated": false
+  },
+  "execution": null,
+  "resources": null,
+  "errors": [],
+  "finished_at": "2026-07-22T16:13:31.740101+00:00",
+  "build_artifacts": {
+    "path": "/home/jmunroe/src/projectpythia/ml-hurricane-intensity/_build",
+    "bytes": 0,
+    "kept_because": "run failed"
+  }
+}
