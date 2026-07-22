@@ -1,0 +1,1427 @@
+{
+  "cookbook": "vapor-python-cookbook",
+  "env_injection": {
+    "attempted": false
+  },
+  "started_at": "2026-07-22T08:03:57.235427+00:00",
+  "hub": "https://binder.projectpythia.org",
+  "ref": "main",
+  "toc_notebooks": [
+    "notebooks/AGU_2023_example.ipynb",
+    "notebooks/animation_example.ipynb",
+    "notebooks/annotation_example.ipynb",
+    "notebooks/camera_example.ipynb",
+    "notebooks/cloudfield_visualizer.ipynb",
+    "notebooks/custom_images_example.ipynb",
+    "notebooks/dataset_example.ipynb",
+    "notebooks/flow_example.ipynb",
+    "notebooks/keyframing_example.ipynb",
+    "notebooks/numpy_example.ipynb",
+    "notebooks/quickstart.ipynb",
+    "notebooks/transfer_function_example.ipynb",
+    "notebooks/visualizer_widget_example.ipynb",
+    "notebooks/workflow_example.ipynb",
+    "notebooks/xarray_example.ipynb"
+  ],
+  "build": {
+    "hub": "https://binder.projectpythia.org",
+    "ref": "main",
+    "seconds": 161.25,
+    "exit_code": 0,
+    "failed": false,
+    "image_cached": false,
+    "log": [
+      {
+        "t": 9.81,
+        "line": "#14 29.66   webcolors                      24.11.1         pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 9.81,
+        "line": "#14 29.66   webencodings                   0.5.1           pyhd8ed1ab_3        conda-forge"
+      },
+      {
+        "t": 9.81,
+        "line": "#14 29.66   websocket-client               1.9.0           pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 9.81,
+        "line": "#14 29.66   wheel                          0.45.1          pyhd8ed1ab_1        conda-forge"
+      },
+      {
+        "t": 9.81,
+        "line": "#14 29.66   widgetsnbextension             4.0.14          pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 9.81,
+        "line": "#14 29.66   yaml                           0.2.5           h280c20c_3          conda-forge"
+      },
+      {
+        "t": 9.81,
+        "line": "#14 29.66   zeromq                         4.3.5           h387f397_9          conda-forge"
+      },
+      {
+        "t": 9.81,
+        "line": "#14 29.66   zipp                           3.23.0          pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 9.81,
+        "line": "#14 29.66   zlib                           1.3.1           hb9d3cd8_2          conda-forge"
+      },
+      {
+        "t": 9.81,
+        "line": "#14 29.66 + /srv/conda/envs/notebook/bin/npm config --global set prefix /srv/npm"
+      },
+      {
+        "t": 9.81,
+        "line": "#14 30.09 time: 29.821"
+      },
+      {
+        "t": 9.81,
+        "line": "#14 DONE 31.4s"
+      },
+      {
+        "t": 9.81,
+        "line": ""
+      },
+      {
+        "t": 9.81,
+        "line": "#15 [11/19] RUN mkdir -p /srv/npm && chown -R jovyan:jovyan /srv/npm"
+      },
+      {
+        "t": 9.81,
+        "line": "#15 DONE 0.4s"
+      },
+      {
+        "t": 9.81,
+        "line": ""
+      },
+      {
+        "t": 9.81,
+        "line": "#16 [12/19] RUN if [ ! -d \"/home/jovyan\" ]; then         /usr/bin/install -o jovyan -g jovyan -d \"/home/jovyan\";     fi"
+      },
+      {
+        "t": 9.81,
+        "line": "#16 DONE 0.4s"
+      },
+      {
+        "t": 9.81,
+        "line": ""
+      },
+      {
+        "t": 9.81,
+        "line": "#17 [13/19] WORKDIR /home/jovyan"
+      },
+      {
+        "t": 9.81,
+        "line": "#17 DONE 0.1s"
+      },
+      {
+        "t": 9.81,
+        "line": ""
+      },
+      {
+        "t": 9.81,
+        "line": "#18 [14/19] RUN chown jovyan:jovyan /home/jovyan"
+      },
+      {
+        "t": 9.81,
+        "line": "#18 DONE 0.4s"
+      },
+      {
+        "t": 9.81,
+        "line": ""
+      },
+      {
+        "t": 9.81,
+        "line": "#19 [12/19] RUN if [ ! -d \"/home/jovyan\" ]; then         /usr/bin/install -o jovyan -g jovyan -d \"/home/jovyan\";     fi"
+      },
+      {
+        "t": 9.81,
+        "line": "#19 CACHED"
+      },
+      {
+        "t": 9.81,
+        "line": ""
+      },
+      {
+        "t": 9.81,
+        "line": "#20 [ 8/19] COPY --chown=1000:1000 build_script_files/-2fopt-2fvenv-2flib-2fpython3-2e12-2fsite-2dpackages-2frepo2docker-2fbuildpacks-2fconda-2fenvironment-2epy-2d3-2e10-2dlinux-2d64-2elock-2bb6e8 /tmp/env/environment.lock"
+      },
+      {
+        "t": 9.81,
+        "line": "#20 CACHED"
+      },
+      {
+        "t": 9.81,
+        "line": ""
+      },
+      {
+        "t": 9.81,
+        "line": "#21 [10/19] RUN TIMEFORMAT='time: %3R' bash -c 'time /tmp/install-base-env.bash' && rm -rf /tmp/install-base-env.bash /tmp/env"
+      },
+      {
+        "t": 9.81,
+        "line": "#21 CACHED"
+      },
+      {
+        "t": 9.81,
+        "line": ""
+      },
+      {
+        "t": 9.81,
+        "line": "#22 [ 7/19] COPY --chown=1000:1000 build_script_files/-2fopt-2fvenv-2flib-2fpython3-2e12-2fsite-2dpackages-2frepo2docker-2fbuildpacks-2fconda-2factivate-2dconda-2esh-e67d51 /etc/profile.d/activate-conda.sh"
+      },
+      {
+        "t": 9.83,
+        "line": ""
+      },
+      {
+        "t": 24.54,
+        "line": "#28 14.93"
+      },
+      {
+        "t": 24.54,
+        "line": "#28 14.93   - python=3.10"
+      },
+      {
+        "t": 24.54,
+        "line": "#28 14.93"
+      },
+      {
+        "t": 25.93,
+        "line": "#28 16.34"
+      },
+      {
+        "t": 25.93,
+        "line": "#28 16.34    - jupyter-book"
+      },
+      {
+        "t": 25.93,
+        "line": "#28 16.34    - jupyterlab"
+      },
+      {
+        "t": 25.93,
+        "line": "#28 16.34    - sphinx-pythia-theme"
+      },
+      {
+        "t": 25.93,
+        "line": "#28 16.34    - mystmd"
+      },
+      {
+        "t": 26.08,
+        "line": "#28 16.34   Package                           Version  Build         Channel          Size"
+      },
+      {
+        "t": 26.08,
+        "line": "#28 16.34   + accessible-pygments               0.0.5  pyhd8ed1ab_1  conda-forge       1MB"
+      },
+      {
+        "t": 26.08,
+        "line": "#28 16.34   + alabaster                         1.0.0  pyhd8ed1ab_1  conda-forge      19kB"
+      },
+      {
+        "t": 26.08,
+        "line": "#28 16.34   + colorama                          0.4.6  pyhd8ed1ab_1  conda-forge      27kB"
+      },
+      {
+        "t": 26.34,
+        "line": "#28 16.67 Linking alabaster-1.0.0-pyhd8ed1ab_1"
+      },
+      {
+        "t": 26.34,
+        "line": "#28 16.67 Linking imagesize-2.0.0-pyhd8ed1ab_0"
+      },
+      {
+        "t": 26.34,
+        "line": "#28 16.67 Linking snowballstemmer-3.1.1-pyhd8ed1ab_0"
+      },
+      {
+        "t": 26.34,
+        "line": "#28 16.68 Linking sphinxcontrib-jsmath-1.0.1-pyhd8ed1ab_1"
+      },
+      {
+        "t": 26.34,
+        "line": "#28 16.68 Linking accessible-pygments-0.0.5-pyhd8ed1ab_1"
+      },
+      {
+        "t": 26.47,
+        "line": "#28 16.77 Linking sphinxcontrib-devhelp-2.0.0-pyhd8ed1ab_1"
+      },
+      {
+        "t": 26.47,
+        "line": "#28 16.83 Linking sphinx-design-0.6.1-pyhd8ed1ab_2"
+      },
+      {
+        "t": 26.47,
+        "line": "#28 16.83 Linking pydata-sphinx-theme-0.15.4-pyhd8ed1ab_0"
+      },
+      {
+        "t": 26.58,
+        "line": "#28 16.90"
+      },
+      {
+        "t": 26.58,
+        "line": "#28 16.90 Transaction finished"
+      },
+      {
+        "t": 26.58,
+        "line": "#28 16.90"
+      },
+      {
+        "t": 26.58,
+        "line": "#28 16.97 time: 16.736"
+      },
+      {
+        "t": 26.58,
+        "line": "#28 16.99 Collect information.."
+      },
+      {
+        "t": 26.58,
+        "line": "#28 16.99 Cleaning index cache.."
+      },
+      {
+        "t": 26.86,
+        "line": "#28 17.17   Package file                                               Size"
+      },
+      {
+        "t": 26.86,
+        "line": "#28 17.17   alabaster-1.0.0-pyhd8ed1ab_1.conda                         19kB"
+      },
+      {
+        "t": 26.86,
+        "line": "#28 17.17   colorama-0.4.6-pyhd8ed1ab_1.conda                          27kB"
+      },
+      {
+        "t": 26.86,
+        "line": "#28 17.17   docutils-0.21.2-pyhd8ed1ab_1.conda                        403kB"
+      },
+      {
+        "t": 26.86,
+        "line": "#28 17.17   imagesize-2.0.0-pyhd8ed1ab_0.conda                         16kB"
+      },
+      {
+        "t": 26.86,
+        "line": "#28 17.17   jupyter-book-2.1.6-pyhcf101f3_0.conda                       2MB"
+      },
+      {
+        "t": 26.86,
+        "line": "#28 17.17   pydata-sphinx-theme-0.15.4-pyhd8ed1ab_0.conda               1MB"
+      },
+      {
+        "t": 26.86,
+        "line": "#28 17.17   snowballstemmer-3.1.1-pyhd8ed1ab_0.conda                   74kB"
+      },
+      {
+        "t": 26.86,
+        "line": "#28 17.17   sphinx-8.1.3-pyhd8ed1ab_1.conda                             1MB"
+      },
+      {
+        "t": 26.86,
+        "line": "#28 17.17   sphinx-book-theme-1.1.4-pyh29332c3_0.conda                255kB"
+      },
+      {
+        "t": 26.86,
+        "line": "#28 17.17   sphinx-design-0.6.1-pyhd8ed1ab_2.conda                    911kB"
+      },
+      {
+        "t": 26.86,
+        "line": "#28 17.17   sphinxcontrib-qthelp-2.0.0-pyhd8ed1ab_1.conda              27kB"
+      },
+      {
+        "t": 26.86,
+        "line": "#28 17.17   sphinxcontrib-serializinghtml-2.0.0-pyhd8ed1ab_0.conda     31kB"
+      },
+      {
+        "t": 26.86,
+        "line": "#28 17.17"
+      },
+      {
+        "t": 26.86,
+        "line": "#28 17.17"
+      },
+      {
+        "t": 26.86,
+        "line": "#28 17.17"
+      },
+      {
+        "t": 26.86,
+        "line": "#28 17.17 \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500"
+      },
+      {
+        "t": 26.86,
+        "line": "#28 17.17"
+      },
+      {
+        "t": 26.86,
+        "line": "#28 17.17   Total size:                                                10MB"
+      },
+      {
+        "t": 26.86,
+        "line": "#28 17.17 Cleaning tarballs.."
+      },
+      {
+        "t": 26.86,
+        "line": "#28 17.17 Cleaning packages.."
+      },
+      {
+        "t": 27.93,
+        "line": "#28 18.33   Name                           Version         Build               Channel"
+      },
+      {
+        "t": 27.93,
+        "line": "#28 18.33   alembic                        1.17.0          pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 27.93,
+        "line": "#28 18.33   annotated-types                0.7.0           pyhd8ed1ab_1        conda-forge"
+      },
+      {
+        "t": 27.93,
+        "line": "#28 18.33   anyio                          4.11.0          pyhcf101f3_0        conda-forge"
+      },
+      {
+        "t": 27.96,
+        "line": "#28 18.33   argon2-cffi                    25.1.0          pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 27.96,
+        "line": "#28 18.33   babel                          2.17.0          pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 27.96,
+        "line": "#28 18.33   beautifulsoup4                 4.14.2          pyha770c72_0        conda-forge"
+      },
+      {
+        "t": 27.96,
+        "line": "#28 18.33   bleach                         6.2.0           pyh29332c3_4        conda-forge"
+      },
+      {
+        "t": 27.96,
+        "line": "#28 18.33   bzip2                          1.0.8           hda65f42_8          conda-forge"
+      },
+      {
+        "t": 27.96,
+        "line": "#28 18.33   ca-certificates                2025.10.5       hbd8a1cb_0          conda-forge"
+      },
+      {
+        "t": 27.96,
+        "line": "#28 18.33   cached-property                1.5.2           hd8ed1ab_1          conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   fqdn                           1.5.1           pyhd8ed1ab_1        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   greenlet                       3.2.4           py310hea6c23e_1     conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   h11                            0.16.0          pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   h2                             4.3.0           pyhcf101f3_0        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   hpack                          4.1.0           pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   httpcore                       1.0.9           pyh29332c3_0        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   httpx                          0.28.1          pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   hyperframe                     6.1.0           pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   icu                            75.1            he02047a_0          conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   idna                           3.11            pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   imagesize                      2.0.0           pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   importlib-metadata             8.7.0           pyhe01879c_1        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   ipykernel                      7.0.1           pyha191276_0        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   ipython                        8.37.0          pyh8f84b5b_0        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   ipywidgets                     8.1.7           pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   isoduration                    20.11.0         pyhd8ed1ab_1        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   jedi                           0.19.2          pyhd8ed1ab_1        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   jinja2                         3.1.6           pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   jupyter-lsp                    2.3.0           pyhcf101f3_0        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   jupyter-offlinenotebook        0.3.2           pyh9692d8f_0        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   jupyter-resource-usage         1.2.0           pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   jupyter_client                 8.6.3           pyhd8ed1ab_1        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   jupyter_core                   5.8.1           pyh31011fe_0        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   jupyter_events                 0.12.0          pyh29332c3_0        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   jupyter_server                 2.17.0          pyhcf101f3_0        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   jupyter_server_terminals       0.5.3           pyhd8ed1ab_1        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   jupyterhub-base                5.4.0           pyhc90fa1f_0        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   jupyterhub-singleuser          5.4.0           hd843c07_0          conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   jupyterlab                     4.4.9           pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   jupyterlab_pygments            0.3.0           pyhd8ed1ab_2        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   jupyterlab_server              2.27.3          pyhd8ed1ab_1        conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   libffi                         3.5.2           h9ec8514_0          conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   libgcc                         15.2.0          h767d61c_7          conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   libgcc-ng                      15.2.0          h69a702a_7          conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   libgomp                        15.2.0          h767d61c_7          conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   liblzma                        5.8.1           hb9d3cd8_2          conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   libnsl                         2.0.1           hb9d3cd8_1          conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   libsodium                      1.0.20          h4ab18f5_0          conda-forge"
+      },
+      {
+        "t": 27.97,
+        "line": "#28 18.33   libsqlite                      3.50.4          h0c1763c_0          conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   libstdcxx                      15.2.0          h8f9b012_7          conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   libstdcxx-ng                   15.2.0          h4852527_7          conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   libuuid                        2.41.2          he9a06e4_0          conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   libuv                          1.51.0          hb03c661_1          conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   libxcrypt                      4.4.36          hd590300_1          conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   libzlib                        1.3.1           hb9d3cd8_2          conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   matplotlib-inline              0.1.7           pyhd8ed1ab_1        conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   mistune                        3.1.4           pyhcf101f3_0        conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   mystmd                         1.10.1          pyhcf101f3_0        conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   nbclient                       0.10.2          pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   nbconvert-core                 7.16.6          pyh29332c3_0        conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   nbformat                       5.10.4          pyhd8ed1ab_1        conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   ncurses                        6.5             h2d0b736_3          conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   nest-asyncio                   1.6.0           pyhd8ed1ab_1        conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   nodejs                         20.19.5         hf7ee748_0          conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   notebook                       7.4.7           pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   notebook-shim                  0.2.4           pyhd8ed1ab_1        conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   oauthlib                       3.3.1           pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   openssl                        3.5.4           h26f9b46_0          conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   overrides                      7.7.0           pyhd8ed1ab_1        conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   packaging                      25.0            pyh29332c3_1        conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   pamela                         1.2.0           pyhd8ed1ab_1        conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   pandocfilters                  1.5.0           pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   parso                          0.8.5           pyhcf101f3_0        conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   pexpect                        4.9.0           pyhd8ed1ab_1        conda-forge"
+      },
+      {
+        "t": 27.98,
+        "line": "#28 18.33   pickleshare                    0.7.5           pyhd8ed1ab_1004     conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   send2trash                     1.8.3           pyh0d859eb_1        conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   setuptools                     80.9.0          pyhff2d567_0        conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   six                            1.17.0          pyhe01879c_1        conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   sniffio                        1.3.1           pyhd8ed1ab_1        conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   snowballstemmer                3.1.1           pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   soupsieve                      2.8             pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   sphinxcontrib-htmlhelp         2.1.0           pyhd8ed1ab_1        conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   sphinxcontrib-jsmath           1.0.1           pyhd8ed1ab_1        conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   tinycss2                       1.4.0           pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   tk                             8.6.13          noxft_hd72426e_102  conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   types-python-dateutil          2.9.0.20251008  pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   typing-extensions              4.15.0          h396c80c_0          conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   typing-inspection              0.4.2           pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   typing_extensions              4.15.0          pyhcf101f3_0        conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   uri-template                   1.3.0           pyhd8ed1ab_1        conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   urllib3                        2.5.0           pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   wcwidth                        0.2.14          pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   webcolors                      24.11.1         pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   webencodings                   0.5.1           pyhd8ed1ab_3        conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   websocket-client               1.9.0           pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   wheel                          0.45.1          pyhd8ed1ab_1        conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   widgetsnbextension             4.0.14          pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   yaml                           0.2.5           h280c20c_3          conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   zeromq                         4.3.5           h387f397_9          conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   zipp                           3.23.0          pyhd8ed1ab_0        conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   zlib                           1.3.1           hb9d3cd8_2          conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   zstandard                      0.25.0          py310h139afa4_0     conda-forge"
+      },
+      {
+        "t": 28.08,
+        "line": "#28 18.33   zstd                           1.5.7           hb8e6e7a_2          conda-forge"
+      },
+      {
+        "t": 28.22,
+        "line": "#28 DONE 18.6s"
+      },
+      {
+        "t": 28.74,
+        "line": ""
+      },
+      {
+        "t": 28.85,
+        "line": ""
+      },
+      {
+        "t": 29.01,
+        "line": ""
+      },
+      {
+        "t": 34.25,
+        "line": "#32 exporting layers 5.4s done"
+      },
+      {
+        "t": 34.46,
+        "line": "#32 writing image sha256:212701496d5ab71337b7ac0e037a4bc869500b4facb7b7ad90113b3a5066f762 done"
+      },
+      {
+        "t": 34.46,
+        "line": "#32 naming to quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2dvapor-2dpython-2dcookbook-5e4bde:102a877b9d24a4c0c15e0ce75f0dcb766277230d 0.0s done"
+      },
+      {
+        "t": 34.46,
+        "line": "#32 DONE 5.4s"
+      },
+      {
+        "t": 34.6,
+        "line": "#33 pushing layer a94ca7f0944b"
+      },
+      {
+        "t": 34.75,
+        "line": "#33 pushing layer 14454ee720f6"
+      },
+      {
+        "t": 34.75,
+        "line": "#33 pushing layer b0fbb11b9f68"
+      },
+      {
+        "t": 34.75,
+        "line": "#33 pushing layer 91069c253881"
+      },
+      {
+        "t": 34.8,
+        "line": "#33 pushing layer 685a81960b97"
+      },
+      {
+        "t": 34.8,
+        "line": "#33 pushing layer dbd4e3e7ede7"
+      },
+      {
+        "t": 34.8,
+        "line": "#33 pushing layer f103cd120fdd"
+      },
+      {
+        "t": 34.89,
+        "line": "#33 pushing layer a94ca7f0944b 512B / 3.88kB 0.3s"
+      },
+      {
+        "t": 35.02,
+        "line": "#33 pushing layer a94ca7f0944b 7.17kB / 3.88kB 0.4s"
+      },
+      {
+        "t": 35.02,
+        "line": "#33 pushing layer c57e9d73d36a 3.07kB / 144B 0.3s"
+      },
+      {
+        "t": 35.24,
+        "line": "#33 pushing layer fe45285975b4 4.82MB / 66.23MB 0.6s"
+      },
+      {
+        "t": 35.47,
+        "line": "#33 pushing layer fe45285975b4 9.18MB / 66.23MB 0.8s"
+      },
+      {
+        "t": 35.68,
+        "line": "#33 pushing layer 31a7db10b383 15.01MB / 129.94MB 1.1s"
+      },
+      {
+        "t": 35.91,
+        "line": "#33 pushing layer 14454ee720f6 1.2s done"
+      },
+      {
+        "t": 36.02,
+        "line": "#33 pushing layer 31a7db10b383 22.81MB / 129.94MB 1.4s"
+      },
+      {
+        "t": 36.15,
+        "line": "#33 pushing layer a94ca7f0944b 1.4s done"
+      },
+      {
+        "t": 36.15,
+        "line": "#33 pushing layer fe45285975b4 24.77MB / 66.23MB 1.5s"
+      },
+      {
+        "t": 36.47,
+        "line": "#33 pushing layer c57e9d73d36a 1.8s done"
+      },
+      {
+        "t": 36.59,
+        "line": "#33 pushing layer fe45285975b4 34.24MB / 66.23MB 1.9s"
+      },
+      {
+        "t": 36.59,
+        "line": "#33 pushing layer 1ef5b7186307 3.07kB / 16B 2.0s"
+      },
+      {
+        "t": 36.72,
+        "line": "#33 pushing layer 31a7db10b383 38.97MB / 129.94MB 2.1s"
+      },
+      {
+        "t": 37.09,
+        "line": "#33 pushing layer 31a7db10b383 47.32MB / 129.94MB 2.5s"
+      },
+      {
+        "t": 37.31,
+        "line": "#33 pushing layer fe45285975b4 48.25MB / 66.23MB 2.6s"
+      },
+      {
+        "t": 37.31,
+        "line": "#33 pushing layer 25575dd490d3 2.7s done"
+      },
+      {
+        "t": 37.31,
+        "line": "#33 pushing layer 5f70bf18a086 2.7s done"
+      },
+      {
+        "t": 37.53,
+        "line": "#33 pushing layer fe45285975b4 53.63MB / 66.23MB 2.9s"
+      },
+      {
+        "t": 37.63,
+        "line": "#33 pushing layer c05534ea0002 23.04kB / 20.09kB 3.0s"
+      },
+      {
+        "t": 37.76,
+        "line": "#33 pushing layer 31a7db10b383 63.48MB / 129.94MB 3.2s"
+      },
+      {
+        "t": 37.97,
+        "line": "#33 pushing layer fe45285975b4 63.97MB / 66.23MB 3.3s"
+      },
+      {
+        "t": 38.08,
+        "line": "#33 pushing layer 31a7db10b383 70.16MB / 129.94MB 3.5s"
+      },
+      {
+        "t": 38.2,
+        "line": "#33 pushing layer fe45285975b4 68.83MB / 66.23MB 3.6s"
+      },
+      {
+        "t": 38.74,
+        "line": "#33 pushing layer 31a7db10b383 84.09MB / 129.94MB 4.1s"
+      },
+      {
+        "t": 39.2,
+        "line": "#33 pushing layer 31a7db10b383 92.44MB / 129.94MB 4.6s"
+      },
+      {
+        "t": 39.87,
+        "line": "#33 pushing layer d51e3a7d7a39 36.35kB / 2.70MB 5.2s"
+      },
+      {
+        "t": 39.97,
+        "line": "#33 pushing layer 31a7db10b383 106.93MB / 129.94MB 5.4s"
+      },
+      {
+        "t": 39.97,
+        "line": "#33 pushing layer d51e3a7d7a39 787.46kB / 2.70MB 5.3s"
+      },
+      {
+        "t": 40.08,
+        "line": "#33 pushing layer 685a81960b97 5.4s done"
+      },
+      {
+        "t": 40.2,
+        "line": "#33 pushing layer 59af12211ef7 20.99kB / 9.48kB 5.6s"
+      },
+      {
+        "t": 40.54,
+        "line": "#33 pushing layer e45fc7f35c44 512B / 1.91kB 6.0s"
+      },
+      {
+        "t": 40.96,
+        "line": "#33 pushing layer 31a7db10b383 128.99MB / 129.94MB 6.4s"
+      },
+      {
+        "t": 41.42,
+        "line": "#33 pushing layer d51e3a7d7a39 6.7s done"
+      },
+      {
+        "t": 41.42,
+        "line": "#33 pushing layer 986e43ee77b6 36.35kB / 3.06MB 6.8s"
+      },
+      {
+        "t": 41.52,
+        "line": "#33 pushing layer 986e43ee77b6 1.28MB / 3.06MB 6.9s"
+      },
+      {
+        "t": 41.66,
+        "line": "#33 pushing layer 986e43ee77b6 3.06MB / 3.06MB 7.0s"
+      },
+      {
+        "t": 41.76,
+        "line": "#33 pushing layer e45fc7f35c44 7.1s done"
+      },
+      {
+        "t": 41.87,
+        "line": "#33 pushing layer b0fbb11b9f68 88.36MB / 948.52MB 7.3s"
+      },
+      {
+        "t": 41.98,
+        "line": "#33 pushing layer 6cf7b909cbb7 7.32MB / 18.97MB 7.3s"
+      },
+      {
+        "t": 42.1,
+        "line": "#33 pushing layer 15b7bcebe436 3.20MB / 543.58MB 7.5s"
+      },
+      {
+        "t": 42.22,
+        "line": "#33 pushing layer 6cf7b909cbb7 12.04MB / 18.97MB 7.5s"
+      },
+      {
+        "t": 42.42,
+        "line": "#33 pushing layer 6cf7b909cbb7 19.19MB / 18.97MB 7.8s"
+      },
+      {
+        "t": 42.99,
+        "line": "#33 pushing layer bfd1029a7912 543.74kB / 146.70MB 8.3s"
+      },
+      {
+        "t": 43.56,
+        "line": "#33 pushing layer 15b7bcebe436 31.41MB / 543.58MB 9.0s"
+      },
+      {
+        "t": 43.77,
+        "line": "#33 pushing layer bfd1029a7912 16.60MB / 146.70MB 9.2s"
+      },
+      {
+        "t": 44.45,
+        "line": "#33 pushing layer dbd4e3e7ede7 7.83MB / 33.65MB 9.8s"
+      },
+      {
+        "t": 44.65,
+        "line": "#33 pushing layer dbd4e3e7ede7 11.44MB / 33.65MB 10.1s"
+      },
+      {
+        "t": 44.86,
+        "line": "#33 pushing layer dbd4e3e7ede7 15.04MB / 33.65MB 10.3s"
+      },
+      {
+        "t": 44.96,
+        "line": "#33 pushing layer 15b7bcebe436 58.73MB / 543.58MB 10.4s"
+      },
+      {
+        "t": 45.08,
+        "line": "#33 pushing layer dbd4e3e7ede7 19.73MB / 33.65MB 10.5s"
+      },
+      {
+        "t": 45.2,
+        "line": "#33 pushing layer dbd4e3e7ede7 21.85MB / 33.65MB 10.6s"
+      },
+      {
+        "t": 45.31,
+        "line": "#33 pushing layer f103cd120fdd 19.51MB / 78.14MB 10.7s"
+      },
+      {
+        "t": 45.52,
+        "line": "#33 pushing layer dbd4e3e7ede7 27.20MB / 33.65MB 11.0s"
+      },
+      {
+        "t": 45.52,
+        "line": "#33 pushing layer f103cd120fdd 25.38MB / 78.14MB 10.9s"
+      },
+      {
+        "t": 45.73,
+        "line": "#33 pushing layer bfd1029a7912 49.67MB / 146.70MB 11.2s"
+      },
+      {
+        "t": 45.73,
+        "line": "#33 pushing layer f103cd120fdd 30.77MB / 78.14MB 11.1s"
+      },
+      {
+        "t": 45.95,
+        "line": "#33 pushing layer dbd4e3e7ede7 34.63MB / 33.65MB 11.3s"
+      },
+      {
+        "t": 46.39,
+        "line": "#33 pushing layer bfd1029a7912 58.32MB / 146.70MB 11.8s"
+      },
+      {
+        "t": 46.5,
+        "line": "#33 pushing layer b0fbb11b9f68 185.35MB / 948.52MB 11.9s"
+      },
+      {
+        "t": 46.5,
+        "line": "#33 pushing layer 15b7bcebe436 87.47MB / 543.58MB 11.9s"
+      },
+      {
+        "t": 46.85,
+        "line": "#33 pushing layer bfd1029a7912 66.36MB / 146.70MB 12.3s"
+      },
+      {
+        "t": 47.08,
+        "line": "#33 pushing layer dbd4e3e7ede7 12.4s done"
+      },
+      {
+        "t": 47.66,
+        "line": "#33 pushing layer 15b7bcebe436 117.03MB / 543.58MB 13.1s"
+      },
+      {
+        "t": 48.0,
+        "line": "#33 pushing layer f103cd120fdd 66.36MB / 78.14MB 13.4s"
+      },
+      {
+        "t": 48.34,
+        "line": "#33 pushing layer f103cd120fdd 71.73MB / 78.14MB 13.7s"
+      },
+      {
+        "t": 48.79,
+        "line": "#33 pushing layer f103cd120fdd 80.66MB / 78.14MB 14.2s"
+      },
+      {
+        "t": 49.23,
+        "line": "#33 pushing layer b0fbb11b9f68 234.33MB / 948.52MB 14.7s"
+      },
+      {
+        "t": 49.67,
+        "line": "#33 pushing layer bfd1029a7912 117.41MB / 146.70MB 15.1s"
+      },
+      {
+        "t": 50.14,
+        "line": "#33 pushing layer bfd1029a7912 125.50MB / 146.70MB 15.5s"
+      },
+      {
+        "t": 50.46,
+        "line": "#33 pushing layer 15b7bcebe436 174.41MB / 543.58MB 15.9s"
+      },
+      {
+        "t": 51.04,
+        "line": "#33 pushing layer bfd1029a7912 141.66MB / 146.70MB 16.4s"
+      },
+      {
+        "t": 51.53,
+        "line": "#33 pushing layer bfd1029a7912 149.75MB / 146.70MB 16.9s"
+      },
+      {
+        "t": 52.36,
+        "line": "#33 pushing layer b0fbb11b9f68 283.24MB / 948.52MB 17.7s"
+      },
+      {
+        "t": 52.82,
+        "line": "#33 pushing layer bfd1029a7912 18.2s done"
+      },
+      {
+        "t": 55.48,
+        "line": "#33 pushing layer b0fbb11b9f68 331.62MB / 948.52MB 21.0s"
+      },
+      {
+        "t": 58.41,
+        "line": "#33 pushing layer 15b7bcebe436 315.60MB / 543.58MB 23.9s"
+      },
+      {
+        "t": 61.87,
+        "line": "#33 pushing layer 15b7bcebe436 372.48MB / 543.58MB 27.2s"
+      },
+      {
+        "t": 62.71,
+        "line": "#33 pushing layer b0fbb11b9f68 427.43MB / 948.52MB 28.2s"
+      },
+      {
+        "t": 63.64,
+        "line": "#33 pushing layer 15b7bcebe436 401.16MB / 543.58MB 29.0s"
+      },
+      {
+        "t": 65.23,
+        "line": "#33 pushing layer 15b7bcebe436 428.75MB / 543.58MB 30.6s"
+      },
+      {
+        "t": 67.54,
+        "line": "#33 pushing layer b0fbb11b9f68 524.84MB / 948.52MB 32.9s"
+      },
+      {
+        "t": 70.24,
+        "line": "#33 pushing layer b0fbb11b9f68 572.69MB / 948.52MB 35.7s"
+      },
+      {
+        "t": 71.06,
+        "line": "#33 pushing layer 15b7bcebe436 539.87MB / 543.58MB 36.5s"
+      },
+      {
+        "t": 74.39,
+        "line": "#33 pushing layer 15b7bcebe436 39.8s done"
+      },
+      {
+        "t": 77.92,
+        "line": "#33 pushing layer b0fbb11b9f68 716.78MB / 948.52MB 43.4s"
+      },
+      {
+        "t": 83.27,
+        "line": "#33 pushing layer b0fbb11b9f68 813.34MB / 948.52MB 48.8s"
+      },
+      {
+        "t": 88.44,
+        "line": "#33 pushing layer b0fbb11b9f68 909.93MB / 948.52MB 54.0s"
+      },
+      {
+        "t": 95.65,
+        "line": "#33 pushing layer b0fbb11b9f68 61.2s done"
+      },
+      {
+        "t": 97.24,
+        "line": "#33 DONE 62.9s"
+      },
+      {
+        "t": 100.35,
+        "line": "Launching server..."
+      },
+      {
+        "t": 100.57,
+        "line": "Server requested"
+      },
+      {
+        "t": 101.53,
+        "line": "2026-07-22T08:05:38.090727Z [Normal] Successfully assigned binderhub/jupyter-projectpythia-v-python-cookbook-dufw8mbq to binder-pythia-cluster-d7vpq4idy5va-user-m3-large-fdpj2-nrqh7"
+      },
+      {
+        "t": 101.53,
+        "line": "2026-07-22T08:05:38Z [Normal] Pulling image \"quay.io/jupyterhub/k8s-network-tools:4.3.3\""
+      },
+      {
+        "t": 105.52,
+        "line": "2026-07-22T08:05:42Z [Normal] Created container: block-cloud-metadata"
+      },
+      {
+        "t": 106.51,
+        "line": "2026-07-22T08:05:43Z [Normal] Container image \"quay.io/jupyterhub/k8s-network-tools:4.1.0\" already present on machine"
+      },
+      {
+        "t": 107.51,
+        "line": "2026-07-22T08:05:44Z [Normal] Pulling image \"quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2dvapor-2dpython-2dcookbook-5e4bde:102a877b9d24a4c0c15e0ce75f0dcb766277230d\""
+      },
+      {
+        "t": 156.48,
+        "line": "2026-07-22T08:06:33Z [Normal] Started container notebook"
+      }
+    ],
+    "log_lines_total": 1218,
+    "log_truncated": true
+  },
+  "execution": {
+    "seconds": 14.09,
+    "exit_code": 0,
+    "failed": false,
+    "cache_cleared": false,
+    "page_seconds": [
+      {
+        "page": "myst.yml#site.parts.footer",
+        "seconds": 0.08
+      },
+      {
+        "page": "notebooks/how-to-cite.md",
+        "seconds": 0.93
+      },
+      {
+        "page": "README.md",
+        "seconds": 1.1
+      },
+      {
+        "page": "notebooks/numpy_example.ipynb",
+        "seconds": 3.01
+      },
+      {
+        "page": "notebooks/quickstart.ipynb",
+        "seconds": 3.02
+      },
+      {
+        "page": "notebooks/dataset_example.ipynb",
+        "seconds": 3.1
+      },
+      {
+        "page": "notebooks/keyframing_example.ipynb",
+        "seconds": 3.23
+      },
+      {
+        "page": "notebooks/workflow_example.ipynb",
+        "seconds": 3.41
+      },
+      {
+        "page": "notebooks/AGU_2023_example.ipynb",
+        "seconds": 3.51
+      },
+      {
+        "page": "notebooks/custom_images_example.ipynb",
+        "seconds": 3.52
+      },
+      {
+        "page": "notebooks/cloudfield_visualizer.ipynb",
+        "seconds": 3.56
+      },
+      {
+        "page": "notebooks/camera_example.ipynb",
+        "seconds": 3.67
+      },
+      {
+        "page": "notebooks/xarray_example.ipynb",
+        "seconds": 4.16
+      },
+      {
+        "page": "notebooks/animation_example.ipynb",
+        "seconds": 5.57
+      },
+      {
+        "page": "notebooks/transfer_function_example.ipynb",
+        "seconds": 5.58
+      },
+      {
+        "page": "notebooks/annotation_example.ipynb",
+        "seconds": 5.77
+      },
+      {
+        "page": "notebooks/flow_example.ipynb",
+        "seconds": 5.76
+      },
+      {
+        "page": "notebooks/visualizer_widget_example.ipynb",
+        "seconds": 5.98
+      }
+    ],
+    "stdout_tail": ".projectpythia.org/user/projectpythia-v-python-cookbook-dufw8mbq/api/kernels/f3603bb7-7c48-4455-9d24-53649debfe93\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-v-python-cookbook-dufw8mbq/api/kernels/f12861ee-203c-4ecf-8261-c06892fca114\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-v-python-cookbook-dufw8mbq/api/kernels/340256ac-f9a9-427d-9bca-872c2d0d0261\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-v-python-cookbook-dufw8mbq/api/kernels/92ae9bca-a3a6-47e1-a46c-56f87c0473e9\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-v-python-cookbook-dufw8mbq/api/kernels/f48d4fc0-a6b2-4f1d-9a00-849e8e61bd9b\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-v-python-cookbook-dufw8mbq/api/kernels/a0d21076-515e-4ea0-92bb-0422d49dae9a\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-v-python-cookbook-dufw8mbq/api/kernels/e4e5dca1-8399-4f40-bfe4-6b06de9fec98\n\ud83d\udcd6 Built notebooks/how-to-cite.md in 930 ms.\n\ud83d\udcd6 Built README.md in 1.1 s.\n\ud83d\udcd6 Built notebooks/numpy_example.ipynb in 3.01 s.\n\ud83d\udcd6 Built notebooks/quickstart.ipynb in 3.02 s.\n\ud83d\udcd6 Built notebooks/dataset_example.ipynb in 3.1 s.\n\ud83d\udcd6 Built notebooks/keyframing_example.ipynb in 3.23 s.\n\ud83d\udcd6 Built notebooks/workflow_example.ipynb in 3.41 s.\n\ud83d\udcd6 Built notebooks/AGU_2023_example.ipynb in 3.51 s.\n\ud83d\udcd6 Built notebooks/custom_images_example.ipynb in 3.52 s.\n\ud83d\udcd6 Built notebooks/cloudfield_visualizer.ipynb in 3.56 s.\n\ud83d\udcd6 Built notebooks/camera_example.ipynb in 3.67 s.\n\ud83d\udcd6 Built notebooks/xarray_example.ipynb in 4.16 s.\n\ud83d\udcd6 Built notebooks/animation_example.ipynb in 5.57 s.\n\ud83d\udcd6 Built notebooks/transfer_function_example.ipynb in 5.58 s.\n\ud83d\udcd6 Built notebooks/annotation_example.ipynb in 5.77 s.\n\ud83d\udcd6 Built notebooks/flow_example.ipynb in 5.76 s.\n\ud83d\udcd6 Built notebooks/visualizer_widget_example.ipynb in 5.98 s.\n\ud83d\udcda Built 17 pages for project in 7.95 s.\n\n\n\t\u2728\u2728\u2728  Starting Book Theme  \u2728\u2728\u2728\n\n\n\n\ud83d\udd0c Server started on port 3000!  \ud83e\udd73 \ud83c\udf89\n\n\n\t\ud83d\udc49  http://localhost:3000  \ud83d\udc48\n\n\n\ud83d\udc8c GET  / 200 - - 66.749 ms\n\ud83d\udc8c GET  /notebooks/numpy-example 200 - - 17.561 ms\n\ud83d\udc8c GET  /notebooks/quickstart 200 - - 95.855 ms\n\ud83d\udc8c GET  /notebooks/how-to-cite 200 - - 85.102 ms\n\ud83d\udc8c GET  /notebooks/camera-example 200 - - 16.386 ms\n\ud83d\udc8c GET  /notebooks/dataset-example 200 - - 55.952 ms\n\ud83d\udc8c GET  /notebooks/transfer-function-example 200 - - 23.823 ms\n\ud83d\udc8c GET  /notebooks/xarray-example 200 - - 73.592 ms\n\ud83d\udc8c GET  /notebooks/annotation-example 200 - - 29.065 ms\n\ud83d\udc8c GET  /notebooks/animation-example 200 - - 29.533 ms\nGET /notebooks/keyframing-example 200 - - 33.165 ms\n\ud83d\udc8c GET  /notebooks/flow-example 200 - - 22.564 ms\n\ud83d\udc8c GET  /notebooks/visualizer-widget-example 200 - - 18.100 ms\nGET /notebooks/custom-images-example 200 - - 21.296 ms\n\ud83d\udc8c GET  /notebooks/workflow-example 200 - - 26.584 ms\nGET /notebooks/agu-2023-example 200 - - 23.126 ms\n\ud83d\udc8c GET  /notebooks/cloudfield-visualizer 200 - - 21.525 ms\n\ud83d\udc8c GET  /notebooks.how-to-cite.json 200 - - 13.561 ms\nGET /index.json 200 - - 15.836 ms\n\ud83d\udc8c GET  /notebooks.quickstart.json 200 - - 8.720 ms\n\ud83d\udc8c GET  /notebooks.dataset-example.json 200 - - 8.131 ms\n\ud83d\udc8c GET  /notebooks.numpy-example.json 200 - - 7.326 ms\n\ud83d\udc8c GET  /notebooks.xarray-example.json 200 - - 6.705 ms\n\ud83d\udc8c GET  /notebooks.transfer-function-example.json 200 - - 6.387 ms\nGET /notebooks.camera-example.json 200 - - 6.933 ms\n\ud83d\udc8c GET  /notebooks.annotation-example.json 200 - - 7.762 ms\n\ud83d\udc8c GET  /notebooks.animation-example.json 200 - - 6.933 ms\n\ud83d\udc8c GET  /notebooks.keyframing-example.json 200 - - 7.009 ms\nGET /notebooks.flow-example.json 200 - - 7.023 ms\n\ud83d\udc8c GET  /notebooks.visualizer-widget-example.json 200 - - 7.431 ms\n\ud83d\udc8c GET  /notebooks.custom-images-example.json 200 - - 7.164 ms\n\ud83d\udc8c GET  /robots.txt 200 - - 0.581 ms\n\ud83d\udc8c GET  /notebooks.agu-2023-example.json 200 - - 8.051 ms\n\ud83d\udc8c GET  /notebooks.workflow-example.json 200 - - 6.994 ms\n\ud83d\udc8c GET  /notebooks.cloudfield-visualizer.json 200 - - 7.067 ms\n\ud83d\udc8c GET  /sitemap_style.xsl 200 - - 0.448 ms\n\ud83d\udc8c GET  /sitemap.xml 200 - - 2.939 ms\nGET /myst-theme.css 200 - - 5.740 ms\n\ud83d\udc8c GET  /favicon.ico 200 - - 3.870 ms\n",
+    "stderr_tail": "ys\u001b[38;5;241m.\u001b[39mpath\u001b[38;5;241m.\u001b[39mappend(\u001b[38;5;124m'\u001b[39m\u001b[38;5;124m..\u001b[39m\u001b[38;5;124m'\u001b[39m)\n\u001b[1;32m     19\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;21;01minspect\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;28;01mimport\u001b[39;00m signature\n\u001b[0;32m---> 20\u001b[0m \u001b[38;5;28;01mimport\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;21;01mnumpy\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;28;01mas\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;21;01mnp\u001b[39;00m\n\u001b[1;32m     21\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;21;01mmath\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;28;01mimport\u001b[39;00m sin\n\u001b[1;32m     23\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;21mSampleFunctionOnRegularGrid\u001b[39m(f, ext\u001b[38;5;241m=\u001b[39m\u001b[38;5;28;01mNone\u001b[39;00m, shape\u001b[38;5;241m=\u001b[39m\u001b[38;5;28;01mNone\u001b[39;00m):\n\n\u001b[0;31mModuleNotFoundError\u001b[0m: No module named 'numpy'\n\u26d4\ufe0f notebooks/flow_example.ipynb An exception occurred during code execution, halting further execution:\n\n\u001b[0;31m---------------------------------------------------------------------------\u001b[0m\n\u001b[0;31mModuleNotFoundError\u001b[0m                       Traceback (most recent call last)\nCell \u001b[0;32mIn[1], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[38;5;28;01mimport\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;21;01mexample_utils\u001b[39;00m\n\u001b[1;32m      2\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;21;01mvapor\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;28;01mimport\u001b[39;00m session, renderer, dataset, camera\n\u001b[1;32m      4\u001b[0m ses \u001b[38;5;241m=\u001b[39m session\u001b[38;5;241m.\u001b[39mSession()\n\nFile \u001b[0;32m~/notebooks/example_utils.py:20\u001b[0m\n\u001b[1;32m     16\u001b[0m     sys\u001b[38;5;241m.\u001b[39mpath\u001b[38;5;241m.\u001b[39mappend(\u001b[38;5;124m'\u001b[39m\u001b[38;5;124m..\u001b[39m\u001b[38;5;124m'\u001b[39m)\n\u001b[1;32m     19\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;21;01minspect\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;28;01mimport\u001b[39;00m signature\n\u001b[0;32m---> 20\u001b[0m \u001b[38;5;28;01mimport\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;21;01mnumpy\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;28;01mas\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;21;01mnp\u001b[39;00m\n\u001b[1;32m     21\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;21;01mmath\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;28;01mimport\u001b[39;00m sin\n\u001b[1;32m     23\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;21mSampleFunctionOnRegularGrid\u001b[39m(f, ext\u001b[38;5;241m=\u001b[39m\u001b[38;5;28;01mNone\u001b[39;00m, shape\u001b[38;5;241m=\u001b[39m\u001b[38;5;28;01mNone\u001b[39;00m):\n\n\u001b[0;31mModuleNotFoundError\u001b[0m: No module named 'numpy'\n\u26d4\ufe0f notebooks/visualizer_widget_example.ipynb An exception occurred during code execution, halting further execution:\n\n\u001b[0;31m---------------------------------------------------------------------------\u001b[0m\n\u001b[0;31mModuleNotFoundError\u001b[0m                       Traceback (most recent call last)\nCell \u001b[0;32mIn[1], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[38;5;28;01mimport\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;21;01mexample_utils\u001b[39;00m\n\u001b[1;32m      2\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;21;01mvapor\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;28;01mimport\u001b[39;00m session, renderer, dataset, camera, widget\n\u001b[1;32m      3\u001b[0m \u001b[38;5;28;01mimport\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;21;01mipywidgets\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;28;01mas\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;21;01mwidgets\u001b[39;00m\n\nFile \u001b[0;32m~/notebooks/example_utils.py:20\u001b[0m\n\u001b[1;32m     16\u001b[0m     sys\u001b[38;5;241m.\u001b[39mpath\u001b[38;5;241m.\u001b[39mappend(\u001b[38;5;124m'\u001b[39m\u001b[38;5;124m..\u001b[39m\u001b[38;5;124m'\u001b[39m)\n\u001b[1;32m     19\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;21;01minspect\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;28;01mimport\u001b[39;00m signature\n\u001b[0;32m---> 20\u001b[0m \u001b[38;5;28;01mimport\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;21;01mnumpy\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;28;01mas\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;21;01mnp\u001b[39;00m\n\u001b[1;32m     21\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;21;01mmath\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;28;01mimport\u001b[39;00m sin\n\u001b[1;32m     23\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;21mSampleFunctionOnRegularGrid\u001b[39m(f, ext\u001b[38;5;241m=\u001b[39m\u001b[38;5;28;01mNone\u001b[39;00m, shape\u001b[38;5;241m=\u001b[39m\u001b[38;5;28;01mNone\u001b[39;00m):\n\n\u001b[0;31mModuleNotFoundError\u001b[0m: No module named 'numpy'\n"
+  },
+  "resources": {
+    "available": true,
+    "sample_count": 5,
+    "sample_seconds": 3,
+    "peak_rss_bytes": 923877376,
+    "peak_pss_bytes": 687870976,
+    "limit_basis": "pss",
+    "peak_against_limit_bytes": 687870976,
+    "memory_limit_bytes": 8589934592,
+    "peak_fraction_of_limit": 0.0801,
+    "peak_cpu_percent": null,
+    "cpu_count": null
+  },
+  "errors": [
+    {
+      "source": "site/content/notebooks.workflow-example.json",
+      "ename": "ModuleNotFoundError",
+      "evalue": "No module named 'numpy'",
+      "traceback": "---------------------------------------------------------------------------\nModuleNotFoundError                       Traceback (most recent call last)\nCell In[1], line 1\n----> 1 import example_utils\n      2 from vapor import session, renderer, dataset, camera\n\nFile ~/notebooks/example_utils.py:20\n     16     sys.path.append('..')\n     19 from inspect import signature\n---> 20 import numpy as np\n     21 from math import sin\n     23 def SampleFunctionOnRegularGrid(f, ext=None, shape=None):\n\nModuleNotFoundError: No module named 'numpy'"
+    },
+    {
+      "source": "site/content/notebooks.visualizer-widget-example.json",
+      "ename": "ModuleNotFoundError",
+      "evalue": "No module named 'numpy'",
+      "traceback": "---------------------------------------------------------------------------\nModuleNotFoundError                       Traceback (most recent call last)\nCell In[1], line 1\n----> 1 import example_utils\n      2 from vapor import session, renderer, dataset, camera, widget\n      3 import ipywidgets as widgets\n\nFile ~/notebooks/example_utils.py:20\n     16     sys.path.append('..')\n     19 from inspect import signature\n---> 20 import numpy as np\n     21 from math import sin\n     23 def SampleFunctionOnRegularGrid(f, ext=None, shape=None):\n\nModuleNotFoundError: No module named 'numpy'"
+    },
+    {
+      "source": "site/content/notebooks.dataset-example.json",
+      "ename": "ModuleNotFoundError",
+      "evalue": "No module named 'numpy'",
+      "traceback": "---------------------------------------------------------------------------\nModuleNotFoundError                       Traceback (most recent call last)\nCell In[1], line 1\n----> 1 import example_utils\n      2 from vapor import session, renderer, dataset, camera\n\nFile ~/notebooks/example_utils.py:20\n     16     sys.path.append('..')\n     19 from inspect import signature\n---> 20 import numpy as np\n     21 from math import sin\n     23 def SampleFunctionOnRegularGrid(f, ext=None, shape=None):\n\nModuleNotFoundError: No module named 'numpy'"
+    },
+    {
+      "source": "site/content/notebooks.numpy-example.json",
+      "ename": "ModuleNotFoundError",
+      "evalue": "No module named 'numpy'",
+      "traceback": "---------------------------------------------------------------------------\nModuleNotFoundError                       Traceback (most recent call last)\nCell In[1], line 1\n----> 1 import example_utils\n      2 from vapor import session, renderer, dataset, camera\n      3 import numpy as np\n\nFile ~/notebooks/example_utils.py:20\n     16     sys.path.append('..')\n     19 from inspect import signature\n---> 20 import numpy as np\n     21 from math import sin\n     23 def SampleFunctionOnRegularGrid(f, ext=None, shape=None):\n\nModuleNotFoundError: No module named 'numpy'"
+    },
+    {
+      "source": "site/content/notebooks.transfer-function-example.json",
+      "ename": "ModuleNotFoundError",
+      "evalue": "No module named 'numpy'",
+      "traceback": "---------------------------------------------------------------------------\nModuleNotFoundError                       Traceback (most recent call last)\nCell In[1], line 1\n----> 1 import example_utils\n      2 from vapor import session, renderer, dataset, camera, transferfunction\n      3 from vapor.utils import histogram\n\nFile ~/notebooks/example_utils.py:20\n     16     sys.path.append('..')\n     19 from inspect import signature\n---> 20 import numpy as np\n     21 from math import sin\n     23 def SampleFunctionOnRegularGrid(f, ext=None, shape=None):\n\nModuleNotFoundError: No module named 'numpy'"
+    },
+    {
+      "source": "site/content/notebooks.custom-images-example.json",
+      "ename": "ModuleNotFoundError",
+      "evalue": "No module named 'matplotlib'",
+      "traceback": "---------------------------------------------------------------------------\nModuleNotFoundError                       Traceback (most recent call last)\nCell In[1], line 7\n      4 import zipfile\n      6 # Plotting libraries:\n----> 7 import matplotlib.pyplot as plt\n      8 import cartopy.crs as ccrs\n      9 import cartopy.feature as cf\n\nModuleNotFoundError: No module named 'matplotlib'"
+    },
+    {
+      "source": "site/content/notebooks.camera-example.json",
+      "ename": "ModuleNotFoundError",
+      "evalue": "No module named 'numpy'",
+      "traceback": "---------------------------------------------------------------------------\nModuleNotFoundError                       Traceback (most recent call last)\nCell In[1], line 1\n----> 1 import example_utils\n      2 from vapor import session, renderer, dataset, camera\n      4 ses = session.Session()\n\nFile ~/notebooks/example_utils.py:20\n     16     sys.path.append('..')\n     19 from inspect import signature\n---> 20 import numpy as np\n     21 from math import sin\n     23 def SampleFunctionOnRegularGrid(f, ext=None, shape=None):\n\nModuleNotFoundError: No module named 'numpy'"
+    },
+    {
+      "source": "site/content/notebooks.xarray-example.json",
+      "ename": "SSLError",
+      "evalue": "HTTPSConnectionPool(host='data.rda.ucar.edu', port=443): Max retries exceeded with url: /ds897.7/Katrina.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1017)')))",
+      "traceback": "---------------------------------------------------------------------------\nSSLCertVerificationError                  Traceback (most recent call last)\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/urllib3/connectionpool.py:464, in HTTPConnectionPool._make_request(self, conn, method, url, body, headers, retries, timeout, chunked, response_conn, preload_content, decode_content, enforce_content_length)\n    463 try:\n--> 464     self._validate_conn(conn)\n    465 except (SocketTimeout, BaseSSLError) as e:\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/urllib3/connectionpool.py:1093, in HTTPSConnectionPool._validate_conn(self, conn)\n   1092 if conn.is_closed:\n-> 1093     conn.connect()\n   1095 # TODO revise this, see https://github.com/urllib3/urllib3/issues/2791\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/urllib3/connection.py:790, in HTTPSConnection.connect(self)\n    788 server_hostname_rm_dot = server_hostname.rstrip(\".\")\n--> 790 sock_and_verified = _ssl_wrap_socket_and_match_hostname(\n    791     sock=sock,\n    792     cert_reqs=self.cert_reqs,\n    793     ssl_version=self.ssl_version,\n    794     ssl_minimum_version=self.ssl_minimum_version,\n    795     ssl_maximum_version=self.ssl_maximum_version,\n    796     ca_certs=self.ca_certs,\n    797     ca_cert_dir=self.ca_cert_dir,\n    798     ca_cert_data=self.ca_cert_data,\n    799     cert_file=self.cert_file,\n    800     key_file=self.key_file,\n    801     key_password=self.key_password,\n    802     server_hostname=server_hostname_rm_dot,\n    803     ssl_context=self.ssl_context,\n    804     tls_in_tls=tls_in_tls,\n    805     assert_hostname=self.assert_hostname,\n    806     assert_fingerprint=self.assert_fingerprint,\n    807 )\n    808 self.sock = sock_and_verified.socket\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/urllib3/connection.py:969, in _ssl_wrap_socket_and_match_hostname(sock, cert_reqs, ssl_version, ssl_minimum_version, ssl_maximum_version, cert_file, ke"
+    },
+    {
+      "source": "site/content/notebooks.keyframing-example.json",
+      "ename": "ModuleNotFoundError",
+      "evalue": "No module named 'vapor'",
+      "traceback": "---------------------------------------------------------------------------\nModuleNotFoundError                       Traceback (most recent call last)\nCell In[1], line 1\n----> 1 from vapor import session, dataset, renderer\n      2 from vapor.animation import Animation\n\nModuleNotFoundError: No module named 'vapor'"
+    },
+    {
+      "source": "site/content/notebooks.agu-2023-example.json",
+      "ename": "ModuleNotFoundError",
+      "evalue": "No module named 'vapor'",
+      "traceback": "---------------------------------------------------------------------------\nModuleNotFoundError                       Traceback (most recent call last)\nCell In[2], line 1\n----> 1 from vapor import session\n      2 ses = session.Session()\n\nModuleNotFoundError: No module named 'vapor'"
+    },
+    {
+      "source": "site/content/notebooks.animation-example.json",
+      "ename": "ModuleNotFoundError",
+      "evalue": "No module named 'numpy'",
+      "traceback": "---------------------------------------------------------------------------\nModuleNotFoundError                       Traceback (most recent call last)\nCell In[1], line 1\n----> 1 import example_utils\n      2 from vapor import session, renderer, dataset, camera\n      3 from vapor.animation import Animation\n\nFile ~/notebooks/example_utils.py:20\n     16     sys.path.append('..')\n     19 from inspect import signature\n---> 20 import numpy as np\n     21 from math import sin\n     23 def SampleFunctionOnRegularGrid(f, ext=None, shape=None):\n\nModuleNotFoundError: No module named 'numpy'"
+    },
+    {
+      "source": "site/content/notebooks.annotation-example.json",
+      "ename": "ModuleNotFoundError",
+      "evalue": "No module named 'numpy'",
+      "traceback": "---------------------------------------------------------------------------\nModuleNotFoundError                       Traceback (most recent call last)\nCell In[1], line 1\n----> 1 import example_utils\n      2 from vapor import session, renderer, dataset, camera\n      3 from vapor.utils import histogram\n\nFile ~/notebooks/example_utils.py:20\n     16     sys.path.append('..')\n     19 from inspect import signature\n---> 20 import numpy as np\n     21 from math import sin\n     23 def SampleFunctionOnRegularGrid(f, ext=None, shape=None):\n\nModuleNotFoundError: No module named 'numpy'"
+    },
+    {
+      "source": "site/content/notebooks.flow-example.json",
+      "ename": "ModuleNotFoundError",
+      "evalue": "No module named 'numpy'",
+      "traceback": "---------------------------------------------------------------------------\nModuleNotFoundError                       Traceback (most recent call last)\nCell In[1], line 1\n----> 1 import example_utils\n      2 from vapor import session, renderer, dataset, camera\n      4 ses = session.Session()\n\nFile ~/notebooks/example_utils.py:20\n     16     sys.path.append('..')\n     19 from inspect import signature\n---> 20 import numpy as np\n     21 from math import sin\n     23 def SampleFunctionOnRegularGrid(f, ext=None, shape=None):\n\nModuleNotFoundError: No module named 'numpy'"
+    },
+    {
+      "source": "site/content/notebooks.cloudfield-visualizer.json",
+      "ename": "ModuleNotFoundError",
+      "evalue": "No module named 'xarray'",
+      "traceback": "---------------------------------------------------------------------------\nModuleNotFoundError                       Traceback (most recent call last)\nCell In[1], line 1\n----> 1 import xarray as xr\n      2 from pathlib import Path\n      3 from vapor import session, renderer, dataset, camera\n\nModuleNotFoundError: No module named 'xarray'"
+    },
+    {
+      "source": "site/content/notebooks.quickstart.json",
+      "ename": "ModuleNotFoundError",
+      "evalue": "No module named 'vapor'",
+      "traceback": "---------------------------------------------------------------------------\nModuleNotFoundError                       Traceback (most recent call last)\nCell In[1], line 1\n----> 1 from vapor import session, renderer, dataset\n      2 from vapor.animation import Animation\n      3 from vapor.dataset import Dataset\n\nModuleNotFoundError: No module named 'vapor'"
+    }
+  ],
+  "finished_at": "2026-07-22T08:06:53.140398+00:00",
+  "build_artifacts": null
+}
