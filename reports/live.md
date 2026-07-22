@@ -35,7 +35,7 @@ The Binder image would not build, so the launch button gives a learner nothing. 
 | [ml-hurricane-intensity](live/ml-hurricane-intensity.md) | `incubating` | 5m 28s | — | — | 0 | 2026-07-22 |
 | [mpas-jedi-cookbook](live/mpas-jedi-cookbook.md) | `healthy` | 2m 45s | — | — | 0 | 2026-07-22 |
 | [mrms-cookbook](live/mrms-cookbook.md) | `incubating` | 9m 26s (cached) | — | — | 0 | 2026-07-22 |
-| [osdf-cookbook](live/osdf-cookbook.md) | `healthy` | 1m 49s | — | — | 0 | 2026-07-22 |
+| [osdf-cookbook](live/osdf-cookbook.md) | `healthy` | 1m 44s | — | — | 0 | 2026-07-22 |
 | [radiative-feedback-cookbook](live/radiative-feedback-cookbook.md) | `incubating` | 1m 03s | — | — | 0 | 2026-07-22 |
 | [snow-observations-cookbook](live/snow-observations-cookbook.md) | `healthy` | 1m 03s | — | — | 0 | 2026-07-22 |
 | [unstructured-grid-viz-cookbook](live/unstructured-grid-viz-cookbook.md) | `healthy` | 30m 00s | — | — | 0 | 2026-07-22 |
