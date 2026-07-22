@@ -1,0 +1,114 @@
+{
+  "cookbook": "healpix-cookbook",
+  "env_injection": {
+    "attempted": false
+  },
+  "started_at": "2026-07-22T05:17:25.458795+00:00",
+  "hub": "https://binder.projectpythia.org",
+  "ref": "main",
+  "toc_notebooks": [
+    "notebooks/00-healpix.ipynb",
+    "notebooks/01-easygems.ipynb",
+    "notebooks/02-uxarray.ipynb",
+    "notebooks/03-uxarray-advanced.ipynb",
+    "notebooks/04-when-to-use-each.ipynb"
+  ],
+  "build": {
+    "hub": "https://binder.projectpythia.org",
+    "ref": "main",
+    "seconds": 11.11,
+    "exit_code": 0,
+    "failed": false,
+    "image_cached": true,
+    "log": [
+      {
+        "t": 0.95,
+        "line": "Found built image, launching..."
+      },
+      {
+        "t": 1.15,
+        "line": "Server requested"
+      },
+      {
+        "t": 2.1,
+        "line": "2026-07-22T05:17:27Z [Normal] Created container: block-cloud-metadata"
+      },
+      {
+        "t": 2.1,
+        "line": "2026-07-22T05:17:27Z [Normal] Started container block-cloud-metadata"
+      },
+      {
+        "t": 3.1,
+        "line": "2026-07-22T05:17:28Z [Normal] Created container: block-nfs-access"
+      },
+      {
+        "t": 3.1,
+        "line": "2026-07-22T05:17:28Z [Normal] Started container block-nfs-access"
+      },
+      {
+        "t": 4.1,
+        "line": "2026-07-22T05:17:29Z [Normal] Container image \"quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2dhealpix-2dcookbook-cb9c82:be29812d753487c0c461398f7f4b5f261809af73\" already present on machine"
+      },
+      {
+        "t": 11.07,
+        "line": "Server ready at /user/projectpythia-healpix-cookbook-1bqno1cp/"
+      },
+      {
+        "t": 11.07,
+        "line": "server running at https://hub.projectpythia.org/user/projectpythia-healpix-cookbook-1bqno1cp/"
+      }
+    ],
+    "log_lines_total": 9,
+    "log_truncated": false
+  },
+  "execution": {
+    "seconds": 81.86,
+    "exit_code": 0,
+    "failed": false,
+    "cache_cleared": false,
+    "page_seconds": [
+      {
+        "page": "notebooks/04-when-to-use-each.ipynb",
+        "seconds": 0.05
+      },
+      {
+        "page": "myst.yml#site.parts.footer",
+        "seconds": 0.06
+      },
+      {
+        "page": "notebooks/00-healpix.ipynb",
+        "seconds": 0.78
+      },
+      {
+        "page": "notebooks/how-to-cite.md",
+        "seconds": 1.22
+      },
+      {
+        "page": "README.md",
+        "seconds": 1.52
+      },
+      {
+        "page": "notebooks/01-easygems.ipynb",
+        "seconds": 16.0
+      }
+    ],
+    "stdout_tail": "building myst-cli session with API URL: https://api.mystmd.org\n\ud83c\udf61 Execution parallelism set to: 19\n\ud83c\udf0e Building MyST site\n\ud83d\udd0d Querying template metadata from https://api.mystmd.org/templates/site/myst/book-theme\n\ud83d\udc15 Fetching template from https://github.com/myst-templates/book-theme/archive/refs/heads/main.zip\n\ud83d\udcbe Saved template to path _build/templates/site/myst/book-theme\nBuilding the base site.\nTo set a baseurl (e.g. GitHub pages) use \"BASE_URL\" environment variable.\n\u2935\ufe0f  Installing web libraries (can take up to 60 s)\n\ud83d\udce6 Installed web libraries in 1.48 s\n\ud83c\udfeb Read 665 myst references for \"foundations\" in 226 ms.\n\ud83c\udfeb Read 19285 intersphinx references for \"python\" in 345 ms.\n\ud83c\udfeb Read 11399 intersphinx references for \"matplotlib\" in 386 ms.\n\ud83c\udfeb Read 9803 intersphinx references for \"xarray\" in 356 ms.\n\ud83d\udcbf Executing notebook (notebooks/01-easygems.ipynb) [no execution cache found]\n\ud83d\udcbf Executing notebook (notebooks/02-uxarray.ipynb) [no execution cache found]\n\ud83d\udcbf Executing notebook (notebooks/03-uxarray-advanced.ipynb) [no execution cache found]\n\ud83d\udcd6 Built notebooks/04-when-to-use-each.ipynb in 52 ms.\n\ud83d\udcd6 Built myst.yml#site.parts.footer in 56 ms.\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-healpix-cookbook-1bqno1cp/api/kernels/5383dda4-9ab5-4cd1-915f-4829cca5d851\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-healpix-cookbook-1bqno1cp/api/kernels/d6fe3206-5e7a-477d-b7bf-6128e3638055\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-healpix-cookbook-1bqno1cp/api/kernels/80205825-d1d0-4dd9-a378-ecc2cb77d9e7\n\ud83e\ude84  Linked 3 DOIs from doi.org in 650 ms for notebooks/00-healpix.ipynb\n\ud83d\udcd6 Built notebooks/00-healpix.ipynb in 778 ms.\n\ud83d\udcd6 Built notebooks/how-to-cite.md in 1.22 s.\n\ud83e\ude84  Linked 1 DOI from doi.org in 1.43 s for README.md\n\ud83d\udcd6 Built README.md in 1.52 s.\n\ud83d\udcd6 Built notebooks/01-easygems.ipynb in 16 s.\n\ud83d\udcd6 Built notebooks/02-uxarray.ipynb in 1 min.\n\ud83d\udcd6 Built notebooks/03-uxarray-advanced.ipynb in 1.17 min.\n\ud83d\udcda Built 7 pages for project in 1.22 min.\n\n\n\t\u2728\u2728\u2728  Starting Book Theme  \u2728\u2728\u2728\n\n\n\n\ud83d\udd0c Server started on port 3000!  \ud83e\udd73 \ud83c\udf89\n\n\n\t\ud83d\udc49  http://localhost:3000  \ud83d\udc48\n\n\n\ud83d\udc8c GET  /notebooks/easygems 200 - - 42.591 ms\n\ud83d\udc8c GET  /notebooks/healpix 200 - - 103.396 ms\nGET /notebooks/uxarray 200 - - 27.113 ms\n\ud83d\udc8c GET  / 200 - - 137.290 ms\nGET /notebooks/how-to-cite 200 - - 134.003 ms\n\ud83d\udc8c GET  /notebooks/when-to-use-each 200 - - 24.657 ms\nGET /notebooks/uxarray-advanced 200 - - 64.987 ms\n\ud83d\udc8c GET  /notebooks.how-to-cite.json 200 - - 24.633 ms\nGET /index.json 200 - - 28.254 ms\n\ud83d\udc8c GET  /notebooks.healpix.json 200 - - 14.458 ms\n\ud83d\udc8c GET  /notebooks.easygems.json 200 - - 8.377 ms\n\ud83d\udc8c GET  /robots.txt 200 - - 0.796 ms\n\ud83d\udc8c GET  /notebooks.when-to-use-each.json 200 - - 6.831 ms\n\ud83d\udc8c GET  /notebooks.uxarray.json 200 - - 12.639 ms\n\ud83d\udc8c GET  /notebooks.uxarray-advanced.json 200 - - 13.918 ms\n\ud83d\udc8c GET  /sitemap_style.xsl 200 - - 0.561 ms\n\ud83d\udc8c GET  /sitemap.xml 200 - - 2.728 ms\n\ud83d\udc8c GET  /myst-theme.css 200 - - 4.095 ms\n\ud83d\udc8c GET  /favicon.ico 200 - - 4.092 ms\n",
+    "stderr_tail": "\u26a0\ufe0f  myst.yml 'nav.1' extra key ignored: open_in_same_tab (at myst.yml#config.site)\n\u26a0\ufe0f  myst.yml 'nav.2' extra key ignored: open_in_same_tab (at myst.yml#config.site)\n\u26a0\ufe0f  notebooks/02-uxarray.ipynb Removing matplotlib string from outputs\n   <matplotlib.legend.Legend at 0x7fd9fb1bd1b0>\n   Fix: Put a semicolon on the last line of your cell or add \"output_matplotlib_strings: remove\" to the project settings.\n\u26a0\ufe0f  notebooks/00-healpix.ipynb:1 Legacy syntax used for link target, please prepend a '#' to your link url: \"related-documentation\"\n   The link target should be of the form `[](#target)`, including the `#` sign.\nThis may be deprecated in the future.\n\u26a0\ufe0f  notebooks/00-healpix.ipynb:1 Linking \"related-documentation\" to an implicit heading reference, best practice is to create an explicit reference.\n   Explicit references do not break when you update the title to a section, they are preferred over using the implicit HTML ID created for headers.\n"
+  },
+  "resources": {
+    "available": true,
+    "sample_count": 25,
+    "sample_seconds": 3,
+    "peak_rss_bytes": 2042068992,
+    "peak_pss_bytes": 1827240960,
+    "limit_basis": "pss",
+    "peak_against_limit_bytes": 1827240960,
+    "memory_limit_bytes": 8589934592,
+    "peak_fraction_of_limit": 0.2127,
+    "peak_cpu_percent": null,
+    "cpu_count": null
+  },
+  "errors": [],
+  "finished_at": "2026-07-22T05:18:58.941117+00:00",
+  "build_artifacts": null
+}
