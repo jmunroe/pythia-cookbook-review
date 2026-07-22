@@ -8,14 +8,14 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 ## Coverage
 
-**8 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
+**9 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
 
 | Outcome | Cookbooks |
 |---|---|
 | build failed | 1 |
 | ran with errors | 4 |
-| ran clean | 3 |
-| not yet checked | 60 |
+| ran clean | 4 |
+| not yet checked | 59 |
 
 ## Results
 
@@ -38,12 +38,13 @@ The book built and ran, but at least one notebook cell raised. Read the per-cook
 | [radar-cookbook](live/radar-cookbook.md) | `stale` | 7.16s (cached) | 414.12s | 7.97 of 8.6 GB | 3 | 2026-07-21 |
 | [xbatcher-ML-1-cookbook](live/xbatcher-ML-1-cookbook.md) | `stale` | 579.91s | 81.83s | 0.70 of 8.6 GB | 1 | 2026-07-22 |
 
-### ran clean — 3
+### ran clean — 4
 
 Built and ran with no cell errors on this sample. Not a verdict -- a cached image never re-solves the environment, and one green run of a network-dependent notebook is a sample, not a guarantee.
 
 | Cookbook | Static tier | Session | Execution | Peak memory | Errors | Checked |
 |---|---|---|---|---|---|---|
+| [advanced-viz-cookbook](live/advanced-viz-cookbook.md) | `healthy` | 341.33s | 45.64s | 1.52 of 8.6 GB | 0 | 2026-07-22 |
 | [eofs-cookbook](live/eofs-cookbook.md) | `healthy` | 81.46s (cached) | 44.02s | 1.43 of 8.6 GB | 0 | 2026-07-21 |
 | [HRRR-AWS-cookbook](live/HRRR-AWS-cookbook.md) | `healthy` | 6.49s (cached) | 27.53s | 0.62 of 8.6 GB | 0 | 2026-07-21 |
 | [interactive-sentinel-2-cookbook](live/interactive-sentinel-2-cookbook.md) | `degraded` | 473.56s | 169.41s | 1.68 of 8.6 GB | 0 | 2026-07-22 |
