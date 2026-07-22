@@ -8,7 +8,7 @@ Run 2026-07-21 19:29:05 UTC against [https://binder.projectpythia.org](https://b
 |---|---|
 | Live outcome | **ran with errors** |
 | Static tier | `stale` |
-| Time to a ready session | 469.24s (fresh build) |
+| Time to a ready session | 7m 49s (fresh build) |
 | Build succeeded | yes |
 | Notebook execution | 34.69s |
 | Build command exit code | 0 (zero despite cell errors) |
@@ -24,8 +24,8 @@ Run 2026-07-21 19:29:05 UTC against [https://binder.projectpythia.org](https://b
 |---|---|
 | [`notebooks/0.0_Intro_Landsat.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/0.0_Intro_Landsat.ipynb) | 0.03s |
 | [`notebooks/2.0_Spectral_Clustering_PC.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/2.0_Spectral_Clustering_PC.ipynb) | 7.56s |
-| [`notebooks/1.1_Data_Ingestion-General.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/1.1_Data_Ingestion-General.ipynb) | 10.0s |
-| [`notebooks/1.0_Data_Ingestion-Geospatial.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/1.0_Data_Ingestion-Geospatial.ipynb) | 21.0s |
+| [`notebooks/1.1_Data_Ingestion-General.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/1.1_Data_Ingestion-General.ipynb) | 10s |
+| [`notebooks/1.0_Data_Ingestion-Geospatial.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/1.0_Data_Ingestion-Geospatial.ipynb) | 21s |
 
 Executed 4 notebook(s) from the project toc: [`notebooks/0.0_Intro_Landsat.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/0.0_Intro_Landsat.ipynb), [`notebooks/1.0_Data_Ingestion-Geospatial.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/1.0_Data_Ingestion-Geospatial.ipynb), [`notebooks/1.1_Data_Ingestion-General.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/1.1_Data_Ingestion-General.ipynb), [`notebooks/2.0_Spectral_Clustering_PC.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/2.0_Spectral_Clustering_PC.ipynb). Notebooks not listed in [`myst.yml`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/myst.yml) are never executed by a build, so a repo can carry notebooks no build ever touches.
 

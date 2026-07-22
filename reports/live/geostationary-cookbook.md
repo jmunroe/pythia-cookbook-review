@@ -8,9 +8,9 @@ Run 2026-07-22 10:05:04 UTC against [https://binder.projectpythia.org](https://b
 |---|---|
 | Live outcome | **ran with errors** |
 | Static tier | `incubating` |
-| Time to a ready session | 322.5s (fresh build) |
+| Time to a ready session | 5m 22s (fresh build) |
 | Build succeeded | yes |
-| Notebook execution | 162.03s |
+| Notebook execution | 2m 42s |
 | Build command exit code | 0 (zero despite cell errors) |
 | Notebooks ran clean | no |
 | Execution cache | **reused — timing is not execution** |
@@ -23,9 +23,9 @@ Run 2026-07-22 10:05:04 UTC against [https://binder.projectpythia.org](https://b
 | Notebook | Execute + render |
 |---|---|
 | [`notebooks/notebook-template.ipynb`](https://github.com/ProjectPythia/geostationary-cookbook/blob/main/notebooks/notebook-template.ipynb) | 2.1s |
-| [`notebooks/04_geosat_AMI_GK2A.ipynb`](https://github.com/ProjectPythia/geostationary-cookbook/blob/main/notebooks/04_geosat_AMI_GK2A.ipynb) | 38.0s |
-| [`notebooks/01_geosat_ABI_GOES_east.ipynb`](https://github.com/ProjectPythia/geostationary-cookbook/blob/main/notebooks/01_geosat_ABI_GOES_east.ipynb) | 38.0s |
-| [`notebooks/03_geosat_AHI_HIMAWARI.ipynb`](https://github.com/ProjectPythia/geostationary-cookbook/blob/main/notebooks/03_geosat_AHI_HIMAWARI.ipynb) | 42.0s |
+| [`notebooks/04_geosat_AMI_GK2A.ipynb`](https://github.com/ProjectPythia/geostationary-cookbook/blob/main/notebooks/04_geosat_AMI_GK2A.ipynb) | 38s |
+| [`notebooks/01_geosat_ABI_GOES_east.ipynb`](https://github.com/ProjectPythia/geostationary-cookbook/blob/main/notebooks/01_geosat_ABI_GOES_east.ipynb) | 38s |
+| [`notebooks/03_geosat_AHI_HIMAWARI.ipynb`](https://github.com/ProjectPythia/geostationary-cookbook/blob/main/notebooks/03_geosat_AHI_HIMAWARI.ipynb) | 42s |
 
 Executed 8 notebook(s) from the project toc: [`notebooks/00_geosat_explaining_steps.ipynb`](https://github.com/ProjectPythia/geostationary-cookbook/blob/main/notebooks/00_geosat_explaining_steps.ipynb), [`notebooks/01_geosat_ABI_GOES_east.ipynb`](https://github.com/ProjectPythia/geostationary-cookbook/blob/main/notebooks/01_geosat_ABI_GOES_east.ipynb), [`notebooks/01_geosat_GOESR.ipynb`](https://github.com/ProjectPythia/geostationary-cookbook/blob/main/notebooks/01_geosat_GOESR.ipynb), [`notebooks/02_geosat_ABI_GOES_west.ipynb`](https://github.com/ProjectPythia/geostationary-cookbook/blob/main/notebooks/02_geosat_ABI_GOES_west.ipynb), [`notebooks/03_geosat_AHI_HIMAWARI.ipynb`](https://github.com/ProjectPythia/geostationary-cookbook/blob/main/notebooks/03_geosat_AHI_HIMAWARI.ipynb), [`notebooks/04_geosat_AMI_GK2A.ipynb`](https://github.com/ProjectPythia/geostationary-cookbook/blob/main/notebooks/04_geosat_AMI_GK2A.ipynb), [`notebooks/99_auxiliar_dowloading.ipynb`](https://github.com/ProjectPythia/geostationary-cookbook/blob/main/notebooks/99_auxiliar_dowloading.ipynb), [`notebooks/notebook-template.ipynb`](https://github.com/ProjectPythia/geostationary-cookbook/blob/main/notebooks/notebook-template.ipynb). Notebooks not listed in [`myst.yml`](https://github.com/ProjectPythia/geostationary-cookbook/blob/main/myst.yml) are never executed by a build, so a repo can carry notebooks no build ever touches.
 

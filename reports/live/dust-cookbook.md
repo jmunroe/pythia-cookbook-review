@@ -8,9 +8,9 @@ Run 2026-07-22 09:38:00 UTC against [https://binder.projectpythia.org](https://b
 |---|---|
 | Live outcome | **ran clean** |
 | Static tier | `incubating` |
-| Time to a ready session | 232.25s (fresh build) |
+| Time to a ready session | 3m 52s (fresh build) |
 | Build succeeded | yes |
-| Notebook execution | 132.41s |
+| Notebook execution | 2m 12s |
 | Build command exit code | 0 |
 | Notebooks ran clean | yes |
 | Execution cache | **reused — timing is not execution** |
@@ -24,7 +24,7 @@ Run 2026-07-22 09:38:00 UTC against [https://binder.projectpythia.org](https://b
 |---|---|
 | [`notebooks/data_exploration.ipynb`](https://github.com/ProjectPythia/dust-cookbook/blob/main/notebooks/data_exploration.ipynb) | 8.98s |
 | [`notebooks/PCA.ipynb`](https://github.com/ProjectPythia/dust-cookbook/blob/main/notebooks/PCA.ipynb) | 9.81s |
-| [`notebooks/SOM.ipynb`](https://github.com/ProjectPythia/dust-cookbook/blob/main/notebooks/SOM.ipynb) | 11.0s |
+| [`notebooks/SOM.ipynb`](https://github.com/ProjectPythia/dust-cookbook/blob/main/notebooks/SOM.ipynb) | 11s |
 
 Executed 4 notebook(s) from the project toc: [`notebooks/PCA.ipynb`](https://github.com/ProjectPythia/dust-cookbook/blob/main/notebooks/PCA.ipynb), [`notebooks/SOM.ipynb`](https://github.com/ProjectPythia/dust-cookbook/blob/main/notebooks/SOM.ipynb), [`notebooks/data_exploration.ipynb`](https://github.com/ProjectPythia/dust-cookbook/blob/main/notebooks/data_exploration.ipynb), [`notebooks/random_forest.ipynb`](https://github.com/ProjectPythia/dust-cookbook/blob/main/notebooks/random_forest.ipynb). Notebooks not listed in [`myst.yml`](https://github.com/ProjectPythia/dust-cookbook/blob/main/myst.yml) are never executed by a build, so a repo can carry notebooks no build ever touches.
 

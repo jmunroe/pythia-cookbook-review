@@ -14,7 +14,7 @@ BinderHub reused an existing image, so the 7.16s is a pod launch and image pull.
 | Static tier | `stale` |
 | Time to a ready session | 7.16s (cached image) |
 | Build succeeded | yes |
-| Notebook execution | 414.12s |
+| Notebook execution | 6m 54s |
 | Build command exit code | 0 (zero despite cell errors) |
 | Notebooks ran clean | no |
 | Execution cache | **reused — timing is not execution** |
@@ -28,9 +28,9 @@ BinderHub reused an existing image, so the 7.16s is a pod launch and image pull.
 |---|---|
 | [`notebooks/radar-basics/radar-basics.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/radar-basics/radar-basics.ipynb) | 0.11s |
 | [`notebooks/example-workflows/moore-oklahoma-tornado.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/moore-oklahoma-tornado.ipynb) | 9.71s |
-| [`notebooks/example-workflows/echo_top_height.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/echo_top_height.ipynb) | 11.0s |
-| [`notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb) | 13.0s |
-| [`notebooks/foundations/interactive-radar-visualization.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/interactive-radar-visualization.ipynb) | 27.0s |
+| [`notebooks/example-workflows/echo_top_height.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/echo_top_height.ipynb) | 11s |
+| [`notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb) | 13s |
+| [`notebooks/foundations/interactive-radar-visualization.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/interactive-radar-visualization.ipynb) | 27s |
 
 Executed 11 notebook(s) from the project toc: [`notebooks/example-workflows/cacti-data-quality-example.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/cacti-data-quality-example.ipynb), [`notebooks/example-workflows/echo_top_height.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/echo_top_height.ipynb), [`notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/fastbarnes_interpolation_rhi.ipynb), [`notebooks/example-workflows/kdp-comparison.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/kdp-comparison.ipynb), [`notebooks/example-workflows/moore-oklahoma-tornado.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/moore-oklahoma-tornado.ipynb), [`notebooks/example-workflows/tracer-example.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/example-workflows/tracer-example.ipynb), [`notebooks/foundations/interactive-radar-visualization.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/interactive-radar-visualization.ipynb), [`notebooks/foundations/pyart-basics.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/pyart-basics.ipynb), [`notebooks/foundations/pyart-corrections.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/pyart-corrections.ipynb), [`notebooks/foundations/pyart-gridding.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/foundations/pyart-gridding.ipynb), [`notebooks/radar-basics/radar-basics.ipynb`](https://github.com/ProjectPythia/radar-cookbook/blob/main/notebooks/radar-basics/radar-basics.ipynb). Notebooks not listed in [`myst.yml`](https://github.com/ProjectPythia/radar-cookbook/blob/main/myst.yml) are never executed by a build, so a repo can carry notebooks no build ever touches.
 

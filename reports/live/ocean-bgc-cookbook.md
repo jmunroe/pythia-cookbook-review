@@ -8,7 +8,7 @@ Run 2026-07-22 07:11:09 UTC against [https://binder.projectpythia.org](https://b
 |---|---|
 | Live outcome | **execution failed** |
 | Static tier | `healthy` |
-| Time to a ready session | 425.15s (fresh build) |
+| Time to a ready session | 7m 05s (fresh build) |
 | Build succeeded | yes |
 | Notebook execution | 49.4s |
 | Build command exit code | 1 |

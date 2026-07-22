@@ -8,7 +8,7 @@ Run 2026-07-22 03:49:01 UTC against [https://binder.projectpythia.org](https://b
 |---|---|
 | Live outcome | **execution failed** |
 | Static tier | `healthy` |
-| Time to a ready session | 930.01s (fresh build) |
+| Time to a ready session | 15m 30s (fresh build) |
 | Build succeeded | yes |
 | Notebook execution | 41.57s |
 | Build command exit code | 1 |
@@ -22,7 +22,7 @@ Run 2026-07-22 03:49:01 UTC against [https://binder.projectpythia.org](https://b
 
 | Notebook | Execute + render |
 |---|---|
-| [`notebooks/foundations/google-cloud-basic.ipynb`](https://github.com/ProjectPythia/cmip6-cookbook/blob/main/notebooks/foundations/google-cloud-basic.ipynb) | 16.0s |
+| [`notebooks/foundations/google-cloud-basic.ipynb`](https://github.com/ProjectPythia/cmip6-cookbook/blob/main/notebooks/foundations/google-cloud-basic.ipynb) | 16s |
 
 Executed 6 notebook(s) from the project toc: [`notebooks/example-workflows/ecs-cmip6.ipynb`](https://github.com/ProjectPythia/cmip6-cookbook/blob/main/notebooks/example-workflows/ecs-cmip6.ipynb), [`notebooks/example-workflows/gmst.ipynb`](https://github.com/ProjectPythia/cmip6-cookbook/blob/main/notebooks/example-workflows/gmst.ipynb), [`notebooks/example-workflows/precip-freq.ipynb`](https://github.com/ProjectPythia/cmip6-cookbook/blob/main/notebooks/example-workflows/precip-freq.ipynb), [`notebooks/example-workflows/xesmf-ohu.ipynb`](https://github.com/ProjectPythia/cmip6-cookbook/blob/main/notebooks/example-workflows/xesmf-ohu.ipynb), [`notebooks/foundations/google-cloud-basic.ipynb`](https://github.com/ProjectPythia/cmip6-cookbook/blob/main/notebooks/foundations/google-cloud-basic.ipynb), [`notebooks/foundations/intake-esm.ipynb`](https://github.com/ProjectPythia/cmip6-cookbook/blob/main/notebooks/foundations/intake-esm.ipynb). Notebooks not listed in [`myst.yml`](https://github.com/ProjectPythia/cmip6-cookbook/blob/main/myst.yml) are never executed by a build, so a repo can carry notebooks no build ever touches.
 

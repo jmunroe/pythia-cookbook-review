@@ -5,16 +5,16 @@ Live outcome: **ran clean**. [← All live checks](../live.md) · [Repository](h
 Run 2026-07-22 08:11:37 UTC against [https://binder.projectpythia.org](https://binder.projectpythia.org), building [web-map-feature-services-cookbook](https://github.com/ProjectPythia/web-map-feature-services-cookbook) at ref [`main`](https://github.com/ProjectPythia/web-map-feature-services-cookbook/tree/main).
 
 :::{warning} Cached image
-BinderHub reused an existing image, so the 520.92s is a pod launch and image pull. It does **not** test whether `environment.yml` still solves.
+BinderHub reused an existing image, so the 8m 41s is a pod launch and image pull. It does **not** test whether `environment.yml` still solves.
 :::
 
 | Measure | Value |
 |---|---|
 | Live outcome | **ran clean** |
 | Static tier | `healthy` |
-| Time to a ready session | 520.92s (cached image) |
+| Time to a ready session | 8m 41s (cached image) |
 | Build succeeded | yes |
-| Notebook execution | 68.12s |
+| Notebook execution | 1m 08s |
 | Build command exit code | 0 |
 | Notebooks ran clean | yes |
 | Execution cache | **reused — timing is not execution** |
@@ -27,9 +27,9 @@ BinderHub reused an existing image, so the 520.92s is a pod launch and image pul
 | Notebook | Execute + render |
 |---|---|
 | [`notebooks/introduction.ipynb`](https://github.com/ProjectPythia/web-map-feature-services-cookbook/blob/main/notebooks/introduction.ipynb) | 0.03s |
-| [`notebooks/web_map_services.ipynb`](https://github.com/ProjectPythia/web-map-feature-services-cookbook/blob/main/notebooks/web_map_services.ipynb) | 11.0s |
-| [`notebooks/nasa_earthdata_gibs_explorer.ipynb`](https://github.com/ProjectPythia/web-map-feature-services-cookbook/blob/main/notebooks/nasa_earthdata_gibs_explorer.ipynb) | 20.0s |
-| [`notebooks/web_feature_services.ipynb`](https://github.com/ProjectPythia/web-map-feature-services-cookbook/blob/main/notebooks/web_feature_services.ipynb) | 57.0s |
+| [`notebooks/web_map_services.ipynb`](https://github.com/ProjectPythia/web-map-feature-services-cookbook/blob/main/notebooks/web_map_services.ipynb) | 11s |
+| [`notebooks/nasa_earthdata_gibs_explorer.ipynb`](https://github.com/ProjectPythia/web-map-feature-services-cookbook/blob/main/notebooks/nasa_earthdata_gibs_explorer.ipynb) | 20s |
+| [`notebooks/web_feature_services.ipynb`](https://github.com/ProjectPythia/web-map-feature-services-cookbook/blob/main/notebooks/web_feature_services.ipynb) | 57s |
 
 Executed 4 notebook(s) from the project toc: [`notebooks/introduction.ipynb`](https://github.com/ProjectPythia/web-map-feature-services-cookbook/blob/main/notebooks/introduction.ipynb), [`notebooks/nasa_earthdata_gibs_explorer.ipynb`](https://github.com/ProjectPythia/web-map-feature-services-cookbook/blob/main/notebooks/nasa_earthdata_gibs_explorer.ipynb), [`notebooks/web_feature_services.ipynb`](https://github.com/ProjectPythia/web-map-feature-services-cookbook/blob/main/notebooks/web_feature_services.ipynb), [`notebooks/web_map_services.ipynb`](https://github.com/ProjectPythia/web-map-feature-services-cookbook/blob/main/notebooks/web_map_services.ipynb). Notebooks not listed in [`myst.yml`](https://github.com/ProjectPythia/web-map-feature-services-cookbook/blob/main/myst.yml) are never executed by a build, so a repo can carry notebooks no build ever touches.
 

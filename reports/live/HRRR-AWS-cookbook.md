@@ -26,7 +26,7 @@ BinderHub reused an existing image, so the 6.49s is a pod launch and image pull.
 
 | Notebook | Execute + render |
 |---|---|
-| [`notebooks/example-workflows/plot-2mt.ipynb`](https://github.com/ProjectPythia/HRRR-AWS-cookbook/blob/main/notebooks/example-workflows/plot-2mt.ipynb) | 22.0s |
+| [`notebooks/example-workflows/plot-2mt.ipynb`](https://github.com/ProjectPythia/HRRR-AWS-cookbook/blob/main/notebooks/example-workflows/plot-2mt.ipynb) | 22s |
 
 Executed 1 notebook(s) from the project toc: [`notebooks/example-workflows/plot-2mt.ipynb`](https://github.com/ProjectPythia/HRRR-AWS-cookbook/blob/main/notebooks/example-workflows/plot-2mt.ipynb). Notebooks not listed in [`myst.yml`](https://github.com/ProjectPythia/HRRR-AWS-cookbook/blob/main/myst.yml) are never executed by a build, so a repo can carry notebooks no build ever touches.
 

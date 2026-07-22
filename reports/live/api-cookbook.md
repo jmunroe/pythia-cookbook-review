@@ -8,7 +8,7 @@ Run 2026-07-22 08:39:10 UTC against [https://binder.projectpythia.org](https://b
 |---|---|
 | Live outcome | **ran with errors** |
 | Static tier | `incubating` |
-| Time to a ready session | 393.34s (fresh build) |
+| Time to a ready session | 6m 33s (fresh build) |
 | Build succeeded | yes |
 | Notebook execution | 22.02s |
 | Build command exit code | 0 (zero despite cell errors) |
@@ -26,7 +26,7 @@ Run 2026-07-22 08:39:10 UTC against [https://binder.projectpythia.org](https://b
 | [`notebooks/example-workflows/air-quality-system-api.ipynb`](https://github.com/ProjectPythia/api-cookbook/blob/main/notebooks/example-workflows/air-quality-system-api.ipynb) | 5.83s |
 | [`notebooks/example-workflows/wfm-cloud-water.ipynb`](https://github.com/ProjectPythia/api-cookbook/blob/main/notebooks/example-workflows/wfm-cloud-water.ipynb) | 6.08s |
 | [`notebooks/api-foundations/api-basics.ipynb`](https://github.com/ProjectPythia/api-cookbook/blob/main/notebooks/api-foundations/api-basics.ipynb) | 7.06s |
-| [`notebooks/example-workflows/earthaccess-sla-sss.ipynb`](https://github.com/ProjectPythia/api-cookbook/blob/main/notebooks/example-workflows/earthaccess-sla-sss.ipynb) | 13.0s |
+| [`notebooks/example-workflows/earthaccess-sla-sss.ipynb`](https://github.com/ProjectPythia/api-cookbook/blob/main/notebooks/example-workflows/earthaccess-sla-sss.ipynb) | 13s |
 
 Executed 5 notebook(s) from the project toc: [`notebooks/api-foundations/api-basics.ipynb`](https://github.com/ProjectPythia/api-cookbook/blob/main/notebooks/api-foundations/api-basics.ipynb), [`notebooks/example-workflows/air-quality-system-api.ipynb`](https://github.com/ProjectPythia/api-cookbook/blob/main/notebooks/example-workflows/air-quality-system-api.ipynb), [`notebooks/example-workflows/cneos-fireball.ipynb`](https://github.com/ProjectPythia/api-cookbook/blob/main/notebooks/example-workflows/cneos-fireball.ipynb), [`notebooks/example-workflows/earthaccess-sla-sss.ipynb`](https://github.com/ProjectPythia/api-cookbook/blob/main/notebooks/example-workflows/earthaccess-sla-sss.ipynb), [`notebooks/example-workflows/wfm-cloud-water.ipynb`](https://github.com/ProjectPythia/api-cookbook/blob/main/notebooks/example-workflows/wfm-cloud-water.ipynb). Notebooks not listed in [`myst.yml`](https://github.com/ProjectPythia/api-cookbook/blob/main/myst.yml) are never executed by a build, so a repo can carry notebooks no build ever touches.
 

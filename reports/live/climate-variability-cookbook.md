@@ -8,7 +8,7 @@ Run 2026-07-22 09:21:45 UTC against [https://binder.projectpythia.org](https://b
 |---|---|
 | Live outcome | **ran with errors** |
 | Static tier | `incubating` |
-| Time to a ready session | 381.75s (fresh build) |
+| Time to a ready session | 6m 22s (fresh build) |
 | Build succeeded | yes |
 | Notebook execution | 42.27s |
 | Build command exit code | 0 (zero despite cell errors) |
@@ -22,7 +22,7 @@ Run 2026-07-22 09:21:45 UTC against [https://binder.projectpythia.org](https://b
 
 | Notebook | Execute + render |
 |---|---|
-| [`notebooks/CESM2_LENS2_AWS.ipynb`](https://github.com/ProjectPythia/climate-variability-cookbook/blob/main/notebooks/CESM2_LENS2_AWS.ipynb) | 35.0s |
+| [`notebooks/CESM2_LENS2_AWS.ipynb`](https://github.com/ProjectPythia/climate-variability-cookbook/blob/main/notebooks/CESM2_LENS2_AWS.ipynb) | 35s |
 
 Executed 1 notebook(s) from the project toc: [`notebooks/CESM2_LENS2_AWS.ipynb`](https://github.com/ProjectPythia/climate-variability-cookbook/blob/main/notebooks/CESM2_LENS2_AWS.ipynb). Notebooks not listed in [`myst.yml`](https://github.com/ProjectPythia/climate-variability-cookbook/blob/main/myst.yml) are never executed by a build, so a repo can carry notebooks no build ever touches.
 

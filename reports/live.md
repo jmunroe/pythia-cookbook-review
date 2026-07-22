@@ -26,19 +26,19 @@ The Binder image would not build, so the launch button gives a learner nothing. 
 
 | Cookbook | Static tier | Session | Execution | Peak memory | Errors | Checked |
 |---|---|---|---|---|---|---|
-| [arm-field-site-cookbook](live/arm-field-site-cookbook.md) | `incubating` | 86.28s | —s | — | 0 | 2026-07-22 |
-| [AtmosCol-2023](live/AtmosCol-2023.md) | `incubating` | 96.27s | —s | — | 0 | 2026-07-22 |
-| [CFC-extreme-weather-cookbook](live/CFC-extreme-weather-cookbook.md) | `incubating` | 78.09s | —s | — | 0 | 2026-07-22 |
-| [eo-datascience-cookbook](live/eo-datascience-cookbook.md) | `healthy` | 687.95s | —s | — | 0 | 2026-07-22 |
-| [esgf-cookbook](live/esgf-cookbook.md) | `stale` | 416.52s | —s | — | 0 | 2026-07-21 |
-| [extreme-weather-events-cookbook](live/extreme-weather-events-cookbook.md) | `incubating` | 132.22s | —s | — | 0 | 2026-07-22 |
-| [great-circle-cookbook](live/great-circle-cookbook.md) | `incubating` | 94.13s | —s | — | 0 | 2026-07-22 |
-| [kerchunk-cookbook](live/kerchunk-cookbook.md) | `healthy` | 578.45s | —s | — | 0 | 2026-07-22 |
-| [metpy-cookbook](live/metpy-cookbook.md) | `healthy` | 652.82s | —s | — | 0 | 2026-07-22 |
-| [mpas-jedi-cookbook](live/mpas-jedi-cookbook.md) | `healthy` | 164.76s | —s | — | 0 | 2026-07-22 |
-| [osdf-cookbook](live/osdf-cookbook.md) | `healthy` | 108.72s | —s | — | 0 | 2026-07-22 |
-| [snow-observations-cookbook](live/snow-observations-cookbook.md) | `healthy` | 63.02s | —s | — | 0 | 2026-07-22 |
-| [unstructured-grid-viz-cookbook](live/unstructured-grid-viz-cookbook.md) | `healthy` | 1800.11s | —s | — | 0 | 2026-07-22 |
+| [arm-field-site-cookbook](live/arm-field-site-cookbook.md) | `incubating` | 1m 26s | — | — | 0 | 2026-07-22 |
+| [AtmosCol-2023](live/AtmosCol-2023.md) | `incubating` | 1m 36s | — | — | 0 | 2026-07-22 |
+| [CFC-extreme-weather-cookbook](live/CFC-extreme-weather-cookbook.md) | `incubating` | 1m 18s | — | — | 0 | 2026-07-22 |
+| [eo-datascience-cookbook](live/eo-datascience-cookbook.md) | `healthy` | 11m 28s | — | — | 0 | 2026-07-22 |
+| [esgf-cookbook](live/esgf-cookbook.md) | `stale` | 6m 57s | — | — | 0 | 2026-07-21 |
+| [extreme-weather-events-cookbook](live/extreme-weather-events-cookbook.md) | `incubating` | 2m 12s | — | — | 0 | 2026-07-22 |
+| [great-circle-cookbook](live/great-circle-cookbook.md) | `incubating` | 1m 34s | — | — | 0 | 2026-07-22 |
+| [kerchunk-cookbook](live/kerchunk-cookbook.md) | `healthy` | 9m 38s | — | — | 0 | 2026-07-22 |
+| [metpy-cookbook](live/metpy-cookbook.md) | `healthy` | 10m 53s | — | — | 0 | 2026-07-22 |
+| [mpas-jedi-cookbook](live/mpas-jedi-cookbook.md) | `healthy` | 2m 45s | — | — | 0 | 2026-07-22 |
+| [osdf-cookbook](live/osdf-cookbook.md) | `healthy` | 1m 49s | — | — | 0 | 2026-07-22 |
+| [snow-observations-cookbook](live/snow-observations-cookbook.md) | `healthy` | 1m 03s | — | — | 0 | 2026-07-22 |
+| [unstructured-grid-viz-cookbook](live/unstructured-grid-viz-cookbook.md) | `healthy` | 30m 00s | — | — | 0 | 2026-07-22 |
 
 ### execution failed — 6
 
@@ -46,12 +46,12 @@ The build succeeded but `myst build --execute` itself did not complete -- a time
 
 | Cookbook | Static tier | Session | Execution | Peak memory | Errors | Checked |
 |---|---|---|---|---|---|---|
-| [armss2024-sail-cookbook](live/armss2024-sail-cookbook.md) | `incubating` | 489.19s | 6.79s | 0.10 of 8.6 GB | 0 | 2026-07-22 |
-| [cmip6-cookbook](live/cmip6-cookbook.md) | `healthy` | 930.01s | 41.57s | 7.32 of 8.6 GB | 0 | 2026-07-22 |
-| [dask-cookbook](live/dask-cookbook.md) | `healthy` | 402.9s | 56.09s | 8.23 of 8.6 GB | 0 | 2026-07-22 |
-| [gdex-cookbook](live/gdex-cookbook.md) | `healthy` | 166.65s (cached) | 81.87s | 7.94 of 8.6 GB | 0 | 2026-07-22 |
-| [land-atmosphere-interactions-and-hydrology-cookbook](live/land-atmosphere-interactions-and-hydrology-cookbook.md) | `incubating` | 335.66s | 9.55s | 0.14 of 8.6 GB | 0 | 2026-07-22 |
-| [ocean-bgc-cookbook](live/ocean-bgc-cookbook.md) | `healthy` | 425.15s | 49.4s | 7.47 of 8.6 GB | 0 | 2026-07-22 |
+| [armss2024-sail-cookbook](live/armss2024-sail-cookbook.md) | `incubating` | 8m 09s | 6.79s | 0.10 of 8.6 GB | 0 | 2026-07-22 |
+| [cmip6-cookbook](live/cmip6-cookbook.md) | `healthy` | 15m 30s | 41.57s | 7.32 of 8.6 GB | 0 | 2026-07-22 |
+| [dask-cookbook](live/dask-cookbook.md) | `healthy` | 6m 43s | 56.09s | 8.23 of 8.6 GB | 0 | 2026-07-22 |
+| [gdex-cookbook](live/gdex-cookbook.md) | `healthy` | 2m 47s (cached) | 1m 22s | 7.94 of 8.6 GB | 0 | 2026-07-22 |
+| [land-atmosphere-interactions-and-hydrology-cookbook](live/land-atmosphere-interactions-and-hydrology-cookbook.md) | `incubating` | 5m 36s | 9.55s | 0.14 of 8.6 GB | 0 | 2026-07-22 |
+| [ocean-bgc-cookbook](live/ocean-bgc-cookbook.md) | `healthy` | 7m 05s | 49.4s | 7.47 of 8.6 GB | 0 | 2026-07-22 |
 
 ### ran with errors — 13
 
@@ -59,19 +59,19 @@ The book built and ran, but at least one notebook cell raised. Read the per-cook
 
 | Cookbook | Static tier | Session | Execution | Peak memory | Errors | Checked |
 |---|---|---|---|---|---|---|
-| [api-cookbook](live/api-cookbook.md) | `incubating` | 393.34s | 22.02s | 0.97 of 8.6 GB | 1 | 2026-07-22 |
-| [cesm-lens-aws-cookbook](live/cesm-lens-aws-cookbook.md) | `healthy` | 329.75s | 463.46s | 3.90 of 8.6 GB | 2 | 2026-07-22 |
-| [climate-variability-cookbook](live/climate-variability-cookbook.md) | `incubating` | 381.75s | 42.27s | 0.34 of 8.6 GB | 1 | 2026-07-22 |
-| [ERA5_interactive-cookbook](live/ERA5_interactive-cookbook.md) | `healthy` | 421.62s | 738.69s | 2.23 of 8.6 GB | 1 | 2026-07-22 |
-| [geomorphology-cookbook](live/geomorphology-cookbook.md) | `incubating` | 475.51s | 141.74s | 2.27 of 8.6 GB | 1 | 2026-07-22 |
-| [geostationary-cookbook](live/geostationary-cookbook.md) | `incubating` | 322.5s | 162.03s | 3.18 of 8.6 GB | 4 | 2026-07-22 |
-| [gridding-cookbook](live/gridding-cookbook.md) | `healthy` | 419.87s (cached) | 58.63s | 3.73 of 8.6 GB | 1 | 2026-07-22 |
-| [icesat2-cookbook](live/icesat2-cookbook.md) | `incubating` | 730.2s | 63.55s | 1.84 of 8.6 GB | 2 | 2026-07-22 |
-| [intake-cookbook](live/intake-cookbook.md) | `degraded` | 508.69s | 20.27s | 0.50 of 8.6 GB | 2 | 2026-07-22 |
-| [landsat-ml-cookbook](live/landsat-ml-cookbook.md) | `stale` | 469.24s | 34.69s | 0.95 of 8.6 GB | 3 | 2026-07-21 |
-| [radar-cookbook](live/radar-cookbook.md) | `stale` | 7.16s (cached) | 414.12s | 7.97 of 8.6 GB | 3 | 2026-07-21 |
-| [vapor-python-cookbook](live/vapor-python-cookbook.md) | `healthy` | 161.25s | 14.09s | 0.69 of 8.6 GB | 15 | 2026-07-22 |
-| [xbatcher-ML-1-cookbook](live/xbatcher-ML-1-cookbook.md) | `stale` | 579.91s | 81.83s | 0.70 of 8.6 GB | 1 | 2026-07-22 |
+| [api-cookbook](live/api-cookbook.md) | `incubating` | 6m 33s | 22.02s | 0.97 of 8.6 GB | 1 | 2026-07-22 |
+| [cesm-lens-aws-cookbook](live/cesm-lens-aws-cookbook.md) | `healthy` | 5m 30s | 7m 43s | 3.90 of 8.6 GB | 2 | 2026-07-22 |
+| [climate-variability-cookbook](live/climate-variability-cookbook.md) | `incubating` | 6m 22s | 42.27s | 0.34 of 8.6 GB | 1 | 2026-07-22 |
+| [ERA5_interactive-cookbook](live/ERA5_interactive-cookbook.md) | `healthy` | 7m 02s | 12m 19s | 2.23 of 8.6 GB | 1 | 2026-07-22 |
+| [geomorphology-cookbook](live/geomorphology-cookbook.md) | `incubating` | 7m 56s | 2m 22s | 2.27 of 8.6 GB | 1 | 2026-07-22 |
+| [geostationary-cookbook](live/geostationary-cookbook.md) | `incubating` | 5m 22s | 2m 42s | 3.18 of 8.6 GB | 4 | 2026-07-22 |
+| [gridding-cookbook](live/gridding-cookbook.md) | `healthy` | 7m 00s (cached) | 58.63s | 3.73 of 8.6 GB | 1 | 2026-07-22 |
+| [icesat2-cookbook](live/icesat2-cookbook.md) | `incubating` | 12m 10s | 1m 04s | 1.84 of 8.6 GB | 2 | 2026-07-22 |
+| [intake-cookbook](live/intake-cookbook.md) | `degraded` | 8m 29s | 20.27s | 0.50 of 8.6 GB | 2 | 2026-07-22 |
+| [landsat-ml-cookbook](live/landsat-ml-cookbook.md) | `stale` | 7m 49s | 34.69s | 0.95 of 8.6 GB | 3 | 2026-07-21 |
+| [radar-cookbook](live/radar-cookbook.md) | `stale` | 7.16s (cached) | 6m 54s | 7.97 of 8.6 GB | 3 | 2026-07-21 |
+| [vapor-python-cookbook](live/vapor-python-cookbook.md) | `healthy` | 2m 41s | 14.09s | 0.69 of 8.6 GB | 15 | 2026-07-22 |
+| [xbatcher-ML-1-cookbook](live/xbatcher-ML-1-cookbook.md) | `stale` | 9m 40s | 1m 22s | 0.70 of 8.6 GB | 1 | 2026-07-22 |
 
 ### ran clean — 19
 
@@ -79,25 +79,25 @@ Built and ran with no cell errors on this sample. Not a verdict -- a cached imag
 
 | Cookbook | Static tier | Session | Execution | Peak memory | Errors | Checked |
 |---|---|---|---|---|---|---|
-| [advanced-viz-cookbook](live/advanced-viz-cookbook.md) | `healthy` | 341.33s | 45.64s | 1.52 of 8.6 GB | 0 | 2026-07-22 |
-| [Aerosol-Cloud-Interactions-cookbook](live/Aerosol-Cloud-Interactions-cookbook.md) | `incubating` | 985.26s | 10.52s | 0.14 of 8.6 GB | 0 | 2026-07-22 |
-| [atmos-modeling-cookbook](live/atmos-modeling-cookbook.md) | `incubating` | 79.6s (cached) | 33.14s | 3.26 of 8.6 GB | 0 | 2026-07-22 |
-| [bayesian-mcmc-cookbook](live/bayesian-mcmc-cookbook.md) | `incubating` | 256.08s | 116.3s | 0.82 of 8.6 GB | 0 | 2026-07-22 |
-| [BiasCorrectionCrowdsourcedData-cookbook](live/BiasCorrectionCrowdsourcedData-cookbook.md) | `incubating` | 385.45s | 10.95s | 0.16 of 8.6 GB | 0 | 2026-07-22 |
-| [cacti-deep-convection](live/cacti-deep-convection.md) | `incubating` | 178.98s | 0.79s | 0.13 of 8.6 GB | 0 | 2026-07-22 |
-| [data-science-ai-teammate-cookbook](live/data-science-ai-teammate-cookbook.md) | `incubating` | 443.93s | 65.34s | 0.52 of 8.6 GB | 0 | 2026-07-22 |
-| [dust-cookbook](live/dust-cookbook.md) | `incubating` | 232.25s | 132.41s | 1.00 of 8.6 GB | 0 | 2026-07-22 |
-| [eofs-cookbook](live/eofs-cookbook.md) | `healthy` | 81.46s (cached) | 44.02s | 1.43 of 8.6 GB | 0 | 2026-07-21 |
-| [feature-tracking-cookbook](live/feature-tracking-cookbook.md) | `healthy` | 629.43s | 179.48s | 3.90 of 8.6 GB | 0 | 2026-07-22 |
-| [geosat-cookbook](live/geosat-cookbook.md) | `incubating` | 348.53s | 69.0s | 0.10 of 8.6 GB | 0 | 2026-07-22 |
-| [healpix-cookbook](live/healpix-cookbook.md) | `healthy` | 11.11s (cached) | 81.86s | 1.83 of 8.6 GB | 0 | 2026-07-22 |
-| [hello-pythia-cookbook](live/hello-pythia-cookbook.md) | `incubating` | 1145.43s | 0.6s | 0.10 of 8.6 GB | 0 | 2026-07-22 |
+| [advanced-viz-cookbook](live/advanced-viz-cookbook.md) | `healthy` | 5m 41s | 45.64s | 1.52 of 8.6 GB | 0 | 2026-07-22 |
+| [Aerosol-Cloud-Interactions-cookbook](live/Aerosol-Cloud-Interactions-cookbook.md) | `incubating` | 16m 25s | 10.52s | 0.14 of 8.6 GB | 0 | 2026-07-22 |
+| [atmos-modeling-cookbook](live/atmos-modeling-cookbook.md) | `incubating` | 1m 20s (cached) | 33.14s | 3.26 of 8.6 GB | 0 | 2026-07-22 |
+| [bayesian-mcmc-cookbook](live/bayesian-mcmc-cookbook.md) | `incubating` | 4m 16s | 1m 56s | 0.82 of 8.6 GB | 0 | 2026-07-22 |
+| [BiasCorrectionCrowdsourcedData-cookbook](live/BiasCorrectionCrowdsourcedData-cookbook.md) | `incubating` | 6m 25s | 10.95s | 0.16 of 8.6 GB | 0 | 2026-07-22 |
+| [cacti-deep-convection](live/cacti-deep-convection.md) | `incubating` | 2m 59s | 0.79s | 0.13 of 8.6 GB | 0 | 2026-07-22 |
+| [data-science-ai-teammate-cookbook](live/data-science-ai-teammate-cookbook.md) | `incubating` | 7m 24s | 1m 05s | 0.52 of 8.6 GB | 0 | 2026-07-22 |
+| [dust-cookbook](live/dust-cookbook.md) | `incubating` | 3m 52s | 2m 12s | 1.00 of 8.6 GB | 0 | 2026-07-22 |
+| [eofs-cookbook](live/eofs-cookbook.md) | `healthy` | 1m 21s (cached) | 44.02s | 1.43 of 8.6 GB | 0 | 2026-07-21 |
+| [feature-tracking-cookbook](live/feature-tracking-cookbook.md) | `healthy` | 10m 29s | 2m 59s | 3.90 of 8.6 GB | 0 | 2026-07-22 |
+| [geosat-cookbook](live/geosat-cookbook.md) | `incubating` | 5m 49s | 1m 09s | 0.10 of 8.6 GB | 0 | 2026-07-22 |
+| [healpix-cookbook](live/healpix-cookbook.md) | `healthy` | 11.11s (cached) | 1m 22s | 1.83 of 8.6 GB | 0 | 2026-07-22 |
+| [hello-pythia-cookbook](live/hello-pythia-cookbook.md) | `incubating` | 19m 05s | 0.6s | 0.10 of 8.6 GB | 0 | 2026-07-22 |
 | [HRRR-AWS-cookbook](live/HRRR-AWS-cookbook.md) | `healthy` | 6.49s (cached) | 27.53s | 0.62 of 8.6 GB | 0 | 2026-07-21 |
-| [interactive-sentinel-2-cookbook](live/interactive-sentinel-2-cookbook.md) | `degraded` | 473.56s | 169.41s | 1.68 of 8.6 GB | 0 | 2026-07-22 |
-| [na-cordex-viz-cookbook](live/na-cordex-viz-cookbook.md) | `healthy` | 455.92s (cached) | 481.71s | 2.23 of 8.6 GB | 0 | 2026-07-22 |
-| [paleoPCA-cookbook](live/paleoPCA-cookbook.md) | `healthy` | 468.96s | 43.08s | 0.77 of 8.6 GB | 0 | 2026-07-22 |
-| [wavelet-cookbook](live/wavelet-cookbook.md) | `healthy` | 217.55s | 23.59s | 1.77 of 8.6 GB | 0 | 2026-07-22 |
-| [web-map-feature-services-cookbook](live/web-map-feature-services-cookbook.md) | `healthy` | 520.92s (cached) | 68.12s | 0.97 of 8.6 GB | 0 | 2026-07-22 |
+| [interactive-sentinel-2-cookbook](live/interactive-sentinel-2-cookbook.md) | `degraded` | 7m 54s | 2m 49s | 1.68 of 8.6 GB | 0 | 2026-07-22 |
+| [na-cordex-viz-cookbook](live/na-cordex-viz-cookbook.md) | `healthy` | 7m 36s (cached) | 8m 02s | 2.23 of 8.6 GB | 0 | 2026-07-22 |
+| [paleoPCA-cookbook](live/paleoPCA-cookbook.md) | `healthy` | 7m 49s | 43.08s | 0.77 of 8.6 GB | 0 | 2026-07-22 |
+| [wavelet-cookbook](live/wavelet-cookbook.md) | `healthy` | 3m 38s | 23.59s | 1.77 of 8.6 GB | 0 | 2026-07-22 |
+| [web-map-feature-services-cookbook](live/web-map-feature-services-cookbook.md) | `healthy` | 8m 41s (cached) | 1m 08s | 0.97 of 8.6 GB | 0 | 2026-07-22 |
 
 Where the live outcome and the static tier disagree, the live result is the more direct evidence — but read it as one sample of a network-dependent workflow, not a verdict. See [the limitations](../docs/live-assessment.md#limitations).
 

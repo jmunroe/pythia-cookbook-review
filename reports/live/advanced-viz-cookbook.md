@@ -8,7 +8,7 @@ Run 2026-07-22 03:28:40 UTC against [https://binder.projectpythia.org](https://b
 |---|---|
 | Live outcome | **ran clean** |
 | Static tier | `healthy` |
-| Time to a ready session | 341.33s (fresh build) |
+| Time to a ready session | 5m 41s (fresh build) |
 | Build succeeded | yes |
 | Notebook execution | 45.64s |
 | Build command exit code | 0 |
@@ -25,10 +25,10 @@ Run 2026-07-22 03:28:40 UTC against [https://binder.projectpythia.org](https://b
 | [`notebooks/1-comparison.ipynb`](https://github.com/ProjectPythia/advanced-viz-cookbook/blob/main/notebooks/1-comparison.ipynb) | 7.93s |
 | [`notebooks/2-good-viz.ipynb`](https://github.com/ProjectPythia/advanced-viz-cookbook/blob/main/notebooks/2-good-viz.ipynb) | 8.54s |
 | [`notebooks/3-plot-elements.ipynb`](https://github.com/ProjectPythia/advanced-viz-cookbook/blob/main/notebooks/3-plot-elements.ipynb) | 8.63s |
-| [`notebooks/5-skewt.ipynb`](https://github.com/ProjectPythia/advanced-viz-cookbook/blob/main/notebooks/5-skewt.ipynb) | 10.0s |
-| [`notebooks/4-taylor-diagrams.ipynb`](https://github.com/ProjectPythia/advanced-viz-cookbook/blob/main/notebooks/4-taylor-diagrams.ipynb) | 11.0s |
-| [`notebooks/6-spaghetti.ipynb`](https://github.com/ProjectPythia/advanced-viz-cookbook/blob/main/notebooks/6-spaghetti.ipynb) | 21.0s |
-| [`notebooks/7-animation.ipynb`](https://github.com/ProjectPythia/advanced-viz-cookbook/blob/main/notebooks/7-animation.ipynb) | 32.0s |
+| [`notebooks/5-skewt.ipynb`](https://github.com/ProjectPythia/advanced-viz-cookbook/blob/main/notebooks/5-skewt.ipynb) | 10s |
+| [`notebooks/4-taylor-diagrams.ipynb`](https://github.com/ProjectPythia/advanced-viz-cookbook/blob/main/notebooks/4-taylor-diagrams.ipynb) | 11s |
+| [`notebooks/6-spaghetti.ipynb`](https://github.com/ProjectPythia/advanced-viz-cookbook/blob/main/notebooks/6-spaghetti.ipynb) | 21s |
+| [`notebooks/7-animation.ipynb`](https://github.com/ProjectPythia/advanced-viz-cookbook/blob/main/notebooks/7-animation.ipynb) | 32s |
 
 Executed 8 notebook(s) from the project toc: [`notebooks/1-comparison.ipynb`](https://github.com/ProjectPythia/advanced-viz-cookbook/blob/main/notebooks/1-comparison.ipynb), [`notebooks/2-good-viz.ipynb`](https://github.com/ProjectPythia/advanced-viz-cookbook/blob/main/notebooks/2-good-viz.ipynb), [`notebooks/3-plot-elements.ipynb`](https://github.com/ProjectPythia/advanced-viz-cookbook/blob/main/notebooks/3-plot-elements.ipynb), [`notebooks/4-taylor-diagrams.ipynb`](https://github.com/ProjectPythia/advanced-viz-cookbook/blob/main/notebooks/4-taylor-diagrams.ipynb), [`notebooks/5-skewt.ipynb`](https://github.com/ProjectPythia/advanced-viz-cookbook/blob/main/notebooks/5-skewt.ipynb), [`notebooks/6-spaghetti.ipynb`](https://github.com/ProjectPythia/advanced-viz-cookbook/blob/main/notebooks/6-spaghetti.ipynb), [`notebooks/7-animation.ipynb`](https://github.com/ProjectPythia/advanced-viz-cookbook/blob/main/notebooks/7-animation.ipynb), [`notebooks/8-interactive-holoviz-mpas.ipynb`](https://github.com/ProjectPythia/advanced-viz-cookbook/blob/main/notebooks/8-interactive-holoviz-mpas.ipynb). Notebooks not listed in [`myst.yml`](https://github.com/ProjectPythia/advanced-viz-cookbook/blob/main/myst.yml) are never executed by a build, so a repo can carry notebooks no build ever touches.
 

@@ -8,7 +8,7 @@ Run 2026-07-22 08:07:15 UTC against [https://binder.projectpythia.org](https://b
 |---|---|
 | Live outcome | **ran clean** |
 | Static tier | `healthy` |
-| Time to a ready session | 217.55s (fresh build) |
+| Time to a ready session | 3m 38s (fresh build) |
 | Build succeeded | yes |
 | Notebook execution | 23.59s |
 | Build command exit code | 0 |
@@ -24,9 +24,9 @@ Run 2026-07-22 08:07:15 UTC against [https://binder.projectpythia.org](https://b
 |---|---|
 | [`notebooks/wavelet-introduction/wavelet-basics.ipynb`](https://github.com/ProjectPythia/wavelet-cookbook/blob/main/notebooks/wavelet-introduction/wavelet-basics.ipynb) | 6.4s |
 | [`notebooks/example-workflows/buoy-wave-height.ipynb`](https://github.com/ProjectPythia/wavelet-cookbook/blob/main/notebooks/example-workflows/buoy-wave-height.ipynb) | 8.79s |
-| [`notebooks/wavelet-introduction/spy-keypad.ipynb`](https://github.com/ProjectPythia/wavelet-cookbook/blob/main/notebooks/wavelet-introduction/spy-keypad.ipynb) | 11.0s |
-| [`notebooks/example-workflows/nino3.ipynb`](https://github.com/ProjectPythia/wavelet-cookbook/blob/main/notebooks/example-workflows/nino3.ipynb) | 11.0s |
-| [`notebooks/wavelet-introduction/jingle-bells.ipynb`](https://github.com/ProjectPythia/wavelet-cookbook/blob/main/notebooks/wavelet-introduction/jingle-bells.ipynb) | 15.0s |
+| [`notebooks/wavelet-introduction/spy-keypad.ipynb`](https://github.com/ProjectPythia/wavelet-cookbook/blob/main/notebooks/wavelet-introduction/spy-keypad.ipynb) | 11s |
+| [`notebooks/example-workflows/nino3.ipynb`](https://github.com/ProjectPythia/wavelet-cookbook/blob/main/notebooks/example-workflows/nino3.ipynb) | 11s |
+| [`notebooks/wavelet-introduction/jingle-bells.ipynb`](https://github.com/ProjectPythia/wavelet-cookbook/blob/main/notebooks/wavelet-introduction/jingle-bells.ipynb) | 15s |
 
 Executed 4 notebook(s) from the project toc: [`notebooks/example-workflows/nino3.ipynb`](https://github.com/ProjectPythia/wavelet-cookbook/blob/main/notebooks/example-workflows/nino3.ipynb), [`notebooks/wavelet-introduction/jingle-bells.ipynb`](https://github.com/ProjectPythia/wavelet-cookbook/blob/main/notebooks/wavelet-introduction/jingle-bells.ipynb), [`notebooks/wavelet-introduction/spy-keypad.ipynb`](https://github.com/ProjectPythia/wavelet-cookbook/blob/main/notebooks/wavelet-introduction/spy-keypad.ipynb), [`notebooks/wavelet-introduction/wavelet-basics.ipynb`](https://github.com/ProjectPythia/wavelet-cookbook/blob/main/notebooks/wavelet-introduction/wavelet-basics.ipynb). Notebooks not listed in [`myst.yml`](https://github.com/ProjectPythia/wavelet-cookbook/blob/main/myst.yml) are never executed by a build, so a repo can carry notebooks no build ever touches.
 

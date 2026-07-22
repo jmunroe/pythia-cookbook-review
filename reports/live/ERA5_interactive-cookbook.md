@@ -8,9 +8,9 @@ Run 2026-07-22 04:25:49 UTC against [https://binder.projectpythia.org](https://b
 |---|---|
 | Live outcome | **ran with errors** |
 | Static tier | `healthy` |
-| Time to a ready session | 421.62s (fresh build) |
+| Time to a ready session | 7m 02s (fresh build) |
 | Build succeeded | yes |
-| Notebook execution | 738.69s |
+| Notebook execution | 12m 19s |
 | Build command exit code | 0 (zero despite cell errors) |
 | Notebooks ran clean | no |
 | Execution cache | **reused — timing is not execution** |
@@ -22,10 +22,10 @@ Run 2026-07-22 04:25:49 UTC against [https://binder.projectpythia.org](https://b
 
 | Notebook | Execute + render |
 |---|---|
-| [`notebooks/05_data_preprocessing.ipynb`](https://github.com/ProjectPythia/ERA5_interactive-cookbook/blob/main/notebooks/05_data_preprocessing.ipynb) | 11.0s |
-| [`notebooks/06_era5_anomaly.ipynb`](https://github.com/ProjectPythia/ERA5_interactive-cookbook/blob/main/notebooks/06_era5_anomaly.ipynb) | 19.0s |
-| [`notebooks/04_dashboard.ipynb`](https://github.com/ProjectPythia/ERA5_interactive-cookbook/blob/main/notebooks/04_dashboard.ipynb) | 22.0s |
-| [`notebooks/03_hvplot.ipynb`](https://github.com/ProjectPythia/ERA5_interactive-cookbook/blob/main/notebooks/03_hvplot.ipynb) | 35.0s |
+| [`notebooks/05_data_preprocessing.ipynb`](https://github.com/ProjectPythia/ERA5_interactive-cookbook/blob/main/notebooks/05_data_preprocessing.ipynb) | 11s |
+| [`notebooks/06_era5_anomaly.ipynb`](https://github.com/ProjectPythia/ERA5_interactive-cookbook/blob/main/notebooks/06_era5_anomaly.ipynb) | 19s |
+| [`notebooks/04_dashboard.ipynb`](https://github.com/ProjectPythia/ERA5_interactive-cookbook/blob/main/notebooks/04_dashboard.ipynb) | 22s |
+| [`notebooks/03_hvplot.ipynb`](https://github.com/ProjectPythia/ERA5_interactive-cookbook/blob/main/notebooks/03_hvplot.ipynb) | 35s |
 
 Executed 6 notebook(s) from the project toc: [`notebooks/01BasicVisualization.ipynb`](https://github.com/ProjectPythia/ERA5_interactive-cookbook/blob/main/notebooks/01BasicVisualization.ipynb), [`notebooks/02InteractiveVisualization.ipynb`](https://github.com/ProjectPythia/ERA5_interactive-cookbook/blob/main/notebooks/02InteractiveVisualization.ipynb), [`notebooks/03_hvplot.ipynb`](https://github.com/ProjectPythia/ERA5_interactive-cookbook/blob/main/notebooks/03_hvplot.ipynb), [`notebooks/04_dashboard.ipynb`](https://github.com/ProjectPythia/ERA5_interactive-cookbook/blob/main/notebooks/04_dashboard.ipynb), [`notebooks/05_data_preprocessing.ipynb`](https://github.com/ProjectPythia/ERA5_interactive-cookbook/blob/main/notebooks/05_data_preprocessing.ipynb), [`notebooks/06_era5_anomaly.ipynb`](https://github.com/ProjectPythia/ERA5_interactive-cookbook/blob/main/notebooks/06_era5_anomaly.ipynb). Notebooks not listed in [`myst.yml`](https://github.com/ProjectPythia/ERA5_interactive-cookbook/blob/main/myst.yml) are never executed by a build, so a repo can carry notebooks no build ever touches.
 

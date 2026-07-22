@@ -8,9 +8,9 @@ Run 2026-07-22 10:34:53 UTC against [https://binder.projectpythia.org](https://b
 |---|---|
 | Live outcome | **ran with errors** |
 | Static tier | `incubating` |
-| Time to a ready session | 730.2s (fresh build) |
+| Time to a ready session | 12m 10s (fresh build) |
 | Build succeeded | yes |
-| Notebook execution | 63.55s |
+| Notebook execution | 1m 04s |
 | Build command exit code | 0 (zero despite cell errors) |
 | Notebooks ran clean | no |
 | Execution cache | **reused — timing is not execution** |
@@ -28,8 +28,8 @@ Run 2026-07-22 10:34:53 UTC against [https://binder.projectpythia.org](https://b
 | [`notebooks/visualization.ipynb`](https://github.com/ProjectPythia/icesat2-cookbook/blob/main/notebooks/visualization.ipynb) | 0.16s |
 | [`notebooks/mission-overview.ipynb`](https://github.com/ProjectPythia/icesat2-cookbook/blob/main/notebooks/mission-overview.ipynb) | 1.58s |
 | [`notebooks/land-ice.ipynb`](https://github.com/ProjectPythia/icesat2-cookbook/blob/main/notebooks/land-ice.ipynb) | 9.23s |
-| [`notebooks/geospatial-transforms.ipynb`](https://github.com/ProjectPythia/icesat2-cookbook/blob/main/notebooks/geospatial-transforms.ipynb) | 40.0s |
-| [`notebooks/filtering.ipynb`](https://github.com/ProjectPythia/icesat2-cookbook/blob/main/notebooks/filtering.ipynb) | 52.0s |
+| [`notebooks/geospatial-transforms.ipynb`](https://github.com/ProjectPythia/icesat2-cookbook/blob/main/notebooks/geospatial-transforms.ipynb) | 40s |
+| [`notebooks/filtering.ipynb`](https://github.com/ProjectPythia/icesat2-cookbook/blob/main/notebooks/filtering.ipynb) | 52s |
 
 Executed 9 notebook(s) from the project toc: [`notebooks/contributing.ipynb`](https://github.com/ProjectPythia/icesat2-cookbook/blob/main/notebooks/contributing.ipynb), [`notebooks/engagement.ipynb`](https://github.com/ProjectPythia/icesat2-cookbook/blob/main/notebooks/engagement.ipynb), [`notebooks/filtering.ipynb`](https://github.com/ProjectPythia/icesat2-cookbook/blob/main/notebooks/filtering.ipynb), [`notebooks/geospatial-transforms.ipynb`](https://github.com/ProjectPythia/icesat2-cookbook/blob/main/notebooks/geospatial-transforms.ipynb), [`notebooks/governance.ipynb`](https://github.com/ProjectPythia/icesat2-cookbook/blob/main/notebooks/governance.ipynb), [`notebooks/land-ice.ipynb`](https://github.com/ProjectPythia/icesat2-cookbook/blob/main/notebooks/land-ice.ipynb), [`notebooks/mission-overview.ipynb`](https://github.com/ProjectPythia/icesat2-cookbook/blob/main/notebooks/mission-overview.ipynb), [`notebooks/snowdepth.ipynb`](https://github.com/ProjectPythia/icesat2-cookbook/blob/main/notebooks/snowdepth.ipynb), [`notebooks/visualization.ipynb`](https://github.com/ProjectPythia/icesat2-cookbook/blob/main/notebooks/visualization.ipynb). Notebooks not listed in [`myst.yml`](https://github.com/ProjectPythia/icesat2-cookbook/blob/main/myst.yml) are never executed by a build, so a repo can carry notebooks no build ever touches.
 

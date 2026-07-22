@@ -5,14 +5,14 @@ Live outcome: **ran with errors**. [← All live checks](../live.md) · [Reposit
 Run 2026-07-22 05:03:54 UTC against [https://binder.projectpythia.org](https://binder.projectpythia.org), building [gridding-cookbook](https://github.com/ProjectPythia/gridding-cookbook) at ref [`main`](https://github.com/ProjectPythia/gridding-cookbook/tree/main).
 
 :::{warning} Cached image
-BinderHub reused an existing image, so the 419.87s is a pod launch and image pull. It does **not** test whether `environment.yml` still solves.
+BinderHub reused an existing image, so the 7m 00s is a pod launch and image pull. It does **not** test whether `environment.yml` still solves.
 :::
 
 | Measure | Value |
 |---|---|
 | Live outcome | **ran with errors** |
 | Static tier | `healthy` |
-| Time to a ready session | 419.87s (cached image) |
+| Time to a ready session | 7m 00s (cached image) |
 | Build succeeded | yes |
 | Notebook execution | 58.63s |
 | Build command exit code | 0 (zero despite cell errors) |
@@ -26,9 +26,9 @@ BinderHub reused an existing image, so the 419.87s is a pod launch and image pul
 
 | Notebook | Execute + render |
 |---|---|
-| [`notebooks/pyresample_intro.ipynb`](https://github.com/ProjectPythia/gridding-cookbook/blob/main/notebooks/pyresample_intro.ipynb) | 10.0s |
-| [`notebooks/verde_intro.ipynb`](https://github.com/ProjectPythia/gridding-cookbook/blob/main/notebooks/verde_intro.ipynb) | 11.0s |
-| [`notebooks/xESMF_introduction.ipynb`](https://github.com/ProjectPythia/gridding-cookbook/blob/main/notebooks/xESMF_introduction.ipynb) | 49.0s |
+| [`notebooks/pyresample_intro.ipynb`](https://github.com/ProjectPythia/gridding-cookbook/blob/main/notebooks/pyresample_intro.ipynb) | 10s |
+| [`notebooks/verde_intro.ipynb`](https://github.com/ProjectPythia/gridding-cookbook/blob/main/notebooks/verde_intro.ipynb) | 11s |
+| [`notebooks/xESMF_introduction.ipynb`](https://github.com/ProjectPythia/gridding-cookbook/blob/main/notebooks/xESMF_introduction.ipynb) | 49s |
 
 Executed 3 notebook(s) from the project toc: [`notebooks/pyresample_intro.ipynb`](https://github.com/ProjectPythia/gridding-cookbook/blob/main/notebooks/pyresample_intro.ipynb), [`notebooks/verde_intro.ipynb`](https://github.com/ProjectPythia/gridding-cookbook/blob/main/notebooks/verde_intro.ipynb), [`notebooks/xESMF_introduction.ipynb`](https://github.com/ProjectPythia/gridding-cookbook/blob/main/notebooks/xESMF_introduction.ipynb). Notebooks not listed in [`myst.yml`](https://github.com/ProjectPythia/gridding-cookbook/blob/main/myst.yml) are never executed by a build, so a repo can carry notebooks no build ever touches.
 

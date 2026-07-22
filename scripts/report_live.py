@@ -85,6 +85,21 @@ def gb(value):
     return f"{value / 1e9:.2f} GB" if isinstance(value, (int, float)) else "—"
 
 
+def dur(value):
+    """A duration for reading: seconds under a minute, else 'Xm Ys'.
+
+    Build and execution times run to hundreds or thousands of seconds, which are
+    hard to read as a bare `1145.43s`. Keep sub-minute values in seconds so short
+    runs stay precise, and switch to minutes and seconds above that.
+    """
+    if not isinstance(value, (int, float)):
+        return "—"
+    if value < 60:
+        return f"{value:g}s"
+    minutes, seconds = divmod(int(round(value)), 60)
+    return f"{minutes}m {seconds:02d}s"
+
+
 def blob(record, path):
     """Link a repo-relative path to the exact ref that was built.
 
@@ -180,9 +195,9 @@ def overview_table(latest, tiers):
             lines.append(
                 f"| [{name}]({detail_slug(name)}) "
                 f"| `{tiers.get(name, '—')}` "
-                f"| {build.get('seconds')}s"
+                f"| {dur(build.get('seconds'))}"
                 f"{' (cached)' if build.get('image_cached') else ''} "
-                f"| {execution.get('seconds', '—')}s "
+                f"| {dur(execution.get('seconds'))} "
                 f"| {memory_cell(record)} "
                 f"| {len(record.get('errors') or [])} "
                 f"| {record.get('started_at', '')[:10]} |"
@@ -232,7 +247,7 @@ def detail_page(record, tiers):
     if build.get("image_cached"):
         lines += [
             ":::{warning} Cached image",
-            f"BinderHub reused an existing image, so the {build.get('seconds')}s "
+            f"BinderHub reused an existing image, so the {dur(build.get('seconds'))} "
             "is a pod launch and image pull. It does **not** test whether "
             "`environment.yml` still solves.",
             ":::",
@@ -245,7 +260,7 @@ def detail_page(record, tiers):
         "|---|---|",
         f"| Live outcome | **{verdict(record)}** |",
         f"| Static tier | `{tier}` |" if tier else "| Static tier | — |",
-        f"| Time to a ready session | {build.get('seconds')}s"
+        f"| Time to a ready session | {dur(build.get('seconds'))}"
         f"{' (cached image)' if build.get('image_cached') else ' (fresh build)'} |",
         f"| Build succeeded | {'no' if build.get('failed') else 'yes'} |",
     ]
@@ -254,7 +269,7 @@ def detail_page(record, tiers):
         # alone would call a run with ten tracebacks a success. Report both.
         clean = not execution.get("failed") and not errors
         rows += [
-            f"| Notebook execution | {execution.get('seconds')}s |",
+            f"| Notebook execution | {dur(execution.get('seconds'))} |",
             f"| Build command exit code | {execution.get('exit_code')}"
             + (" (zero despite cell errors)" if execution.get("exit_code") == 0 and errors else "")
             + " |",
@@ -298,7 +313,7 @@ def detail_page(record, tiers):
     if pages:
         lines += ["| Notebook | Execute + render |", "|---|---|"]
         lines += [
-            f"| [`{p['page']}`]({blob(record, p['page'])}) | {p['seconds']}s |"
+            f"| [`{p['page']}`]({blob(record, p['page'])}) | {dur(p['seconds'])} |"
             for p in pages
         ]
         lines.append("")
