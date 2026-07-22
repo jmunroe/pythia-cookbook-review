@@ -8,15 +8,15 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 ## Coverage
 
-**64 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
+**65 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
 
 | Outcome | Cookbooks |
 |---|---|
 | build failed | 19 |
-| execution failed | 9 |
+| execution failed | 10 |
 | ran with errors | 14 |
 | ran clean | 22 |
-| not yet checked | 4 |
+| not yet checked | 3 |
 
 ## Results
 
@@ -46,7 +46,7 @@ The Binder image would not build, so the launch button gives a learner nothing. 
 | [snow-observations-cookbook](live/snow-observations-cookbook.md) | `healthy` | 1m 03s | — | — | 0 | 2026-07-22 |
 | [unstructured-grid-viz-cookbook](live/unstructured-grid-viz-cookbook.md) | `healthy` | 30m 00s | — | — | 0 | 2026-07-22 |
 
-### execution failed — 9
+### execution failed — 10
 
 The build succeeded but `myst build --execute` itself did not complete -- a timeout, a dead kernel, or a crash rather than a cell error.
 
@@ -61,6 +61,7 @@ The build succeeded but `myst build --execute` itself did not complete -- a time
 | [lasso-those-clouds-cookbook](live/lasso-those-clouds-cookbook.md) | `incubating` | 24m 22s | 6.18s | 0.10 of 8.6 GB | 0 | 2026-07-22 |
 | [ocean-bgc-cookbook](live/ocean-bgc-cookbook.md) | `healthy` | 7m 05s | 49.4s | 7.47 of 8.6 GB | 0 | 2026-07-22 |
 | [sklearn-argo-cookbook](live/sklearn-argo-cookbook.md) | `incubating` | 7m 33s | 9m 22s | 8.61 of 8.6 GB | 0 | 2026-07-22 |
+| [spectral-analysis-cookbook](live/spectral-analysis-cookbook.md) | `incubating` | 16m 43s | 43.71s | 8.61 of 8.6 GB | 0 | 2026-07-22 |
 
 ### ran with errors — 14
 
