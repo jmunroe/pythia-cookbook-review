@@ -8,15 +8,15 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 ## Coverage
 
-**11 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
+**12 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
 
 | Outcome | Cookbooks |
 |---|---|
 | build failed | 1 |
-| execution failed | 1 |
+| execution failed | 2 |
 | ran with errors | 5 |
 | ran clean | 4 |
-| not yet checked | 57 |
+| not yet checked | 56 |
 
 ## Results
 
@@ -28,13 +28,14 @@ The Binder image would not build, so the launch button gives a learner nothing. 
 |---|---|---|---|---|---|---|
 | [esgf-cookbook](live/esgf-cookbook.md) | `stale` | 416.52s | —s | — | 0 | 2026-07-21 |
 
-### execution failed — 1
+### execution failed — 2
 
 The build succeeded but `myst build --execute` itself did not complete -- a timeout, a dead kernel, or a crash rather than a cell error.
 
 | Cookbook | Static tier | Session | Execution | Peak memory | Errors | Checked |
 |---|---|---|---|---|---|---|
 | [cmip6-cookbook](live/cmip6-cookbook.md) | `healthy` | 930.01s | 41.57s | 7.32 of 8.6 GB | 0 | 2026-07-22 |
+| [dask-cookbook](live/dask-cookbook.md) | `healthy` | 402.9s | 56.09s | 8.23 of 8.6 GB | 0 | 2026-07-22 |
 
 ### ran with errors — 5
 
