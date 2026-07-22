@@ -1,0 +1,136 @@
+{
+  "cookbook": "mpasviewer-cookbook",
+  "env_injection": {
+    "attempted": false
+  },
+  "started_at": "2026-07-22T16:14:27.399463+00:00",
+  "hub": "https://binder.projectpythia.org",
+  "ref": "main",
+  "toc_notebooks": [
+    "notebooks/20_remote_out_hurricane_investigation.ipynb",
+    "notebooks/Hurricane_Ida_Pt2.ipynb",
+    "notebooks/convective-environments.ipynb",
+    "notebooks/introduction.ipynb"
+  ],
+  "build": {
+    "hub": "https://binder.projectpythia.org",
+    "ref": "main",
+    "seconds": 26.52,
+    "exit_code": 1,
+    "failed": true,
+    "image_cached": false,
+    "log": [
+      {
+        "t": 19.29,
+        "line": "HEAD is now at 21f9d885 added example anim"
+      },
+      {
+        "t": 19.5,
+        "line": "Building conda environment for python=3.10"
+      },
+      {
+        "t": 19.5,
+        "line": "Unknown phase \"undefined\" from builder"
+      },
+      {
+        "t": 19.5,
+        "line": "Using CondaBuildPack builder"
+      },
+      {
+        "t": 20.6,
+        "line": "#3 transferring context: 2B done"
+      },
+      {
+        "t": 20.6,
+        "line": "#3 DONE 0.1s"
+      },
+      {
+        "t": 20.6,
+        "line": ""
+      },
+      {
+        "t": 20.6,
+        "line": "#5 [internal] load build context"
+      },
+      {
+        "t": 20.92,
+        "line": "#5 transferring context: 58.45MB 0.3s done"
+      },
+      {
+        "t": 21.14,
+        "line": ""
+      },
+      {
+        "t": 21.14,
+        "line": "#6 [ 5/19] RUN if id 1000; then       USER_1000=\"$(id 1000 -un)\";       if [ \"$USER_1000\" != \"jovyan\" ]; then         usermod --home \"/home/jovyan\" --login \"jovyan\" --move-home \"$USER_1000\";       fi;     else       useradd         --comment \"Default user\"         --create-home         --gid 1000         --no-log-init         --shell /bin/bash         --uid 1000         jovyan;     fi"
+      },
+      {
+        "t": 21.14,
+        "line": "#6 CACHED"
+      },
+      {
+        "t": 21.14,
+        "line": "#7 CACHED"
+      },
+      {
+        "t": 21.14,
+        "line": "#8 CACHED"
+      },
+      {
+        "t": 21.15,
+        "line": ""
+      },
+      {
+        "t": 21.19,
+        "line": "#10 [ 9/19] COPY --chown=1000:1000 build_script_files/-2fopt-2fvenv-2flib-2fpython3-2e12-2fsite-2dpackages-2frepo2docker-2fbuildpacks-2fconda-2finstall-2dbase-2denv-2ebash-637204 /tmp/install-base-env.bash"
+      },
+      {
+        "t": 21.19,
+        "line": ""
+      },
+      {
+        "t": 21.19,
+        "line": "#15 CACHED"
+      },
+      {
+        "t": 21.19,
+        "line": "#16 [ 7/19] COPY --chown=1000:1000 build_script_files/-2fopt-2fvenv-2flib-2fpython3-2e12-2fsite-2dpackages-2frepo2docker-2fbuildpacks-2fconda-2factivate-2dconda-2esh-e67d51 /etc/profile.d/activate-conda.sh"
+      },
+      {
+        "t": 21.19,
+        "line": "#16 CACHED"
+      },
+      {
+        "t": 21.47,
+        "line": "#19 DONE 0.5s"
+      },
+      {
+        "t": 21.65,
+        "line": "#20 [16/19] RUN TIMEFORMAT='time: %3R' bash -c 'time ${MAMBA_EXE} env update -p ${NB_PYTHON_PREFIX} --file \"environment.yml\" && time ${MAMBA_EXE} clean --all -f -y && ${MAMBA_EXE} list -p ${NB_PYTHON_PREFIX} '"
+      },
+      {
+        "t": 26.49,
+        "line": "ERROR: failed to receive status: rpc error: code = Unavailable desc = error reading from server: EOF"
+      },
+      {
+        "t": 26.52,
+        "line": "Error during build: Command '['docker', 'buildx', 'build', '--progress', 'plain', '--push', '--build-arg', 'NB_USER=jovyan', '--build-arg', 'NB_UID=1000', '--tag', 'quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2dmpasviewer-2dcookbook-9a297b:21f9d885a68ce3636285d6f72f238ffa34554008', '--platform', 'linux/amd64', '/tmp/tmpj7vow4dd']' returned non-zero exit status 1."
+      },
+      {
+        "t": 26.52,
+        "line": "Error during build: Command '['docker', 'buildx', 'build', '--progress', 'plain', '--push', '--build-arg', 'NB_USER=jovyan', '--build-arg', 'NB_UID=1000', '--tag', 'quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2dmpasviewer-2dcookbook-9a297b:21f9d885a68ce3636285d6f72f238ffa34554008', '--platform', 'linux/amd64', '/tmp/tmpj7vow4dd']' returned non-zero exit status 1."
+      }
+    ],
+    "log_lines_total": 25,
+    "log_truncated": false
+  },
+  "execution": null,
+  "resources": null,
+  "errors": [],
+  "finished_at": "2026-07-22T16:14:51.446691+00:00",
+  "build_artifacts": {
+    "path": "/home/jmunroe/src/projectpythia/mpasviewer-cookbook/_build",
+    "bytes": 0,
+    "kept_because": "run failed"
+  }
+}
