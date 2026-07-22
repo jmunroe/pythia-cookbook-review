@@ -12,14 +12,14 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 | Outcome | Cookbooks |
 |---|---|
-| build failed | 15 |
+| build failed | 14 |
 | execution failed | 10 |
-| ran with errors | 18 |
+| ran with errors | 19 |
 | ran clean | 25 |
 
 ## Results
 
-### build failed — 15
+### build failed — 14
 
 The Binder image would not build, so the launch button gives a learner nothing. The most direct failure there is.
 
@@ -34,7 +34,6 @@ The Binder image would not build, so the launch button gives a learner nothing. 
 | [kerchunk-cookbook](live/kerchunk-cookbook.md) | `healthy` | 9m 38s | — | — | 0 | 2026-07-22 |
 | [ml-hurricane-intensity](live/ml-hurricane-intensity.md) | `incubating` | 5m 28s | — | — | 0 | 2026-07-22 |
 | [mpas-jedi-cookbook](live/mpas-jedi-cookbook.md) | `healthy` | 2m 45s | — | — | 0 | 2026-07-22 |
-| [mpasviewer-cookbook](live/mpasviewer-cookbook.md) | `incubating` | 26.52s | — | — | 0 | 2026-07-22 |
 | [mrms-cookbook](live/mrms-cookbook.md) | `incubating` | 9m 26s (cached) | — | — | 0 | 2026-07-22 |
 | [osdf-cookbook](live/osdf-cookbook.md) | `healthy` | 1m 49s | — | — | 0 | 2026-07-22 |
 | [radiative-feedback-cookbook](live/radiative-feedback-cookbook.md) | `incubating` | 1m 03s | — | — | 0 | 2026-07-22 |
@@ -58,7 +57,7 @@ The build succeeded but `myst build --execute` itself did not complete -- a time
 | [sklearn-argo-cookbook](live/sklearn-argo-cookbook.md) | `incubating` | 7m 33s | 9m 22s | 8.61 of 8.6 GB | 0 | 2026-07-22 |
 | [spectral-analysis-cookbook](live/spectral-analysis-cookbook.md) | `incubating` | 16m 43s | 43.71s | 8.61 of 8.6 GB | 0 | 2026-07-22 |
 
-### ran with errors — 18
+### ran with errors — 19
 
 The book built and ran, but at least one notebook cell raised. Read the per-cookbook page before calling it a defect: a missing credential or an upstream outage looks identical to a broken cookbook.
 
@@ -77,6 +76,7 @@ The book built and ran, but at least one notebook cell raised. Read the per-cook
 | [landsat-ml-cookbook](live/landsat-ml-cookbook.md) | `stale` | 7m 49s | 34.69s | 0.95 of 8.6 GB | 3 | 2026-07-21 |
 | [marine-heatwave-cookbook](live/marine-heatwave-cookbook.md) | `incubating` | 5m 37s | 26.9s | 0.48 of 8.6 GB | 1 | 2026-07-22 |
 | [metpy-cookbook](live/metpy-cookbook.md) | `healthy` | 19m 43s (cached) | 1m 38s | 3.28 of 8.6 GB | 7 | 2026-07-22 |
+| [mpasviewer-cookbook](live/mpasviewer-cookbook.md) | `incubating` | 6m 40s | 3m 06s | 1.78 of 8.6 GB | 1 | 2026-07-22 |
 | [physical-oceanography-cookbook](live/physical-oceanography-cookbook.md) | `incubating` | 6m 09s | 1m 16s | 1.32 of 8.6 GB | 5 | 2026-07-22 |
 | [radar-cookbook](live/radar-cookbook.md) | `stale` | 7.16s (cached) | 6m 54s | 7.97 of 8.6 GB | 3 | 2026-07-21 |
 | [uxarray-vorticity-cookbook](live/uxarray-vorticity-cookbook.md) | `incubating` | 5m 25s | 24.9s | 0.48 of 8.6 GB | 1 | 2026-07-22 |
