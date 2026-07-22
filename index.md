@@ -111,12 +111,12 @@ This matters because Pythia's own builds no longer touch Binder: the binderbot s
 so notebooks execute on a GitHub runner instead. Nothing else measures what a cookbook costs to
 run until a learner's kernel dies.
 
-**5 of 68 cookbooks live-checked so far.** The per-cookbook results are in [the live checks report](reports/live.md).
+**6 of 68 cookbooks live-checked so far.** The per-cookbook results are in [the live checks report](reports/live.md).
 
 | Outcome | Cookbooks |
 |---|---|
 | build failed | 1 |
-| ran with errors | 2 |
+| ran with errors | 3 |
 | ran clean | 2 |
 
 :::{danger} A passing badge does not mean the notebooks ran
