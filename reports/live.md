@@ -8,15 +8,15 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 ## Coverage
 
-**40 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
+**41 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
 
 | Outcome | Cookbooks |
 |---|---|
 | build failed | 11 |
 | execution failed | 5 |
-| ran with errors | 9 |
+| ran with errors | 10 |
 | ran clean | 15 |
-| not yet checked | 28 |
+| not yet checked | 27 |
 
 ## Results
 
@@ -50,7 +50,7 @@ The build succeeded but `myst build --execute` itself did not complete -- a time
 | [gdex-cookbook](live/gdex-cookbook.md) | `healthy` | 166.65s (cached) | 81.87s | 7.94 of 8.6 GB | 0 | 2026-07-22 |
 | [ocean-bgc-cookbook](live/ocean-bgc-cookbook.md) | `healthy` | 425.15s | 49.4s | 7.47 of 8.6 GB | 0 | 2026-07-22 |
 
-### ran with errors — 9
+### ran with errors — 10
 
 The book built and ran, but at least one notebook cell raised. Read the per-cookbook page before calling it a defect: a missing credential or an upstream outage looks identical to a broken cookbook.
 
@@ -58,6 +58,7 @@ The book built and ran, but at least one notebook cell raised. Read the per-cook
 |---|---|---|---|---|---|---|
 | [api-cookbook](live/api-cookbook.md) | `incubating` | 393.34s | 22.02s | 0.97 of 8.6 GB | 1 | 2026-07-22 |
 | [cesm-lens-aws-cookbook](live/cesm-lens-aws-cookbook.md) | `healthy` | 329.75s | 463.46s | 3.90 of 8.6 GB | 2 | 2026-07-22 |
+| [climate-variability-cookbook](live/climate-variability-cookbook.md) | `incubating` | 381.75s | 42.27s | 0.34 of 8.6 GB | 1 | 2026-07-22 |
 | [ERA5_interactive-cookbook](live/ERA5_interactive-cookbook.md) | `healthy` | 421.62s | 738.69s | 2.23 of 8.6 GB | 1 | 2026-07-22 |
 | [gridding-cookbook](live/gridding-cookbook.md) | `healthy` | 419.87s (cached) | 58.63s | 3.73 of 8.6 GB | 1 | 2026-07-22 |
 | [intake-cookbook](live/intake-cookbook.md) | `degraded` | 508.69s | 20.27s | 0.50 of 8.6 GB | 2 | 2026-07-22 |
