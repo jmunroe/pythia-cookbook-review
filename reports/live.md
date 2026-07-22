@@ -8,15 +8,15 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 ## Coverage
 
-**29 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
+**30 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
 
 | Outcome | Cookbooks |
 |---|---|
 | build failed | 8 |
 | execution failed | 4 |
 | ran with errors | 8 |
-| ran clean | 9 |
-| not yet checked | 39 |
+| ran clean | 10 |
+| not yet checked | 38 |
 
 ## Results
 
@@ -61,7 +61,7 @@ The book built and ran, but at least one notebook cell raised. Read the per-cook
 | [vapor-python-cookbook](live/vapor-python-cookbook.md) | `healthy` | 161.25s | 14.09s | 0.69 of 8.6 GB | 15 | 2026-07-22 |
 | [xbatcher-ML-1-cookbook](live/xbatcher-ML-1-cookbook.md) | `stale` | 579.91s | 81.83s | 0.70 of 8.6 GB | 1 | 2026-07-22 |
 
-### ran clean — 9
+### ran clean — 10
 
 Built and ran with no cell errors on this sample. Not a verdict -- a cached image never re-solves the environment, and one green run of a network-dependent notebook is a sample, not a guarantee.
 
@@ -76,6 +76,7 @@ Built and ran with no cell errors on this sample. Not a verdict -- a cached imag
 | [na-cordex-viz-cookbook](live/na-cordex-viz-cookbook.md) | `healthy` | 455.92s (cached) | 481.71s | 2.23 of 8.6 GB | 0 | 2026-07-22 |
 | [paleoPCA-cookbook](live/paleoPCA-cookbook.md) | `healthy` | 468.96s | 43.08s | 0.77 of 8.6 GB | 0 | 2026-07-22 |
 | [wavelet-cookbook](live/wavelet-cookbook.md) | `healthy` | 217.55s | 23.59s | 1.77 of 8.6 GB | 0 | 2026-07-22 |
+| [web-map-feature-services-cookbook](live/web-map-feature-services-cookbook.md) | `healthy` | 520.92s (cached) | 68.12s | 0.97 of 8.6 GB | 0 | 2026-07-22 |
 
 Where the live outcome and the static tier disagree, the live result is the more direct evidence — but read it as one sample of a network-dependent workflow, not a verdict. See [the limitations](../docs/live-assessment.md#limitations).
 
