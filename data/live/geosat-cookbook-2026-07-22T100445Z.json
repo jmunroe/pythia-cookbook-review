@@ -1,0 +1,1266 @@
+{
+  "cookbook": "geosat-cookbook",
+  "env_injection": {
+    "attempted": false
+  },
+  "started_at": "2026-07-22T09:57:47.102173+00:00",
+  "hub": "https://binder.projectpythia.org",
+  "ref": "main",
+  "toc_notebooks": [
+    "notebooks/notebook-template.ipynb"
+  ],
+  "build": {
+    "hub": "https://binder.projectpythia.org",
+    "ref": "main",
+    "seconds": 348.53,
+    "exit_code": 0,
+    "failed": false,
+    "image_cached": false,
+    "log": [
+      {
+        "t": 136.52,
+        "line": "#20 55.03   azure-identity-cpp                1.13.2          h3a5f585_1               conda-forge"
+      },
+      {
+        "t": 136.52,
+        "line": "#20 55.03   bleach-with-css                   6.2.0           h82add2a_4               conda-forge"
+      },
+      {
+        "t": 136.53,
+        "line": "#20 55.03   blinker                           1.9.0           pyhff2d567_0             conda-forge"
+      },
+      {
+        "t": 136.53,
+        "line": "#20 55.03   blosc                             1.21.6          he440d0b_1               conda-forge"
+      },
+      {
+        "t": 136.53,
+        "line": "#20 55.03   bokeh                             3.9.1           pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.53,
+        "line": "#20 55.03   brotli                            1.1.0           hb03c661_4               conda-forge"
+      },
+      {
+        "t": 136.53,
+        "line": "#20 55.03   brotli-bin                        1.1.0           hb03c661_4               conda-forge"
+      },
+      {
+        "t": 136.53,
+        "line": "#20 55.03   brotli-python                     1.1.0           py310hea6c23e_4          conda-forge"
+      },
+      {
+        "t": 136.53,
+        "line": "#20 55.03   dbus                              1.16.2          h3c4dab8_0               conda-forge"
+      },
+      {
+        "t": 136.53,
+        "line": "#20 55.03   double-conversion                 3.3.1           h5888daf_0               conda-forge"
+      },
+      {
+        "t": 136.53,
+        "line": "#20 55.03   exceptiongroup                    1.3.0           pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.53,
+        "line": "#20 55.03   executing                         2.2.1           pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.53,
+        "line": "#20 55.03   fasteners                         0.20            pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.53,
+        "line": "#20 55.03   font-ttf-dejavu-sans-mono         2.37            hab24e00_0               conda-forge"
+      },
+      {
+        "t": 136.53,
+        "line": "#20 55.03   font-ttf-inconsolata              3.000           h77eed37_0               conda-forge"
+      },
+      {
+        "t": 136.53,
+        "line": "#20 55.03   font-ttf-source-code-pro          2.038           h77eed37_0               conda-forge"
+      },
+      {
+        "t": 136.53,
+        "line": "#20 55.03   font-ttf-ubuntu                   0.83            h77eed37_3               conda-forge"
+      },
+      {
+        "t": 136.53,
+        "line": "#20 55.03   fontconfig                        2.15.0          h7e30c49_1               conda-forge"
+      },
+      {
+        "t": 136.53,
+        "line": "#20 55.03   graphite2                         1.3.15          hecca717_0               conda-forge"
+      },
+      {
+        "t": 136.53,
+        "line": "#20 55.03   greenlet                          3.2.4           py310hea6c23e_1          conda-forge"
+      },
+      {
+        "t": 136.53,
+        "line": "#20 55.03   h11                               0.16.0          pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.53,
+        "line": "#20 55.03   h2                                4.3.0           pyhcf101f3_0             conda-forge"
+      },
+      {
+        "t": 136.53,
+        "line": "#20 55.03   h5py                              3.16.0          nompi_py310h4aa865e_102  conda-forge"
+      },
+      {
+        "t": 136.53,
+        "line": "#20 55.03   httpcore                          1.0.9           pyh29332c3_0             conda-forge"
+      },
+      {
+        "t": 136.53,
+        "line": "#20 55.03   httpx                             0.28.1          pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.54,
+        "line": "#20 55.03   icu                               75.1            he02047a_0               conda-forge"
+      },
+      {
+        "t": 136.54,
+        "line": "#20 55.03   ipykernel                         7.0.1           pyha191276_0             conda-forge"
+      },
+      {
+        "t": 136.54,
+        "line": "#20 55.03   ipython                           8.37.0          pyh8f84b5b_0             conda-forge"
+      },
+      {
+        "t": 136.54,
+        "line": "#20 55.03   ipywidgets                        8.1.7           pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.54,
+        "line": "#20 55.03   isoduration                       20.11.0         pyhd8ed1ab_1             conda-forge"
+      },
+      {
+        "t": 136.54,
+        "line": "#20 55.03   jedi                              0.19.2          pyhd8ed1ab_1             conda-forge"
+      },
+      {
+        "t": 136.54,
+        "line": "#20 55.03   jinja2                            3.1.6           pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.54,
+        "line": "#20 55.03   json-c                            0.18            h6688a6e_0               conda-forge"
+      },
+      {
+        "t": 136.54,
+        "line": "#20 55.03   json5                             0.12.1          pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.54,
+        "line": "#20 55.03   jupyter_server_terminals          0.5.3           pyhd8ed1ab_1             conda-forge"
+      },
+      {
+        "t": 136.54,
+        "line": "#20 55.03   jupyterhub-base                   5.4.0           pyhc90fa1f_0             conda-forge"
+      },
+      {
+        "t": 136.54,
+        "line": "#20 55.03   jupyterhub-singleuser             5.4.0           hd843c07_0               conda-forge"
+      },
+      {
+        "t": 136.54,
+        "line": "#20 55.03   krb5                              1.21.3          h659f571_0               conda-forge"
+      },
+      {
+        "t": 136.54,
+        "line": "#20 55.03   lark                              1.3.0           pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.54,
+        "line": "#20 55.03   lcms2                             2.19.1          h0c24ade_1               conda-forge"
+      },
+      {
+        "t": 136.54,
+        "line": "#20 55.03   ld_impl_linux-64                  2.44            ha97dd6f_2               conda-forge"
+      },
+      {
+        "t": 136.54,
+        "line": "#20 55.03   libcblas                          3.11.0          8_h0358290_openblas      conda-forge"
+      },
+      {
+        "t": 136.54,
+        "line": "#20 55.03   libclang-cpp22.1                  22.1.8          default_h6c227bf_3       conda-forge"
+      },
+      {
+        "t": 136.54,
+        "line": "#20 55.03   libclang13                        22.1.8          default_h9692865_3       conda-forge"
+      },
+      {
+        "t": 136.54,
+        "line": "#20 55.03   libcrc32c                         1.1.2           h9c3ff4c_0               conda-forge"
+      },
+      {
+        "t": 136.54,
+        "line": "#20 55.03   libcups                           2.3.3           hb8b1518_5               conda-forge"
+      },
+      {
+        "t": 136.54,
+        "line": "#20 55.03   libcurl                           8.18.0          h4e3cde8_0               conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libegl                            1.7.0           ha4b6fd6_3               conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libev                             4.33            hd590300_2               conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libevent                          2.1.12          hf998b51_1               conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libexpat                          2.7.1           hecca717_0               conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libgoogle-cloud                   2.39.0          hdb79228_0               conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libgoogle-cloud-storage           2.39.0          hdbdcf42_0               conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libgrpc                           1.73.1          h3288cfb_1               conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libiconv                          1.18            h3b78370_2               conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libjpeg-turbo                     3.2.0           hb03c661_0               conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libkml                            1.3.0           haa4a5bd_1022            conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   liblapack                         3.11.0          8_h47877c9_openblas      conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libnetcdf                         4.9.3           nompi_h11f7409_103       conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libnghttp2                        1.67.0          had1ee68_0               conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libnsl                            2.0.1           hb9d3cd8_1               conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libopengl                         1.7.0           ha4b6fd6_3               conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libopentelemetry-cpp              1.21.0          hb9b0907_1               conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libprotobuf                       6.31.1          hfb7daa7_5               conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libre2-11                         2025.11.05      h7b12aa8_0               conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   librttopo                         1.1.0           h96cd706_19              conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libsodium                         1.0.20          h4ab18f5_0               conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libspatialite                     5.1.0           h2eee824_16              conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libsqlite                         3.50.4          h0c1763c_0               conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libxcb                            1.17.0          h8a09558_0               conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libxcrypt                         4.4.36          hd590300_1               conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libxkbcommon                      1.13.2          hca5e8e5_0               conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libxml2                           2.15.1          h26afc86_0               conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libxml2-16                        2.15.1          ha9997c6_0               conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   libxml2-devel                     2.15.1          h26afc86_0               conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   mako                              1.3.10          pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   markupsafe                        3.0.3           py310h3406613_0          conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   matplotlib                        3.10.9          py310hff52083_0          conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   matplotlib-base                   3.10.9          py310hfde16b3_0          conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   matplotlib-inline                 0.1.7           pyhd8ed1ab_1             conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   minizip                           4.0.10          h05a5f5f_0               conda-forge"
+      },
+      {
+        "t": 136.57,
+        "line": "#20 55.03   mistune                           3.1.4           pyhcf101f3_0             conda-forge"
+      },
+      {
+        "t": 136.58,
+        "line": "#20 55.03   nbclient                          0.10.2          pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.58,
+        "line": "#20 55.03   nbconvert-core                    7.16.6          pyh29332c3_0             conda-forge"
+      },
+      {
+        "t": 136.58,
+        "line": "#20 55.03   nbformat                          5.10.4          pyhd8ed1ab_1             conda-forge"
+      },
+      {
+        "t": 136.58,
+        "line": "#20 55.03   ncurses                           6.5             h2d0b736_3               conda-forge"
+      },
+      {
+        "t": 136.58,
+        "line": "#20 55.03   nest-asyncio                      1.6.0           pyhd8ed1ab_1             conda-forge"
+      },
+      {
+        "t": 136.63,
+        "line": "#20 55.03   pandas                            2.3.3           py310h0158d43_2          conda-forge"
+      },
+      {
+        "t": 136.63,
+        "line": "#20 55.03   pcre2                             10.46           h1321c63_0               conda-forge"
+      },
+      {
+        "t": 136.63,
+        "line": "#20 55.03   pexpect                           4.9.0           pyhd8ed1ab_1             conda-forge"
+      },
+      {
+        "t": 136.63,
+        "line": "#20 55.03   pickleshare                       0.7.5           pyhd8ed1ab_1004          conda-forge"
+      },
+      {
+        "t": 136.63,
+        "line": "#20 55.03   platformdirs                      4.5.0           pyhcf101f3_0             conda-forge"
+      },
+      {
+        "t": 136.63,
+        "line": "#20 55.03   pooch                             1.9.0           pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.63,
+        "line": "#20 55.03   proj                              9.6.2           h18fbb6c_2               conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   prometheus-cpp                    1.3.0           ha5d0236_0               conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   prometheus_client                 0.23.1          pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   prompt-toolkit                    3.0.52          pyha770c72_0             conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   psutil                            7.1.0           py310h7c4b9e2_0          conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   pthread-stubs                     0.4             hb9d3cd8_1002            conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   ptyprocess                        0.7.0           pyhd8ed1ab_1             conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   pure_eval                         0.2.3           pyhd8ed1ab_1             conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   pyarrow                           22.0.0          py310hff52083_2          conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   pyarrow-core                      22.0.0          py310h923f568_2_cpu      conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   pydata-sphinx-theme               0.15.4          pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   pygments                          2.19.2          pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   pyjwt                             2.10.1          pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   pykdtree                          1.4.3           py310hf779ad0_2          conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   pyorbital                         1.12.1          pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   pyparsing                         3.3.2           pyhcf101f3_0             conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   pyproj                            3.7.1           py310h71d0299_1          conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   pyresample                        1.31.0          py310hf71b8c6_3          conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   pyside6                           6.9.3           py310h2007e60_2          conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   pysocks                           1.7.1           pyha55dd90_7             conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   pyspectral                        0.14.3          pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   python                            3.10.19         hd994cfb_1_cpython       conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   python-dateutil                   2.9.0.post0     pyhe01879c_2             conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   python-fastjsonschema             2.21.2          pyhe01879c_0             conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   python-geotiepoints               1.7.5           py310hf462985_1          conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   python-json-logger                2.0.7           pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   python-tzdata                     2026.3          pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   python_abi                        3.10            8_cp310                  conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   readline                          8.2             h8c095d6_2               conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   referencing                       0.37.0          pyhcf101f3_0             conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   requests                          2.32.5          pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.64,
+        "line": "#20 55.03   rfc3339-validator                 0.1.4           pyhd8ed1ab_1             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   rfc3986-validator                 0.1.1           pyh9f0ad1d_0             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   rfc3987-syntax                    1.1.0           pyhe01879c_1             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   rpds-py                           0.27.1          py310hd8f68c5_1          conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   satpy                             0.59.0          pyhd8ed1ab_1             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   send2trash                        1.8.3           pyh0d859eb_1             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   setuptools                        80.9.0          pyhff2d567_0             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   shapely                           2.1.2           py310h777b3ac_0          conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   six                               1.17.0          pyhe01879c_1             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   snappy                            1.2.2           h03e3b7b_1               conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   sniffio                           1.3.1           pyhd8ed1ab_1             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   soupsieve                         2.8             pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   sphinx                            8.1.3           pyhd8ed1ab_1             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   sphinx-book-theme                 1.1.4           pyh29332c3_0             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   sphinx-design                     0.6.1           pyhd8ed1ab_2             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   sphinxcontrib-applehelp           2.0.0           pyhd8ed1ab_1             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   sphinxcontrib-devhelp             2.0.0           pyhd8ed1ab_1             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   sphinxcontrib-htmlhelp            2.1.0           pyhd8ed1ab_1             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   sqlalchemy                        2.0.44          py310h7c4b9e2_0          conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   tk                                8.6.13          noxft_hd72426e_102       conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   tomli                             2.3.0           pyhcf101f3_0             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   toolz                             1.1.0           pyhd8ed1ab_1             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   tornado                           6.5.2           py310h7c4b9e2_1          conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   tqdm                              4.69.0          pyh8f84b5b_0             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   traitlets                         5.14.3          pyhd8ed1ab_1             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   trollimage                        1.26.0          py310h5eaa309_1          conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   trollsift                         1.0.1           pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   types-python-dateutil             2.9.0.20251008  pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   typing-inspection                 0.4.2           pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   typing_extensions                 4.15.0          pyhcf101f3_0             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   typing_utils                      0.1.0           pyhd8ed1ab_1             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   tzdata                            2025b           h78e105d_0               conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   uriparser                         0.9.8           hac33072_0               conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   urllib3                           2.5.0           pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   wayland                           1.24.0          hd6090a7_1               conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   wcwidth                           0.2.14          pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   wheel                             0.45.1          pyhd8ed1ab_1             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   widgetsnbextension                4.0.14          pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   xarray                            2025.6.1        pyhd8ed1ab_1             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   xcb-util                          0.4.1           h4f16b4b_2               conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   xcb-util-cursor                   0.1.6           hb03c661_0               conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   xcb-util-image                    0.4.0           hb711507_2               conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   xcb-util-keysyms                  0.4.1           hb711507_0               conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   xcb-util-renderutil               0.3.10          hb711507_0               conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   xcb-util-wm                       0.4.2           hb711507_0               conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   xerces-c                          3.2.5           h988505b_2               conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   xkeyboard-config                  2.48            h280c20c_0               conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   xorg-libice                       1.1.2           hb9d3cd8_0               conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   xorg-libxdamage                   1.1.6           hb9d3cd8_0               conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   xorg-libxdmcp                     1.1.5           hb03c661_1               conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   xorg-libxext                      1.3.7           hb03c661_0               conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   xyzservices                       2026.3.0        pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   yaml                              0.2.5           h280c20c_3               conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   zarr                              2.18.3          pyhd8ed1ab_1             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   zeromq                            4.3.5           h387f397_9               conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   zict                              3.0.0           pyhd8ed1ab_1             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   zipp                              3.23.0          pyhd8ed1ab_0             conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   zlib                              1.3.2           h25fd6f3_2               conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   zlib-ng                           2.3.3           hceb46e0_1               conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   zstandard                         0.25.0          py310h139afa4_0          conda-forge"
+      },
+      {
+        "t": 136.68,
+        "line": "#20 55.03   zstd                              1.5.7           hb8e6e7a_2               conda-forge"
+      },
+      {
+        "t": 138.52,
+        "line": ""
+      },
+      {
+        "t": 139.64,
+        "line": "#21 DONE 1.3s"
+      },
+      {
+        "t": 139.86,
+        "line": ""
+      },
+      {
+        "t": 140.04,
+        "line": ""
+      },
+      {
+        "t": 148.16,
+        "line": "#24 writing image sha256:954dfd2a0722a165e56edacbb4d4e94c50add57309468112347578eda7a7f379 done"
+      },
+      {
+        "t": 148.59,
+        "line": "#25 pushing layer 8eb6ace16aaa"
+      },
+      {
+        "t": 148.75,
+        "line": "#25 pushing layer c240975c7ee9"
+      },
+      {
+        "t": 148.75,
+        "line": "#25 pushing layer d22266002502"
+      },
+      {
+        "t": 148.75,
+        "line": "#25 pushing layer bf501fbca02e"
+      },
+      {
+        "t": 148.75,
+        "line": "#25 pushing layer b4b8dc810fd5"
+      },
+      {
+        "t": 148.75,
+        "line": "#25 pushing layer 63dd6aac48bc"
+      },
+      {
+        "t": 148.79,
+        "line": "#25 pushing layer bfd1029a7912"
+      },
+      {
+        "t": 148.79,
+        "line": "#25 pushing layer dbd4e3e7ede7"
+      },
+      {
+        "t": 148.79,
+        "line": "#25 pushing layer f103cd120fdd"
+      },
+      {
+        "t": 148.92,
+        "line": "#25 pushing layer 3249ca171f9c 512B / 374B 0.3s"
+      },
+      {
+        "t": 150.1,
+        "line": "#25 pushing layer 3249ca171f9c 1.4s done"
+      },
+      {
+        "t": 150.93,
+        "line": "#25 pushing layer 0c114b57bb6f 30.07MB / 562.28MB 2.2s"
+      },
+      {
+        "t": 152.02,
+        "line": "#25 pushing layer 7e6270aba9a9 3.07kB / 16B 3.3s"
+      },
+      {
+        "t": 152.35,
+        "line": "#25 pushing layer 0c114b57bb6f 60.15MB / 562.28MB 3.8s"
+      },
+      {
+        "t": 152.55,
+        "line": "#25 pushing layer d22266002502 5.12kB / 2.62kB 3.9s"
+      },
+      {
+        "t": 153.76,
+        "line": "#25 pushing layer 7e6270aba9a9 5.2s done"
+      },
+      {
+        "t": 154.07,
+        "line": "#25 pushing layer 0c114b57bb6f 89.12MB / 562.28MB 5.5s"
+      },
+      {
+        "t": 154.2,
+        "line": "#25 pushing layer b4b8dc810fd5 4.10kB / 1.19kB 5.6s"
+      },
+      {
+        "t": 155.65,
+        "line": "#25 pushing layer 0c114b57bb6f 119.20MB / 562.28MB 7.1s"
+      },
+      {
+        "t": 157.42,
+        "line": "#25 pushing layer 0c114b57bb6f 150.39MB / 562.28MB 8.8s"
+      },
+      {
+        "t": 157.63,
+        "line": "#25 pushing layer 63dd6aac48bc 9.0s done"
+      },
+      {
+        "t": 157.74,
+        "line": "#25 pushing layer bf501fbca02e 9.1s done"
+      },
+      {
+        "t": 157.86,
+        "line": "#25 pushing layer 820bb2746d95 7.17kB / 1.91kB 9.2s"
+      },
+      {
+        "t": 158.98,
+        "line": "#25 pushing layer 03cbd1117e44 10.3s done"
+      },
+      {
+        "t": 159.2,
+        "line": "#25 pushing layer 1b339ffdc13b 190.46kB / 18.97MB 10.6s"
+      },
+      {
+        "t": 159.3,
+        "line": "#25 pushing layer d3e9e4cc80bb 1.22MB / 3.06MB 10.7s"
+      },
+      {
+        "t": 159.46,
+        "line": "#25 pushing layer d3e9e4cc80bb 3.06MB / 3.06MB 10.8s"
+      },
+      {
+        "t": 159.46,
+        "line": "#25 pushing layer 1b339ffdc13b 3.56MB / 18.97MB 10.8s"
+      },
+      {
+        "t": 159.61,
+        "line": "#25 pushing layer 1b339ffdc13b 5.55MB / 18.97MB 10.9s"
+      },
+      {
+        "t": 159.8,
+        "line": "#25 pushing layer 1b339ffdc13b 9.48MB / 18.97MB 11.1s"
+      },
+      {
+        "t": 160.02,
+        "line": "#25 pushing layer 1b339ffdc13b 16.17MB / 18.97MB 11.5s"
+      },
+      {
+        "t": 160.23,
+        "line": "#25 pushing layer d3e9e4cc80bb 11.7s done"
+      },
+      {
+        "t": 160.36,
+        "line": "#25 pushing layer 0c114b57bb6f 208.88MB / 562.28MB 11.7s"
+      },
+      {
+        "t": 160.57,
+        "line": "#25 pushing layer 15b7bcebe436 526.18kB / 543.58MB 12.0s"
+      },
+      {
+        "t": 161.64,
+        "line": "#25 pushing layer 0c114b57bb6f 238.41MB / 562.28MB 13.1s"
+      },
+      {
+        "t": 161.75,
+        "line": "#25 pushing layer bfd1029a7912 543.74kB / 146.70MB 13.1s"
+      },
+      {
+        "t": 162.37,
+        "line": "#25 pushing layer bfd1029a7912 8.83MB / 146.70MB 13.7s"
+      },
+      {
+        "t": 162.82,
+        "line": "#25 pushing layer bfd1029a7912 16.60MB / 146.70MB 14.2s"
+      },
+      {
+        "t": 163.25,
+        "line": "#25 pushing layer bfd1029a7912 24.29MB / 146.70MB 14.7s"
+      },
+      {
+        "t": 163.81,
+        "line": "#25 pushing layer 15b7bcebe436 56.62MB / 543.58MB 15.2s"
+      },
+      {
+        "t": 163.93,
+        "line": "#25 pushing layer bfd1029a7912 32.47MB / 146.70MB 15.3s"
+      },
+      {
+        "t": 164.52,
+        "line": "#25 pushing layer bfd1029a7912 41.60MB / 146.70MB 15.9s"
+      },
+      {
+        "t": 165.12,
+        "line": "#25 pushing layer bfd1029a7912 50.23MB / 146.70MB 16.5s"
+      },
+      {
+        "t": 165.43,
+        "line": "#25 pushing layer 15b7bcebe436 85.32MB / 543.58MB 16.8s"
+      },
+      {
+        "t": 166.68,
+        "line": "#25 pushing layer 15b7bcebe436 113.22MB / 543.58MB 18.0s"
+      },
+      {
+        "t": 166.68,
+        "line": "#25 pushing layer bfd1029a7912 74.39MB / 146.70MB 18.1s"
+      },
+      {
+        "t": 167.12,
+        "line": "#25 pushing layer c240975c7ee9 260.95MB / 948.52MB 18.6s"
+      },
+      {
+        "t": 167.79,
+        "line": "#25 pushing layer bfd1029a7912 91.71MB / 146.70MB 19.2s"
+      },
+      {
+        "t": 168.15,
+        "line": "#25 pushing layer 4ddb0b0449e0 359.19MB / 1.95GB 19.5s"
+      },
+      {
+        "t": 168.37,
+        "line": "#25 pushing layer 0c114b57bb6f 282.97MB / 562.28MB 19.7s"
+      },
+      {
+        "t": 169.04,
+        "line": "#25 pushing layer bfd1029a7912 119.04MB / 146.70MB 20.5s"
+      },
+      {
+        "t": 169.54,
+        "line": "#25 pushing layer bfd1029a7912 127.11MB / 146.70MB 20.9s"
+      },
+      {
+        "t": 169.9,
+        "line": "#25 pushing layer 0c114b57bb6f 313.61MB / 562.28MB 21.4s"
+      },
+      {
+        "t": 170.48,
+        "line": "#25 pushing layer bfd1029a7912 143.29MB / 146.70MB 21.9s"
+      },
+      {
+        "t": 171.69,
+        "line": "#25 pushing layer 0c114b57bb6f 343.13MB / 562.28MB 23.1s"
+      },
+      {
+        "t": 173.14,
+        "line": "#25 pushing layer 4ddb0b0449e0 438.83MB / 1.95GB 24.6s"
+      },
+      {
+        "t": 173.38,
+        "line": "#25 pushing layer c240975c7ee9 356.27MB / 948.52MB 24.8s"
+      },
+      {
+        "t": 173.85,
+        "line": "#25 pushing layer bfd1029a7912 25.3s done"
+      },
+      {
+        "t": 174.45,
+        "line": "#25 pushing layer 0c114b57bb6f 400.51MB / 562.28MB 25.9s"
+      },
+      {
+        "t": 175.12,
+        "line": "#25 pushing layer dbd4e3e7ede7 3.54MB / 33.65MB 26.5s"
+      },
+      {
+        "t": 175.33,
+        "line": "#25 pushing layer dbd4e3e7ede7 7.83MB / 33.65MB 26.7s"
+      },
+      {
+        "t": 175.45,
+        "line": "#25 pushing layer dbd4e3e7ede7 9.63MB / 33.65MB 26.8s"
+      },
+      {
+        "t": 175.57,
+        "line": "#25 pushing layer dbd4e3e7ede7 11.44MB / 33.65MB 26.9s"
+      },
+      {
+        "t": 175.68,
+        "line": "#25 pushing layer 15b7bcebe436 282.20MB / 543.58MB 27.0s"
+      },
+      {
+        "t": 175.68,
+        "line": "#25 pushing layer dbd4e3e7ede7 13.24MB / 33.65MB 27.1s"
+      },
+      {
+        "t": 175.89,
+        "line": "#25 pushing layer dbd4e3e7ede7 17.20MB / 33.65MB 27.3s"
+      },
+      {
+        "t": 176.31,
+        "line": "#25 pushing layer dbd4e3e7ede7 25.06MB / 33.65MB 27.7s"
+      },
+      {
+        "t": 176.67,
+        "line": "#25 pushing layer dbd4e3e7ede7 30.31MB / 33.65MB 28.0s"
+      },
+      {
+        "t": 177.14,
+        "line": "#25 pushing layer 15b7bcebe436 311.15MB / 543.58MB 28.5s"
+      },
+      {
+        "t": 177.48,
+        "line": "#25 pushing layer 0c114b57bb6f 458.98MB / 562.28MB 28.8s"
+      },
+      {
+        "t": 178.84,
+        "line": "#25 pushing layer 0c114b57bb6f 490.73MB / 562.28MB 30.3s"
+      },
+      {
+        "t": 179.18,
+        "line": "#25 pushing layer c240975c7ee9 457.76MB / 948.52MB 30.6s"
+      },
+      {
+        "t": 179.52,
+        "line": "#25 pushing layer f103cd120fdd 10.77MB / 78.14MB 31.0s"
+      },
+      {
+        "t": 179.87,
+        "line": "#25 pushing layer f103cd120fdd 16.80MB / 78.14MB 31.3s"
+      },
+      {
+        "t": 180.21,
+        "line": "#25 pushing layer f103cd120fdd 21.11MB / 78.14MB 31.6s"
+      },
+      {
+        "t": 180.43,
+        "line": "#25 pushing layer f103cd120fdd 30.21MB / 78.14MB 31.9s"
+      },
+      {
+        "t": 180.87,
+        "line": "#25 pushing layer f103cd120fdd 35.70MB / 78.14MB 32.2s"
+      },
+      {
+        "t": 181.43,
+        "line": "#25 pushing layer f103cd120fdd 47.86MB / 78.14MB 32.9s"
+      },
+      {
+        "t": 181.53,
+        "line": "#25 pushing layer 0c114b57bb6f 548.63MB / 562.28MB 32.9s"
+      },
+      {
+        "t": 181.53,
+        "line": "#25 pushing layer c240975c7ee9 506.35MB / 948.52MB 32.9s"
+      },
+      {
+        "t": 181.65,
+        "line": "#25 pushing layer f103cd120fdd 52.26MB / 78.14MB 33.1s"
+      },
+      {
+        "t": 181.87,
+        "line": "#25 pushing layer f103cd120fdd 56.55MB / 78.14MB 33.3s"
+      },
+      {
+        "t": 182.2,
+        "line": "#25 pushing layer f103cd120fdd 60.95MB / 78.14MB 33.6s"
+      },
+      {
+        "t": 182.68,
+        "line": "#25 pushing layer f103cd120fdd 71.19MB / 78.14MB 34.1s"
+      },
+      {
+        "t": 182.89,
+        "line": "#25 pushing layer 15b7bcebe436 424.30MB / 543.58MB 34.3s"
+      },
+      {
+        "t": 183.13,
+        "line": "#25 pushing layer f103cd120fdd 77.06MB / 78.14MB 34.5s"
+      },
+      {
+        "t": 184.39,
+        "line": "#25 pushing layer c240975c7ee9 554.44MB / 948.52MB 35.8s"
+      },
+      {
+        "t": 184.73,
+        "line": "#25 pushing layer 15b7bcebe436 452.69MB / 543.58MB 36.1s"
+      },
+      {
+        "t": 184.73,
+        "line": "#25 pushing layer f103cd120fdd 36.1s done"
+      },
+      {
+        "t": 186.56,
+        "line": "#25 pushing layer 15b7bcebe436 481.10MB / 543.58MB 38.0s"
+      },
+      {
+        "t": 189.42,
+        "line": "#25 pushing layer 0c114b57bb6f 40.9s done"
+      },
+      {
+        "t": 193.31,
+        "line": "#25 pushing layer 15b7bcebe436 44.8s done"
+      },
+      {
+        "t": 196.49,
+        "line": "#25 pushing layer 4ddb0b0449e0 912.71MB / 1.95GB 48.0s"
+      },
+      {
+        "t": 201.44,
+        "line": "#25 pushing layer 4ddb0b0449e0 1.01GB / 1.95GB 53.0s"
+      },
+      {
+        "t": 206.53,
+        "line": "#25 pushing layer 4ddb0b0449e0 1.11GB / 1.95GB 58.0s"
+      },
+      {
+        "t": 210.18,
+        "line": "#25 pushing layer c240975c7ee9 945.84MB / 948.52MB 61.7s"
+      },
+      {
+        "t": 216.12,
+        "line": "#25 pushing layer c240975c7ee9 67.6s done"
+      },
+      {
+        "t": 216.48,
+        "line": "#25 pushing layer 4ddb0b0449e0 1.30GB / 1.95GB 68.0s"
+      },
+      {
+        "t": 226.5,
+        "line": "#25 pushing layer 4ddb0b0449e0 1.49GB / 1.95GB 78.1s"
+      },
+      {
+        "t": 235.82,
+        "line": "#25 pushing layer 4ddb0b0449e0 1.69GB / 1.95GB 87.4s"
+      },
+      {
+        "t": 249.63,
+        "line": "#25 pushing layer 4ddb0b0449e0 1.98GB / 1.95GB 101.2s"
+      },
+      {
+        "t": 256.39,
+        "line": "#25 DONE 108.4s"
+      },
+      {
+        "t": 260.13,
+        "line": "Server requested"
+      },
+      {
+        "t": 261.1,
+        "line": "2026-07-22T10:02:07.747523Z [Normal] Successfully assigned binderhub/jupyter-projectpythia-geosat-cookbook-og0wesxd to binder-pythia-cluster-d7vpq4idy5va-user-m3-large-fdpj2-nrqh7"
+      },
+      {
+        "t": 262.11,
+        "line": "2026-07-22T10:02:08Z [Normal] Started container block-cloud-metadata"
+      },
+      {
+        "t": 262.11,
+        "line": "2026-07-22T10:02:09Z [Normal] Container image \"quay.io/jupyterhub/k8s-network-tools:4.1.0\" already present on machine"
+      },
+      {
+        "t": 263.11,
+        "line": "2026-07-22T10:02:10Z [Normal] Pulling image \"quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2dgeosat-2dcookbook-142309:d78ed3a765529e486e6940d9a7e13c65f1b2ced0\""
+      },
+      {
+        "t": 343.07,
+        "line": "2026-07-22T10:03:30Z [Normal] Created container: notebook"
+      },
+      {
+        "t": 348.53,
+        "line": "Server ready at /user/projectpythia-geosat-cookbook-og0wesxd/"
+      },
+      {
+        "t": 348.53,
+        "line": "server running at https://hub.projectpythia.org/user/projectpythia-geosat-cookbook-og0wesxd/"
+      }
+    ],
+    "log_lines_total": 1713,
+    "log_truncated": true
+  },
+  "execution": {
+    "seconds": 69.0,
+    "exit_code": 0,
+    "failed": false,
+    "cache_cleared": false,
+    "page_seconds": [
+      {
+        "page": "myst.yml#site.parts.footer",
+        "seconds": 0.03
+      },
+      {
+        "page": "README.md",
+        "seconds": 0.76
+      },
+      {
+        "page": "notebooks/how-to-cite.md",
+        "seconds": 0.79
+      },
+      {
+        "page": "notebooks/notebook-template.ipynb",
+        "seconds": 1.1
+      }
+    ],
+    "stdout_tail": "building myst-cli session with API URL: https://api.mystmd.org\n\ud83c\udf61 Execution parallelism set to: 19\n\ud83c\udf0e Building MyST site\n\ud83d\udd0d Querying template metadata from https://api.mystmd.org/templates/site/myst/book-theme\n\ud83d\udc15 Fetching template from https://github.com/myst-templates/book-theme/archive/refs/heads/main.zip\n\ud83d\udcbe Saved template to path _build/templates/site/myst/book-theme\nBuilding the base site.\nTo set a baseurl (e.g. GitHub pages) use \"BASE_URL\" environment variable.\n\u2935\ufe0f  Installing web libraries (can take up to 60 s)\n\ud83d\udce6 Installed web libraries in 1.02 s\n\ud83c\udfeb Read 665 myst references for \"foundations\" in 157 ms.\n\ud83c\udfeb Read 11399 intersphinx references for \"matplotlib\" in 204 ms.\n\ud83c\udfeb Read 19285 intersphinx references for \"python\" in 246 ms.\n\ud83c\udfeb Read 9803 intersphinx references for \"xarray\" in 378 ms.\n\ud83d\udcbf Executing notebook (notebooks/notebook-template.ipynb) [no execution cache found]\n\ud83d\udcd6 Built myst.yml#site.parts.footer in 30 ms.\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-geosat-cookbook-og0wesxd/api/kernels/c2a52f4f-81c9-4b7e-86c4-e547a9469da2\n\ud83d\udcd6 Built README.md in 760 ms.\n\ud83d\udcd6 Built notebooks/how-to-cite.md in 786 ms.\n\ud83d\udcd6 Built notebooks/notebook-template.ipynb in 1.1 s.\n\u23f3 Waiting for response from https://zenodo.org/badge/810398043.svg\n\u23f3 Waiting for response from https://zenodo.org/badge/810398043.svg\n\ud83d\udcda Built 3 pages for project in 17 s.\n\n\n\t\u2728\u2728\u2728  Starting Book Theme  \u2728\u2728\u2728\n\n\n\n\ud83d\udd0c Server started on port 3000!  \ud83e\udd73 \ud83c\udf89\n\n\n\t\ud83d\udc49  http://localhost:3000  \ud83d\udc48\n\n\n\ud83d\udc8c GET  /notebooks.how-to-cite.json 200 - - 6.937 ms\n\ud83d\udc8c GET  /notebooks/how-to-cite 200 - - 76.738 ms\n\ud83d\udc8c GET  /notebooks.notebook-template.json 200 - - 28.380 ms\n\ud83d\udc8c GET  /robots.txt 200 - - 0.954 ms\n\ud83d\udc8c GET  /index.json 200 - - 12.159 ms\n\ud83d\udc8c GET  / 200 - - 111.860 ms\n\ud83d\udc8c GET  /notebooks/notebook-template 200 - - 97.075 ms\n\ud83d\udc8c GET  /myst-theme.css 200 - - 35.061 ms\n\ud83d\udc8c GET  /sitemap_style.xsl 200 - - 1.208 ms\n\ud83d\udc8c GET  /sitemap.xml 200 - - 3.989 ms\n\ud83d\udc8c GET  /favicon.ico 200 - - 4.153 ms\n",
+    "stderr_tail": "\u26a0\ufe0f  myst.yml 'nav.1' extra key ignored: open_in_same_tab (at myst.yml#config.site)\n\u26a0\ufe0f  myst.yml 'nav.2' extra key ignored: open_in_same_tab (at myst.yml#config.site)\n\u26d4\ufe0f 279b7cd75e0c1112982c5ef3b362b142 Error saving image \"https://zenodo.org/badge/810398043.svg\": https://zenodo.org/badge/810398043.svg content-type \"text/html; charset=utf-8\" is not an image\n\u26d4\ufe0f notebooks/how-to-cite.md:7 Unsupported image extension \"<no extension>\" may not correctly render.\n\u26d4\ufe0f 279b7cd75e0c1112982c5ef3b362b142 Error saving image \"https://zenodo.org/badge/810398043.svg\": https://zenodo.org/badge/810398043.svg content-type \"text/html; charset=utf-8\" is not an image\n\u26d4\ufe0f README.md:5 Unsupported image extension \"<no extension>\" may not correctly render.\n"
+  },
+  "resources": {
+    "available": true,
+    "sample_count": 22,
+    "sample_seconds": 3,
+    "peak_rss_bytes": 106967040,
+    "peak_pss_bytes": 103425024,
+    "limit_basis": "pss",
+    "peak_against_limit_bytes": 103425024,
+    "memory_limit_bytes": 8589934592,
+    "peak_fraction_of_limit": 0.012,
+    "peak_cpu_percent": null,
+    "cpu_count": null
+  },
+  "errors": [],
+  "finished_at": "2026-07-22T10:04:45.559323+00:00",
+  "build_artifacts": null
+}
