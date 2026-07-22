@@ -8,15 +8,15 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 ## Coverage
 
-**49 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
+**50 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
 
 | Outcome | Cookbooks |
 |---|---|
 | build failed | 13 |
 | execution failed | 5 |
-| ran with errors | 12 |
+| ran with errors | 13 |
 | ran clean | 19 |
-| not yet checked | 19 |
+| not yet checked | 18 |
 
 ## Results
 
@@ -52,7 +52,7 @@ The build succeeded but `myst build --execute` itself did not complete -- a time
 | [gdex-cookbook](live/gdex-cookbook.md) | `healthy` | 166.65s (cached) | 81.87s | 7.94 of 8.6 GB | 0 | 2026-07-22 |
 | [ocean-bgc-cookbook](live/ocean-bgc-cookbook.md) | `healthy` | 425.15s | 49.4s | 7.47 of 8.6 GB | 0 | 2026-07-22 |
 
-### ran with errors — 12
+### ran with errors — 13
 
 The book built and ran, but at least one notebook cell raised. Read the per-cookbook page before calling it a defect: a missing credential or an upstream outage looks identical to a broken cookbook.
 
@@ -65,6 +65,7 @@ The book built and ran, but at least one notebook cell raised. Read the per-cook
 | [geomorphology-cookbook](live/geomorphology-cookbook.md) | `incubating` | 475.51s | 141.74s | 2.27 of 8.6 GB | 1 | 2026-07-22 |
 | [geostationary-cookbook](live/geostationary-cookbook.md) | `incubating` | 322.5s | 162.03s | 3.18 of 8.6 GB | 4 | 2026-07-22 |
 | [gridding-cookbook](live/gridding-cookbook.md) | `healthy` | 419.87s (cached) | 58.63s | 3.73 of 8.6 GB | 1 | 2026-07-22 |
+| [icesat2-cookbook](live/icesat2-cookbook.md) | `incubating` | 730.2s | 63.55s | 1.84 of 8.6 GB | 2 | 2026-07-22 |
 | [intake-cookbook](live/intake-cookbook.md) | `degraded` | 508.69s | 20.27s | 0.50 of 8.6 GB | 2 | 2026-07-22 |
 | [landsat-ml-cookbook](live/landsat-ml-cookbook.md) | `stale` | 469.24s | 34.69s | 0.95 of 8.6 GB | 3 | 2026-07-21 |
 | [radar-cookbook](live/radar-cookbook.md) | `stale` | 7.16s (cached) | 414.12s | 7.97 of 8.6 GB | 3 | 2026-07-21 |
