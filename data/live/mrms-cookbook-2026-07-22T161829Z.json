@@ -1,0 +1,165 @@
+{
+  "cookbook": "mrms-cookbook",
+  "env_injection": {
+    "attempted": false
+  },
+  "started_at": "2026-07-22T16:15:30.986017+00:00",
+  "hub": "https://binder.projectpythia.org",
+  "ref": "main",
+  "toc_notebooks": [
+    "notebooks/ch1_Introduction.ipynb",
+    "notebooks/ch2-mar-2023-tornado_jdh.ipynb",
+    "notebooks/ch3_TXfloods.ipynb",
+    "notebooks/ch4_bnf-mrms-qpe-hourly.ipynb",
+    "notebooks/ch5_realtimeData.ipynb"
+  ],
+  "build": {
+    "hub": "https://binder.projectpythia.org",
+    "ref": "main",
+    "seconds": 192.99,
+    "exit_code": 1,
+    "failed": true,
+    "image_cached": false,
+    "log": [
+      {
+        "t": 0.96,
+        "line": "Waiting for build to start..."
+      },
+      {
+        "t": 86.64,
+        "line": "Picked Git content provider."
+      },
+      {
+        "t": 86.65,
+        "line": "Unknown phase \"undefined\" from builder"
+      },
+      {
+        "t": 104.66,
+        "line": "HEAD is now at ff5211c1 Merge pull request #58 from ProjectPythia/dependabot/github_actions/actions/checkout-7"
+      },
+      {
+        "t": 107.45,
+        "line": "#0 building with \"default\" instance using docker driver"
+      },
+      {
+        "t": 107.45,
+        "line": "#1 transferring dockerfile: 5.77kB done"
+      },
+      {
+        "t": 107.45,
+        "line": "#2 [internal] load metadata for docker.io/library/buildpack-deps:24.04"
+      },
+      {
+        "t": 107.78,
+        "line": ""
+      },
+      {
+        "t": 107.78,
+        "line": "#3 DONE 0.1s"
+      },
+      {
+        "t": 107.95,
+        "line": "#4 DONE 0.0s"
+      },
+      {
+        "t": 107.95,
+        "line": "#5 CACHED"
+      },
+      {
+        "t": 107.95,
+        "line": ""
+      },
+      {
+        "t": 107.95,
+        "line": "#7 [ 4/19] RUN if getent group 1000; then       GROUP_1000=\"$(getent group 1000 | cut -d: -f1)\";       if [ \"$GROUP_1000\" != \"jovyan\" ]; then         groupmod --new-name jovyan \"$GROUP_1000\";       fi;     else       groupadd --gid 1000 jovyan;     fi"
+      },
+      {
+        "t": 107.99,
+        "line": ""
+      },
+      {
+        "t": 107.99,
+        "line": "#9 [internal] load build context"
+      },
+      {
+        "t": 111.44,
+        "line": "#9 transferring context: 691.80MB 3.3s done"
+      },
+      {
+        "t": 111.44,
+        "line": "#9 DONE 3.4s"
+      },
+      {
+        "t": 111.44,
+        "line": ""
+      },
+      {
+        "t": 111.44,
+        "line": "#10 [ 6/19] RUN apt-get -qq update &&     apt-get -qq install --yes --no-install-recommends        gettext-base        less        unzip        > /dev/null &&     apt-get -qq purge &&     apt-get -qq clean &&     rm -rf /var/lib/apt/lists/*"
+      },
+      {
+        "t": 192.67,
+        "line": "#10 78.35 E: Package 'gettext-base' has no installation candidate"
+      },
+      {
+        "t": 192.83,
+        "line": "78.35 E: Package 'gettext-base' has no installation candidate"
+      },
+      {
+        "t": 192.83,
+        "line": "------"
+      },
+      {
+        "t": 192.84,
+        "line": "  61 | >>>        unzip \\"
+      },
+      {
+        "t": 192.84,
+        "line": "  62 | >>>        > /dev/null && \\"
+      },
+      {
+        "t": 192.84,
+        "line": "  63 | >>>     apt-get -qq purge && \\"
+      },
+      {
+        "t": 192.84,
+        "line": "  64 | >>>     apt-get -qq clean && \\"
+      },
+      {
+        "t": 192.84,
+        "line": "  65 | >>>     rm -rf /var/lib/apt/lists/*"
+      },
+      {
+        "t": 192.84,
+        "line": "  66 |"
+      },
+      {
+        "t": 192.84,
+        "line": "--------------------"
+      },
+      {
+        "t": 192.84,
+        "line": "ERROR: failed to solve: process \"/bin/sh -c apt-get -qq update &&     apt-get -qq install --yes --no-install-recommends        gettext-base        less        unzip        > /dev/null &&     apt-get -qq purge &&     apt-get -qq clean &&     rm -rf /var/lib/apt/lists/*\" did not complete successfully: exit code: 100"
+      },
+      {
+        "t": 192.99,
+        "line": "Error during build: Command '['docker', 'buildx', 'build', '--progress', 'plain', '--push', '--build-arg', 'NB_USER=jovyan', '--build-arg', 'NB_UID=1000', '--tag', 'quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2dmrms-2dcookbook-36cd92:ff5211c1b307b3d351142f59277069aa3e1fdec7', '--platform', 'linux/amd64', '/tmp/tmp95fxz_vb']' returned non-zero exit status 1."
+      },
+      {
+        "t": 192.99,
+        "line": "Error during build: Command '['docker', 'buildx', 'build', '--progress', 'plain', '--push', '--build-arg', 'NB_USER=jovyan', '--build-arg', 'NB_UID=1000', '--tag', 'quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2dmrms-2dcookbook-36cd92:ff5211c1b307b3d351142f59277069aa3e1fdec7', '--platform', 'linux/amd64', '/tmp/tmp95fxz_vb']' returned non-zero exit status 1."
+      }
+    ],
+    "log_lines_total": 32,
+    "log_truncated": false
+  },
+  "execution": null,
+  "resources": null,
+  "errors": [],
+  "finished_at": "2026-07-22T16:18:29.099758+00:00",
+  "build_artifacts": {
+    "path": "/home/jmunroe/src/projectpythia/mrms-cookbook/_build",
+    "bytes": 0,
+    "kept_because": "run failed"
+  }
+}
