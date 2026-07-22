@@ -8,15 +8,15 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 ## Coverage
 
-**33 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
+**34 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
 
 | Outcome | Cookbooks |
 |---|---|
 | build failed | 9 |
-| execution failed | 4 |
+| execution failed | 5 |
 | ran with errors | 9 |
 | ran clean | 11 |
-| not yet checked | 35 |
+| not yet checked | 34 |
 
 ## Results
 
@@ -36,12 +36,13 @@ The Binder image would not build, so the launch button gives a learner nothing. 
 | [snow-observations-cookbook](live/snow-observations-cookbook.md) | `healthy` | 63.02s | —s | — | 0 | 2026-07-22 |
 | [unstructured-grid-viz-cookbook](live/unstructured-grid-viz-cookbook.md) | `healthy` | 1800.11s | —s | — | 0 | 2026-07-22 |
 
-### execution failed — 4
+### execution failed — 5
 
 The build succeeded but `myst build --execute` itself did not complete -- a timeout, a dead kernel, or a crash rather than a cell error.
 
 | Cookbook | Static tier | Session | Execution | Peak memory | Errors | Checked |
 |---|---|---|---|---|---|---|
+| [armss2024-sail-cookbook](live/armss2024-sail-cookbook.md) | `incubating` | 489.19s | 6.79s | 0.10 of 8.6 GB | 0 | 2026-07-22 |
 | [cmip6-cookbook](live/cmip6-cookbook.md) | `healthy` | 930.01s | 41.57s | 7.32 of 8.6 GB | 0 | 2026-07-22 |
 | [dask-cookbook](live/dask-cookbook.md) | `healthy` | 402.9s | 56.09s | 8.23 of 8.6 GB | 0 | 2026-07-22 |
 | [gdex-cookbook](live/gdex-cookbook.md) | `healthy` | 166.65s (cached) | 81.87s | 7.94 of 8.6 GB | 0 | 2026-07-22 |
