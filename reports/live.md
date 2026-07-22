@@ -8,19 +8,19 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 ## Coverage
 
-**54 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
+**55 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
 
 | Outcome | Cookbooks |
 |---|---|
-| build failed | 14 |
+| build failed | 15 |
 | execution failed | 8 |
 | ran with errors | 13 |
 | ran clean | 19 |
-| not yet checked | 14 |
+| not yet checked | 13 |
 
 ## Results
 
-### build failed — 14
+### build failed — 15
 
 The Binder image would not build, so the launch button gives a learner nothing. The most direct failure there is.
 
@@ -35,6 +35,7 @@ The Binder image would not build, so the launch button gives a learner nothing. 
 | [great-circle-cookbook](live/great-circle-cookbook.md) | `incubating` | 1m 34s | — | — | 0 | 2026-07-22 |
 | [kerchunk-cookbook](live/kerchunk-cookbook.md) | `healthy` | 9m 38s | — | — | 0 | 2026-07-22 |
 | [marine-heatwave-cookbook](live/marine-heatwave-cookbook.md) | `incubating` | 11m 25s | — | — | 0 | 2026-07-22 |
+| [METAR_archive-cookbook](live/METAR_archive-cookbook.md) | `incubating` | 1m 56s | — | — | 0 | 2026-07-22 |
 | [metpy-cookbook](live/metpy-cookbook.md) | `healthy` | 10m 53s | — | — | 0 | 2026-07-22 |
 | [mpas-jedi-cookbook](live/mpas-jedi-cookbook.md) | `healthy` | 2m 45s | — | — | 0 | 2026-07-22 |
 | [osdf-cookbook](live/osdf-cookbook.md) | `healthy` | 1m 49s | — | — | 0 | 2026-07-22 |
