@@ -34,7 +34,7 @@ The Binder image would not build, so the launch button gives a learner nothing. 
 | [great-circle-cookbook](live/great-circle-cookbook.md) | `incubating` | 1m 34s | — | — | 0 | 2026-07-22 |
 | [kerchunk-cookbook](live/kerchunk-cookbook.md) | `healthy` | 9m 38s | — | — | 0 | 2026-07-22 |
 | [metpy-cookbook](live/metpy-cookbook.md) | `healthy` | 10m 53s | — | — | 0 | 2026-07-22 |
-| [ml-hurricane-intensity](live/ml-hurricane-intensity.md) | `incubating` | 3m 36s | — | — | 0 | 2026-07-22 |
+| [ml-hurricane-intensity](live/ml-hurricane-intensity.md) | `incubating` | 5m 28s | — | — | 0 | 2026-07-22 |
 | [mpas-jedi-cookbook](live/mpas-jedi-cookbook.md) | `healthy` | 2m 45s | — | — | 0 | 2026-07-22 |
 | [mpasviewer-cookbook](live/mpasviewer-cookbook.md) | `incubating` | 26.52s | — | — | 0 | 2026-07-22 |
 | [mrms-cookbook](live/mrms-cookbook.md) | `incubating` | 3m 13s | — | — | 0 | 2026-07-22 |
