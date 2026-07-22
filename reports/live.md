@@ -8,19 +8,19 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 ## Coverage
 
-**47 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
+**48 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
 
 | Outcome | Cookbooks |
 |---|---|
-| build failed | 12 |
+| build failed | 13 |
 | execution failed | 5 |
 | ran with errors | 12 |
 | ran clean | 18 |
-| not yet checked | 21 |
+| not yet checked | 20 |
 
 ## Results
 
-### build failed — 12
+### build failed — 13
 
 The Binder image would not build, so the launch button gives a learner nothing. The most direct failure there is.
 
@@ -32,6 +32,7 @@ The Binder image would not build, so the launch button gives a learner nothing. 
 | [eo-datascience-cookbook](live/eo-datascience-cookbook.md) | `healthy` | 687.95s | —s | — | 0 | 2026-07-22 |
 | [esgf-cookbook](live/esgf-cookbook.md) | `stale` | 416.52s | —s | — | 0 | 2026-07-21 |
 | [extreme-weather-events-cookbook](live/extreme-weather-events-cookbook.md) | `incubating` | 132.22s | —s | — | 0 | 2026-07-22 |
+| [great-circle-cookbook](live/great-circle-cookbook.md) | `incubating` | 94.13s | —s | — | 0 | 2026-07-22 |
 | [kerchunk-cookbook](live/kerchunk-cookbook.md) | `healthy` | 578.45s | —s | — | 0 | 2026-07-22 |
 | [metpy-cookbook](live/metpy-cookbook.md) | `healthy` | 652.82s | —s | — | 0 | 2026-07-22 |
 | [mpas-jedi-cookbook](live/mpas-jedi-cookbook.md) | `healthy` | 164.76s | —s | — | 0 | 2026-07-22 |
