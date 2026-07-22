@@ -8,15 +8,15 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 ## Coverage
 
-**60 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
+**61 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
 
 | Outcome | Cookbooks |
 |---|---|
 | build failed | 18 |
 | execution failed | 8 |
-| ran with errors | 13 |
+| ran with errors | 14 |
 | ran clean | 21 |
-| not yet checked | 8 |
+| not yet checked | 7 |
 
 ## Results
 
@@ -60,7 +60,7 @@ The build succeeded but `myst build --execute` itself did not complete -- a time
 | [lasso-those-clouds-cookbook](live/lasso-those-clouds-cookbook.md) | `incubating` | 24m 22s | 6.18s | 0.10 of 8.6 GB | 0 | 2026-07-22 |
 | [ocean-bgc-cookbook](live/ocean-bgc-cookbook.md) | `healthy` | 7m 05s | 49.4s | 7.47 of 8.6 GB | 0 | 2026-07-22 |
 
-### ran with errors — 13
+### ran with errors — 14
 
 The book built and ran, but at least one notebook cell raised. Read the per-cookbook page before calling it a defect: a missing credential or an upstream outage looks identical to a broken cookbook.
 
@@ -76,6 +76,7 @@ The book built and ran, but at least one notebook cell raised. Read the per-cook
 | [icesat2-cookbook](live/icesat2-cookbook.md) | `incubating` | 12m 10s | 1m 04s | 1.84 of 8.6 GB | 2 | 2026-07-22 |
 | [intake-cookbook](live/intake-cookbook.md) | `degraded` | 8m 29s | 20.27s | 0.50 of 8.6 GB | 2 | 2026-07-22 |
 | [landsat-ml-cookbook](live/landsat-ml-cookbook.md) | `stale` | 7m 49s | 34.69s | 0.95 of 8.6 GB | 3 | 2026-07-21 |
+| [physical-oceanography-cookbook](live/physical-oceanography-cookbook.md) | `incubating` | 6m 09s | 1m 16s | 1.32 of 8.6 GB | 5 | 2026-07-22 |
 | [radar-cookbook](live/radar-cookbook.md) | `stale` | 7.16s (cached) | 6m 54s | 7.97 of 8.6 GB | 3 | 2026-07-21 |
 | [vapor-python-cookbook](live/vapor-python-cookbook.md) | `healthy` | 2m 41s | 14.09s | 0.69 of 8.6 GB | 15 | 2026-07-22 |
 | [xbatcher-ML-1-cookbook](live/xbatcher-ML-1-cookbook.md) | `stale` | 9m 40s | 1m 22s | 0.70 of 8.6 GB | 1 | 2026-07-22 |
