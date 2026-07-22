@@ -8,24 +8,25 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 ## Coverage
 
-**32 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
+**33 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
 
 | Outcome | Cookbooks |
 |---|---|
-| build failed | 8 |
+| build failed | 9 |
 | execution failed | 4 |
 | ran with errors | 9 |
 | ran clean | 11 |
-| not yet checked | 36 |
+| not yet checked | 35 |
 
 ## Results
 
-### build failed — 8
+### build failed — 9
 
 The Binder image would not build, so the launch button gives a learner nothing. The most direct failure there is.
 
 | Cookbook | Static tier | Session | Execution | Peak memory | Errors | Checked |
 |---|---|---|---|---|---|---|
+| [arm-field-site-cookbook](live/arm-field-site-cookbook.md) | `incubating` | 86.28s | —s | — | 0 | 2026-07-22 |
 | [eo-datascience-cookbook](live/eo-datascience-cookbook.md) | `healthy` | 687.95s | —s | — | 0 | 2026-07-22 |
 | [esgf-cookbook](live/esgf-cookbook.md) | `stale` | 416.52s | —s | — | 0 | 2026-07-21 |
 | [kerchunk-cookbook](live/kerchunk-cookbook.md) | `healthy` | 578.45s | —s | — | 0 | 2026-07-22 |
