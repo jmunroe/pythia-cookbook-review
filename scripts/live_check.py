@@ -460,7 +460,13 @@ def execute_notebooks(clone, session, timeout, keep_cache=False):
     except subprocess.TimeoutExpired as expired:
         code = None
         out = expired.stdout or ""
-        err = (expired.stderr or "") + f"\nTIMEOUT after {timeout}s"
+        # On timeout these come back as raw bytes even under text=True, so decode
+        # before appending the marker -- concatenating str to bytes crashes, and
+        # a slow cookbook that hits the timeout is exactly when we need a record.
+        err = expired.stderr or ""
+        if isinstance(err, bytes):
+            err = err.decode(errors="replace")
+        err += f"\nTIMEOUT after {timeout}s"
         log(f"myst build exceeded {timeout}s")
 
     elapsed = round(time.monotonic() - started, 2)
