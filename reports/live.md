@@ -8,19 +8,19 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 ## Coverage
 
-**25 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
+**26 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
 
 | Outcome | Cookbooks |
 |---|---|
-| build failed | 6 |
+| build failed | 7 |
 | execution failed | 4 |
 | ran with errors | 7 |
 | ran clean | 8 |
-| not yet checked | 43 |
+| not yet checked | 42 |
 
 ## Results
 
-### build failed — 6
+### build failed — 7
 
 The Binder image would not build, so the launch button gives a learner nothing. The most direct failure there is.
 
@@ -32,6 +32,7 @@ The Binder image would not build, so the launch button gives a learner nothing. 
 | [metpy-cookbook](live/metpy-cookbook.md) | `healthy` | 652.82s | —s | — | 0 | 2026-07-22 |
 | [mpas-jedi-cookbook](live/mpas-jedi-cookbook.md) | `healthy` | 164.76s | —s | — | 0 | 2026-07-22 |
 | [osdf-cookbook](live/osdf-cookbook.md) | `healthy` | 108.72s | —s | — | 0 | 2026-07-22 |
+| [snow-observations-cookbook](live/snow-observations-cookbook.md) | `healthy` | 63.02s | —s | — | 0 | 2026-07-22 |
 
 ### execution failed — 4
 

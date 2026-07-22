@@ -1,0 +1,110 @@
+{
+  "cookbook": "snow-observations-cookbook",
+  "env_injection": {
+    "attempted": false
+  },
+  "started_at": "2026-07-22T07:31:54.453976+00:00",
+  "hub": "https://binder.projectpythia.org",
+  "ref": "main",
+  "toc_notebooks": [
+    "notebooks/GPR-lidar-tutorial.ipynb",
+    "notebooks/aviris-ng-tutorial.ipynb",
+    "notebooks/microstructure-tutorial.ipynb",
+    "notebooks/snotel_data_access.ipynb",
+    "notebooks/snowex_data_overview.ipynb",
+    "notebooks/snowexsql-database.ipynb",
+    "notebooks/thermal-ir-tutorial.ipynb",
+    "notebooks/timelapse-camera-tutorial.ipynb",
+    "notebooks/tls_data_access.ipynb",
+    "notebooks/uavsar-tutorial.ipynb"
+  ],
+  "build": {
+    "hub": "https://binder.projectpythia.org",
+    "ref": "main",
+    "seconds": 63.02,
+    "exit_code": 1,
+    "failed": true,
+    "image_cached": false,
+    "log": [
+      {
+        "t": 1.02,
+        "line": "Waiting for build to start..."
+      },
+      {
+        "t": 2.71,
+        "line": "Unknown phase \"undefined\" from builder"
+      },
+      {
+        "t": 2.71,
+        "line": "Cloning into '/tmp/repo2dockerkmyv87bq'..."
+      },
+      {
+        "t": 49.83,
+        "line": "Python version unspecified, using current default Python version 3.10. This will change in the future."
+      },
+      {
+        "t": 49.83,
+        "line": "Unknown phase \"undefined\" from builder"
+      },
+      {
+        "t": 49.83,
+        "line": "Unknown phase \"undefined\" from builder"
+      },
+      {
+        "t": 49.83,
+        "line": "Using CondaBuildPack builder"
+      },
+      {
+        "t": 55.07,
+        "line": "#1 transferring dockerfile: 5.78kB done"
+      },
+      {
+        "t": 55.07,
+        "line": "#1 DONE 0.1s"
+      },
+      {
+        "t": 55.07,
+        "line": ""
+      },
+      {
+        "t": 55.07,
+        "line": "#2 [internal] load metadata for docker.io/library/buildpack-deps:24.04"
+      },
+      {
+        "t": 55.35,
+        "line": ""
+      },
+      {
+        "t": 55.35,
+        "line": "#3 [internal] load .dockerignore"
+      },
+      {
+        "t": 55.35,
+        "line": "#3 transferring context: 2B done"
+      },
+      {
+        "t": 55.35,
+        "line": "#4 [ 1/19] FROM docker.io/library/buildpack-deps:24.04@sha256:cfb30ff3856780c63b00ec3ad2e4aed77ae6afce5975ebb8ad9525ec45354e2e"
+      },
+      {
+        "t": 55.35,
+        "line": "#5 [internal] load build context"
+      },
+      {
+        "t": 62.59,
+        "line": "ERROR: failed to receive status: rpc error: code = Unavailable desc = error reading from server: EOF"
+      }
+    ],
+    "log_lines_total": 17,
+    "log_truncated": false
+  },
+  "execution": null,
+  "resources": null,
+  "errors": [],
+  "finished_at": "2026-07-22T07:32:57.571961+00:00",
+  "build_artifacts": {
+    "path": "/home/jmunroe/src/projectpythia/snow-observations-cookbook/_build",
+    "bytes": 0,
+    "kept_because": "run failed"
+  }
+}
