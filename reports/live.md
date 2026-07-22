@@ -8,15 +8,15 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 ## Coverage
 
-**59 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
+**60 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
 
 | Outcome | Cookbooks |
 |---|---|
 | build failed | 18 |
 | execution failed | 8 |
 | ran with errors | 13 |
-| ran clean | 20 |
-| not yet checked | 9 |
+| ran clean | 21 |
+| not yet checked | 8 |
 
 ## Results
 
@@ -80,7 +80,7 @@ The book built and ran, but at least one notebook cell raised. Read the per-cook
 | [vapor-python-cookbook](live/vapor-python-cookbook.md) | `healthy` | 2m 41s | 14.09s | 0.69 of 8.6 GB | 15 | 2026-07-22 |
 | [xbatcher-ML-1-cookbook](live/xbatcher-ML-1-cookbook.md) | `stale` | 9m 40s | 1m 22s | 0.70 of 8.6 GB | 1 | 2026-07-22 |
 
-### ran clean — 20
+### ran clean — 21
 
 Built and ran with no cell errors on this sample. Not a verdict -- a cached image never re-solves the environment, and one green run of a network-dependent notebook is a sample, not a guarantee.
 
@@ -103,6 +103,7 @@ Built and ran with no cell errors on this sample. Not a verdict -- a cached imag
 | [interactive-sentinel-2-cookbook](live/interactive-sentinel-2-cookbook.md) | `degraded` | 7m 54s | 2m 49s | 1.68 of 8.6 GB | 0 | 2026-07-22 |
 | [na-cordex-viz-cookbook](live/na-cordex-viz-cookbook.md) | `healthy` | 7m 36s (cached) | 8m 02s | 2.23 of 8.6 GB | 0 | 2026-07-22 |
 | [nsdf-openvisus-cookbook](live/nsdf-openvisus-cookbook.md) | `incubating` | 6m 13s | 33s | 1.40 of 8.6 GB | 0 | 2026-07-22 |
+| [packaging-cookbook](live/packaging-cookbook.md) | `incubating` | 6m 14s | 10.75s | 0.10 of 8.6 GB | 0 | 2026-07-22 |
 | [paleoPCA-cookbook](live/paleoPCA-cookbook.md) | `healthy` | 7m 49s | 43.08s | 0.77 of 8.6 GB | 0 | 2026-07-22 |
 | [wavelet-cookbook](live/wavelet-cookbook.md) | `healthy` | 3m 38s | 23.59s | 1.77 of 8.6 GB | 0 | 2026-07-22 |
 | [web-map-feature-services-cookbook](live/web-map-feature-services-cookbook.md) | `healthy` | 8m 41s (cached) | 1m 08s | 0.97 of 8.6 GB | 0 | 2026-07-22 |
