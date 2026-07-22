@@ -8,15 +8,15 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 ## Coverage
 
-**34 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
+**35 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
 
 | Outcome | Cookbooks |
 |---|---|
 | build failed | 9 |
 | execution failed | 5 |
 | ran with errors | 9 |
-| ran clean | 11 |
-| not yet checked | 34 |
+| ran clean | 12 |
+| not yet checked | 33 |
 
 ## Results
 
@@ -64,7 +64,7 @@ The book built and ran, but at least one notebook cell raised. Read the per-cook
 | [vapor-python-cookbook](live/vapor-python-cookbook.md) | `healthy` | 161.25s | 14.09s | 0.69 of 8.6 GB | 15 | 2026-07-22 |
 | [xbatcher-ML-1-cookbook](live/xbatcher-ML-1-cookbook.md) | `stale` | 579.91s | 81.83s | 0.70 of 8.6 GB | 1 | 2026-07-22 |
 
-### ran clean — 11
+### ran clean — 12
 
 Built and ran with no cell errors on this sample. Not a verdict -- a cached image never re-solves the environment, and one green run of a network-dependent notebook is a sample, not a guarantee.
 
@@ -72,6 +72,7 @@ Built and ran with no cell errors on this sample. Not a verdict -- a cached imag
 |---|---|---|---|---|---|---|
 | [advanced-viz-cookbook](live/advanced-viz-cookbook.md) | `healthy` | 341.33s | 45.64s | 1.52 of 8.6 GB | 0 | 2026-07-22 |
 | [Aerosol-Cloud-Interactions-cookbook](live/Aerosol-Cloud-Interactions-cookbook.md) | `incubating` | 985.26s | 10.52s | 0.14 of 8.6 GB | 0 | 2026-07-22 |
+| [atmos-modeling-cookbook](live/atmos-modeling-cookbook.md) | `incubating` | 79.6s (cached) | 33.14s | 3.26 of 8.6 GB | 0 | 2026-07-22 |
 | [eofs-cookbook](live/eofs-cookbook.md) | `healthy` | 81.46s (cached) | 44.02s | 1.43 of 8.6 GB | 0 | 2026-07-21 |
 | [feature-tracking-cookbook](live/feature-tracking-cookbook.md) | `healthy` | 629.43s | 179.48s | 3.90 of 8.6 GB | 0 | 2026-07-22 |
 | [healpix-cookbook](live/healpix-cookbook.md) | `healthy` | 11.11s (cached) | 81.86s | 1.83 of 8.6 GB | 0 | 2026-07-22 |

@@ -1,0 +1,145 @@
+{
+  "cookbook": "atmos-modeling-cookbook",
+  "env_injection": {
+    "attempted": false
+  },
+  "started_at": "2026-07-22T08:57:49.060689+00:00",
+  "hub": "https://binder.projectpythia.org",
+  "ref": "main",
+  "toc_notebooks": [
+    "notebooks/intro/crash_course.ipynb",
+    "notebooks/intro/improving_model.ipynb",
+    "notebooks/intro/matsuno-gill.ipynb",
+    "notebooks/intro/troubleshooting.ipynb"
+  ],
+  "build": {
+    "hub": "https://binder.projectpythia.org",
+    "ref": "main",
+    "seconds": 79.6,
+    "exit_code": 0,
+    "failed": false,
+    "image_cached": true,
+    "log": [
+      {
+        "t": 12.04,
+        "line": "Found built image, launching..."
+      },
+      {
+        "t": 12.04,
+        "line": "Launching server..."
+      },
+      {
+        "t": 12.23,
+        "line": "Server requested"
+      },
+      {
+        "t": 17.21,
+        "line": "2026-07-22T08:58:06Z [Normal] Successfully pulled image \"quay.io/jupyterhub/k8s-network-tools:4.3.3\" in 4.237s (4.237s including waiting). Image size: 3896334 bytes."
+      },
+      {
+        "t": 17.21,
+        "line": "2026-07-22T08:58:06Z [Normal] Created container: block-cloud-metadata"
+      },
+      {
+        "t": 18.21,
+        "line": "2026-07-22T08:58:07Z [Normal] Created container: block-nfs-access"
+      },
+      {
+        "t": 18.21,
+        "line": "2026-07-22T08:58:07Z [Normal] Started container block-nfs-access"
+      },
+      {
+        "t": 19.21,
+        "line": "2026-07-22T08:58:08Z [Normal] Pulling image \"quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2datmos-2dmodeling-2dcookbook-2a76d5:61af870d56a0e4c5888c5c2bf24f3cf346925e09\""
+      },
+      {
+        "t": 79.6,
+        "line": "Server ready at /user/projectpythia-a-deling-cookbook-v3my05h1/"
+      }
+    ],
+    "log_lines_total": 9,
+    "log_truncated": false
+  },
+  "execution": {
+    "seconds": 33.14,
+    "exit_code": 0,
+    "failed": false,
+    "cache_cleared": false,
+    "page_seconds": [
+      {
+        "page": "notebooks/intro/initial_concepts.md",
+        "seconds": 0.22
+      },
+      {
+        "page": "notebooks/intro/troubleshooting.ipynb",
+        "seconds": 0.23
+      },
+      {
+        "page": "notebooks/intro/improving_model.ipynb",
+        "seconds": 0.23
+      },
+      {
+        "page": "notebooks/dynamics/dynamics_overview.md",
+        "seconds": 0.23
+      },
+      {
+        "page": "notebooks/numerics/finite_differencing.md",
+        "seconds": 0.24
+      },
+      {
+        "page": "notebooks/config/init_boundary_conditions.md",
+        "seconds": 0.24
+      },
+      {
+        "page": "notebooks/summary/summary.md",
+        "seconds": 0.17
+      },
+      {
+        "page": "notebooks/appendix/finite_differencing.md",
+        "seconds": 0.19
+      },
+      {
+        "page": "notebooks/appendix/time_stepping.md",
+        "seconds": 0.2
+      },
+      {
+        "page": "myst.yml#site.parts.footer",
+        "seconds": 0.2
+      },
+      {
+        "page": "README.md",
+        "seconds": 0.97
+      },
+      {
+        "page": "notebooks/how-to-cite.md",
+        "seconds": 1.07
+      },
+      {
+        "page": "notebooks/intro/matsuno-gill.ipynb",
+        "seconds": 21.0
+      },
+      {
+        "page": "notebooks/intro/crash_course.ipynb",
+        "seconds": 23.0
+      }
+    ],
+    "stdout_tail": "building myst-cli session with API URL: https://api.mystmd.org\n\ud83c\udf61 Execution parallelism set to: 19\n\ud83c\udf0e Building MyST site\n\ud83d\udd0d Querying template metadata from https://api.mystmd.org/templates/site/myst/book-theme\n\ud83d\udc15 Fetching template from https://github.com/myst-templates/book-theme/archive/refs/heads/main.zip\n\ud83d\udcbe Saved template to path _build/templates/site/myst/book-theme\nBuilding the base site.\nTo set a baseurl (e.g. GitHub pages) use \"BASE_URL\" environment variable.\n\u2935\ufe0f  Installing web libraries (can take up to 60 s)\n\ud83d\udce6 Installed web libraries in 693 ms\n\ud83c\udfeb Read 665 myst references for \"foundations\" in 133 ms.\n\ud83c\udfeb Read 9803 intersphinx references for \"xarray\" in 215 ms.\n\ud83c\udfeb Read 19285 intersphinx references for \"python\" in 250 ms.\n\ud83c\udfeb Read 11399 intersphinx references for \"matplotlib\" in 304 ms.\n\ud83d\udcd6 Built notebooks/intro/initial_concepts.md in 221 ms.\n\ud83d\udcbf Executing notebook (notebooks/intro/matsuno-gill.ipynb) [no execution cache found]\n\ud83d\udcbf Executing notebook (notebooks/intro/crash_course.ipynb) [no execution cache found]\n\ud83d\udcd6 Built notebooks/intro/troubleshooting.ipynb in 227 ms.\n\ud83d\udcd6 Built notebooks/intro/improving_model.ipynb in 225 ms.\n\ud83d\udcd6 Built notebooks/dynamics/dynamics_overview.md in 234 ms.\n\ud83d\udcd6 Built notebooks/numerics/finite_differencing.md in 237 ms.\n\ud83d\udcd6 Built notebooks/config/init_boundary_conditions.md in 239 ms.\n\ud83d\udcd6 Built notebooks/summary/summary.md in 172 ms.\n\ud83d\udcd6 Built notebooks/appendix/finite_differencing.md in 188 ms.\n\ud83d\udcd6 Built notebooks/appendix/time_stepping.md in 198 ms.\n\ud83d\udcd6 Built myst.yml#site.parts.footer in 202 ms.\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-a-deling-cookbook-v3my05h1/api/kernels/6027ab4c-601e-4648-a133-5c6b0e7ff84b\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-a-deling-cookbook-v3my05h1/api/kernels/913d66c3-3e73-4a17-beb6-655b6ee18ef1\n\ud83d\udcd6 Built README.md in 970 ms.\n\ud83d\udcd6 Built notebooks/how-to-cite.md in 1.07 s.\n\ud83d\udcd6 Built notebooks/intro/matsuno-gill.ipynb in 21 s.\n\ud83e\ude84  Linked 2 DOIs from doi.org in 428 ms for notebooks/intro/crash_course.ipynb\n\ud83d\udcd6 Built notebooks/intro/crash_course.ipynb in 23 s.\n\ud83d\udcda Built 13 pages for project in 27 s.\n\n\n\t\u2728\u2728\u2728  Starting Book Theme  \u2728\u2728\u2728\n\n\n\n\ud83d\udd0c Server started on port 3000!  \ud83e\udd73 \ud83c\udf89\n\n\n\t\ud83d\udc49  http://localhost:3000  \ud83d\udc48\n\n\n\ud83d\udc8c GET  /notebooks/intro/initial-concepts 200 - - 31.582 ms\n\ud83d\udc8c GET  /notebooks/how-to-cite 200 - - 88.192 ms\n\ud83d\udc8c GET  /notebooks/intro/matsuno-gill 200 - - 91.834 ms\n\ud83d\udc8c GET  / 200 - - 164.786 ms\n\ud83d\udc8c GET  /notebooks/intro/crash-course 200 - - 71.211 ms\nGET /notebooks/intro/troubleshooting 200 - - 84.494 ms\n\ud83d\udc8c GET  /notebooks/intro/improving-model 200 - - 14.590 ms\n\ud83d\udc8c GET  /notebooks/dynamics/dynamics-overview 200 - - 16.963 ms\n\ud83d\udc8c GET  /notebooks/numerics/finite-differencing 200 - - 20.404 ms\n\ud83d\udc8c GET  /notebooks/config/init-boundary-conditions 200 - - 17.556 ms\nGET /notebooks/summary/summary 200 - - 19.154 ms\n\ud83d\udc8c GET  /notebooks/appendix/finite-differencing 200 - - 33.730 ms\n\ud83d\udc8c GET  /notebooks.how-to-cite.json 200 - - 27.350 ms\nGET /index.json 200 - - 28.367 ms\nGET /notebooks/appendix/time-stepping 200 - - 31.328 ms\n\ud83d\udc8c GET  /notebooks.intro.initial-concepts.json 200 - - 20.397 ms\n\ud83d\udc8c GET  /notebooks.intro.matsuno-gill.json 200 - - 11.580 ms\nGET /notebooks.intro.improving-model.json 200 - - 12.985 ms\nGET /notebooks.intro.troubleshooting.json 200 - - 16.404 ms\n\ud83d\udc8c GET  /notebooks.intro.crash-course.json 200 - - 15.314 ms\n\ud83d\udc8c GET  /notebooks.dynamics.dynamics-overview.json 200 - - 15.547 ms\n\ud83d\udc8c GET  /notebooks.config.init-boundary-conditions.json 200 - - 7.817 ms\nGET /notebooks.numerics.finite-differencing.json 200 - - 8.019 ms\n\ud83d\udc8c GET  /notebooks.summary.summary.json 200 - - 8.032 ms\n\ud83d\udc8c GET  /robots.txt 200 - - 0.576 ms\n\ud83d\udc8c GET  /notebooks.appendix.finite-differencing.json 200 - - 12.225 ms\nGET /notebooks.appendix.time-stepping.json 200 - - 10.919 ms\n\ud83d\udc8c GET  /sitemap.xml 200 - - 2.308 ms\nGET /sitemap_style.xsl 200 - - 0.559 ms\nGET /myst-theme.css 200 - - 9.454 ms\n\ud83d\udc8c GET  /favicon.ico 200 - - 3.591 ms\n",
+    "stderr_tail": "\u26a0\ufe0f  myst.yml 'nav.1' extra key ignored: open_in_same_tab (at myst.yml#config.site)\n\u26a0\ufe0f  myst.yml 'nav.2' extra key ignored: open_in_same_tab (at myst.yml#config.site)\n\u26a0\ufe0f  myst.yml 'config.project' extra key ignored: bibtex_bibfiles (at myst.yml)\n\u26a0\ufe0f  notebooks/intro/matsuno-gill.ipynb Removing matplotlib string from outputs\n   Text(0.5, 1.0, 'Heating $Q$')\n   Fix: Put a semicolon on the last line of your cell or add \"output_matplotlib_strings: remove\" to the project settings.\n\u26a0\ufe0f  notebooks/intro/matsuno-gill.ipynb Removing matplotlib string from outputs\n   Text(0, 0.5, 'Meridional Distance (y)')\n   Fix: Put a semicolon on the last line of your cell or add \"output_matplotlib_strings: remove\" to the project settings.\n"
+  },
+  "resources": {
+    "available": true,
+    "sample_count": 11,
+    "sample_seconds": 3,
+    "peak_rss_bytes": 3373047808,
+    "peak_pss_bytes": 3255061504,
+    "limit_basis": "pss",
+    "peak_against_limit_bytes": 3255061504,
+    "memory_limit_bytes": 8589934592,
+    "peak_fraction_of_limit": 0.3789,
+    "peak_cpu_percent": null,
+    "cpu_count": null
+  },
+  "errors": [],
+  "finished_at": "2026-07-22T08:59:42.277790+00:00",
+  "build_artifacts": null
+}
