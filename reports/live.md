@@ -8,15 +8,15 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 ## Coverage
 
-**16 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
+**17 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
 
 | Outcome | Cookbooks |
 |---|---|
 | build failed | 2 |
 | execution failed | 3 |
-| ran with errors | 6 |
+| ran with errors | 7 |
 | ran clean | 5 |
-| not yet checked | 52 |
+| not yet checked | 51 |
 
 ## Results
 
@@ -39,7 +39,7 @@ The build succeeded but `myst build --execute` itself did not complete -- a time
 | [dask-cookbook](live/dask-cookbook.md) | `healthy` | 402.9s | 56.09s | 8.23 of 8.6 GB | 0 | 2026-07-22 |
 | [gdex-cookbook](live/gdex-cookbook.md) | `healthy` | 166.65s (cached) | 81.87s | 7.94 of 8.6 GB | 0 | 2026-07-22 |
 
-### ran with errors — 6
+### ran with errors — 7
 
 The book built and ran, but at least one notebook cell raised. Read the per-cookbook page before calling it a defect: a missing credential or an upstream outage looks identical to a broken cookbook.
 
@@ -47,6 +47,7 @@ The book built and ran, but at least one notebook cell raised. Read the per-cook
 |---|---|---|---|---|---|---|
 | [cesm-lens-aws-cookbook](live/cesm-lens-aws-cookbook.md) | `healthy` | 329.75s | 463.46s | 3.90 of 8.6 GB | 2 | 2026-07-22 |
 | [ERA5_interactive-cookbook](live/ERA5_interactive-cookbook.md) | `healthy` | 421.62s | 738.69s | 2.23 of 8.6 GB | 1 | 2026-07-22 |
+| [gridding-cookbook](live/gridding-cookbook.md) | `healthy` | 419.87s (cached) | 58.63s | 3.73 of 8.6 GB | 1 | 2026-07-22 |
 | [intake-cookbook](live/intake-cookbook.md) | `degraded` | 508.69s | 20.27s | 0.50 of 8.6 GB | 2 | 2026-07-22 |
 | [landsat-ml-cookbook](live/landsat-ml-cookbook.md) | `stale` | 469.24s | 34.69s | 0.95 of 8.6 GB | 3 | 2026-07-21 |
 | [radar-cookbook](live/radar-cookbook.md) | `stale` | 7.16s (cached) | 414.12s | 7.97 of 8.6 GB | 3 | 2026-07-21 |
