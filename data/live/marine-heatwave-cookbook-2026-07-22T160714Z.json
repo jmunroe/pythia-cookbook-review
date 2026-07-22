@@ -1,0 +1,253 @@
+{
+  "cookbook": "marine-heatwave-cookbook",
+  "env_injection": {
+    "attempted": false
+  },
+  "started_at": "2026-07-22T15:56:41.497310+00:00",
+  "hub": "https://binder.projectpythia.org",
+  "ref": "main",
+  "toc_notebooks": [
+    "notebooks/foundation/mhw_observation_myst.ipynb"
+  ],
+  "build": {
+    "hub": "https://binder.projectpythia.org",
+    "ref": "main",
+    "seconds": 684.85,
+    "exit_code": 1,
+    "failed": true,
+    "image_cached": false,
+    "log": [
+      {
+        "t": 3.17,
+        "line": "Waiting for build to start..."
+      },
+      {
+        "t": 18.85,
+        "line": "Picked Git content provider."
+      },
+      {
+        "t": 18.85,
+        "line": "Unknown phase \"undefined\" from builder"
+      },
+      {
+        "t": 22.1,
+        "line": "Python version unspecified, using current default Python version 3.10. This will change in the future."
+      },
+      {
+        "t": 22.1,
+        "line": "Unknown phase \"undefined\" from builder"
+      },
+      {
+        "t": 22.1,
+        "line": "Unknown phase \"undefined\" from builder"
+      },
+      {
+        "t": 22.91,
+        "line": "#1 DONE 0.1s"
+      },
+      {
+        "t": 23.73,
+        "line": "#2 DONE 0.9s"
+      },
+      {
+        "t": 23.97,
+        "line": ""
+      },
+      {
+        "t": 23.97,
+        "line": "#4 [ 1/19] FROM docker.io/library/buildpack-deps:24.04@sha256:cfb30ff3856780c63b00ec3ad2e4aed77ae6afce5975ebb8ad9525ec45354e2e"
+      },
+      {
+        "t": 24.08,
+        "line": "#4 sha256:ca2678b20700c15185707964d9211b1a6406196114bf675f568b6025d37b3888 0B / 29.74MB 0.1s"
+      },
+      {
+        "t": 24.08,
+        "line": "#4 sha256:76a991c6bfc1738367d1f726699924445e25d762cea07820a5069de2e0ffb806 0B / 13.58MB 0.1s"
+      },
+      {
+        "t": 24.08,
+        "line": "#4 sha256:992bb70ed221ae6468bafbde091d782eb827cfa9afae6267256a2d2737b8619f 0B / 47.77MB 0.1s"
+      },
+      {
+        "t": 24.08,
+        "line": "#4 sha256:cfb30ff3856780c63b00ec3ad2e4aed77ae6afce5975ebb8ad9525ec45354e2e 7.83kB / 7.83kB done"
+      },
+      {
+        "t": 24.08,
+        "line": "#4 sha256:7a96164779cf6d59a90f0b01a003422ff84a56988163ce7af3b4b8c03a309439 1.76kB / 1.76kB done"
+      },
+      {
+        "t": 24.19,
+        "line": "#4 sha256:992bb70ed221ae6468bafbde091d782eb827cfa9afae6267256a2d2737b8619f 18.87MB / 47.77MB 0.2s"
+      },
+      {
+        "t": 24.3,
+        "line": "#4 sha256:ca2678b20700c15185707964d9211b1a6406196114bf675f568b6025d37b3888 29.74MB / 29.74MB 0.3s"
+      },
+      {
+        "t": 24.49,
+        "line": "#4 ..."
+      },
+      {
+        "t": 24.49,
+        "line": "#5 transferring context: 62.11MB 0.3s done"
+      },
+      {
+        "t": 24.49,
+        "line": "#4 sha256:ca2678b20700c15185707964d9211b1a6406196114bf675f568b6025d37b3888 29.74MB / 29.74MB 0.4s done"
+      },
+      {
+        "t": 24.59,
+        "line": "#4 sha256:992bb70ed221ae6468bafbde091d782eb827cfa9afae6267256a2d2737b8619f 47.77MB / 47.77MB 0.4s done"
+      },
+      {
+        "t": 24.73,
+        "line": "#4 sha256:13f2c3e911f50d01ad2d490a0fa0c8921ce491b3365589e1fe21c2a07de011c3 24.89MB / 185.48MB 0.6s"
+      },
+      {
+        "t": 24.94,
+        "line": "#4 sha256:13f2c3e911f50d01ad2d490a0fa0c8921ce491b3365589e1fe21c2a07de011c3 85.98MB / 185.48MB 0.8s"
+      },
+      {
+        "t": 25.16,
+        "line": "#4 sha256:13f2c3e911f50d01ad2d490a0fa0c8921ce491b3365589e1fe21c2a07de011c3 181.40MB / 185.48MB 1.1s"
+      },
+      {
+        "t": 25.58,
+        "line": "#4 sha256:13f2c3e911f50d01ad2d490a0fa0c8921ce491b3365589e1fe21c2a07de011c3 185.48MB / 185.48MB 1.3s done"
+      },
+      {
+        "t": 25.81,
+        "line": "#4 extracting sha256:76a991c6bfc1738367d1f726699924445e25d762cea07820a5069de2e0ffb806"
+      },
+      {
+        "t": 26.4,
+        "line": "#4 extracting sha256:76a991c6bfc1738367d1f726699924445e25d762cea07820a5069de2e0ffb806 0.4s done"
+      },
+      {
+        "t": 26.4,
+        "line": "#4 extracting sha256:992bb70ed221ae6468bafbde091d782eb827cfa9afae6267256a2d2737b8619f"
+      },
+      {
+        "t": 28.69,
+        "line": "#4 extracting sha256:13f2c3e911f50d01ad2d490a0fa0c8921ce491b3365589e1fe21c2a07de011c3"
+      },
+      {
+        "t": 34.27,
+        "line": "#4 extracting sha256:13f2c3e911f50d01ad2d490a0fa0c8921ce491b3365589e1fe21c2a07de011c3 5.0s done"
+      },
+      {
+        "t": 267.11,
+        "line": "#6 214.7 W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/noble-security/multiverse/binary-amd64/Packages  Connection failed [IP: 91.189.92.22 80]"
+      },
+      {
+        "t": 457.99,
+        "line": "#6 390.9 debconf: delaying package configuration, since apt-utils is not installed"
+      },
+      {
+        "t": 460.67,
+        "line": ""
+      },
+      {
+        "t": 460.67,
+        "line": "#7 [ 3/19] RUN echo \"en_US.UTF-8 UTF-8\" > /etc/locale.gen &&     locale-gen"
+      },
+      {
+        "t": 462.13,
+        "line": "#7 0.250   en_US.UTF-8... done"
+      },
+      {
+        "t": 462.29,
+        "line": "#7 1.492 Generation complete."
+      },
+      {
+        "t": 462.49,
+        "line": ""
+      },
+      {
+        "t": 462.49,
+        "line": "#8 [ 4/19] RUN if getent group 1000; then       GROUP_1000=\"$(getent group 1000 | cut -d: -f1)\";       if [ \"$GROUP_1000\" != \"jovyan\" ]; then         groupmod --new-name jovyan \"$GROUP_1000\";       fi;     else       groupadd --gid 1000 jovyan;     fi"
+      },
+      {
+        "t": 462.66,
+        "line": "#8 0.312 ubuntu:x:1000:"
+      },
+      {
+        "t": 462.98,
+        "line": ""
+      },
+      {
+        "t": 462.98,
+        "line": "#9 [ 5/19] RUN if id 1000; then       USER_1000=\"$(id 1000 -un)\";       if [ \"$USER_1000\" != \"jovyan\" ]; then         usermod --home \"/home/jovyan\" --login \"jovyan\" --move-home \"$USER_1000\";       fi;     else       useradd         --comment \"Default user\"         --create-home         --gid 1000         --no-log-init         --shell /bin/bash         --uid 1000         jovyan;     fi"
+      },
+      {
+        "t": 463.16,
+        "line": "#9 0.304 uid=1000(ubuntu) gid=1000(jovyan) groups=1000(jovyan),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev)"
+      },
+      {
+        "t": 463.54,
+        "line": "#9 DONE 0.7s"
+      },
+      {
+        "t": 684.56,
+        "line": "#10 204.0 W: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/noble/InRelease  Connection failed [IP: 91.189.92.23 80]"
+      },
+      {
+        "t": 684.68,
+        "line": "#10 204.0 E: Package 'gettext-base' has no installation candidate"
+      },
+      {
+        "t": 684.8,
+        "line": "------"
+      },
+      {
+        "t": 684.8,
+        "line": " > [ 6/19] RUN apt-get -qq update &&     apt-get -qq install --yes --no-install-recommends        gettext-base        less        unzip        > /dev/null &&     apt-get -qq purge &&     apt-get -qq clean &&     rm -rf /var/lib/apt/lists/*:"
+      },
+      {
+        "t": 684.8,
+        "line": "204.0 W: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/noble-backports/InRelease  Could not connect to archive.ubuntu.com:80 (185.125.190.83), connection timed out Could not connect to archive.ubuntu.com:80 (91.189.92.24), connection timed out Could not connect to archive.ubuntu.com:80 (185.125.190.81), connection timed out Could not connect to archive.ubuntu.com:80 (91.189.92.23), connection timed out Could not connect to archive.ubuntu.com:80 (185.125.190.82), connection timed out Could not connect to archive.ubuntu.com:80 (91.189.92.22), connection timed out [IP: 91.189.92.22 80]"
+      },
+      {
+        "t": 684.8,
+        "line": "204.0 E: Package 'gettext-base' has no installation candidate"
+      },
+      {
+        "t": 684.8,
+        "line": "  57 | >>> RUN apt-get -qq update && \\"
+      },
+      {
+        "t": 684.8,
+        "line": "  58 | >>>     apt-get -qq install --yes --no-install-recommends \\"
+      },
+      {
+        "t": 684.8,
+        "line": "  59 | >>>        gettext-base \\"
+      },
+      {
+        "t": 684.84,
+        "line": "  61 | >>>        unzip \\"
+      },
+      {
+        "t": 684.84,
+        "line": "  62 | >>>        > /dev/null && \\"
+      },
+      {
+        "t": 684.84,
+        "line": "  63 | >>>     apt-get -qq purge && \\"
+      }
+    ],
+    "log_lines_total": 55,
+    "log_truncated": false
+  },
+  "execution": null,
+  "resources": null,
+  "errors": [],
+  "finished_at": "2026-07-22T16:07:14.275989+00:00",
+  "build_artifacts": {
+    "path": "/home/jmunroe/src/projectpythia/marine-heatwave-cookbook/_build",
+    "bytes": 0,
+    "kept_because": "run failed"
+  }
+}
