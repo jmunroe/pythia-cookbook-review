@@ -115,9 +115,9 @@ run until a learner's kernel dies.
 
 | Outcome | Cookbooks |
 |---|---|
-| build failed | 19 |
+| build failed | 18 |
 | execution failed | 10 |
-| ran with errors | 15 |
+| ran with errors | 16 |
 | ran clean | 24 |
 
 :::{danger} A passing badge does not mean the notebooks ran
