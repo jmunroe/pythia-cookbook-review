@@ -39,8 +39,14 @@ project:
         - file: reports/by-tier.md
         - file: reports/dashboard.md
         - file: reports/gaps.md
-        - file: reports/live.md
         - file: reports/ci-errors.md
+        - title: Live checks
+          children:
+            # The overview is the landing page; the per-cookbook detail pages are
+            # generated into reports/live/ and picked up by the pattern, so
+            # checking a new cookbook needs no toc edit. See scripts/report_live.py.
+            - file: reports/live.md
+            - pattern: reports/live/*.md
     - title: Method
       children:
         - file: docs/criteria.md

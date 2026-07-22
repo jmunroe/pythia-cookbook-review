@@ -28,7 +28,7 @@ observation.
 | `reports/` | `report.py` | **Generated.** Never hand-edit; the next run destroys it. Wrong output means `report.py` or the rubric is wrong. |
 | `index.md` | `build_site.py` | **Generated** from the newest snapshot. Edit `scripts/templates/index.md`, never `index.md`. |
 | `data/live/` | `live_check.py` | **Append-only**, like snapshots. Never contains session tokens. |
-| `reports/live.md` | `report_live.py` | **Generated.** |
+| `reports/live.md` + `reports/live/` | `report_live.py` | **Generated.** The overview page plus one auto-included detail page per cookbook; the whole `reports/live/` dir is rewritten each run. |
 | `notes/` | **a human** | **Never generate these.** See below. |
 | `docs/` | a human | Changes when upstream Pythia guidance changes. |
 

@@ -19,6 +19,7 @@ import json
 import pathlib
 
 import report
+import report_live
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 TEMPLATE = ROOT / "scripts" / "templates" / "index.md"
@@ -113,8 +114,13 @@ def ci_counts():
     }
 
 
-def live_summary():
-    """One line per cookbook that has been live-checked, or a placeholder."""
+def live_summary(total):
+    """A compact teaser: coverage and outcomes, not one row per cookbook.
+
+    The full per-cookbook breakdown lives in reports/live.md and its detail
+    pages; enumerating every checked cookbook here would put the same
+    unbounded table on the landing page it was split off to avoid.
+    """
     live = ROOT / "data" / "live"
     latest = {}
     for path in sorted(live.glob("*.json")):
@@ -131,26 +137,23 @@ def live_summary():
     if not latest:
         return "*No cookbooks have been live-checked yet.*"
 
-    rows = ["| Cookbook | Session | Execution | Peak memory | Errors |", "|---|---|---|---|---|"]
-    for name, record in sorted(latest.items()):
-        build = record.get("build") or {}
-        execution = record.get("execution") or {}
-        resources = record.get("resources") or {}
-        # pss where available -- rss double-counts pages shared between the
-        # server and its kernels, and can read above a limit never breached.
-        peak = resources.get("peak_against_limit_bytes") or resources.get("peak_rss_bytes")
-        limit = resources.get("memory_limit_bytes")
-        memory = (
-            f"{peak / 1e9:.2f} of {limit / 1e9:.1f} GB" if peak and limit else "—"
-        )
-        rows.append(
-            f"| {name} "
-            f"| {build.get('seconds')}s"
-            f"{' (cached)' if build.get('image_cached') else ''} "
-            f"| {execution.get('seconds', '—')}s "
-            f"| {memory} "
-            f"| {len(record.get('errors') or [])} |"
-        )
+    outcomes = {}
+    for record in latest.values():
+        outcome = report_live.verdict(record)
+        outcomes[outcome] = outcomes.get(outcome, 0) + 1
+
+    rows = [
+        f"**{len(latest)} of {total} cookbooks live-checked so far.** "
+        "The per-cookbook results are in [the live checks report](reports/live.md).",
+        "",
+        "| Outcome | Cookbooks |",
+        "|---|---|",
+    ]
+    rows += [
+        f"| {outcome} | {outcomes[outcome]} |"
+        for outcome in report_live.OUTCOME_ORDER
+        if outcomes.get(outcome)
+    ]
     return "\n".join(rows)
 
 
@@ -179,7 +182,7 @@ def main():
         "REVIEWED": reviewed,
         "TIER_TABLE": tier_table(counts),
         "GAP_TABLE": gap_table(live, gallery),
-        "LIVE_SUMMARY": live_summary(),
+        "LIVE_SUMMARY": live_summary(len(live)),
         **ci_counts(),
         # Must sit below the frontmatter -- MyST needs that block at the very
         # top of the file.
