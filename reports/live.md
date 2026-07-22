@@ -8,14 +8,14 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 ## Coverage
 
-**9 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
+**10 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
 
 | Outcome | Cookbooks |
 |---|---|
 | build failed | 1 |
-| ran with errors | 4 |
+| ran with errors | 5 |
 | ran clean | 4 |
-| not yet checked | 59 |
+| not yet checked | 58 |
 
 ## Results
 
@@ -27,12 +27,13 @@ The Binder image would not build, so the launch button gives a learner nothing. 
 |---|---|---|---|---|---|---|
 | [esgf-cookbook](live/esgf-cookbook.md) | `stale` | 416.52s | —s | — | 0 | 2026-07-21 |
 
-### ran with errors — 4
+### ran with errors — 5
 
 The book built and ran, but at least one notebook cell raised. Read the per-cookbook page before calling it a defect: a missing credential or an upstream outage looks identical to a broken cookbook.
 
 | Cookbook | Static tier | Session | Execution | Peak memory | Errors | Checked |
 |---|---|---|---|---|---|---|
+| [cesm-lens-aws-cookbook](live/cesm-lens-aws-cookbook.md) | `healthy` | 329.75s | 463.46s | 3.90 of 8.6 GB | 2 | 2026-07-22 |
 | [intake-cookbook](live/intake-cookbook.md) | `degraded` | 508.69s | 20.27s | 0.50 of 8.6 GB | 2 | 2026-07-22 |
 | [landsat-ml-cookbook](live/landsat-ml-cookbook.md) | `stale` | 469.24s | 34.69s | 0.95 of 8.6 GB | 3 | 2026-07-21 |
 | [radar-cookbook](live/radar-cookbook.md) | `stale` | 7.16s (cached) | 414.12s | 7.97 of 8.6 GB | 3 | 2026-07-21 |
