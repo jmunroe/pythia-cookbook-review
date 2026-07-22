@@ -8,24 +8,25 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 ## Coverage
 
-**12 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
+**13 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
 
 | Outcome | Cookbooks |
 |---|---|
-| build failed | 1 |
+| build failed | 2 |
 | execution failed | 2 |
 | ran with errors | 5 |
 | ran clean | 4 |
-| not yet checked | 56 |
+| not yet checked | 55 |
 
 ## Results
 
-### build failed — 1
+### build failed — 2
 
 The Binder image would not build, so the launch button gives a learner nothing. The most direct failure there is.
 
 | Cookbook | Static tier | Session | Execution | Peak memory | Errors | Checked |
 |---|---|---|---|---|---|---|
+| [eo-datascience-cookbook](live/eo-datascience-cookbook.md) | `healthy` | 687.95s | —s | — | 0 | 2026-07-22 |
 | [esgf-cookbook](live/esgf-cookbook.md) | `stale` | 416.52s | —s | — | 0 | 2026-07-21 |
 
 ### execution failed — 2
