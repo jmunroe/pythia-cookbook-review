@@ -12,14 +12,14 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 | Outcome | Cookbooks |
 |---|---|
-| build failed | 17 |
+| build failed | 16 |
 | execution failed | 10 |
-| ran with errors | 16 |
+| ran with errors | 17 |
 | ran clean | 25 |
 
 ## Results
 
-### build failed — 17
+### build failed — 16
 
 The Binder image would not build, so the launch button gives a learner nothing. The most direct failure there is.
 
@@ -31,7 +31,6 @@ The Binder image would not build, so the launch button gives a learner nothing. 
 | [eo-datascience-cookbook](live/eo-datascience-cookbook.md) | `healthy` | 11m 28s | — | — | 0 | 2026-07-22 |
 | [esgf-cookbook](live/esgf-cookbook.md) | `stale` | 6m 57s | — | — | 0 | 2026-07-21 |
 | [extreme-weather-events-cookbook](live/extreme-weather-events-cookbook.md) | `incubating` | 2m 12s | — | — | 0 | 2026-07-22 |
-| [great-circle-cookbook](live/great-circle-cookbook.md) | `incubating` | 1m 34s | — | — | 0 | 2026-07-22 |
 | [kerchunk-cookbook](live/kerchunk-cookbook.md) | `healthy` | 9m 38s | — | — | 0 | 2026-07-22 |
 | [metpy-cookbook](live/metpy-cookbook.md) | `healthy` | 10m 53s | — | — | 0 | 2026-07-22 |
 | [ml-hurricane-intensity](live/ml-hurricane-intensity.md) | `incubating` | 5m 28s | — | — | 0 | 2026-07-22 |
@@ -60,7 +59,7 @@ The build succeeded but `myst build --execute` itself did not complete -- a time
 | [sklearn-argo-cookbook](live/sklearn-argo-cookbook.md) | `incubating` | 7m 33s | 9m 22s | 8.61 of 8.6 GB | 0 | 2026-07-22 |
 | [spectral-analysis-cookbook](live/spectral-analysis-cookbook.md) | `incubating` | 16m 43s | 43.71s | 8.61 of 8.6 GB | 0 | 2026-07-22 |
 
-### ran with errors — 16
+### ran with errors — 17
 
 The book built and ran, but at least one notebook cell raised. Read the per-cookbook page before calling it a defect: a missing credential or an upstream outage looks identical to a broken cookbook.
 
@@ -72,6 +71,7 @@ The book built and ran, but at least one notebook cell raised. Read the per-cook
 | [ERA5_interactive-cookbook](live/ERA5_interactive-cookbook.md) | `healthy` | 7m 02s | 12m 19s | 2.23 of 8.6 GB | 1 | 2026-07-22 |
 | [geomorphology-cookbook](live/geomorphology-cookbook.md) | `incubating` | 7m 56s | 2m 22s | 2.27 of 8.6 GB | 1 | 2026-07-22 |
 | [geostationary-cookbook](live/geostationary-cookbook.md) | `incubating` | 5m 22s | 2m 42s | 3.18 of 8.6 GB | 4 | 2026-07-22 |
+| [great-circle-cookbook](live/great-circle-cookbook.md) | `incubating` | 14m 50s | 31.37s | 1.12 of 8.6 GB | 1 | 2026-07-22 |
 | [gridding-cookbook](live/gridding-cookbook.md) | `healthy` | 7m 00s (cached) | 58.63s | 3.73 of 8.6 GB | 1 | 2026-07-22 |
 | [icesat2-cookbook](live/icesat2-cookbook.md) | `incubating` | 12m 10s | 1m 04s | 1.84 of 8.6 GB | 2 | 2026-07-22 |
 | [intake-cookbook](live/intake-cookbook.md) | `degraded` | 8m 29s | 20.27s | 0.50 of 8.6 GB | 2 | 2026-07-22 |
