@@ -8,19 +8,19 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 ## Coverage
 
-**62 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
+**63 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
 
 | Outcome | Cookbooks |
 |---|---|
-| build failed | 18 |
+| build failed | 19 |
 | execution failed | 8 |
 | ran with errors | 14 |
 | ran clean | 22 |
-| not yet checked | 6 |
+| not yet checked | 5 |
 
 ## Results
 
-### build failed — 18
+### build failed — 19
 
 The Binder image would not build, so the launch button gives a learner nothing. The most direct failure there is.
 
@@ -42,6 +42,7 @@ The Binder image would not build, so the launch button gives a learner nothing. 
 | [mpasviewer-cookbook](live/mpasviewer-cookbook.md) | `incubating` | 26.52s | — | — | 0 | 2026-07-22 |
 | [mrms-cookbook](live/mrms-cookbook.md) | `incubating` | 3m 13s | — | — | 0 | 2026-07-22 |
 | [osdf-cookbook](live/osdf-cookbook.md) | `healthy` | 1m 49s | — | — | 0 | 2026-07-22 |
+| [radiative-feedback-cookbook](live/radiative-feedback-cookbook.md) | `incubating` | 1m 03s | — | — | 0 | 2026-07-22 |
 | [snow-observations-cookbook](live/snow-observations-cookbook.md) | `healthy` | 1m 03s | — | — | 0 | 2026-07-22 |
 | [unstructured-grid-viz-cookbook](live/unstructured-grid-viz-cookbook.md) | `healthy` | 30m 00s | — | — | 0 | 2026-07-22 |
 
