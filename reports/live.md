@@ -8,15 +8,15 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 ## Coverage
 
-**48 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
+**49 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
 
 | Outcome | Cookbooks |
 |---|---|
 | build failed | 13 |
 | execution failed | 5 |
 | ran with errors | 12 |
-| ran clean | 18 |
-| not yet checked | 20 |
+| ran clean | 19 |
+| not yet checked | 19 |
 
 ## Results
 
@@ -71,7 +71,7 @@ The book built and ran, but at least one notebook cell raised. Read the per-cook
 | [vapor-python-cookbook](live/vapor-python-cookbook.md) | `healthy` | 161.25s | 14.09s | 0.69 of 8.6 GB | 15 | 2026-07-22 |
 | [xbatcher-ML-1-cookbook](live/xbatcher-ML-1-cookbook.md) | `stale` | 579.91s | 81.83s | 0.70 of 8.6 GB | 1 | 2026-07-22 |
 
-### ran clean — 18
+### ran clean — 19
 
 Built and ran with no cell errors on this sample. Not a verdict -- a cached image never re-solves the environment, and one green run of a network-dependent notebook is a sample, not a guarantee.
 
@@ -89,6 +89,7 @@ Built and ran with no cell errors on this sample. Not a verdict -- a cached imag
 | [feature-tracking-cookbook](live/feature-tracking-cookbook.md) | `healthy` | 629.43s | 179.48s | 3.90 of 8.6 GB | 0 | 2026-07-22 |
 | [geosat-cookbook](live/geosat-cookbook.md) | `incubating` | 348.53s | 69.0s | 0.10 of 8.6 GB | 0 | 2026-07-22 |
 | [healpix-cookbook](live/healpix-cookbook.md) | `healthy` | 11.11s (cached) | 81.86s | 1.83 of 8.6 GB | 0 | 2026-07-22 |
+| [hello-pythia-cookbook](live/hello-pythia-cookbook.md) | `incubating` | 1145.43s | 0.6s | 0.10 of 8.6 GB | 0 | 2026-07-22 |
 | [HRRR-AWS-cookbook](live/HRRR-AWS-cookbook.md) | `healthy` | 6.49s (cached) | 27.53s | 0.62 of 8.6 GB | 0 | 2026-07-21 |
 | [interactive-sentinel-2-cookbook](live/interactive-sentinel-2-cookbook.md) | `degraded` | 473.56s | 169.41s | 1.68 of 8.6 GB | 0 | 2026-07-22 |
 | [na-cordex-viz-cookbook](live/na-cordex-viz-cookbook.md) | `healthy` | 455.92s (cached) | 481.71s | 2.23 of 8.6 GB | 0 | 2026-07-22 |
