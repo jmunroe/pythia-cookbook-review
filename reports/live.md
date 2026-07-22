@@ -12,14 +12,14 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 | Outcome | Cookbooks |
 |---|---|
-| build failed | 18 |
+| build failed | 17 |
 | execution failed | 10 |
 | ran with errors | 16 |
-| ran clean | 24 |
+| ran clean | 25 |
 
 ## Results
 
-### build failed — 18
+### build failed — 17
 
 The Binder image would not build, so the launch button gives a learner nothing. The most direct failure there is.
 
@@ -33,7 +33,6 @@ The Binder image would not build, so the launch button gives a learner nothing. 
 | [extreme-weather-events-cookbook](live/extreme-weather-events-cookbook.md) | `incubating` | 2m 12s | — | — | 0 | 2026-07-22 |
 | [great-circle-cookbook](live/great-circle-cookbook.md) | `incubating` | 1m 34s | — | — | 0 | 2026-07-22 |
 | [kerchunk-cookbook](live/kerchunk-cookbook.md) | `healthy` | 9m 38s | — | — | 0 | 2026-07-22 |
-| [METAR_archive-cookbook](live/METAR_archive-cookbook.md) | `incubating` | 1m 56s | — | — | 0 | 2026-07-22 |
 | [metpy-cookbook](live/metpy-cookbook.md) | `healthy` | 10m 53s | — | — | 0 | 2026-07-22 |
 | [ml-hurricane-intensity](live/ml-hurricane-intensity.md) | `incubating` | 3m 36s | — | — | 0 | 2026-07-22 |
 | [mpas-jedi-cookbook](live/mpas-jedi-cookbook.md) | `healthy` | 2m 45s | — | — | 0 | 2026-07-22 |
@@ -84,7 +83,7 @@ The book built and ran, but at least one notebook cell raised. Read the per-cook
 | [vapor-python-cookbook](live/vapor-python-cookbook.md) | `healthy` | 2m 41s | 14.09s | 0.69 of 8.6 GB | 15 | 2026-07-22 |
 | [xbatcher-ML-1-cookbook](live/xbatcher-ML-1-cookbook.md) | `stale` | 9m 40s | 1m 22s | 0.70 of 8.6 GB | 1 | 2026-07-22 |
 
-### ran clean — 24
+### ran clean — 25
 
 Built and ran with no cell errors on this sample. Not a verdict -- a cached image never re-solves the environment, and one green run of a network-dependent notebook is a sample, not a guarantee.
 
@@ -105,6 +104,7 @@ Built and ran with no cell errors on this sample. Not a verdict -- a cached imag
 | [hello-pythia-cookbook](live/hello-pythia-cookbook.md) | `incubating` | 19m 05s | 0.6s | 0.10 of 8.6 GB | 0 | 2026-07-22 |
 | [HRRR-AWS-cookbook](live/HRRR-AWS-cookbook.md) | `healthy` | 6.49s (cached) | 27.53s | 0.62 of 8.6 GB | 0 | 2026-07-21 |
 | [interactive-sentinel-2-cookbook](live/interactive-sentinel-2-cookbook.md) | `degraded` | 7m 54s | 2m 49s | 1.68 of 8.6 GB | 0 | 2026-07-22 |
+| [METAR_archive-cookbook](live/METAR_archive-cookbook.md) | `incubating` | 7m 31s (cached) | 1m 40s | 6.61 of 8.6 GB | 0 | 2026-07-22 |
 | [na-cordex-viz-cookbook](live/na-cordex-viz-cookbook.md) | `healthy` | 7m 36s (cached) | 8m 02s | 2.23 of 8.6 GB | 0 | 2026-07-22 |
 | [nsdf-openvisus-cookbook](live/nsdf-openvisus-cookbook.md) | `incubating` | 6m 13s | 33s | 1.40 of 8.6 GB | 0 | 2026-07-22 |
 | [packaging-cookbook](live/packaging-cookbook.md) | `incubating` | 6m 14s | 10.75s | 0.10 of 8.6 GB | 0 | 2026-07-22 |
