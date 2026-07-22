@@ -1,0 +1,188 @@
+{
+  "cookbook": "gdex-cookbook",
+  "env_injection": {
+    "attempted": false
+  },
+  "started_at": "2026-07-22T04:59:24.272704+00:00",
+  "hub": "https://binder.projectpythia.org",
+  "ref": "main",
+  "toc_notebooks": [
+    "notebooks/gdex_intro/enabling_science.ipynb",
+    "notebooks/gdex_intro/gdex_intro.ipynb",
+    "notebooks/gdex_intro/services.ipynb",
+    "notebooks/services/api_intro.ipynb",
+    "notebooks/services/api_metadata.ipynb",
+    "notebooks/services/api_subset.ipynb",
+    "notebooks/services/download_intro.ipynb",
+    "notebooks/services/download_workflow.ipynb",
+    "notebooks/services/globus_intro.ipynb",
+    "notebooks/services/posix_intro.ipynb",
+    "notebooks/services/tds_intro.ipynb",
+    "notebooks/services/tds_siphon.ipynb",
+    "notebooks/services/tds_xarray.ipynb",
+    "notebooks/services/zarr_intro.ipynb",
+    "notebooks/services/zarr_workflow.ipynb",
+    "notebooks/workflows/cesm2_lens.ipynb",
+    "notebooks/workflows/conus404.ipynb",
+    "notebooks/workflows/data_fusion.ipynb",
+    "notebooks/workflows/era5.ipynb",
+    "notebooks/workflows/hadisst.ipynb",
+    "notebooks/workflows/jra3q.ipynb",
+    "notebooks/workflows/na-cordex.ipynb",
+    "notebooks/workflows/radar.ipynb"
+  ],
+  "build": {
+    "hub": "https://binder.projectpythia.org",
+    "ref": "main",
+    "seconds": 166.65,
+    "exit_code": 0,
+    "failed": false,
+    "image_cached": true,
+    "log": [
+      {
+        "t": 1.16,
+        "line": "Found built image, launching..."
+      },
+      {
+        "t": 1.37,
+        "line": "Server requested"
+      },
+      {
+        "t": 22.34,
+        "line": "2026-07-22T04:59:45Z [Normal] pod triggered scale-up: [{MachineDeployment/magnum-94aa2480393c48b9acde33024b27e87d/binder-pythia-cluster-d7vpq4idy5va-user-m3-large 1->2 (max: 100)}]"
+      },
+      {
+        "t": 94.23,
+        "line": "2026-07-22T05:00:58Z [Normal] Container image \"quay.io/jupyterhub/k8s-network-tools:4.3.3\" already present on machine"
+      },
+      {
+        "t": 94.23,
+        "line": "2026-07-22T05:00:58Z [Normal] Created container: block-cloud-metadata"
+      },
+      {
+        "t": 94.23,
+        "line": "2026-07-22T05:00:58Z [Normal] Started container block-cloud-metadata"
+      },
+      {
+        "t": 96.23,
+        "line": "2026-07-22T05:01:00Z [Normal] Pulling image \"quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2dgdex-2dcookbook-31a671:ee8e26b30ec006a18c186246ed8402771af5ddfb\""
+      },
+      {
+        "t": 166.64,
+        "line": "Server ready at /user/projectpythia-gdex-cookbook-c4ytwaka/"
+      }
+    ],
+    "log_lines_total": 8,
+    "log_truncated": false
+  },
+  "execution": {
+    "seconds": 81.87,
+    "exit_code": 1,
+    "failed": true,
+    "cache_cleared": false,
+    "page_seconds": [
+      {
+        "page": "notebooks/gdex_intro/gdex_intro.ipynb",
+        "seconds": 0.18
+      },
+      {
+        "page": "notebooks/gdex_intro/services.ipynb",
+        "seconds": 0.18
+      },
+      {
+        "page": "notebooks/gdex_intro/enabling_science.ipynb",
+        "seconds": 0.19
+      },
+      {
+        "page": "notebooks/services/services_intro.md",
+        "seconds": 0.18
+      },
+      {
+        "page": "notebooks/services/download_intro.ipynb",
+        "seconds": 0.13
+      },
+      {
+        "page": "notebooks/services/globus_intro.ipynb",
+        "seconds": 0.14
+      },
+      {
+        "page": "myst.yml#site.parts.footer",
+        "seconds": 0.13
+      },
+      {
+        "page": "notebooks/how-to-cite.md",
+        "seconds": 1.27
+      },
+      {
+        "page": "README.md",
+        "seconds": 1.43
+      },
+      {
+        "page": "notebooks/services/api_intro.ipynb",
+        "seconds": 4.74
+      },
+      {
+        "page": "notebooks/services/zarr_intro.ipynb",
+        "seconds": 5.22
+      },
+      {
+        "page": "notebooks/services/api_subset.ipynb",
+        "seconds": 6.66
+      },
+      {
+        "page": "notebooks/services/posix_intro.ipynb",
+        "seconds": 9.24
+      },
+      {
+        "page": "notebooks/services/zarr_workflow.ipynb",
+        "seconds": 11.0
+      },
+      {
+        "page": "notebooks/services/tds_intro.ipynb",
+        "seconds": 12.0
+      },
+      {
+        "page": "notebooks/services/api_metadata.ipynb",
+        "seconds": 15.0
+      },
+      {
+        "page": "notebooks/services/download_workflow.ipynb",
+        "seconds": 19.0
+      },
+      {
+        "page": "notebooks/workflows/era5.ipynb",
+        "seconds": 27.0
+      },
+      {
+        "page": "notebooks/services/tds_siphon.ipynb",
+        "seconds": 29.0
+      },
+      {
+        "page": "notebooks/workflows/hadisst.ipynb",
+        "seconds": 30.0
+      }
+    ],
+    "stdout_tail": "ps/undici/undici:4725:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async consumeBody (node:internal/deps/undici/undici:5842:7)\n    at async ResponseError.create (/home/jmunroe/.nvm/versions/node/v22.22.0/lib/node_modules/mystmd/dist/myst.cjs:186405:26)\n    at async getKernelModel (/home/jmunroe/.nvm/versions/node/v22.22.0/lib/node_modules/mystmd/dist/myst.cjs:188961:21)\n    at async getKernelModel (/home/jmunroe/.nvm/versions/node/v22.22.0/lib/node_modules/mystmd/dist/myst.cjs:189626:29)\n    at async _WebSocket.earlyClose (/home/jmunroe/.nvm/versions/node/v22.22.0/lib/node_modules/mystmd/dist/myst.cjs:189649:13)\nSyntaxError: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON\n    at JSON.parse (<anonymous>)\n    at parseJSONFromBytes (node:internal/deps/undici/undici:5852:19)\n    at successSteps (node:internal/deps/undici/undici:5833:27)\n    at fullyReadBody (node:internal/deps/undici/undici:4725:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async consumeBody (node:internal/deps/undici/undici:5842:7)\n    at async ResponseError.create (/home/jmunroe/.nvm/versions/node/v22.22.0/lib/node_modules/mystmd/dist/myst.cjs:186405:26)\n    at async listRunning (/home/jmunroe/.nvm/versions/node/v22.22.0/lib/node_modules/mystmd/dist/myst.cjs:191671:21)\n    at async SessionManager2.requestRunning (/home/jmunroe/.nvm/versions/node/v22.22.0/lib/node_modules/mystmd/dist/myst.cjs:192400:20)\nSyntaxError: Unexpected token '<', \"\n<!DOCTYPE \"... is not valid JSON\n    at JSON.parse (<anonymous>)\n    at parseJSONFromBytes (node:internal/deps/undici/undici:5852:19)\n    at successSteps (node:internal/deps/undici/undici:5833:27)\n    at fullyReadBody (node:internal/deps/undici/undici:4725:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async consumeBody (node:internal/deps/undici/undici:5842:7)\n    at async ResponseError.create (/home/jmunroe/.nvm/versions/node/v22.22.0/lib/node_modules/mystmd/dist/myst.cjs:186405:26)\n    at async listRunning (/home/jmunroe/.nvm/versions/node/v22.22.0/lib/node_modules/mystmd/dist/myst.cjs:188901:21)\n    at async KernelManager2.requestRunning (/home/jmunroe/.nvm/versions/node/v22.22.0/lib/node_modules/mystmd/dist/myst.cjs:191133:20)\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-gdex-cookbook-c4ytwaka/api/kernels/a3031904-556e-4b04-9f4b-b93b0a71eab8\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-gdex-cookbook-c4ytwaka/api/kernels/1029cbad-7dca-43aa-86d5-5b4e00d9d732\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-gdex-cookbook-c4ytwaka/api/kernels/a3031904-556e-4b04-9f4b-b93b0a71eab8\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-gdex-cookbook-c4ytwaka/api/kernels/1029cbad-7dca-43aa-86d5-5b4e00d9d732\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-gdex-cookbook-c4ytwaka/api/kernels/a3031904-556e-4b04-9f4b-b93b0a71eab8\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-gdex-cookbook-c4ytwaka/api/kernels/1029cbad-7dca-43aa-86d5-5b4e00d9d732\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-gdex-cookbook-c4ytwaka/api/kernels/6a89db89-564a-43c4-b39c-5c695451164e\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-gdex-cookbook-c4ytwaka/api/kernels/6a89db89-564a-43c4-b39c-5c695451164e\nKernel: dead (18e870b5-a7da-45cb-b1d3-84d92ad06126)\nKernel: dead (42bde410-315a-4d21-9e55-7f0f6041e701)\nKernel: dead (a85e1804-15d2-4c41-8506-153fa0df3cf4)\nKernel: dead (a3031904-556e-4b04-9f4b-b93b0a71eab8)\nKernel: dead (1029cbad-7dca-43aa-86d5-5b4e00d9d732)\nKernel: dead (6a89db89-564a-43c4-b39c-5c695451164e)\nKernel: dead (b223b341-0a19-4525-ba5f-65f1cba0544a)\n\n\nMyst CLI Versions:\n - node                        22.22.0     Required: >= 18.0.0      \n - npm                          10.9.4     Required: >=8.6.0        \n - myst                         1.10.1     \n\n\n",
+    "stderr_tail": "\u26a0\ufe0f  myst.yml 'nav.1' extra key ignored: open_in_same_tab (at myst.yml#config.site)\n\u26a0\ufe0f  myst.yml 'nav.2' extra key ignored: open_in_same_tab (at myst.yml#config.site)\n\u26a0\ufe0f  notebooks/gdex_intro/enabling_science.ipynb:2 Usage of the {doc} role is not recommended, use a markdown link to the file instead.\n   For {doc}`services` use [](services)\n\u26a0\ufe0f  notebooks/gdex_intro/gdex_intro.ipynb:4 unexpected body provided for directive: image\n\u26a0\ufe0f  notebooks/gdex_intro/gdex_intro.ipynb:2 Usage of the {doc} role is not recommended, use a markdown link to the file instead.\n   For {doc}`enabling_science` use [](enabling_science)\n\u26a0\ufe0f  notebooks/services/api_subset.ipynb:2 Usage of the {doc} role is not recommended, use a markdown link to the file instead.\n   For {doc}`metadata` use [](metadata)\n\u26a0\ufe0f  notebooks/services/api_subset.ipynb:3 Usage of the {doc} role is not recommended, use a markdown link to the file instead.\n   For {doc}`globus_intro` use [](globus_intro)\n\u26a0\ufe0f  notebooks/services/api_metadata.ipynb:2 Usage of the {doc} role is not recommended, use a markdown link to the file instead.\n   For {doc}`api_subset` use [](api_subset)\n\u26a0\ufe0f  notebooks/services/api_metadata.ipynb missing heading depth 3\n\u26a0\ufe0f  notebooks/services/tds_siphon.ipynb Removing matplotlib string from outputs\n   <matplotlib.collections.QuadMesh at 0x7f5801880110>\n   Fix: Put a semicolon on the last line of your cell or add \"output_matplotlib_strings: remove\" to the project settings.\nConnection lost, reconnecting in 0 seconds.\nConnection lost, reconnecting in 0 seconds.\nConnection lost, reconnecting in 0 seconds.\nConnection lost, reconnecting in 0 seconds.\nConnection lost, reconnecting in 0 seconds.\nConnection lost, reconnecting in 0 seconds.\nConnection lost, reconnecting in 0 seconds.\nConnection lost, reconnecting in 0 seconds.\nConnection lost, reconnecting in 0 seconds.\nConnection lost, reconnecting in 0 seconds.\nConnection lost, reconnecting in 1 seconds.\nConnection lost, reconnecting in 5 seconds.\nConnection lost, reconnecting in 3 seconds.\nConnection lost, reconnecting in 0 seconds.\nConnection lost, reconnecting in 6 seconds.\nConnection lost, reconnecting in 13 seconds.\nConnection lost, reconnecting in 0 seconds.\nConnection lost, reconnecting in 0 seconds.\nSession not found: session_id='73ac8d4d-58c7-4edc-8488-a39dd773bf8d'\nCanceled future for execute_request message before replies were done\n"
+  },
+  "resources": {
+    "available": true,
+    "sample_count": 23,
+    "sample_seconds": 3,
+    "peak_rss_bytes": 9761001472,
+    "peak_pss_bytes": 7935020032,
+    "limit_basis": "pss",
+    "peak_against_limit_bytes": 7935020032,
+    "memory_limit_bytes": 8589934592,
+    "peak_fraction_of_limit": 0.9238,
+    "peak_cpu_percent": null,
+    "cpu_count": null
+  },
+  "errors": [],
+  "finished_at": "2026-07-22T05:03:33.617394+00:00",
+  "build_artifacts": {
+    "path": "/home/jmunroe/src/projectpythia/gdex-cookbook/_build",
+    "bytes": 128125971,
+    "kept_because": "run failed"
+  }
+}
