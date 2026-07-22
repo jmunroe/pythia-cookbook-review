@@ -1,0 +1,145 @@
+{
+  "cookbook": "landsatproduct-cookbook",
+  "env_injection": {
+    "attempted": false
+  },
+  "started_at": "2026-07-22T14:53:42.719308+00:00",
+  "hub": "https://binder.projectpythia.org",
+  "ref": "main",
+  "toc_notebooks": [
+    "notebooks/calibration.ipynb",
+    "notebooks/preprocessing.ipynb",
+    "notebooks/validation_p2.ipynb",
+    "notebooks/validation_step1.ipynb"
+  ],
+  "build": {
+    "hub": "https://binder.projectpythia.org",
+    "ref": "main",
+    "seconds": 766.83,
+    "exit_code": 0,
+    "failed": false,
+    "image_cached": true,
+    "log": [
+      {
+        "t": 1.35,
+        "line": "Found built image, launching..."
+      },
+      {
+        "t": 2.62,
+        "line": "2026-07-22T14:53:42.750757Z [Normal] Successfully assigned binderhub/jupyter-projectpythia-l-roduct-cookbook-ma5hb0tb to binder-pythia-cluster-d7vpq4idy5va-user-m3-large-fdpj2-8pjgt"
+      },
+      {
+        "t": 3.7,
+        "line": "2026-07-22T14:53:44Z [Normal] Container image \"quay.io/jupyterhub/k8s-network-tools:4.1.0\" already present on machine"
+      },
+      {
+        "t": 4.79,
+        "line": "2026-07-22T14:53:45Z [Normal] Pulling image \"quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2dlandsatproduct-2dcookbook-6054f6:9bd9de1cd230d27d08f16a6a2196fc03896c0347\""
+      },
+      {
+        "t": 80.69,
+        "line": "2026-07-22T14:54:55Z [Warning] Container runtime did not kill the pod within specified grace period."
+      },
+      {
+        "t": 81.77,
+        "line": "2026-07-22T14:54:55Z [Normal] Successfully pulled image \"quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2dlandsatproduct-2dcookbook-6054f6:9bd9de1cd230d27d08f16a6a2196fc03896c0347\" in 1m10.243s (1m10.243s including waiting). Image size: 2843293498 bytes."
+      },
+      {
+        "t": 651.5,
+        "line": "Launch attempt 1 failed, retrying..."
+      },
+      {
+        "t": 656.11,
+        "line": "Server requested"
+      },
+      {
+        "t": 657.15,
+        "line": "2026-07-22T15:03:46.958228Z [Normal] Successfully assigned binderhub/jupyter-projectpythia-l-roduct-cookbook-cwikstj6 to binder-pythia-cluster-d7vpq4idy5va-user-m3-large-fdpj2-r4km9"
+      },
+      {
+        "t": 657.15,
+        "line": "2026-07-22T15:03:47Z [Normal] Pulling image \"quay.io/jupyterhub/k8s-network-tools:4.3.3\""
+      },
+      {
+        "t": 664.74,
+        "line": "2026-07-22T15:03:54Z [Normal] Successfully pulled image \"quay.io/jupyterhub/k8s-network-tools:4.3.3\" in 7.228s (7.228s including waiting). Image size: 3896334 bytes."
+      },
+      {
+        "t": 664.74,
+        "line": "2026-07-22T15:03:54Z [Normal] Created container: block-cloud-metadata"
+      },
+      {
+        "t": 666.91,
+        "line": "2026-07-22T15:03:56Z [Normal] Started container block-nfs-access"
+      },
+      {
+        "t": 759.08,
+        "line": "2026-07-22T15:05:21Z [Normal] Successfully pulled image \"quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2dlandsatproduct-2dcookbook-6054f6:9bd9de1cd230d27d08f16a6a2196fc03896c0347\" in 1m24.079s (1m24.079s including waiting). Image size: 2843293498 bytes."
+      },
+      {
+        "t": 760.17,
+        "line": "2026-07-22T15:05:22Z [Normal] Created container: notebook"
+      },
+      {
+        "t": 760.17,
+        "line": "2026-07-22T15:05:22Z [Normal] Started container notebook"
+      },
+      {
+        "t": 766.82,
+        "line": "server running at https://hub.projectpythia.org/user/projectpythia-l-roduct-cookbook-cwikstj6/"
+      }
+    ],
+    "log_lines_total": 17,
+    "log_truncated": false
+  },
+  "execution": {
+    "seconds": 1800.13,
+    "exit_code": null,
+    "failed": true,
+    "cache_cleared": true,
+    "page_seconds": [
+      {
+        "page": "notebooks/validation_p2.ipynb",
+        "seconds": 0.06
+      },
+      {
+        "page": "myst.yml#site.parts.footer",
+        "seconds": 0.06
+      },
+      {
+        "page": "notebooks/how-to-cite.md",
+        "seconds": 0.89
+      },
+      {
+        "page": "README.md",
+        "seconds": 0.99
+      },
+      {
+        "page": "notebooks/validation_step1.ipynb",
+        "seconds": 20.0
+      }
+    ],
+    "stdout_tail": "building myst-cli session with API URL: https://api.mystmd.org\n\ud83c\udf61 Execution parallelism set to: 19\n\ud83c\udf0e Building MyST site\nBuilding the base site.\nTo set a baseurl (e.g. GitHub pages) use \"BASE_URL\" environment variable.\n\ud83c\udfeb Read 665 myst references for \"foundations\" in 260 ms.\n\ud83c\udfeb Read 11399 intersphinx references for \"matplotlib\" in 293 ms.\n\ud83c\udfeb Read 19285 intersphinx references for \"python\" in 343 ms.\n\ud83c\udfeb Read 9803 intersphinx references for \"xarray\" in 344 ms.\n\ud83d\udcbf Executing notebook (notebooks/preprocessing.ipynb) [no execution cache found]\n\ud83d\udcbf Executing notebook (notebooks/calibration.ipynb) [no execution cache found]\n\ud83d\udcbf Executing notebook (notebooks/validation_step1.ipynb) [no execution cache found]\n\ud83d\udcd6 Built notebooks/validation_p2.ipynb in 60 ms.\n\ud83d\udcd6 Built myst.yml#site.parts.footer in 64 ms.\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-l-roduct-cookbook-cwikstj6/api/kernels/e2ceea1d-164c-4045-840b-b30e7a895c1d\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-l-roduct-cookbook-cwikstj6/api/kernels/3dd05be6-2e8a-44c5-af57-6135f5611bb2\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-l-roduct-cookbook-cwikstj6/api/kernels/9c99367a-064b-4045-ab9c-2ffd79376fde\n\ud83d\udcd6 Built notebooks/how-to-cite.md in 890 ms.\n\ud83d\udcd6 Built README.md in 987 ms.\n\ud83e\ude84  Linked 3 DOIs from doi.org in 1.53 s for notebooks/validation_step1.ipynb\n\ud83d\udcd6 Built notebooks/validation_step1.ipynb in 20 s.\n",
+    "stderr_tail": ";5;241;43m.\u001b[39;49m\u001b[43moptions\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mget\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43mencoding\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;28;43;01mNone\u001b[39;49;00m\u001b[43m)\u001b[49m\u001b[43m,\u001b[49m\n\u001b[1;32m   1884\u001b[0m \u001b[43m    \u001b[49m\u001b[43mcompression\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43moptions\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mget\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43mcompression\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;28;43;01mNone\u001b[39;49;00m\u001b[43m)\u001b[49m\u001b[43m,\u001b[49m\n\u001b[1;32m   1885\u001b[0m \u001b[43m    \u001b[49m\u001b[43mmemory_map\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43moptions\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mget\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43mmemory_map\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;28;43;01mFalse\u001b[39;49;00m\u001b[43m)\u001b[49m\u001b[43m,\u001b[49m\n\u001b[1;32m   1886\u001b[0m \u001b[43m    \u001b[49m\u001b[43mis_text\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_text\u001b[49m\u001b[43m,\u001b[49m\n\u001b[1;32m   1887\u001b[0m \u001b[43m    \u001b[49m\u001b[43merrors\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43moptions\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mget\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43mencoding_errors\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43mstrict\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m)\u001b[49m\u001b[43m,\u001b[49m\n\u001b[1;32m   1888\u001b[0m \u001b[43m    \u001b[49m\u001b[43mstorage_options\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43moptions\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mget\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43mstorage_options\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;28;43;01mNone\u001b[39;49;00m\u001b[43m)\u001b[49m\u001b[43m,\u001b[49m\n\u001b[1;32m   1889\u001b[0m \u001b[43m\u001b[49m\u001b[43m)\u001b[49m\n\u001b[1;32m   1890\u001b[0m \u001b[38;5;28;01massert\u001b[39;00m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mhandles \u001b[38;5;129;01mis\u001b[39;00m \u001b[38;5;129;01mnot\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m\n\u001b[1;32m   1891\u001b[0m f \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mhandles\u001b[38;5;241m.\u001b[39mhandle\n\nFile \u001b[0;32m/srv/conda/envs/notebook/lib/python3.10/site-packages/pandas/io/common.py:873\u001b[0m, in \u001b[0;36mget_handle\u001b[0;34m(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)\u001b[0m\n\u001b[1;32m    868\u001b[0m \u001b[38;5;28;01melif\u001b[39;00m \u001b[38;5;28misinstance\u001b[39m(handle, \u001b[38;5;28mstr\u001b[39m):\n\u001b[1;32m    869\u001b[0m     \u001b[38;5;66;03m# Check whether the filename is to be opened in binary mode.\u001b[39;00m\n\u001b[1;32m    870\u001b[0m     \u001b[38;5;66;03m# Binary mode does not support 'encoding' and 'newline'.\u001b[39;00m\n\u001b[1;32m    871\u001b[0m     \u001b[38;5;28;01mif\u001b[39;00m ioargs\u001b[38;5;241m.\u001b[39mencoding \u001b[38;5;129;01mand\u001b[39;00m \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mb\u001b[39m\u001b[38;5;124m\"\u001b[39m \u001b[38;5;129;01mnot\u001b[39;00m \u001b[38;5;129;01min\u001b[39;00m ioargs\u001b[38;5;241m.\u001b[39mmode:\n\u001b[1;32m    872\u001b[0m         \u001b[38;5;66;03m# Encoding\u001b[39;00m\n\u001b[0;32m--> 873\u001b[0m         handle \u001b[38;5;241m=\u001b[39m \u001b[38;5;28;43mopen\u001b[39;49m\u001b[43m(\u001b[49m\n\u001b[1;32m    874\u001b[0m \u001b[43m            \u001b[49m\u001b[43mhandle\u001b[49m\u001b[43m,\u001b[49m\n\u001b[1;32m    875\u001b[0m \u001b[43m            \u001b[49m\u001b[43mioargs\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mmode\u001b[49m\u001b[43m,\u001b[49m\n\u001b[1;32m    876\u001b[0m \u001b[43m            \u001b[49m\u001b[43mencoding\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mioargs\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mencoding\u001b[49m\u001b[43m,\u001b[49m\n\u001b[1;32m    877\u001b[0m \u001b[43m            \u001b[49m\u001b[43merrors\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43merrors\u001b[49m\u001b[43m,\u001b[49m\n\u001b[1;32m    878\u001b[0m \u001b[43m            \u001b[49m\u001b[43mnewline\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m,\u001b[49m\n\u001b[1;32m    879\u001b[0m \u001b[43m        \u001b[49m\u001b[43m)\u001b[49m\n\u001b[1;32m    880\u001b[0m     \u001b[38;5;28;01melse\u001b[39;00m:\n\u001b[1;32m    881\u001b[0m         \u001b[38;5;66;03m# Binary mode\u001b[39;00m\n\u001b[1;32m    882\u001b[0m         handle \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mopen\u001b[39m(handle, ioargs\u001b[38;5;241m.\u001b[39mmode)\n\n\u001b[0;31mFileNotFoundError\u001b[0m: [Errno 2] No such file or directory: '/home/jovyan/landsatproduct-cookbook/Data/Landsat_validation_202009_202103_1.0.csv'\n\nTIMEOUT after 1800s"
+  },
+  "resources": {
+    "available": true,
+    "sample_count": 551,
+    "sample_seconds": 3,
+    "peak_rss_bytes": 1978220544,
+    "peak_pss_bytes": 1563186176,
+    "limit_basis": "pss",
+    "peak_against_limit_bytes": 1563186176,
+    "memory_limit_bytes": 8589934592,
+    "peak_fraction_of_limit": 0.182,
+    "peak_cpu_percent": null,
+    "cpu_count": null
+  },
+  "errors": [],
+  "finished_at": "2026-07-22T15:33:14.102636+00:00",
+  "build_artifacts": {
+    "path": "/home/jmunroe/src/projectpythia/landsatproduct-cookbook/_build",
+    "bytes": 126507667,
+    "kept_because": "run failed"
+  }
+}

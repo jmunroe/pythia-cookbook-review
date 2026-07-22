@@ -8,15 +8,15 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 ## Coverage
 
-**51 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
+**52 of 68 cookbooks live-checked.** Each run is manual and uses shared BinderHub capacity — one cookbook at a time, never a scheduled sweep ([why](../docs/live-assessment.md#resource-etiquette)). Coverage grows as runs accumulate; the rest have not been checked yet.
 
 | Outcome | Cookbooks |
 |---|---|
 | build failed | 13 |
-| execution failed | 6 |
+| execution failed | 7 |
 | ran with errors | 13 |
 | ran clean | 19 |
-| not yet checked | 17 |
+| not yet checked | 16 |
 
 ## Results
 
@@ -40,7 +40,7 @@ The Binder image would not build, so the launch button gives a learner nothing. 
 | [snow-observations-cookbook](live/snow-observations-cookbook.md) | `healthy` | 1m 03s | — | — | 0 | 2026-07-22 |
 | [unstructured-grid-viz-cookbook](live/unstructured-grid-viz-cookbook.md) | `healthy` | 30m 00s | — | — | 0 | 2026-07-22 |
 
-### execution failed — 6
+### execution failed — 7
 
 The build succeeded but `myst build --execute` itself did not complete -- a timeout, a dead kernel, or a crash rather than a cell error.
 
@@ -51,6 +51,7 @@ The build succeeded but `myst build --execute` itself did not complete -- a time
 | [dask-cookbook](live/dask-cookbook.md) | `healthy` | 6m 43s | 56.09s | 8.23 of 8.6 GB | 0 | 2026-07-22 |
 | [gdex-cookbook](live/gdex-cookbook.md) | `healthy` | 2m 47s (cached) | 1m 22s | 7.94 of 8.6 GB | 0 | 2026-07-22 |
 | [land-atmosphere-interactions-and-hydrology-cookbook](live/land-atmosphere-interactions-and-hydrology-cookbook.md) | `incubating` | 5m 36s | 9.55s | 0.14 of 8.6 GB | 0 | 2026-07-22 |
+| [landsatproduct-cookbook](live/landsatproduct-cookbook.md) | `incubating` | 12m 47s (cached) | 30m 00s | 1.56 of 8.6 GB | 0 | 2026-07-22 |
 | [ocean-bgc-cookbook](live/ocean-bgc-cookbook.md) | `healthy` | 7m 05s | 49.4s | 7.47 of 8.6 GB | 0 | 2026-07-22 |
 
 ### ran with errors — 13
