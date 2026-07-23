@@ -12,14 +12,14 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 | Outcome | Cookbooks |
 |---|---|
-| build failed | 14 |
-| execution failed | 10 |
+| build failed | 13 |
+| execution failed | 11 |
 | ran with errors | 19 |
 | ran clean | 25 |
 
 ## Results
 
-### build failed — 14
+### build failed — 13
 
 The Binder image would not build, so the launch button gives a learner nothing. The most direct failure there is.
 
@@ -36,11 +36,10 @@ The Binder image would not build, so the launch button gives a learner nothing. 
 | [mpas-jedi-cookbook](live/mpas-jedi-cookbook.md) | `healthy` | 2m 45s | — | — | 0 | 2026-07-22 |
 | [mrms-cookbook](live/mrms-cookbook.md) | `incubating` | 9m 26s (cached) | — | — | 0 | 2026-07-22 |
 | [osdf-cookbook](live/osdf-cookbook.md) | `healthy` | 1m 44s | — | — | 0 | 2026-07-22 |
-| [radiative-feedback-cookbook](live/radiative-feedback-cookbook.md) | `incubating` | 1m 03s | — | — | 0 | 2026-07-22 |
 | [snow-observations-cookbook](live/snow-observations-cookbook.md) | `healthy` | 1m 03s | — | — | 0 | 2026-07-22 |
 | [unstructured-grid-viz-cookbook](live/unstructured-grid-viz-cookbook.md) | `healthy` | 30m 00s | — | — | 0 | 2026-07-22 |
 
-### execution failed — 10
+### execution failed — 11
 
 The build succeeded but `myst build --execute` itself did not complete -- a timeout, a dead kernel, or a crash rather than a cell error.
 
@@ -54,6 +53,7 @@ The build succeeded but `myst build --execute` itself did not complete -- a time
 | [landsatproduct-cookbook](live/landsatproduct-cookbook.md) | `incubating` | 12m 47s (cached) | 30m 00s | 1.56 of 8.6 GB | 0 | 2026-07-22 |
 | [lasso-those-clouds-cookbook](live/lasso-those-clouds-cookbook.md) | `incubating` | 24m 22s | 6.18s | 0.10 of 8.6 GB | 0 | 2026-07-22 |
 | [ocean-bgc-cookbook](live/ocean-bgc-cookbook.md) | `healthy` | 7m 05s | 49.4s | 7.47 of 8.6 GB | 0 | 2026-07-22 |
+| [radiative-feedback-cookbook](live/radiative-feedback-cookbook.md) | `incubating` | 8m 23s | 30m 00s | 2.29 of 8.6 GB | 0 | 2026-07-22 |
 | [sklearn-argo-cookbook](live/sklearn-argo-cookbook.md) | `incubating` | 7m 33s | 9m 22s | 8.61 of 8.6 GB | 0 | 2026-07-22 |
 | [spectral-analysis-cookbook](live/spectral-analysis-cookbook.md) | `incubating` | 16m 43s | 43.71s | 8.61 of 8.6 GB | 0 | 2026-07-22 |
 

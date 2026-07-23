@@ -115,8 +115,8 @@ run until a learner's kernel dies.
 
 | Outcome | Cookbooks |
 |---|---|
-| build failed | 14 |
-| execution failed | 10 |
+| build failed | 13 |
+| execution failed | 11 |
 | ran with errors | 19 |
 | ran clean | 25 |
 
