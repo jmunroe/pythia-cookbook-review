@@ -1,0 +1,112 @@
+{
+  "cookbook": "landsat-ml-cookbook",
+  "env_injection": {
+    "attempted": false
+  },
+  "started_at": "2026-07-23T14:39:37.776587+00:00",
+  "hub": "https://binder.projectpythia.org",
+  "ref": "main",
+  "toc_notebooks": [
+    "notebooks/0.0_Intro_Landsat.ipynb",
+    "notebooks/1.0_Data_Ingestion-Geospatial.ipynb",
+    "notebooks/1.1_Data_Ingestion-General.ipynb",
+    "notebooks/2.0_Spectral_Clustering_PC.ipynb"
+  ],
+  "build": {
+    "hub": "https://binder.projectpythia.org",
+    "ref": "main",
+    "seconds": 85.55,
+    "exit_code": 0,
+    "failed": false,
+    "image_cached": true,
+    "log": [
+      {
+        "t": 1.39,
+        "line": "Found built image, launching..."
+      },
+      {
+        "t": 1.61,
+        "line": "Server requested"
+      },
+      {
+        "t": 4.57,
+        "line": "2026-07-23T14:39:41Z [Normal] Started container block-nfs-access"
+      },
+      {
+        "t": 85.54,
+        "line": "Server ready at /user/projectpythia-l-sat-ml-cookbook-hlbli2b2/"
+      }
+    ],
+    "log_lines_total": 4,
+    "log_truncated": false
+  },
+  "execution": {
+    "seconds": 173.09,
+    "exit_code": 0,
+    "failed": false,
+    "cache_cleared": false,
+    "page_seconds": [
+      {
+        "page": "notebooks/0.0_Intro_Landsat.ipynb",
+        "seconds": 0.03
+      },
+      {
+        "page": "myst.yml#site.parts.footer",
+        "seconds": 0.04
+      },
+      {
+        "page": "README.md",
+        "seconds": 1.25
+      },
+      {
+        "page": "notebooks/2.0_Spectral_Clustering_PC.ipynb",
+        "seconds": 7.06
+      },
+      {
+        "page": "notebooks/1.1_Data_Ingestion-General.ipynb",
+        "seconds": 9.86
+      },
+      {
+        "page": "notebooks/1.0_Data_Ingestion-Geospatial.ipynb",
+        "seconds": 44.0
+      }
+    ],
+    "stdout_tail": "building myst-cli session with API URL: https://api.mystmd.org\n\ud83c\udf61 Execution parallelism set to: 19\n\ud83c\udf0e Building MyST site\nBuilding the base site.\nTo set a baseurl (e.g. GitHub pages) use \"BASE_URL\" environment variable.\n\ud83c\udfeb Read 665 myst references for \"foundations\" in 229 ms.\n\ud83c\udfeb Read 11399 intersphinx references for \"matplotlib\" in 296 ms.\n\ud83c\udfeb Read 19307 intersphinx references for \"python\" in 432 ms.\n\ud83c\udfeb Read 9803 intersphinx references for \"xarray\" in 350 ms.\n\ud83d\udcd6 Built notebooks/0.0_Intro_Landsat.ipynb in 33 ms.\n\ud83d\udcbf Executing notebook (notebooks/1.0_Data_Ingestion-Geospatial.ipynb) [no execution cache found]\n\ud83d\udcbf Executing notebook (notebooks/1.1_Data_Ingestion-General.ipynb) [no execution cache found]\n\ud83d\udcbf Executing notebook (notebooks/2.0_Spectral_Clustering_PC.ipynb) [no execution cache found]\n\ud83d\udcd6 Built myst.yml#site.parts.footer in 37 ms.\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-l-sat-ml-cookbook-hlbli2b2/api/kernels/0ddeafdc-0b2c-44cf-970f-6c10396a9f13\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-l-sat-ml-cookbook-hlbli2b2/api/kernels/e1357c38-c92d-4c38-b2f7-d7466e3c1b8e\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-l-sat-ml-cookbook-hlbli2b2/api/kernels/0630cddf-1832-46af-9af2-a3da79436f73\n\ud83d\udcd6 Built README.md in 1.25 s.\n\ud83d\udcd6 Built notebooks/2.0_Spectral_Clustering_PC.ipynb in 7.06 s.\n\ud83d\udcd6 Built notebooks/1.1_Data_Ingestion-General.ipynb in 9.86 s.\n\ud83d\udcd6 Built notebooks/1.0_Data_Ingestion-Geospatial.ipynb in 44 s.\n\u23f3 Waiting for response from https://contrib.rocks/image?repo=ProjectPythia/landsat-ml-cookbook\n\ud83d\udcda Built 5 pages for project in 2.83 min.\n\n\n\t\u2728\u2728\u2728  Starting Book Theme  \u2728\u2728\u2728\n\n\n\n\ud83d\udd0c Server started on port 3000!  \ud83e\udd73 \ud83c\udf89\n\n\n\t\ud83d\udc49  http://localhost:3000  \ud83d\udc48\n\n\n\ud83d\udc8c GET  /notebooks/intro-landsat 200 - - 81.645 ms\nGET /notebooks/spectral-clustering-pc 200 - - 44.245 ms\n\ud83d\udc8c GET  /notebooks/data-ingestion-general 200 - - 31.763 ms\nGET / 200 - - 133.982 ms\n\ud83d\udc8c GET  /notebooks/data-ingestion-geospatial 200 - - 143.358 ms\n\ud83d\udc8c GET  /index.json 200 - - 10.785 ms\n\ud83d\udc8c GET  /notebooks.intro-landsat.json 200 - - 10.028 ms\n\ud83d\udc8c GET  /robots.txt 200 - - 0.943 ms\n\ud83d\udc8c GET  /notebooks.data-ingestion-geospatial.json 200 - - 12.034 ms\n\ud83d\udc8c GET  /notebooks.spectral-clustering-pc.json 200 - - 11.241 ms\n\ud83d\udc8c GET  /notebooks.data-ingestion-general.json 200 - - 17.572 ms\nGET /sitemap_style.xsl 200 - - 0.782 ms\n\ud83d\udc8c GET  /sitemap.xml 200 - - 4.006 ms\nGET /myst-theme.css 200 - - 6.085 ms\n\ud83d\udc8c GET  /favicon.ico 200 - - 4.300 ms\n",
+    "stderr_tail": "[39mget(\u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mencode_url(url), \u001b[38;5;241m*\u001b[39m\u001b[38;5;241m*\u001b[39mkw) \u001b[38;5;28;01mas\u001b[39;00m r:\n\u001b[0;32m--> 249\u001b[0m     out \u001b[38;5;241m=\u001b[39m \u001b[38;5;28;01mawait\u001b[39;00m r\u001b[38;5;241m.\u001b[39mread()\n\u001b[1;32m    250\u001b[0m     \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_raise_not_found_for_status(r, url)\n\u001b[1;32m    251\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m out\n\nFile \u001b[0;32m/srv/conda/envs/notebook/lib/python3.10/site-packages/aiohttp/client_reqrep.py:715\u001b[0m, in \u001b[0;36mClientResponse.read\u001b[0;34m(self)\u001b[0m\n\u001b[1;32m    713\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_body \u001b[38;5;129;01mis\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m:\n\u001b[1;32m    714\u001b[0m     \u001b[38;5;28;01mtry\u001b[39;00m:\n\u001b[0;32m--> 715\u001b[0m         \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_body \u001b[38;5;241m=\u001b[39m \u001b[38;5;28;01mawait\u001b[39;00m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mcontent\u001b[38;5;241m.\u001b[39mread()\n\u001b[1;32m    716\u001b[0m         \u001b[38;5;28;01mfor\u001b[39;00m trace \u001b[38;5;129;01min\u001b[39;00m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_traces:\n\u001b[1;32m    717\u001b[0m             \u001b[38;5;28;01mawait\u001b[39;00m trace\u001b[38;5;241m.\u001b[39msend_response_chunk_received(\n\u001b[1;32m    718\u001b[0m                 \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mmethod, \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39murl, \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_body\n\u001b[1;32m    719\u001b[0m             )\n\nFile \u001b[0;32m/srv/conda/envs/notebook/lib/python3.10/site-packages/aiohttp/streams.py:413\u001b[0m, in \u001b[0;36mStreamReader.read\u001b[0;34m(self, n)\u001b[0m\n\u001b[1;32m    411\u001b[0m \u001b[38;5;28;01masync\u001b[39;00m \u001b[38;5;28;01mdef\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;21mread\u001b[39m(\u001b[38;5;28mself\u001b[39m, n: \u001b[38;5;28mint\u001b[39m \u001b[38;5;241m=\u001b[39m \u001b[38;5;241m-\u001b[39m\u001b[38;5;241m1\u001b[39m) \u001b[38;5;241m-\u001b[39m\u001b[38;5;241m>\u001b[39m \u001b[38;5;28mbytes\u001b[39m:\n\u001b[1;32m    412\u001b[0m     \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_exception \u001b[38;5;129;01mis\u001b[39;00m \u001b[38;5;129;01mnot\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m:\n\u001b[0;32m--> 413\u001b[0m         \u001b[38;5;28;01mraise\u001b[39;00m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_exception\n\u001b[1;32m    415\u001b[0m     \u001b[38;5;66;03m# migration problem; with DataQueue you have to catch\u001b[39;00m\n\u001b[1;32m    416\u001b[0m     \u001b[38;5;66;03m# EofStream exception, so common way is to run payload.read() inside\u001b[39;00m\n\u001b[1;32m    417\u001b[0m     \u001b[38;5;66;03m# infinite loop. what can cause real infinite loop with StreamReader\u001b[39;00m\n\u001b[1;32m    418\u001b[0m     \u001b[38;5;66;03m# lets keep this code one major release.\u001b[39;00m\n\u001b[1;32m    419\u001b[0m     \u001b[38;5;28;01mif\u001b[39;00m __debug__:\n\n\u001b[0;31mClientPayloadError\u001b[0m: 400, message:\n  Can not decode content-encoding: br\n\u26d4\ufe0f notebooks/1.0_Data_Ingestion-Geospatial.ipynb An exception occurred during code execution, halting further execution:\n\n\u001b[0;31m---------------------------------------------------------------------------\u001b[0m\n\u001b[0;31mKeyError\u001b[0m                                  Traceback (most recent call last)\nCell \u001b[0;32mIn[18], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m da\u001b[38;5;241m.\u001b[39mattrs[\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mcrs\u001b[39m\u001b[38;5;124m\"\u001b[39m] \u001b[38;5;241m=\u001b[39m \u001b[38;5;124mf\u001b[39m\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mepsg:\u001b[39m\u001b[38;5;132;01m{\u001b[39;00m\u001b[43mselected_item\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mproperties\u001b[49m\u001b[43m[\u001b[49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[38;5;124;43mproj:epsg\u001b[39;49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[43m]\u001b[49m\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m\"\u001b[39m\n\u001b[1;32m      2\u001b[0m da\u001b[38;5;241m.\u001b[39mattrs[\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mcrs\u001b[39m\u001b[38;5;124m\"\u001b[39m]\n\n\u001b[0;31mKeyError\u001b[0m: 'proj:epsg'\n\u26a0\ufe0f  notebooks/1.0_Data_Ingestion-Geospatial.ipynb Removing matplotlib string from outputs\n   <matplotlib.image.AxesImage at 0x7f9ecd3cde70>\n   Fix: Put a semicolon on the last line of your cell or add \"output_matplotlib_strings: remove\" to the project settings.\n\u26d4\ufe0f 5026e5c0290a10597194db3b641620c6 Error saving image \"https://contrib.rocks/image?repo=ProjectPythia/landsat-ml-cookbook\": https://contrib.rocks/image?repo=ProjectPythia/landsat-ml-cookbook content-type \"text/html; charset=UTF-8\" is not an image\n\u26d4\ufe0f README.md Unsupported image extension \"<no extension>\" may not correctly render.\n"
+  },
+  "resources": {
+    "available": true,
+    "sample_count": 54,
+    "sample_seconds": 3,
+    "peak_rss_bytes": 1089724416,
+    "peak_pss_bytes": 877486080,
+    "limit_basis": "pss",
+    "peak_against_limit_bytes": 877486080,
+    "memory_limit_bytes": 8589934592,
+    "peak_fraction_of_limit": 0.1022,
+    "peak_cpu_percent": null,
+    "cpu_count": null
+  },
+  "errors": [
+    {
+      "source": "site/content/notebooks.spectral-clustering-pc.json",
+      "ename": "ImportError",
+      "evalue": "cannot import name 'collections_to_dsk' from 'dask.base' (/srv/conda/envs/notebook/lib/python3.10/site-packages/dask/base.py)",
+      "traceback": "---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\nCell In[1], line 7\n      5 import pystac_client\n      6 import xarray as xr\n----> 7 from dask.distributed import Client\n      8 from pystac.extensions.eo import EOExtension as eo\n      9 from dask_ml.cluster import SpectralClustering\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/dask/distributed.py:11\n      3 _import_error_message = (\n      4     \"dask.distributed is not installed.\\n\\n\"\n      5     \"Please either conda or pip install distributed:\\n\\n\"\n      6     \"  conda install dask distributed             # either conda install\\n\"\n      7     '  python -m pip install \"dask[distributed]\" --upgrade    # or pip install'\n      8 )\n     10 try:\n---> 11     from distributed import *  # noqa: F403\n     12 except ImportError as e:\n     13     if e.msg == \"No module named 'distributed'\":\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/distributed/__init__.py:23\n     20 from dask.config import config  # type: ignore\n     22 from distributed._version import get_versions\n---> 23 from distributed.actor import Actor, ActorFuture, BaseActorFuture\n     24 from distributed.client import (\n     25     Client,\n     26     CompatibleExecutor,\n   (...)\n     35     wait,\n     36 )\n     37 from distributed.core import Status, connect, rpc\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/distributed/actor.py:13\n      9 from typing import Generic, Literal, NoReturn, TypeVar\n     11 from tornado.ioloop import IOLoop\n---> 13 from distributed.client import Future\n     14 from distributed.protocol import to_serialize\n     15 from distributed.utils import LateLoopEvent, iscoroutinefunction, sync, thread_state\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/distributed/client.py:34\n     31 from tlz import first, groupby, merge, partition_all, valmap\n     33 import dask\n---> 34 from dask.base impo"
+    },
+    {
+      "source": "site/content/notebooks.data-ingestion-general.json",
+      "ename": "ClientPayloadError",
+      "evalue": "400, message:\n  Can not decode content-encoding: br",
+      "traceback": "---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/aiohttp/http_parser.py:1197, in DeflateBuffer.feed_data(self, chunk, size)\n   1196 try:\n-> 1197     chunk = self.decompressor.decompress_sync(chunk, max_length=max_length)\n   1198 except Exception:\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/aiohttp/compression_utils.py:371, in BrotliDecompressor.decompress_sync(self, data, max_length)\n    370     else:\n--> 371         result = cast(bytes, self._obj.process(data, max_length))\n    372 # Only way to know that brotli has no further data is checking we get no output\n\nTypeError: process() takes exactly 1 argument (2 given)\n\nDuring handling of the above exception, another exception occurred:\n\nContentEncodingError                      Traceback (most recent call last)\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/aiohttp/_http_parser.pyx:894, in aiohttp._http_parser.cb_on_body()\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/aiohttp/http_parser.py:1199, in DeflateBuffer.feed_data(self, chunk, size)\n   1198 except Exception:\n-> 1199     raise ContentEncodingError(\n   1200         \"Can not decode content-encoding: %s\" % self.encoding\n   1201     )\n   1203 if chunk:\n\nContentEncodingError: 400, message:\n  Can not decode content-encoding: br\n\nThe above exception was the direct cause of the following exception:\n\nClientPayloadError                        Traceback (most recent call last)\nCell In[2], line 2\n      1 url = \"https://planetarycomputer.microsoft.com/api/stac/v1\"\n----> 2 data_types = intake.readers.datatypes.recommend(url)\n      3 pprint(data_types)\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/intake/readers/datatypes.py:834, in recommend(url, mime, head, contents, storage_options, ignore)\n    832 try:\n    833     fs, url2 = fsspec.core.url_to_fs(url, **(st"
+    },
+    {
+      "source": "site/content/notebooks.data-ingestion-geospatial.json",
+      "ename": "KeyError",
+      "evalue": "'proj:epsg'",
+      "traceback": "---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\nCell In[18], line 1\n----> 1 da.attrs[\"crs\"] = f\"epsg:{selected_item.properties['proj:epsg']}\"\n      2 da.attrs[\"crs\"]\n\nKeyError: 'proj:epsg'"
+    }
+  ],
+  "finished_at": "2026-07-23T14:43:56.683790+00:00",
+  "build_artifacts": null
+}

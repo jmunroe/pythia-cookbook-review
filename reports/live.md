@@ -68,7 +68,7 @@ The book built and ran, but at least one notebook cell raised. Read the per-cook
 | [gridding-cookbook](live/gridding-cookbook.md) | `healthy` | 7m 00s (cached) | 58.63s | 3.73 of 8.6 GB | 1 | 2026-07-22 |
 | [icesat2-cookbook](live/icesat2-cookbook.md) | `incubating` | 12m 10s | 1m 04s | 1.84 of 8.6 GB | 2 | 2026-07-22 |
 | [intake-cookbook](live/intake-cookbook.md) | `degraded` | 8m 29s | 20.27s | 0.50 of 8.6 GB | 2 | 2026-07-22 |
-| [landsat-ml-cookbook](live/landsat-ml-cookbook.md) | `stale` | 7m 49s | 34.69s | 0.95 of 8.6 GB | 3 | 2026-07-21 |
+| [landsat-ml-cookbook](live/landsat-ml-cookbook.md) | `stale` | 1m 26s (cached) | 2m 53s | 0.88 of 8.6 GB | 3 | 2026-07-23 |
 | [marine-heatwave-cookbook](live/marine-heatwave-cookbook.md) | `incubating` | 5m 37s | 26.9s | 0.48 of 8.6 GB | 1 | 2026-07-22 |
 | [metpy-cookbook](live/metpy-cookbook.md) | `healthy` | 19m 43s (cached) | 1m 38s | 3.28 of 8.6 GB | 7 | 2026-07-22 |
 | [mpasviewer-cookbook](live/mpasviewer-cookbook.md) | `incubating` | 6m 40s | 3m 06s | 1.78 of 8.6 GB | 1 | 2026-07-22 |

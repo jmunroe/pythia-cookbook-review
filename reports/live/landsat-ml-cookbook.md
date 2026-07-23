@@ -2,30 +2,34 @@
 
 Live outcome: **ran with errors**. [← All live checks](../live.md) · [Repository](https://github.com/ProjectPythia/landsat-ml-cookbook)
 
-Run 2026-07-21 19:29:05 UTC against [https://binder.projectpythia.org](https://binder.projectpythia.org), building [landsat-ml-cookbook](https://github.com/ProjectPythia/landsat-ml-cookbook) at ref [`main`](https://github.com/ProjectPythia/landsat-ml-cookbook/tree/main).
+Run 2026-07-23 14:39:37 UTC against [https://binder.projectpythia.org](https://binder.projectpythia.org), building [landsat-ml-cookbook](https://github.com/ProjectPythia/landsat-ml-cookbook) at ref [`main`](https://github.com/ProjectPythia/landsat-ml-cookbook/tree/main).
+
+:::{warning} Cached image
+BinderHub reused an existing image, so the 1m 26s is a pod launch and image pull. It does **not** test whether `environment.yml` still solves.
+:::
 
 | Measure | Value |
 |---|---|
 | Live outcome | **ran with errors** |
 | Static tier | `stale` |
-| Time to a ready session | 7m 49s (fresh build) |
+| Time to a ready session | 1m 26s (cached image) |
 | Build succeeded | yes |
-| Notebook execution | 34.69s |
+| Notebook execution | 2m 53s |
 | Build command exit code | 0 (zero despite cell errors) |
 | Notebooks ran clean | no |
 | Execution cache | **reused — timing is not execution** |
-| Peak memory (pss) | 0.95 GB |
+| Peak memory (pss) | 0.88 GB |
 | Pod memory limit | 8.59 GB |
-| Peak as share of limit | 11.0% |
-| Peak rss (upper bound, shared pages double-counted) | 1.16 GB |
+| Peak as share of limit | 10.2% |
+| Peak rss (upper bound, shared pages double-counted) | 1.09 GB |
 | Errors raised | 3 |
 
 | Notebook | Execute + render |
 |---|---|
 | [`notebooks/0.0_Intro_Landsat.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/0.0_Intro_Landsat.ipynb) | 0.03s |
-| [`notebooks/2.0_Spectral_Clustering_PC.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/2.0_Spectral_Clustering_PC.ipynb) | 7.56s |
-| [`notebooks/1.1_Data_Ingestion-General.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/1.1_Data_Ingestion-General.ipynb) | 10s |
-| [`notebooks/1.0_Data_Ingestion-Geospatial.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/1.0_Data_Ingestion-Geospatial.ipynb) | 21s |
+| [`notebooks/2.0_Spectral_Clustering_PC.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/2.0_Spectral_Clustering_PC.ipynb) | 7.06s |
+| [`notebooks/1.1_Data_Ingestion-General.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/1.1_Data_Ingestion-General.ipynb) | 9.86s |
+| [`notebooks/1.0_Data_Ingestion-Geospatial.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/1.0_Data_Ingestion-Geospatial.ipynb) | 44s |
 
 Executed 4 notebook(s) from the project toc: [`notebooks/0.0_Intro_Landsat.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/0.0_Intro_Landsat.ipynb), [`notebooks/1.0_Data_Ingestion-Geospatial.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/1.0_Data_Ingestion-Geospatial.ipynb), [`notebooks/1.1_Data_Ingestion-General.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/1.1_Data_Ingestion-General.ipynb), [`notebooks/2.0_Spectral_Clustering_PC.ipynb`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/notebooks/2.0_Spectral_Clustering_PC.ipynb). Notebooks not listed in [`myst.yml`](https://github.com/ProjectPythia/landsat-ml-cookbook/blob/main/myst.yml) are never executed by a build, so a repo can carry notebooks no build ever touches.
 
@@ -33,7 +37,7 @@ Executed 4 notebook(s) from the project toc: [`notebooks/0.0_Intro_Landsat.ipynb
 
 **`ImportError`** — cannot import name 'collections_to_dsk' from 'dask.base' (/srv/conda/envs/notebook/lib/python3.10/site-packages/dask/base.py)
 
-in `html/notebooks.spectral-clustering-pc.json`
+in `site/content/notebooks.spectral-clustering-pc.json`
 
 ```
 ---------------------------------------------------------------------------
@@ -66,7 +70,7 @@ File /srv/conda/envs/notebook/lib/python3.10/site-packages/distributed/__init__.
 **`ClientPayloadError`** — 400, message:
   Can not decode content-encoding: br
 
-in `html/notebooks.data-ingestion-general.json`
+in `site/content/notebooks.data-ingestion-general.json`
 
 ```
 ---------------------------------------------------------------------------
@@ -93,7 +97,7 @@ File /srv/conda/envs/notebook/lib/python3.10/site-packages/aiohttp/http_parser.p
 
 **`KeyError`** — 'proj:epsg'
 
-in `html/notebooks.data-ingestion-geospatial.json`
+in `site/content/notebooks.data-ingestion-geospatial.json`
 
 ```
 ---------------------------------------------------------------------------
