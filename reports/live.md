@@ -12,14 +12,14 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 | Outcome | Cookbooks |
 |---|---|
-| build failed | 12 |
+| build failed | 11 |
 | execution failed | 11 |
-| ran with errors | 19 |
+| ran with errors | 20 |
 | ran clean | 26 |
 
 ## Results
 
-### build failed — 12
+### build failed — 11
 
 The Binder image would not build, so the launch button gives a learner nothing. The most direct failure there is.
 
@@ -27,7 +27,6 @@ The Binder image would not build, so the launch button gives a learner nothing. 
 |---|---|---|---|---|---|---|
 | [arm-field-site-cookbook](live/arm-field-site-cookbook.md) | `incubating` | 1m 26s | — | — | 0 | 2026-07-22 |
 | [AtmosCol-2023](live/AtmosCol-2023.md) | `incubating` | 1m 36s | — | — | 0 | 2026-07-22 |
-| [CFC-extreme-weather-cookbook](live/CFC-extreme-weather-cookbook.md) | `incubating` | 1m 18s | — | — | 0 | 2026-07-22 |
 | [eo-datascience-cookbook](live/eo-datascience-cookbook.md) | `healthy` | 11m 28s | — | — | 0 | 2026-07-22 |
 | [esgf-cookbook](live/esgf-cookbook.md) | `stale` | 6m 57s | — | — | 0 | 2026-07-21 |
 | [extreme-weather-events-cookbook](live/extreme-weather-events-cookbook.md) | `incubating` | 2m 12s | — | — | 0 | 2026-07-22 |
@@ -56,7 +55,7 @@ The build succeeded but `myst build --execute` itself did not complete -- a time
 | [sklearn-argo-cookbook](live/sklearn-argo-cookbook.md) | `incubating` | 7m 33s | 9m 22s | 8.61 of 8.6 GB | 0 | 2026-07-22 |
 | [spectral-analysis-cookbook](live/spectral-analysis-cookbook.md) | `incubating` | 16m 43s | 43.71s | 8.61 of 8.6 GB | 0 | 2026-07-22 |
 
-### ran with errors — 19
+### ran with errors — 20
 
 The book built and ran, but at least one notebook cell raised. Read the per-cookbook page before calling it a defect: a missing credential or an upstream outage looks identical to a broken cookbook.
 
@@ -64,6 +63,7 @@ The book built and ran, but at least one notebook cell raised. Read the per-cook
 |---|---|---|---|---|---|---|
 | [api-cookbook](live/api-cookbook.md) | `incubating` | 6m 33s | 22.02s | 0.97 of 8.6 GB | 1 | 2026-07-22 |
 | [cesm-lens-aws-cookbook](live/cesm-lens-aws-cookbook.md) | `healthy` | 5m 30s | 7m 43s | 3.90 of 8.6 GB | 2 | 2026-07-22 |
+| [CFC-extreme-weather-cookbook](live/CFC-extreme-weather-cookbook.md) | `incubating` | 9m 18s (cached) | 2m 51s | 0.84 of 8.6 GB | 2 | 2026-07-23 |
 | [climate-variability-cookbook](live/climate-variability-cookbook.md) | `incubating` | 6m 22s | 42.27s | 0.34 of 8.6 GB | 1 | 2026-07-22 |
 | [ERA5_interactive-cookbook](live/ERA5_interactive-cookbook.md) | `healthy` | 7m 02s | 12m 19s | 2.23 of 8.6 GB | 1 | 2026-07-22 |
 | [geomorphology-cookbook](live/geomorphology-cookbook.md) | `incubating` | 7m 56s | 2m 22s | 2.27 of 8.6 GB | 1 | 2026-07-22 |
