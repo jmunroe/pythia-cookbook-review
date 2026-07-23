@@ -1,37 +1,40 @@
 # mrms-cookbook — Recommendations
 
-Live outcome: **build failed** (spawn timeout). [← All recommendations](../recommendations.md) · [Live check](../reports/live/mrms-cookbook.md) · [Repository](https://github.com/ProjectPythia/mrms-cookbook)
+Live outcome: **build failed** (server never started). [← All recommendations](../recommendations.md) · [Live check](../reports/live/mrms-cookbook.md) · [Repository](https://github.com/ProjectPythia/mrms-cookbook)
 
-Static tier `incubating`. **This was a server-spawn timeout on a cached image, not a build error — most likely transient.**
+Static tier `incubating`. **A live re-check proved this is *not* transient — the notebook server reproducibly fails to start.**
 
-## What this failure actually is
+## What the re-check changed
 
-The image was already built and cached (`Container image … already present on machine`); the failure
-was the notebook **server not responding within 120 seconds** of the pod starting, twice:
+The original run failed at the server-spawn step, which looked like it might be a one-off. I re-ran
+the live check on [binder.projectpythia.org](https://binder.projectpythia.org) on 2026-07-23 to find
+out. It failed the same way — **and worse: every spawn attempt failed**, across two independent
+live checks and multiple retries:
 
 ```
+Started container notebook
 Spawn failed: Server at http://…:8888/user/projectpythia-mrms-cookbook-…/api didn't respond in 120 seconds
+Launch attempt 1 failed, retrying...
+Spawn failed: … didn't respond in 120 seconds
 ```
 
-That is a launch/startup timeout on shared BinderHub capacity, not a dependency or image-build
-problem. The environment itself is fine — `mamba env create --dry-run` resolves it cleanly (431
-packages, 116 MB, no conflict).
+The image is **cached and builds fine**; the pod schedules and the notebook *container starts*. What
+fails, every time, is the **Jupyter server inside it becoming responsive within 120 seconds**. That
+is a reproducible startup problem in the image, not shared-hub flakiness. So "re-run it" — my first
+guess — is wrong: it needs a fix.
 
-**First action: re-run the live check.** A spawn timeout on shared infrastructure is the textbook
-case for a retry.
+## The most likely cause, and the first thing to try
 
-## The one durable cleanup: drop `conda` from the runtime env
+A server that starts but never answers within two minutes usually means a **server extension
+hanging or an over-heavy image loading slowly on startup**. The strongest concrete lead is the
+environment itself:
 
-`environment.yml` lists `conda` **twice** (lines 18 and 20), which pulls the entire package-manager
-stack — `conda`, `conda-libmamba-solver`, `libmamba`, `libmambapy` — *into the learner's runtime
-environment*:
+- **`conda` is listed twice** in `environment.yml` (lines 18 and 20), dragging the entire
+  package-manager stack (`conda`, `conda-libmamba-solver`, `libmamba`, `libmambapy`) into the
+  learner's runtime image. A cookbook environment should never contain a package manager — it
+  bloats the image and can register startup hooks that slow the server.
 
 ```diff
-   - cartopy
-   - numpy
-   - s3fs
-   - fsspec
-   - cfgrib
    - matplotlib
 -  - conda
    - ipykernel
@@ -39,26 +42,28 @@ environment*:
    - ipywidgets
 ```
 
-A cookbook environment does not need a package manager inside it — no notebook imports `conda` or
-shells out to it (confirmed by scanning all 6 notebooks). Removing both lines slims the image, which
-can only help a slow spawn, and eliminates a confusing duplicate. This is the clearest concrete
-improvement; it will not by itself have caused the timeout, but a leaner image starts faster.
+Remove both, then rebuild. If the server still stalls, audit the server extensions the env installs
+(`jupyter_bokeh`, `geoviews`/`jupyter-server-proxy` if present) by launching with
+`jupyter server --debug` and watching which extension blocks.
+
+## The definitive next diagnostic
+
+The one thing this live check *cannot* see is the server's own startup log inside the pod — which
+records exactly what the server was doing when it failed to answer. The maintainers can get it by
+launching the cookbook on the hub and reading the pod log (or `jupyter server` output locally in the
+built image). That log will name the blocking step directly; the `conda`-removal above is the most
+likely fix in the meantime.
 
 ## What was verified
 
-- **Env solves cleanly** with `mamba` (431 packages, 116 MB, no conflict) — the image build is not
-  the problem.
-- **`conda` is listed twice** (lines 18, 20) and **no notebook uses it** (import scan of all 6
-  notebooks).
-- **Not verified:** the spawn timeout itself, which depends on live BinderHub scheduling and cannot
-  be reproduced locally. The evidence (cached image + server-response timeout) points to transient
-  infrastructure.
-
-## Secondary
-
-- The `pyviz` channel is listed but the dependencies all resolve from conda-forge; confirm it is
-  still needed, and drop it if not, to keep the solve simple.
+- **The spawn failure is reproducible** — all attempts across two live checks (2026-07-22 and
+  2026-07-23) failed with "Server … didn't respond in 120 seconds"; the image is cached and builds
+  successfully. Recorded in `data/live/mrms-cookbook-2026-07-23T043255Z.json`.
+- **`conda` appears twice** in `environment.yml`; the env otherwise solves cleanly (431 packages).
+- **No notebook uses `conda`** (scanned all 6).
+- **Not verified:** the exact blocking step at server startup (needs the pod's server log), and
+  whether removing `conda` alone fixes it. It is the highest-probability first fix.
 
 ---
-*Agent-assisted analysis, 2026-07-23. A proposal to confirm by re-running the live check, not an
-applied change.*
+*Agent-assisted analysis, updated 2026-07-23 after a live re-check (supersedes the earlier
+"transient, re-run" note). A proposal to confirm with the community, not an applied change.*

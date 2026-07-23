@@ -31,7 +31,7 @@ The Binder image would not build, so the launch button gives a learner nothing. 
 | [esgf-cookbook](live/esgf-cookbook.md) | `stale` | 6m 57s | — | — | 0 | 2026-07-21 |
 | [kerchunk-cookbook](live/kerchunk-cookbook.md) | `healthy` | 9m 28s | — | — | 0 | 2026-07-23 |
 | [ml-hurricane-intensity](live/ml-hurricane-intensity.md) | `incubating` | 5m 28s | — | — | 0 | 2026-07-22 |
-| [mrms-cookbook](live/mrms-cookbook.md) | `incubating` | 9m 26s (cached) | — | — | 0 | 2026-07-22 |
+| [mrms-cookbook](live/mrms-cookbook.md) | `incubating` | 10m 45s (cached) | — | — | 0 | 2026-07-23 |
 | [unstructured-grid-viz-cookbook](live/unstructured-grid-viz-cookbook.md) | `healthy` | 30m 00s | — | — | 0 | 2026-07-22 |
 
 ### execution failed — 11
