@@ -1,0 +1,1247 @@
+{
+  "cookbook": "arm-field-site-cookbook",
+  "env_injection": {
+    "attempted": false
+  },
+  "started_at": "2026-07-23T00:46:01.794503+00:00",
+  "hub": "https://binder.projectpythia.org",
+  "ref": "main",
+  "toc_notebooks": [
+    "foundations/act/ACT-Basics-BNF.ipynb",
+    "foundations/act/act-tower-data.ipynb",
+    "foundations/pyart/pyart-basics.ipynb",
+    "foundations/pyart/pyart-corrections.ipynb",
+    "foundations/pyart/pyart-gatefilers.ipynb",
+    "foundations/pyart/pyart-qpe.ipynb",
+    "foundations/pyart/radars-with-arm.ipynb",
+    "foundations/xarray/dask-xarray-demo.ipynb",
+    "foundations/xarray/xarray-intro.ipynb",
+    "foundations/xarray/xwrf-xarray-intro.ipynb",
+    "projects/bnf-2025/acid/ccn-droplet-count.ipynb",
+    "projects/bnf-2025/acid/optical-properties.ipynb",
+    "projects/bnf-2025/bnf-deep-convection/coldpool-radar-analysis.ipynb",
+    "projects/bnf-2025/bnf-deep-convection/coldpool-time-series.ipynb",
+    "projects/bnf-2025/land-atmosphere-interactions/surface-energy-balance-all-sites.ipynb"
+  ],
+  "build": {
+    "hub": "https://binder.projectpythia.org",
+    "ref": "main",
+    "seconds": 138.03,
+    "exit_code": 1,
+    "failed": true,
+    "image_cached": false,
+    "log": [
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/mlir/framework/ir/xla_framework_types.h.inc"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/mlir/framework/transforms/passes.h.inc"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/mlir_hlo/mhlo/IR/hlo_ops_attrs.cc.inc"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/mlir_hlo/mhlo/IR/hlo_ops_attrs.h.inc"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/mlir_hlo/mhlo/IR/hlo_ops_enums.cc.inc"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/mlir_hlo/mhlo/IR/hlo_ops_enums.h.inc"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/mlir_hlo/mhlo/IR/hlo_ops_typedefs.cc.inc"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/mlir_hlo/mhlo/IR/hlo_ops_typedefs.h.inc"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/mlir_hlo/mhlo/IR/hlo_patterns.cc.inc"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/mlir_hlo/mhlo/IR/mhlo_canonicalize.inc"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/mlir_hlo/mhlo/transforms/chlo_legalize_to_hlo/generated_chlo_legalize_to_hlo.inc"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/mlir_hlo/mhlo/transforms/mhlo_passes.h.inc"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/pjrt/execute_options.pb.h"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/pjrt/gpu/gpu_topology.pb.h"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/pjrt/plugin/xla_cpu/cpu_topology.pb.h"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/pjrt/stream_executor_executable.pb.h"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/service/buffer_assignment.pb.h"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/service/cpu/backend_config.pb.h"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/service/cpu/executable.pb.h"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/service/cpu/onednn_config.pb.h"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/service/cpu/xla_framework.pb.h"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/service/gpu/backend_configs.pb.h"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/service/gpu/model/hlo_op_profile.pb.h"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/service/hlo.pb.h"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/service/hlo_execution_profile_data.pb.h"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/service/hlo_profile_printer_data.pb.h"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/service/metrics.pb.h"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/stream_executor/cuda/cuda_compute_capability.pb.h"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/stream_executor/device_description.pb.h"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/tsl/protobuf/bfc_memory_map.pb.h"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/tsl/protobuf/coordination_config.pb.h"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/tsl/protobuf/coordination_service.grpc.pb.h"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/tsl/protobuf/coordination_service.pb.h"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/tsl/protobuf/coordination_service_mock.grpc.pb.h"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/tsl/protobuf/histogram.pb.h"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/tsl/protobuf/rpc_options.pb.h"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/tsl/protobuf/status.pb.h"
+      },
+      {
+        "t": 133.0,
+        "line": "#20 94.01     - include/xla/tsl/protobuf/test_log.pb.h"
+      },
+      {
+        "t": 134.66,
+        "line": "#20 96.51 Linking pyside6-6.11.1-py311hf27b23e_1"
+      },
+      {
+        "t": 134.69,
+        "line": "#20 96.76 Linking aiobotocore-3.8.0-pyhcf101f3_0"
+      },
+      {
+        "t": 134.87,
+        "line": "#20 96.76 Linking trackpy-0.7-pyhd8ed1ab_0"
+      },
+      {
+        "t": 135.0,
+        "line": "#20 96.99 Linking arm_pyart-2.2.4-py311h49ec1c0_0"
+      },
+      {
+        "t": 135.0,
+        "line": "#20 97.02 Linking pydda-2.4.1-pyhd8ed1ab_0"
+      },
+      {
+        "t": 135.0,
+        "line": "#20 97.03 Linking zipp-3.23.0-pyhd8ed1ab_0"
+      },
+      {
+        "t": 135.17,
+        "line": "#20 97.08 Linking six-1.17.0-pyhe01879c_1"
+      },
+      {
+        "t": 135.17,
+        "line": "#20 97.08 Linking python-dateutil-2.9.0.post0-pyhe01879c_2"
+      },
+      {
+        "t": 135.17,
+        "line": "#20 97.08 Linking types-python-dateutil-2.9.0.20251008-pyhd8ed1ab_0"
+      },
+      {
+        "t": 135.17,
+        "line": "#20 97.09 Linking asttokens-3.0.0-pyhd8ed1ab_1"
+      },
+      {
+        "t": 135.17,
+        "line": "#20 97.09 Linking async-lru-2.0.5-pyh29332c3_0"
+      },
+      {
+        "t": 135.17,
+        "line": "#20 97.09 Linking async_generator-1.10-pyhd8ed1ab_2"
+      },
+      {
+        "t": 135.17,
+        "line": "#20 97.09 Linking attrs-25.4.0-pyh71513ae_0"
+      },
+      {
+        "t": 135.17,
+        "line": "#20 97.10 Linking pytz-2025.2-pyhd8ed1ab_0"
+      },
+      {
+        "t": 135.27,
+        "line": "#20 97.34 Linking soupsieve-2.8-pyhd8ed1ab_0"
+      },
+      {
+        "t": 135.27,
+        "line": "#20 97.34 Linking beautifulsoup4-4.14.2-pyha770c72_0"
+      },
+      {
+        "t": 135.27,
+        "line": "#20 97.34 Linking webencodings-0.5.1-pyhd8ed1ab_3"
+      },
+      {
+        "t": 135.27,
+        "line": "#20 97.34 Linking bleach-6.2.0-pyh29332c3_4"
+      },
+      {
+        "t": 135.27,
+        "line": "#20 97.35 Linking tinycss2-1.4.0-pyhd8ed1ab_0"
+      },
+      {
+        "t": 135.48,
+        "line": "#20 97.35 Linking blinker-1.9.0-pyhff2d567_0"
+      },
+      {
+        "t": 135.48,
+        "line": "#20 97.37 Linking fqdn-1.5.1-pyhd8ed1ab_1"
+      },
+      {
+        "t": 135.48,
+        "line": "#20 97.37 Linking h11-0.16.0-pyhd8ed1ab_0"
+      },
+      {
+        "t": 135.48,
+        "line": "#20 97.37 Linking hpack-4.1.0-pyhd8ed1ab_0"
+      },
+      {
+        "t": 135.48,
+        "line": "#20 97.42 Linking parso-0.8.5-pyhcf101f3_0"
+      },
+      {
+        "t": 135.5,
+        "line": "#20 97.59 Linking traitlets-5.14.3-pyhd8ed1ab_1"
+      },
+      {
+        "t": 135.62,
+        "line": "#20 97.60 Linking ptyprocess-0.7.0-pyhd8ed1ab_1"
+      },
+      {
+        "t": 135.62,
+        "line": "#20 97.60 Linking pexpect-4.9.0-pyhd8ed1ab_1"
+      },
+      {
+        "t": 135.62,
+        "line": "#20 97.62 Linking stack_data-0.6.3-pyhd8ed1ab_1"
+      },
+      {
+        "t": 135.62,
+        "line": "#20 97.62 Linking ipython-9.6.0-pyhfa0c392_0"
+      },
+      {
+        "t": 135.62,
+        "line": "#20 97.65 Linking platformdirs-4.5.0-pyhcf101f3_0"
+      },
+      {
+        "t": 135.62,
+        "line": "#20 97.65 Linking jupyter_core-5.8.1-pyh31011fe_0"
+      },
+      {
+        "t": 135.62,
+        "line": "#20 97.65 Linking jupyter_client-8.6.3-pyhd8ed1ab_1"
+      },
+      {
+        "t": 135.62,
+        "line": "#20 97.65 Linking nest-asyncio-1.6.0-pyhd8ed1ab_1"
+      },
+      {
+        "t": 135.62,
+        "line": "#20 97.71 Linking jsonschema-specifications-2025.9.1-pyhcf101f3_0"
+      },
+      {
+        "t": 135.72,
+        "line": "#20 97.74 Linking terminado-0.18.1-pyh0d859eb_0"
+      },
+      {
+        "t": 135.72,
+        "line": "#20 97.74 Linking jupyter_server_terminals-0.5.3-pyhd8ed1ab_1"
+      },
+      {
+        "t": 135.72,
+        "line": "#20 97.74 Linking jupyterlab_pygments-0.3.0-pyhd8ed1ab_2"
+      },
+      {
+        "t": 135.72,
+        "line": "#20 97.75 Linking mistune-3.1.4-pyhcf101f3_0"
+      },
+      {
+        "t": 135.72,
+        "line": "#20 97.75 Linking python-fastjsonschema-2.21.2-pyhe01879c_0"
+      },
+      {
+        "t": 135.72,
+        "line": "#20 97.79 Linking send2trash-1.8.3-pyh0d859eb_1"
+      },
+      {
+        "t": 135.72,
+        "line": "#20 97.79 Linking websocket-client-1.9.0-pyhd8ed1ab_0"
+      },
+      {
+        "t": 135.72,
+        "line": "#20 97.80 Linking jupyter_server-2.17.0-pyhcf101f3_0"
+      },
+      {
+        "t": 135.72,
+        "line": "#20 97.82 Linking jupyter-lsp-2.3.0-pyhcf101f3_0"
+      },
+      {
+        "t": 135.91,
+        "line": "#20 97.82 Linking jupyter-offlinenotebook-0.3.2-pyh9692d8f_0"
+      },
+      {
+        "t": 135.91,
+        "line": "#20 97.86 Linking requests-2.32.5-pyhd8ed1ab_0"
+      },
+      {
+        "t": 135.91,
+        "line": "#20 97.86 Linking jupyterhub-base-5.4.0-pyhc90fa1f_0"
+      },
+      {
+        "t": 136.48,
+        "line": "#20 98.60 Linking jupyterlab_server-2.27.3-pyhd8ed1ab_1"
+      },
+      {
+        "t": 136.8,
+        "line": "#20 98.78 Linking wheel-0.45.1-pyhd8ed1ab_1"
+      },
+      {
+        "t": 136.8,
+        "line": "#20 98.79 Linking pip-25.2-pyh8b19718_0"
+      },
+      {
+        "t": 137.1,
+        "line": "#20 99.24 time: 98.953"
+      },
+      {
+        "t": 137.29,
+        "line": "#20 99.44 Cleaning lock files.."
+      },
+      {
+        "t": 137.45,
+        "line": "#20 99.45   Package file                                                  Size"
+      },
+      {
+        "t": 137.46,
+        "line": "#20 99.45 \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500"
+      },
+      {
+        "t": 137.46,
+        "line": "#20 99.45   /srv/conda/pkgs"
+      },
+      {
+        "t": 137.46,
+        "line": "#20 99.45 \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500"
+      },
+      {
+        "t": 137.46,
+        "line": "#20 99.45"
+      },
+      {
+        "t": 137.46,
+        "line": "#20 99.45   _python_abi3_support-1.0-hd8ed1ab_3.conda                      8kB"
+      },
+      {
+        "t": 137.46,
+        "line": "#20 99.45   _x86_64-microarch-level-3-3_x86_64_v3.conda                   10kB"
+      },
+      {
+        "t": 137.46,
+        "line": "#20 99.45   alsa-lib-1.2.16.1-hb03c661_0.conda                           592kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   annotated-types-0.7.0-pyhd8ed1ab_1.conda                      18kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   aws-c-common-0.14.2-hb03c661_0.conda                         246kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   aws-c-compression-0.3.2-h720e601_4.conda                      22kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   aws-c-event-stream-0.7.1-h6ffeea8_4.conda                     60kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   aws-c-io-0.27.3-h6f4d18d_1.conda                             183kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   aws-c-mqtt-0.16.0-h21f4ec5_2.conda                           225kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   aws-c-s3-0.12.8-h46fcd08_1.conda                             156kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   aws-c-sdkutils-0.2.7-h720e601_2.conda                         69kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   bokeh-3.9.1-pyhd8ed1ab_0.conda                                 5MB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   brunsli-0.1-hd1e3526_2.conda                                 169kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   c-ares-1.34.8-hb03c661_0.conda                               211kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   c-blosc2-3.0.3-hc31b594_0.conda                              379kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   cached-property-1.5.2-hd8ed1ab_1.tar.bz2                       4kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   cached_property-1.5.2-pyha770c72_1.tar.bz2                    11kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   cairo-1.18.4-he90730b_1.conda                                990kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   cartopy-0.25.0-py311hed34c8f_1.conda                           2MB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   certifi-2025.10.5-pyhd8ed1ab_0.conda                         160kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   certipy-0.2.2-pyhd8ed1ab_0.conda                              23kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   cf-units-3.3.1-py311h0372a8f_0.conda                         554kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   cffi-2.1.0-py311h03d9500_0.conda                             310kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   cftime-1.6.5-py311h0372a8f_1.conda                           433kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   charls-2.4.4-hecca717_0.conda                                162kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   cmweather-0.3.2-pyhd8ed1ab_1.conda                            44kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   comm-0.2.3-pyhe01879c_0.conda                                 15kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   contourpy-1.3.3-py311h724c32c_4.conda                        321kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   cookiecutter-2.7.1-pyhcf101f3_0.conda                        114kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   cytoolz-1.1.0-py311h49ec1c0_2.conda                          624kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   dask-2026.7.1-pyhc364b38_0.conda                              10kB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   dask-core-2026.7.1-pyhc364b38_0.conda                          1MB"
+      },
+      {
+        "t": 137.49,
+        "line": "#20 99.45   dav1d-1.2.1-hd590300_0.conda                                 760kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   dm-tree-0.1.10-py311hfa00145_0.conda                         137kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   donfig-0.8.1.post1-pyhd8ed1ab_1.conda                         22kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   double-conversion-3.4.0-hecca717_0.conda                      72kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   exceptiongroup-1.3.0-pyhd8ed1ab_0.conda                       21kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   executing-2.2.1-pyhd8ed1ab_0.conda                            31kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   flatbuffers-25.9.23-hb7d4c21_0.conda                           2MB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   flexcache-0.3-pyhd8ed1ab_1.conda                              17kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   flexparser-0.4-pyhd8ed1ab_1.conda                             29kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   font-ttf-dejavu-sans-mono-2.37-hab24e00_0.tar.bz2            397kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   font-ttf-inconsolata-3.000-h77eed37_0.tar.bz2                 97kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   font-ttf-source-code-pro-2.038-h77eed37_0.tar.bz2            701kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   font-ttf-ubuntu-0.83-h77eed37_3.conda                          2MB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   fontconfig-2.18.2-h27c8c51_0.conda                           293kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   fonts-conda-ecosystem-1-0.tar.bz2                              4kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   fonts-conda-forge-1-hc364b38_1.conda                           4kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   fonttools-4.63.0-py311h3778330_0.conda                         3MB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   fqdn-1.5.1-pyhd8ed1ab_1.conda                                 17kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   freetype-2.14.3-ha770c72_0.conda                             174kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   fribidi-1.0.16-hb03c661_0.conda                               61kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   frozenlist-1.8.0-py311h52bc045_0.conda                        54kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   fsspec-2026.6.0-pyhd8ed1ab_0.conda                           150kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   gast-0.7.0-pyhd8ed1ab_0.conda                                 27kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   importlib-metadata-8.7.0-pyhe01879c_1.conda                   35kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   ipykernel-7.0.1-pyha191276_0.conda                           132kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   ipython-9.6.0-pyhfa0c392_0.conda                             639kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   ipython_pygments_lexers-1.1.1-pyhd8ed1ab_0.conda              14kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   ipywidgets-8.1.7-pyhd8ed1ab_0.conda                          115kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   iris-3.14.1-pyha770c72_0.conda                                 1MB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   isoduration-20.11.0-pyhd8ed1ab_1.conda                        20kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   jax-0.10.2-pyhd8ed1ab_0.conda                                  2MB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   jaxlib-0.10.2-cpu_py311hceffaa2_0.conda                       68MB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   jaxopt-0.8.4-pyhd8ed1ab_0.conda                              104kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   jedi-0.19.2-pyhd8ed1ab_1.conda                               844kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   jinja2-3.1.6-pyhd8ed1ab_0.conda                              113kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   lat_lon_parser-1.3.1-pyhd8ed1ab_1.conda                       16kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   lazy-loader-0.5-pyhd8ed1ab_0.conda                            15kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   lazy_loader-0.5-pyhd8ed1ab_0.conda                             8kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   lcms2-2.19.1-h0c24ade_1.conda                                252kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   lerc-4.1.0-hdb68285_0.conda                                  262kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   libabseil-20260107.1-cxx17_h7b12aa8_0.conda                    1MB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   libaec-1.1.5-h088129d_0.conda                                 37kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   libarrow-24.0.0-h3e48024_9_cpu.conda                           7MB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   libarrow-acero-24.0.0-h635bf11_9_cpu.conda                   591kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   libarrow-compute-24.0.0-h53684a4_9_cpu.conda                   3MB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   libarrow-dataset-24.0.0-h635bf11_9_cpu.conda                 591kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   libarrow-substrait-24.0.0-hb4dd7c2_9_cpu.conda               501kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   libavif16-1.4.2-h0ed3d04_3.conda                             165kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   libblas-3.11.0-8_h4a7cf45_openblas.conda                      19kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   libbrotlicommon-1.2.0-hb03c661_1.conda                        80kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   libbrotlidec-1.2.0-hb03c661_1.conda                           35kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   libbrotlienc-1.2.0-hb03c661_1.conda                          298kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   libcblas-3.11.0-8_h0358290_openblas.conda                     19kB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   libclang-cpp22.1-22.1.8-default_h6c227bf_3.conda              24MB"
+      },
+      {
+        "t": 137.5,
+        "line": "#20 99.45   libclang13-22.1.8-default_h9692865_3.conda                    14MB"
+      },
+      {
+        "t": 137.52,
+        "line": "#20 99.45   libfreetype-2.14.3-ha770c72_0.conda                            8kB"
+      },
+      {
+        "t": 137.52,
+        "line": "#20 99.45   libfreetype6-2.14.3-h73754d4_0.conda                         385kB"
+      },
+      {
+        "t": 137.52,
+        "line": "#20 99.45   libgfortran-15.2.0-h69a702a_19.conda                          28kB"
+      },
+      {
+        "t": 137.52,
+        "line": "#20 99.45   libgfortran5-15.2.0-h68bc16d_19.conda                          2MB"
+      },
+      {
+        "t": 137.52,
+        "line": "#20 99.45   libgl-1.7.0-ha4b6fd6_3.conda                                 133kB"
+      },
+      {
+        "t": 137.52,
+        "line": "#20 99.45   libgl-devel-1.7.0-ha4b6fd6_3.conda                           116kB"
+      },
+      {
+        "t": 137.52,
+        "line": "#20 99.45   libglib-2.88.2-h0d30a3d_0.conda                                5MB"
+      },
+      {
+        "t": 137.52,
+        "line": "#20 99.45   libglvnd-1.7.0-ha4b6fd6_3.conda                              134kB"
+      },
+      {
+        "t": 137.52,
+        "line": "#20 99.45   libglx-1.7.0-ha4b6fd6_3.conda                                 77kB"
+      },
+      {
+        "t": 137.52,
+        "line": "#20 99.45   libglx-devel-1.7.0-ha4b6fd6_3.conda                           27kB"
+      },
+      {
+        "t": 137.52,
+        "line": "#20 99.45   libgoogle-cloud-3.6.0-h8d2ee43_0.conda                         3MB"
+      },
+      {
+        "t": 137.52,
+        "line": "#20 99.45   libgoogle-cloud-storage-3.6.0-hdbdcf42_0.conda               786kB"
+      },
+      {
+        "t": 137.52,
+        "line": "#20 99.45   libgrpc-1.78.1-h1d1128b_0.conda                                7MB"
+      },
+      {
+        "t": 137.52,
+        "line": "#20 99.45   libharfbuzz-14.2.1-h17a8019_1.conda                            1MB"
+      },
+      {
+        "t": 137.52,
+        "line": "#20 99.45   libharfbuzz-devel-14.2.1-h17a8019_1.conda                      2MB"
+      },
+      {
+        "t": 137.52,
+        "line": "#20 99.45   libhwy-1.4.0-h3a9caae_0.conda                                  1MB"
+      },
+      {
+        "t": 137.52,
+        "line": "#20 99.45   libwebp-base-1.6.0-hd42ef1d_0.conda                          429kB"
+      },
+      {
+        "t": 137.52,
+        "line": "#20 99.45   libxcb-1.17.0-h8a09558_0.conda                               396kB"
+      },
+      {
+        "t": 137.52,
+        "line": "#20 99.45   libxkbcommon-1.13.2-hca5e8e5_0.conda                         851kB"
+      },
+      {
+        "t": 137.52,
+        "line": "#20 99.45   libxml2-16-2.15.3-hca6bf5a_0.conda                           560kB"
+      },
+      {
+        "t": 137.52,
+        "line": "#20 99.45   libxml2-2.15.3-h49c6c72_0.conda                               47kB"
+      },
+      {
+        "t": 137.52,
+        "line": "#20 99.45   libzlib-1.3.2-h25fd6f3_2.conda                                64kB"
+      },
+      {
+        "t": 137.52,
+        "line": "#20 99.45   libzopfli-1.0.3-h9c3ff4c_0.tar.bz2                           168kB"
+      },
+      {
+        "t": 137.52,
+        "line": "#20 99.45   locket-1.0.0-pyhd8ed1ab_0.tar.bz2                              8kB"
+      },
+      {
+        "t": 137.52,
+        "line": "#20 99.45   looseversion-1.3.0-pyhd8ed1ab_0.conda                         14kB"
+      },
+      {
+        "t": 137.53,
+        "line": "#20 99.45   lxml-6.1.1-py311h8840267_0.conda                               2MB"
+      },
+      {
+        "t": 137.53,
+        "line": "#20 99.45   msgpack-python-1.2.1-py311h724c32c_1.conda                   113kB"
+      },
+      {
+        "t": 137.53,
+        "line": "#20 99.45   multidict-6.7.1-py311h3778330_0.conda                        101kB"
+      },
+      {
+        "t": 137.53,
+        "line": "#20 99.45   munkres-1.1.4-pyhd8ed1ab_1.conda                              16kB"
+      },
+      {
+        "t": 137.53,
+        "line": "#20 99.45   mystmd-1.10.1-pyhcf101f3_0.conda                               2MB"
+      },
+      {
+        "t": 137.53,
+        "line": "#20 99.45   namex-0.1.0-pyhd8ed1ab_0.conda                                12kB"
+      },
+      {
+        "t": 137.53,
+        "line": "#20 99.45   narwhals-2.24.0-pyhcf101f3_0.conda                           290kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   nbclient-0.10.2-pyhd8ed1ab_0.conda                            28kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   nbconvert-core-7.16.6-pyh29332c3_0.conda                     201kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   nbformat-5.10.4-pyhd8ed1ab_1.conda                           101kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   ncurses-6.6-hdb14827_0.conda                                 919kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   nest-asyncio-1.6.0-pyhd8ed1ab_1.conda                         12kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   netcdf4-1.7.4-nompi_py311hb115678_109.conda                    1MB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   networkx-3.6.1-pyhcf101f3_0.conda                              2MB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   nlohmann_json-3.12.0-h54a6638_1.conda                        136kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   nodejs-26.0.0-he4ff34a_0.conda                                19MB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   onednn-cpu-threadpool-3.12-threadpool_hc2f90bd_0.conda        11kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   open-radar-data-0.8.0-pyhd8ed1ab_0.conda                      19kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   openjpeg-2.5.4-h55fea9a_0.conda                              355kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   openjph-0.27.4-h8d634f6_0.conda                              283kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   openldap-2.6.13-hbde042b_0.conda                             786kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   openssl-3.6.3-h35e630c_0.conda                                 3MB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   opt_einsum-3.4.0-pyhd8ed1ab_1.conda                           62kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   optree-0.19.1-py311hdf67eae_0.conda                          488kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   pandas-3.0.3-py311h8032f78_0.conda                            15MB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   pandocfilters-1.5.0-pyhd8ed1ab_0.tar.bz2                      12kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   pcre2-10.47-haa7fec5_0.conda                                   1MB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   pexpect-4.9.0-pyhd8ed1ab_1.conda                              54kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   pickleshare-0.7.5-pyhd8ed1ab_1004.conda                       12kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   pillow-12.3.0-py311hf88fc01_0.conda                            1MB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   pint-0.25.3-pyhc364b38_0.conda                               245kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   pip-25.2-pyh8b19718_0.conda                                    1MB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   pixman-0.46.4-h54a6638_2.conda                               376kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   prometheus-cpp-1.3.0-ha5d0236_0.conda                        200kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   prometheus_client-0.23.1-pyhd8ed1ab_0.conda                   55kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   prompt-toolkit-3.0.52-pyha770c72_0.conda                     274kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   propcache-0.5.2-py311h3778330_0.conda                         51kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   protobuf-6.33.5-py311h3f0a9aa_2.conda                        489kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   pthread-stubs-0.4-hb9d3cd8_1002.conda                          8kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   ptyprocess-0.7.0-pyhd8ed1ab_1.conda                           19kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   pure_eval-0.2.3-pyhd8ed1ab_1.conda                            17kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   pyarrow-24.0.0-py311h38be061_0.conda                          27kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   pyarrow-core-24.0.0-py311h66caee6_0_cpu.conda                  6MB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   pycparser-2.22-pyh29332c3_1.conda                            110kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   pydantic-2.12.2-pyh3cfb1c2_0.conda                           318kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   pydda-2.4.1-pyhd8ed1ab_0.conda                                71kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   pygments-2.19.2-pyhd8ed1ab_0.conda                           889kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   pyjwt-2.10.1-pyhd8ed1ab_0.conda                               25kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   pyparsing-3.3.2-pyhcf101f3_0.conda                           111kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   pyproj-3.7.2-py311hc7c0204_4.conda                           562kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   pyshp-3.1.4-pyhcf101f3_0.conda                               511kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   pyside6-6.11.1-py311hf27b23e_1.conda                          14MB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   pysocks-1.7.1-pyha55dd90_7.conda                              21kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   python-3.11.15-h7508c33_1_cpython.conda                       31MB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   python-dateutil-2.9.0.post0-pyhe01879c_2.conda               233kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   python-fastjsonschema-2.21.2-pyhe01879c_0.conda              245kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   python-flatbuffers-25.12.19-pyh9d96877_0.conda                36kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   python-gil-3.11.15-hd8ed1ab_1.conda                           48kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   python-json-logger-2.0.7-pyhd8ed1ab_0.conda                   13kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   python-slugify-8.0.4-pyhd8ed1ab_1.conda                       19kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   python-xxhash-3.7.0-py311h041eb40_0.conda                     25kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   pytz-2025.2-pyhd8ed1ab_0.conda                               189kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   qhull-2020.2-h434a139_5.conda                                553kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   qt6-main-6.11.1-pl5321h16c4a6b_1.conda                        60MB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   rav1e-0.8.1-h1fbca29_0.conda                                   6MB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   re2-2025.11.05-h5301d42_1.conda                               27kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   readline-8.3-h853b02a_0.conda                                345kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   referencing-0.37.0-pyhcf101f3_0.conda                         52kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   termcolor-3.3.0-pyhd8ed1ab_0.conda                            13kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   terminado-0.18.1-pyh0d859eb_0.conda                           22kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   text-unidecode-1.3-pyhd8ed1ab_2.conda                         66kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   threadpoolctl-3.6.0-pyhecae5ae_0.conda                        24kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   trackpy-0.7-pyhd8ed1ab_0.conda                               106kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   traitlets-5.14.3-pyhd8ed1ab_1.conda                          110kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   types-python-dateutil-2.9.0.20251008-pyhd8ed1ab_0.conda       25kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   typing-inspection-0.4.2-pyhd8ed1ab_0.conda                    19kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   typing_extensions-4.15.0-pyhcf101f3_0.conda                   52kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   typing_utils-0.1.0-pyhd8ed1ab_1.conda                         15kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   udunits2-2.2.28-h40f5838_3.conda                             113kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   unicodedata2-17.0.1-py311h49ec1c0_0.conda                    410kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   uri-template-1.3.0-pyhd8ed1ab_1.conda                         24kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   urllib3-2.5.0-pyhd8ed1ab_0.conda                             102kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   vcs_versioning-2.2.2-pyhcf101f3_0.conda                       83kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   versioneer-0.29-pyhd8ed1ab_0.conda                            48kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   wayland-1.26.0-hd6090a7_0.conda                              341kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   wcwidth-0.2.14-pyhd8ed1ab_0.conda                             34kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   widgetsnbextension-4.0.14-pyhd8ed1ab_0.conda                 889kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   xkeyboard-config-2.48-h280c20c_0.conda                       442kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   zlib-1.3.2-h25fd6f3_2.conda                                   96kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   zlib-ng-2.3.3-hceb46e0_1.conda                               123kB"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45"
+      },
+      {
+        "t": 137.54,
+        "line": "#20 99.45   /home/jovyan/.mamba/pkgs"
+      },
+      {
+        "t": 138.01,
+        "line": "Error during build: Command '['docker', 'buildx', 'build', '--progress', 'plain', '--push', '--build-arg', 'NB_USER=jovyan', '--build-arg', 'NB_UID=1000', '--tag', 'quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2darm-2dfield-2dsite-2dcookbook-bd3cc2:507972a13ce0642f789ea5864c73ef8c6686bd20', '--platform', 'linux/amd64', '/tmp/tmp6umzil0i']' returned non-zero exit status 1."
+      },
+      {
+        "t": 138.01,
+        "line": "Error during build: Command '['docker', 'buildx', 'build', '--progress', 'plain', '--push', '--build-arg', 'NB_USER=jovyan', '--build-arg', 'NB_UID=1000', '--tag', 'quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2darm-2dfield-2dsite-2dcookbook-bd3cc2:507972a13ce0642f789ea5864c73ef8c6686bd20', '--platform', 'linux/amd64', '/tmp/tmp6umzil0i']' returned non-zero exit status 1."
+      }
+    ],
+    "log_lines_total": 7618,
+    "log_truncated": true
+  },
+  "execution": null,
+  "resources": null,
+  "errors": [],
+  "finished_at": "2026-07-23T00:48:24.632108+00:00",
+  "build_artifacts": {
+    "path": "/home/jmunroe/src/projectpythia/arm-field-site-cookbook/_build",
+    "bytes": 0,
+    "kept_because": "run failed"
+  }
+}

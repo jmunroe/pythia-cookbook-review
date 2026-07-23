@@ -25,7 +25,7 @@ The Binder image would not build, so the launch button gives a learner nothing. 
 
 | Cookbook | Static tier | Session | Execution | Peak memory | Errors | Checked |
 |---|---|---|---|---|---|---|
-| [arm-field-site-cookbook](live/arm-field-site-cookbook.md) | `incubating` | 1m 26s | — | — | 0 | 2026-07-22 |
+| [arm-field-site-cookbook](live/arm-field-site-cookbook.md) | `incubating` | 2m 18s | — | — | 0 | 2026-07-23 |
 | [AtmosCol-2023](live/AtmosCol-2023.md) | `incubating` | 1m 36s | — | — | 0 | 2026-07-22 |
 | [eo-datascience-cookbook](live/eo-datascience-cookbook.md) | `healthy` | 11m 28s | — | — | 0 | 2026-07-22 |
 | [esgf-cookbook](live/esgf-cookbook.md) | `stale` | 6m 57s | — | — | 0 | 2026-07-21 |

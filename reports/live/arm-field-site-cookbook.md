@@ -2,13 +2,13 @@
 
 Live outcome: **build failed**. [← All live checks](../live.md) · [Repository](https://github.com/ProjectPythia/arm-field-site-cookbook)
 
-Run 2026-07-22 08:46:26 UTC against [https://binder.projectpythia.org](https://binder.projectpythia.org), building [arm-field-site-cookbook](https://github.com/ProjectPythia/arm-field-site-cookbook) at ref [`main`](https://github.com/ProjectPythia/arm-field-site-cookbook/tree/main).
+Run 2026-07-23 00:46:01 UTC against [https://binder.projectpythia.org](https://binder.projectpythia.org), building [arm-field-site-cookbook](https://github.com/ProjectPythia/arm-field-site-cookbook) at ref [`main`](https://github.com/ProjectPythia/arm-field-site-cookbook/tree/main).
 
 | Measure | Value |
 |---|---|
 | Live outcome | **build failed** |
 | Static tier | `incubating` |
-| Time to a ready session | 1m 26s (fresh build) |
+| Time to a ready session | 2m 18s (fresh build) |
 | Build succeeded | no |
 | Resource metrics | unavailable: unknown |
 | Errors raised | 0 |
@@ -18,30 +18,30 @@ Executed 15 notebook(s) from the project toc: [`foundations/act/ACT-Basics-BNF.i
 ### Build log (tail)
 
 ```
-[   83.08s] #20 42.52   + libexpat                                   2.8.1  hecca717_1               conda-forge      78kB
-[   83.08s] #20 42.52   - libffi                                     3.4.6  h2dba641_1               conda-forge      57kB
-[   83.08s] #20 42.52   + libffi                                     3.5.2  h3435931_0               conda-forge      59kB
-[   83.08s] #20 42.52   - liblzma                                    5.8.1  hb9d3cd8_2               conda-forge     113kB
-[   83.08s] #20 42.52   + liblzma                                    5.8.3  hb03c661_0               conda-forge     113kB
-[   83.08s] #20 42.52   - libsodium                                 1.0.20  h4ab18f5_0               conda-forge     206kB
-[   83.08s] #20 42.52   - libuuid                                   2.41.2  he9a06e4_0               conda-forge      37kB
-[   83.08s] #20 42.52   + libuuid                                   2.42.2  h5347b49_0               conda-forge      40kB
-[   83.08s] #20 42.52   - libzlib                                    1.3.1  hb9d3cd8_2               conda-forge      61kB
-[   83.08s] #20 42.52   + libzlib                                    1.3.2  h25fd6f3_2               conda-forge      64kB
-[   83.08s] #20 42.52   - ncurses                                      6.5  h2d0b736_3               conda-forge     892kB
-[   83.08s] #20 42.52   + ncurses                                      6.6  hdb14827_0               conda-forge     919kB
-[   83.08s] #20 42.52   - nodejs                                   20.19.5  hf7ee748_0               conda-forge      17MB
-[   83.08s] #20 42.52   - zlib                                       1.3.1  hb9d3cd8_2               conda-forge      92kB
-[   83.08s] #20 42.52   + zlib                                       1.3.2  h25fd6f3_2               conda-forge      96kB
-[   83.08s] #20 42.52
-[   83.08s] #20 42.52
-[   83.08s] #20 42.52   Upgrade: 17 packages
-[   83.08s] #20 42.52 ──────────────────────────────────────────────────────────────────────────────────────────────────────
-[   83.08s] #20 42.52
-[   83.08s] #20 42.52
-[   83.08s] #20 42.53 Confirm changes: [Y/n]
-[   83.08s] #20 42.53 Transaction starting
-[   86.27s] Error during build: Command '['docker', 'buildx', 'build', '--progress', 'plain', '--push', '--build-arg', 'NB_USER=jovyan', '--build-arg', 'NB_UID=1000', '--tag', 'quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2darm-2dfield-2dsite-2dcookbook-bd3cc2:507972a13ce0642f789ea5864c73ef8c6686bd20', '--platform', 'linux/amd64', '/tmp/tmpzr2puzf9']' returned non-zero exit status 1.
-[   86.27s] Error during build: Command '['docker', 'buildx', 'build', '--progress', 'plain', '--push', '--build-arg', 'NB_USER=jovyan', '--build-arg', 'NB_UID=1000', '--tag', 'quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2darm-2dfield-2dsite-2dcookbook-bd3cc2:507972a13ce0642f789ea5864c73ef8c6686bd20', '--platform', 'linux/amd64', '/tmp/tmpzr2puzf9']' returned non-zero exit status 1.
+[  137.54s] #20 99.45   terminado-0.18.1-pyh0d859eb_0.conda                           22kB
+[  137.54s] #20 99.45   text-unidecode-1.3-pyhd8ed1ab_2.conda                         66kB
+[  137.54s] #20 99.45   threadpoolctl-3.6.0-pyhecae5ae_0.conda                        24kB
+[  137.54s] #20 99.45   trackpy-0.7-pyhd8ed1ab_0.conda                               106kB
+[  137.54s] #20 99.45   traitlets-5.14.3-pyhd8ed1ab_1.conda                          110kB
+[  137.54s] #20 99.45   types-python-dateutil-2.9.0.20251008-pyhd8ed1ab_0.conda       25kB
+[  137.54s] #20 99.45   typing-inspection-0.4.2-pyhd8ed1ab_0.conda                    19kB
+[  137.54s] #20 99.45   typing_extensions-4.15.0-pyhcf101f3_0.conda                   52kB
+[  137.54s] #20 99.45   typing_utils-0.1.0-pyhd8ed1ab_1.conda                         15kB
+[  137.54s] #20 99.45   udunits2-2.2.28-h40f5838_3.conda                             113kB
+[  137.54s] #20 99.45   unicodedata2-17.0.1-py311h49ec1c0_0.conda                    410kB
+[  137.54s] #20 99.45   uri-template-1.3.0-pyhd8ed1ab_1.conda                         24kB
+[  137.54s] #20 99.45   urllib3-2.5.0-pyhd8ed1ab_0.conda                             102kB
+[  137.54s] #20 99.45   vcs_versioning-2.2.2-pyhcf101f3_0.conda                       83kB
+[  137.54s] #20 99.45   versioneer-0.29-pyhd8ed1ab_0.conda                            48kB
+[  137.54s] #20 99.45   wayland-1.26.0-hd6090a7_0.conda                              341kB
+[  137.54s] #20 99.45   wcwidth-0.2.14-pyhd8ed1ab_0.conda                             34kB
+[  137.54s] #20 99.45   widgetsnbextension-4.0.14-pyhd8ed1ab_0.conda                 889kB
+[  137.54s] #20 99.45   xkeyboard-config-2.48-h280c20c_0.conda                       442kB
+[  137.54s] #20 99.45   zlib-1.3.2-h25fd6f3_2.conda                                   96kB
+[  137.54s] #20 99.45   zlib-ng-2.3.3-hceb46e0_1.conda                               123kB
+[  137.54s] #20 99.45
+[  137.54s] #20 99.45   /home/jovyan/.mamba/pkgs
+[  138.01s] Error during build: Command '['docker', 'buildx', 'build', '--progress', 'plain', '--push', '--build-arg', 'NB_USER=jovyan', '--build-arg', 'NB_UID=1000', '--tag', 'quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2darm-2dfield-2dsite-2dcookbook-bd3cc2:507972a13ce0642f789ea5864c73ef8c6686bd20', '--platform', 'linux/amd64', '/tmp/tmp6umzil0i']' returned non-zero exit status 1.
+[  138.01s] Error during build: Command '['docker', 'buildx', 'build', '--progress', 'plain', '--push', '--build-arg', 'NB_USER=jovyan', '--build-arg', 'NB_UID=1000', '--tag', 'quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2darm-2dfield-2dsite-2dcookbook-bd3cc2:507972a13ce0642f789ea5864c73ef8c6686bd20', '--platform', 'linux/amd64', '/tmp/tmp6umzil0i']' returned non-zero exit status 1.
 ```
 
