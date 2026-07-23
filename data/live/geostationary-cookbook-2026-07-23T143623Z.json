@@ -1,0 +1,180 @@
+{
+  "cookbook": "geostationary-cookbook",
+  "env_injection": {
+    "attempted": false
+  },
+  "started_at": "2026-07-23T14:29:19.637420+00:00",
+  "hub": "https://binder.projectpythia.org",
+  "ref": "main",
+  "toc_notebooks": [
+    "notebooks/00_geosat_explaining_steps.ipynb",
+    "notebooks/01_geosat_ABI_GOES_east.ipynb",
+    "notebooks/01_geosat_GOESR.ipynb",
+    "notebooks/02_geosat_ABI_GOES_west.ipynb",
+    "notebooks/03_geosat_AHI_HIMAWARI.ipynb",
+    "notebooks/04_geosat_AMI_GK2A.ipynb",
+    "notebooks/99_auxiliar_dowloading.ipynb",
+    "notebooks/notebook-template.ipynb"
+  ],
+  "build": {
+    "hub": "https://binder.projectpythia.org",
+    "ref": "main",
+    "seconds": 298.82,
+    "exit_code": 0,
+    "failed": false,
+    "image_cached": true,
+    "log": [
+      {
+        "t": 1.42,
+        "line": "Found built image, launching..."
+      },
+      {
+        "t": 1.62,
+        "line": "Server requested"
+      },
+      {
+        "t": 137.66,
+        "line": "2026-07-23T14:31:37.323454Z [Warning] 0/5 nodes are available: 1 node(s) had untolerated taint {node-role.kubernetes.io/control-plane: }, 1 node(s) had untolerated taint {node.cluster.x-k8s.io/uninitialized: }, 1 node(s) had untolerated taint {node.kubernetes.io/disk-pressure: }, 2 node(s) didn't match Pod's node affinity/selector. preemption: 0/5 nodes are available: 5 Preemption is not helpful for scheduling."
+      },
+      {
+        "t": 142.62,
+        "line": "2026-07-23T14:31:41.567803Z [Warning] 0/5 nodes are available: 1 node(s) had untolerated taint {node-role.kubernetes.io/control-plane: }, 1 node(s) had untolerated taint {node.kubernetes.io/disk-pressure: }, 1 node(s) had untolerated taint {node.kubernetes.io/not-ready: }, 2 node(s) didn't match Pod's node affinity/selector. preemption: 0/5 nodes are available: 5 Preemption is not helpful for scheduling."
+      },
+      {
+        "t": 169.7,
+        "line": "2026-07-23T14:32:09Z [Normal] Pod sandbox changed, it will be killed and re-created."
+      },
+      {
+        "t": 185.79,
+        "line": "2026-07-23T14:32:24Z [Normal] Pulling image \"quay.io/jupyterhub/k8s-network-tools:4.3.3\""
+      },
+      {
+        "t": 211.65,
+        "line": "2026-07-23T14:32:50Z [Normal] Successfully pulled image \"quay.io/jupyterhub/k8s-network-tools:4.3.3\" in 4.687s (25.743s including waiting). Image size: 3896334 bytes."
+      },
+      {
+        "t": 211.65,
+        "line": "2026-07-23T14:32:50Z [Normal] Created container: block-cloud-metadata"
+      },
+      {
+        "t": 211.65,
+        "line": "2026-07-23T14:32:50Z [Normal] Started container block-cloud-metadata"
+      },
+      {
+        "t": 211.65,
+        "line": "2026-07-23T14:32:51Z [Normal] Container image \"quay.io/jupyterhub/k8s-network-tools:4.1.0\" already present on machine"
+      },
+      {
+        "t": 211.65,
+        "line": "2026-07-23T14:32:51Z [Normal] Created container: block-nfs-access"
+      },
+      {
+        "t": 211.65,
+        "line": "2026-07-23T14:32:51Z [Normal] Started container block-nfs-access"
+      },
+      {
+        "t": 212.64,
+        "line": "2026-07-23T14:32:52Z [Normal] Pulling image \"quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2dgeostationary-2dcookbook-5febab:2dc90fdbe3bcd1d29e1eff7695451a15e5a7c7b7\""
+      },
+      {
+        "t": 292.45,
+        "line": "2026-07-23T14:34:12Z [Normal] Successfully pulled image \"quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2dgeostationary-2dcookbook-5febab:2dc90fdbe3bcd1d29e1eff7695451a15e5a7c7b7\" in 58.672s (1m19.964s including waiting). Image size: 2242200001 bytes."
+      },
+      {
+        "t": 298.82,
+        "line": "Server ready at /user/projectpythia-g-ionary-cookbook-677o49wj/"
+      },
+      {
+        "t": 298.82,
+        "line": "server running at https://hub.projectpythia.org/user/projectpythia-g-ionary-cookbook-677o49wj/"
+      }
+    ],
+    "log_lines_total": 16,
+    "log_truncated": false
+  },
+  "execution": {
+    "seconds": 124.29,
+    "exit_code": 0,
+    "failed": false,
+    "cache_cleared": false,
+    "page_seconds": [
+      {
+        "page": "myst.yml#site.parts.footer",
+        "seconds": 0.05
+      },
+      {
+        "page": "notebooks/how-to-cite.md",
+        "seconds": 0.74
+      },
+      {
+        "page": "README.md",
+        "seconds": 1.26
+      },
+      {
+        "page": "notebooks/notebook-template.ipynb",
+        "seconds": 2.09
+      },
+      {
+        "page": "notebooks/01_geosat_ABI_GOES_east.ipynb",
+        "seconds": 28.0
+      },
+      {
+        "page": "notebooks/02_geosat_ABI_GOES_west.ipynb",
+        "seconds": 30.0
+      },
+      {
+        "page": "notebooks/03_geosat_AHI_HIMAWARI.ipynb",
+        "seconds": 31.0
+      },
+      {
+        "page": "notebooks/04_geosat_AMI_GK2A.ipynb",
+        "seconds": 32.0
+      },
+      {
+        "page": "notebooks/00_geosat_explaining_steps.ipynb",
+        "seconds": 57.0
+      },
+      {
+        "page": "notebooks/01_geosat_GOESR.ipynb",
+        "seconds": 60.0
+      }
+    ],
+    "stdout_tail": "otlib\" in 266 ms.\n\ud83c\udfeb Read 19307 intersphinx references for \"python\" in 293 ms.\n\ud83c\udfeb Read 9803 intersphinx references for \"xarray\" in 354 ms.\n\ud83d\udcbf Executing notebook (notebooks/notebook-template.ipynb) [no execution cache found]\n\ud83d\udcbf Executing notebook (notebooks/00_geosat_explaining_steps.ipynb) [no execution cache found]\n\ud83d\udcbf Executing notebook (notebooks/01_geosat_ABI_GOES_east.ipynb) [no execution cache found]\n\ud83d\udcbf Executing notebook (notebooks/01_geosat_GOESR.ipynb) [no execution cache found]\n\ud83d\udcbf Executing notebook (notebooks/02_geosat_ABI_GOES_west.ipynb) [no execution cache found]\n\ud83d\udcbf Executing notebook (notebooks/03_geosat_AHI_HIMAWARI.ipynb) [no execution cache found]\n\ud83d\udcbf Executing notebook (notebooks/04_geosat_AMI_GK2A.ipynb) [no execution cache found]\n\ud83d\udcbf Executing notebook (notebooks/99_auxiliar_dowloading.ipynb) [no execution cache found]\n\ud83d\udcd6 Built myst.yml#site.parts.footer in 49 ms.\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-g-ionary-cookbook-677o49wj/api/kernels/c034aee2-52e1-45bc-a8bc-b10a591c5b8c\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-g-ionary-cookbook-677o49wj/api/kernels/a146797d-ecf0-4245-95ce-6e188f2461f8\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-g-ionary-cookbook-677o49wj/api/kernels/b817aa91-94dc-4d29-b90c-6a81b5f9592e\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-g-ionary-cookbook-677o49wj/api/kernels/3d4573da-63fd-45ed-abf5-76089373ab02\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-g-ionary-cookbook-677o49wj/api/kernels/fb700ae2-d02b-42e0-ae2d-96b32fc7eb9e\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-g-ionary-cookbook-677o49wj/api/kernels/2d6547cd-0db2-44f2-865c-4eaaca6e96d3\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-g-ionary-cookbook-677o49wj/api/kernels/a46bc5cb-c003-4db5-bd0f-e55196735c14\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-g-ionary-cookbook-677o49wj/api/kernels/a4483da1-d3de-479e-8018-13be7a3bd203\n\ud83d\udcd6 Built notebooks/how-to-cite.md in 740 ms.\n\ud83e\ude84  Linked 1 DOI from doi.org in 1.07 s for README.md\n\ud83d\udcd6 Built README.md in 1.26 s.\n\ud83d\udcd6 Built notebooks/notebook-template.ipynb in 2.09 s.\n\ud83d\udcd6 Built notebooks/01_geosat_ABI_GOES_east.ipynb in 28 s.\n\ud83d\udcd6 Built notebooks/02_geosat_ABI_GOES_west.ipynb in 30 s.\n\ud83d\udcd6 Built notebooks/03_geosat_AHI_HIMAWARI.ipynb in 31 s.\n\ud83d\udcd6 Built notebooks/04_geosat_AMI_GK2A.ipynb in 32 s.\n\ud83d\udcd6 Built notebooks/00_geosat_explaining_steps.ipynb in 57 s.\n\ud83d\udcd6 Built notebooks/01_geosat_GOESR.ipynb in 60 s.\n\ud83d\udcd6 Built notebooks/99_auxiliar_dowloading.ipynb in 1.92 min.\n\ud83d\udcda Built 10 pages for project in 1.95 min.\n\n\n\t\u2728\u2728\u2728  Starting Book Theme  \u2728\u2728\u2728\n\n\n\n\ud83d\udd0c Server started on port 3000!  \ud83e\udd73 \ud83c\udf89\n\n\n\t\ud83d\udc49  http://localhost:3000  \ud83d\udc48\n\n\n\ud83d\udc8c GET  /notebooks/how-to-cite 200 - - 29.097 ms\n\ud83d\udc8c GET  /notebooks/notebook-template 200 - - 100.510 ms\nGET /notebooks/geosat-abi-goes-east 200 - - 41.384 ms\nGET / 200 - - 133.036 ms\n\ud83d\udc8c GET  /notebooks/geosat-explaining-steps 200 - - 126.964 ms\nGET /notebooks/geosat-goesr 200 - - 84.802 ms\nGET /notebooks/geosat-abi-goes-west 200 - - 39.609 ms\n\ud83d\udc8c GET  /notebooks/geosat-ahi-himawari 200 - - 52.822 ms\n\ud83d\udc8c GET  /notebooks/geosat-ami-gk2a 200 - - 65.463 ms\n\ud83d\udc8c GET  /notebooks.how-to-cite.json 200 - - 20.235 ms\nGET /index.json 200 - - 20.411 ms\n\ud83d\udc8c GET  /notebooks/auxiliar-dowloading 200 - - 30.055 ms\n\ud83d\udc8c GET  /notebooks.notebook-template.json 200 - - 18.877 ms\n\ud83d\udc8c GET  /notebooks.geosat-explaining-steps.json 200 - - 11.446 ms\nGET /notebooks.geosat-abi-goes-east.json 200 - - 10.753 ms\n\ud83d\udc8c GET  /notebooks.geosat-abi-goes-west.json 200 - - 9.979 ms\nGET /notebooks.geosat-goesr.json 200 - - 10.245 ms\n\ud83d\udc8c GET  /notebooks.geosat-ahi-himawari.json 200 - - 8.625 ms\n\ud83d\udc8c GET  /robots.txt 200 - - 0.932 ms\n\ud83d\udc8c GET  /notebooks.geosat-ami-gk2a.json 200 - - 8.065 ms\n\ud83d\udc8c GET  /notebooks.auxiliar-dowloading.json 200 - - 8.257 ms\n\ud83d\udc8c GET  /sitemap_style.xsl 200 - - 0.581 ms\n\ud83d\udc8c GET  /sitemap.xml 200 - - 4.251 ms\nGET /myst-theme.css 200 - - 7.432 ms\n\ud83d\udc8c GET  /favicon.ico 200 - - 4.584 ms\n",
+    "stderr_tail": "\u001b[1;32m    457\u001b[0m tar_kwargs \u001b[38;5;241m=\u001b[39m {} \u001b[38;5;28;01mif\u001b[39;00m sys\u001b[38;5;241m.\u001b[39mversion_info \u001b[38;5;241m<\u001b[39m (\u001b[38;5;241m3\u001b[39m, \u001b[38;5;241m12\u001b[39m) \u001b[38;5;28;01melse\u001b[39;00m {\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mfilter\u001b[39m\u001b[38;5;124m\"\u001b[39m: \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mdata\u001b[39m\u001b[38;5;124m\"\u001b[39m}\n\u001b[0;32m--> 458\u001b[0m \u001b[38;5;28;01mwith\u001b[39;00m \u001b[43mtarfile\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mopen\u001b[49m\u001b[43m(\u001b[49m\u001b[43mlocal_pathname\u001b[49m\u001b[43m)\u001b[49m \u001b[38;5;28;01mas\u001b[39;00m tar:\n\u001b[1;32m    459\u001b[0m     tar\u001b[38;5;241m.\u001b[39mextractall(extract_dir, \u001b[38;5;241m*\u001b[39m\u001b[38;5;241m*\u001b[39mtar_kwargs)  \u001b[38;5;66;03m# type: ignore\u001b[39;00m\n\u001b[1;32m    461\u001b[0m os\u001b[38;5;241m.\u001b[39mremove(local_pathname)\n\nFile \u001b[0;32m/srv/conda/envs/notebook/lib/python3.10/tarfile.py:1853\u001b[0m, in \u001b[0;36mTarFile.open\u001b[0;34m(cls, name, mode, fileobj, bufsize, **kwargs)\u001b[0m\n\u001b[1;32m   1851\u001b[0m     saved_pos \u001b[38;5;241m=\u001b[39m fileobj\u001b[38;5;241m.\u001b[39mtell()\n\u001b[1;32m   1852\u001b[0m \u001b[38;5;28;01mtry\u001b[39;00m:\n\u001b[0;32m-> 1853\u001b[0m     \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[43mfunc\u001b[49m\u001b[43m(\u001b[49m\u001b[43mname\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43mr\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mfileobj\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;241;43m*\u001b[39;49m\u001b[38;5;241;43m*\u001b[39;49m\u001b[43mkwargs\u001b[49m\u001b[43m)\u001b[49m\n\u001b[1;32m   1854\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m (ReadError, CompressionError) \u001b[38;5;28;01mas\u001b[39;00m e:\n\u001b[1;32m   1855\u001b[0m     error_msgs\u001b[38;5;241m.\u001b[39mappend(\u001b[38;5;124mf\u001b[39m\u001b[38;5;124m'\u001b[39m\u001b[38;5;124m- method \u001b[39m\u001b[38;5;132;01m{\u001b[39;00mcomptype\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m: \u001b[39m\u001b[38;5;132;01m{\u001b[39;00me\u001b[38;5;132;01m!r}\u001b[39;00m\u001b[38;5;124m'\u001b[39m)\n\nFile \u001b[0;32m/srv/conda/envs/notebook/lib/python3.10/tarfile.py:1919\u001b[0m, in \u001b[0;36mTarFile.gzopen\u001b[0;34m(cls, name, mode, fileobj, compresslevel, **kwargs)\u001b[0m\n\u001b[1;32m   1916\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m CompressionError(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mgzip module is not available\u001b[39m\u001b[38;5;124m\"\u001b[39m) \u001b[38;5;28;01mfrom\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;28;01mNone\u001b[39;00m\n\u001b[1;32m   1918\u001b[0m \u001b[38;5;28;01mtry\u001b[39;00m:\n\u001b[0;32m-> 1919\u001b[0m     fileobj \u001b[38;5;241m=\u001b[39m \u001b[43mGzipFile\u001b[49m\u001b[43m(\u001b[49m\u001b[43mname\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mmode\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;241;43m+\u001b[39;49m\u001b[43m \u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43mb\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mcompresslevel\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mfileobj\u001b[49m\u001b[43m)\u001b[49m\n\u001b[1;32m   1920\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mOSError\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m e:\n\u001b[1;32m   1921\u001b[0m     \u001b[38;5;28;01mif\u001b[39;00m fileobj \u001b[38;5;129;01mis\u001b[39;00m \u001b[38;5;129;01mnot\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m \u001b[38;5;129;01mand\u001b[39;00m mode \u001b[38;5;241m==\u001b[39m \u001b[38;5;124m'\u001b[39m\u001b[38;5;124mr\u001b[39m\u001b[38;5;124m'\u001b[39m:\n\nFile \u001b[0;32m/srv/conda/envs/notebook/lib/python3.10/gzip.py:174\u001b[0m, in \u001b[0;36mGzipFile.__init__\u001b[0;34m(self, filename, mode, compresslevel, fileobj, mtime)\u001b[0m\n\u001b[1;32m    172\u001b[0m     mode \u001b[38;5;241m+\u001b[39m\u001b[38;5;241m=\u001b[39m \u001b[38;5;124m'\u001b[39m\u001b[38;5;124mb\u001b[39m\u001b[38;5;124m'\u001b[39m\n\u001b[1;32m    173\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m fileobj \u001b[38;5;129;01mis\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m:\n\u001b[0;32m--> 174\u001b[0m     fileobj \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mmyfileobj \u001b[38;5;241m=\u001b[39m \u001b[43mbuiltins\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mopen\u001b[49m\u001b[43m(\u001b[49m\u001b[43mfilename\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mmode\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;129;43;01mor\u001b[39;49;00m\u001b[43m \u001b[49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[38;5;124;43mrb\u001b[39;49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[43m)\u001b[49m\n\u001b[1;32m    175\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m filename \u001b[38;5;129;01mis\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m:\n\u001b[1;32m    176\u001b[0m     filename \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mgetattr\u001b[39m(fileobj, \u001b[38;5;124m'\u001b[39m\u001b[38;5;124mname\u001b[39m\u001b[38;5;124m'\u001b[39m, \u001b[38;5;124m'\u001b[39m\u001b[38;5;124m'\u001b[39m)\n\n\u001b[0;31mFileNotFoundError\u001b[0m: [Errno 2] No such file or directory: '/home/jovyan/.local/share/pyspectral/rayleigh_only/pyspectral_rayleigh_correction_luts.tgz'\n\u26a0\ufe0f  notebooks/99_auxiliar_dowloading.ipynb missing heading depth 3\n"
+  },
+  "resources": {
+    "available": true,
+    "sample_count": 39,
+    "sample_seconds": 3,
+    "peak_rss_bytes": 2726936576,
+    "peak_pss_bytes": 2599720960,
+    "limit_basis": "pss",
+    "peak_against_limit_bytes": 2599720960,
+    "memory_limit_bytes": 8589934592,
+    "peak_fraction_of_limit": 0.3026,
+    "peak_cpu_percent": null,
+    "cpu_count": null
+  },
+  "errors": [
+    {
+      "source": "site/content/notebooks.geosat-abi-goes-east.json",
+      "ename": "FileNotFoundError",
+      "evalue": "[Errno 2] No such file or directory: '/home/jovyan/.local/share/pyspectral/rayleigh_only/pyspectral_rayleigh_correction_luts.tgz'",
+      "traceback": "---------------------------------------------------------------------------\nFileNotFoundError                         Traceback (most recent call last)\nCell In[16], line 1\n----> 1 lscn.load(['true_color'])\n      3 ### Uncomment to show it\n      4 #lscn.show('true_color')\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/satpy/scene.py:1484, in Scene.load(self, wishlist, calibration, resolution, polarization, level, modifiers, generate, unload, **kwargs)\n   1482 self._read_datasets_from_storage(**kwargs)\n   1483 if generate:\n-> 1484     self.generate_possible_composites(unload)\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/satpy/scene.py:1547, in Scene.generate_possible_composites(self, unload)\n   1540 def generate_possible_composites(self, unload):\n   1541     \"\"\"See which composites can be generated and generate them.\n   1542 \n   1543     Args:\n   1544         unload (bool): if the dependencies of the composites\n   1545                        should be unloaded after successful generation.\n   1546     \"\"\"\n-> 1547     keepables = self._generate_composites_from_loaded_datasets()\n   1549     if self.missing_datasets:\n   1550         self._remove_failed_datasets(keepables)\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/satpy/scene.py:1566, in Scene._generate_composites_from_loaded_datasets(self)\n   1563 trunk_nodes = self._dependency_tree.trunk(limit_nodes_to=self.missing_datasets,\n   1564                                           limit_children_to=self._datasets.keys())\n   1565 needed_comp_nodes = set(self._filter_loaded_datasets_from_trunk_nodes(trunk_nodes))\n-> 1566 return self._generate_composites_nodes_from_loaded_datasets(needed_comp_nodes)\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/satpy/scene.py:1572, in Scene._generate_composites_nodes_from_loaded_datasets(self, compositor_nodes)\n   1570 keepables = set()\n   1571 for node in compositor_nodes:\n-> 1572     self._generate_composite(node, keepables)\n   1573 ret"
+    },
+    {
+      "source": "site/content/notebooks.geosat-ahi-himawari.json",
+      "ename": "FileNotFoundError",
+      "evalue": "[Errno 2] No such file or directory: '/home/jovyan/.local/share/pyspectral/rayleigh_only/pyspectral_rayleigh_correction_luts.tgz'",
+      "traceback": "---------------------------------------------------------------------------\nFileNotFoundError                         Traceback (most recent call last)\nCell In[14], line 1\n----> 1 lscn.load(['true_color'])\n      3 ### Uncomment to show it\n      4 #lscn.show('true_color')\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/satpy/scene.py:1484, in Scene.load(self, wishlist, calibration, resolution, polarization, level, modifiers, generate, unload, **kwargs)\n   1482 self._read_datasets_from_storage(**kwargs)\n   1483 if generate:\n-> 1484     self.generate_possible_composites(unload)\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/satpy/scene.py:1547, in Scene.generate_possible_composites(self, unload)\n   1540 def generate_possible_composites(self, unload):\n   1541     \"\"\"See which composites can be generated and generate them.\n   1542 \n   1543     Args:\n   1544         unload (bool): if the dependencies of the composites\n   1545                        should be unloaded after successful generation.\n   1546     \"\"\"\n-> 1547     keepables = self._generate_composites_from_loaded_datasets()\n   1549     if self.missing_datasets:\n   1550         self._remove_failed_datasets(keepables)\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/satpy/scene.py:1566, in Scene._generate_composites_from_loaded_datasets(self)\n   1563 trunk_nodes = self._dependency_tree.trunk(limit_nodes_to=self.missing_datasets,\n   1564                                           limit_children_to=self._datasets.keys())\n   1565 needed_comp_nodes = set(self._filter_loaded_datasets_from_trunk_nodes(trunk_nodes))\n-> 1566 return self._generate_composites_nodes_from_loaded_datasets(needed_comp_nodes)\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/satpy/scene.py:1572, in Scene._generate_composites_nodes_from_loaded_datasets(self, compositor_nodes)\n   1570 keepables = set()\n   1571 for node in compositor_nodes:\n-> 1572     self._generate_composite(node, keepables)\n   1573 ret"
+    },
+    {
+      "source": "site/content/notebooks.geosat-ami-gk2a.json",
+      "ename": "FileNotFoundError",
+      "evalue": "[Errno 2] No such file or directory: '/home/jovyan/.local/share/pyspectral/rayleigh_only/pyspectral_rayleigh_correction_luts.tgz'",
+      "traceback": "---------------------------------------------------------------------------\nFileNotFoundError                         Traceback (most recent call last)\nCell In[14], line 1\n----> 1 lscn.load(['true_color'])\n      3 ### Uncomment to show it\n      4 #lscn.show('true_color')\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/satpy/scene.py:1484, in Scene.load(self, wishlist, calibration, resolution, polarization, level, modifiers, generate, unload, **kwargs)\n   1482 self._read_datasets_from_storage(**kwargs)\n   1483 if generate:\n-> 1484     self.generate_possible_composites(unload)\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/satpy/scene.py:1547, in Scene.generate_possible_composites(self, unload)\n   1540 def generate_possible_composites(self, unload):\n   1541     \"\"\"See which composites can be generated and generate them.\n   1542 \n   1543     Args:\n   1544         unload (bool): if the dependencies of the composites\n   1545                        should be unloaded after successful generation.\n   1546     \"\"\"\n-> 1547     keepables = self._generate_composites_from_loaded_datasets()\n   1549     if self.missing_datasets:\n   1550         self._remove_failed_datasets(keepables)\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/satpy/scene.py:1566, in Scene._generate_composites_from_loaded_datasets(self)\n   1563 trunk_nodes = self._dependency_tree.trunk(limit_nodes_to=self.missing_datasets,\n   1564                                           limit_children_to=self._datasets.keys())\n   1565 needed_comp_nodes = set(self._filter_loaded_datasets_from_trunk_nodes(trunk_nodes))\n-> 1566 return self._generate_composites_nodes_from_loaded_datasets(needed_comp_nodes)\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/satpy/scene.py:1572, in Scene._generate_composites_nodes_from_loaded_datasets(self, compositor_nodes)\n   1570 keepables = set()\n   1571 for node in compositor_nodes:\n-> 1572     self._generate_composite(node, keepables)\n   1573 ret"
+    }
+  ],
+  "finished_at": "2026-07-23T14:36:23.440141+00:00",
+  "build_artifacts": null
+}

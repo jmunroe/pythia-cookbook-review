@@ -63,7 +63,7 @@ The book built and ran, but at least one notebook cell raised. Read the per-cook
 | [climate-variability-cookbook](live/climate-variability-cookbook.md) | `incubating` | 6m 22s | 42.27s | 0.34 of 8.6 GB | 1 | 2026-07-22 |
 | [ERA5_interactive-cookbook](live/ERA5_interactive-cookbook.md) | `healthy` | 7m 02s | 12m 19s | 2.23 of 8.6 GB | 1 | 2026-07-22 |
 | [geomorphology-cookbook](live/geomorphology-cookbook.md) | `incubating` | 7m 56s | 2m 22s | 2.27 of 8.6 GB | 1 | 2026-07-22 |
-| [geostationary-cookbook](live/geostationary-cookbook.md) | `incubating` | 5m 22s | 2m 42s | 3.18 of 8.6 GB | 4 | 2026-07-22 |
+| [geostationary-cookbook](live/geostationary-cookbook.md) | `incubating` | 4m 59s (cached) | 2m 04s | 2.60 of 8.6 GB | 3 | 2026-07-23 |
 | [great-circle-cookbook](live/great-circle-cookbook.md) | `incubating` | 14m 50s | 31.37s | 1.12 of 8.6 GB | 1 | 2026-07-22 |
 | [gridding-cookbook](live/gridding-cookbook.md) | `healthy` | 7m 00s (cached) | 58.63s | 3.73 of 8.6 GB | 1 | 2026-07-22 |
 | [icesat2-cookbook](live/icesat2-cookbook.md) | `incubating` | 12m 10s | 1m 04s | 1.84 of 8.6 GB | 2 | 2026-07-22 |
