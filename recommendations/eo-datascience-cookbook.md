@@ -2,67 +2,70 @@
 
 Live outcome: **build failed**. [← All recommendations](../recommendations.md) · [Live check](../reports/live/eo-datascience-cookbook.md) · [Repository](https://github.com/ProjectPythia/eo-datascience-cookbook)
 
-Static tier `healthy`. **Partial recommendation** — the failure was *not* reproduced from the
-captured log, so the top items below are the direction to take rather than a single confirmed diff.
+Static tier `healthy`. **The environment builds end-to-end locally — conda *and* every pip package — so the failure was most likely transient, aggravated by a slow, oversized pip step.**
 
-## What this failure is *not*
+## What was reproduced
 
-The build log tail stops right after conda finishes linking (`odc-stac`, `six`) with only the
-generic `docker buildx … exit status 1`; the specific error is not in the captured tail. Two obvious
-suspects were checked and cleared:
+Rebuilt the full environment locally with `mamba`:
 
-- **The local package installs fine.** `environment.yml` pip-installs a relative path,
-  `notebooks/courses/environmental-remote-sensing` (the `envrs` package, `build-backend =
-  "uv_build"`, `requires-python >=3.13`). It builds and installs cleanly on Python 3.13 with **plain
-  pip** using build isolation — not just with `uv` — so the unusual `uv_build` backend is not the
-  problem.
-- **Every pip dependency exists.** `ascat`, `pdbufr`, `pynetcf`, `pyswi`, `python-gitlab`, and
-  `pyviz_comms` all resolve on PyPI (HTTP 200). No dead pins here.
+- **Conda solve succeeds** — `mamba env create --dry-run` resolves cleanly (595 packages, 407 MB).
+- **The pip step succeeds too.** Reproducing Binder's exact `mamba env update … --file
+  environment.yml` runs the `pip:` block and installs everything — `ascat`, `pdbufr`, `pynetcf`,
+  `pyswi`, `python-dotenv`, `python-gitlab`, `pyviz_comms==3.0.4`, and the local `envrs` package
+  (built from `notebooks/courses/environmental-remote-sensing`). Exit 0; all of them import in the
+  finished environment.
 
-So the failure is most likely a **resolution conflict** that only appears once conda's full stack is
-in place — something the pip step or the final conda solve hits — and it cannot be pinned down
-without a real rebuild.
+So nothing in the environment is actually broken. The build log tail stops right after conda linking
+with only the generic `docker buildx … exit status 1` and **no pip error** — consistent with a
+transient failure (network, or a registry push) during or just after the long pip step, not a
+dependency conflict.
 
-## Recommended direction
+## The durable fix: shrink and speed up the pip step
 
-1. **Rebuild once with full logs to capture the actual error.** The single most useful next step is
-   a Binder (or local `mamba env create`) build that surfaces the failing line the tail truncated.
-   Everything below is a strong prior, not a substitute for that.
+The pip block is the slow, fragile part of this build — pip resolving `ascat`, `pynetcf`, `pyswi`,
+and `pdbufr` pulls a heavy scientific stack (`pyresample`, `pint`, …) and builds a wheel, taking
+several minutes. Most of it doesn't need to be pip at all. **Four of the seven pip packages are on
+conda-forge:**
 
-2. **Slim the runtime environment.** This `environment.yml` mixes a full developer toolchain into
-   the learner's runtime env: `black`, `flake8-nb`, `isort`, `nbqa`, `nbstripout`, `pre-commit`,
-   `pytest`, and `mamba`. None are needed to *run* the notebooks; each adds solve constraints and a
-   chance of conflict. Move them to a separate dev environment (or drop them) so the runtime env has
-   only what the notebooks import. A smaller env is both faster and far less likely to fail to solve.
+| pip package | conda-forge | action |
+|---|---|---|
+| `pdbufr` | 0.14.2 | move to conda deps |
+| `python-dotenv` | 1.2.2 | move to conda deps |
+| `python-gitlab` | 8.4.0 | move to conda deps |
+| `pyviz_comms==3.0.4` | 3.0.6 | move to conda deps (and drop the exact pin) |
+| `ascat` | — | keep in pip (not packaged) |
+| `pynetcf` | — | keep in pip (not packaged) |
+| `pyswi` | — | keep in pip (not packaged) |
+| `notebooks/courses/environmental-remote-sensing` (`envrs`) | — | keep in pip (local package) |
 
-3. **Drop or refresh the stale exact pins.** Several hard pins look like frozen incidental versions
-   rather than deliberate constraints:
-   - `importlib-metadata==4.13.0` — very old (current 8.x); a frequent source of conflicts on a
-     modern Python 3.13 stack. Float it unless a specific package needs 4.x.
-   - `jupyter==1.1.1`, `jupyterlab==4.2.5`, `jupyterlab_server==2.27.3`,
-     `jupyterlab_widgets==3.0.13`, `pyviz_comms==3.0.4` — pinning the entire Jupyter stack to exact
-     versions invites solver conflicts as conda-forge moves. Float these and pin again only where a
-     reason is documented, per the [criteria](../docs/criteria.md).
-   - `zarr==2.18.4` holds zarr at v2; confirm whether the notebooks actually require v2 or can move
-     to v3, and document the reason if v2 is intentional.
+Moving those four to the conda dependency list leaves pip with only the three genuinely pip-only TU
+Wien packages plus the local one — a smaller, faster, more reliable pip step, and better alignment
+with the [criteria](../docs/criteria.md)'s "prefer conda-forge over pip."
 
-4. **`python==3.13` is aggressive.** It is the newest line and some geospatial wheels lag it. If the
-   rebuild shows a package with no 3.13 build, relaxing to `python=3.12` is the quickest unblock.
+**First action, though: re-run the live check** — the env builds locally, so a retry may simply pass.
 
 ## Secondary
 
-- **Pre-MyST leftover.** The repo carries both `_config.yml` (Sphinx/jupyter-book era) and
-  `myst.yml`. The cookbook builds with `mystmd`, so the stale `_config.yml` should be removed — one
-  of the cross-cutting [gaps](../reports/gaps.md) across the collection.
+- **Slim the runtime environment.** It mixes a developer toolchain into the learner env: `black`,
+  `flake8-nb`, `isort`, `nbqa`, `nbstripout`, `pre-commit` (twice — also in pip), `pytest`, and
+  `mamba`. None are needed to *run* the notebooks; move them to a dev environment to cut solve time
+  and image size.
+- **Drop stale exact pins.** `importlib-metadata==4.13.0` is very old (current 8.x) and a frequent
+  conflict source; `jupyter==1.1.1`, `jupyterlab==4.2.5`, `jupyterlab_server==2.27.3`,
+  `jupyterlab_widgets==3.0.13`, and `pyviz_comms==3.0.4` pin the whole Jupyter stack to exact
+  versions. Float these unless a reason is documented.
+- **Pre-MyST leftover.** The repo carries both `_config.yml` (Sphinx era) and `myst.yml`; remove the
+  stale `_config.yml` — one of the cross-cutting [gaps](../reports/gaps.md).
 
 ## What was verified
 
-- Local `envrs` package builds and installs under real `pip` on Python 3.13 (build isolation
-  fetching `uv_build`). Not the cause.
-- All six external pip dependencies resolve on PyPI. Not the cause.
-- **Not verified:** the actual failing step — no conda/mamba on this machine, and the log tail does
-  not contain the error. A rebuild is required to confirm any fix.
+- Full env builds locally with `mamba` — conda solve + the complete pip step (exit 0); all pip
+  packages import.
+- Four of the seven pip packages confirmed present on conda-forge (versions above).
+- **Not verified:** the exact trigger of the Binder failure — it does not reproduce locally, which
+  itself points to transient infrastructure. Confirm with a re-run.
 
 ---
-*Agent-assisted analysis, 2026-07-22. Partial: verified negatives plus recommended direction;
-the fix must be confirmed against a real build that captures the failing line.*
+*Agent-assisted analysis, updated 2026-07-23 with a full local rebuild (supersedes the earlier
+partial note). A proposal to confirm in a real build and open with the community, not an applied
+change.*
