@@ -47,6 +47,16 @@ project:
             # checking a new cookbook needs no toc edit. See scripts/report_live.py.
             - file: reports/live.md
             - pattern: reports/live/*.md
+    - title: Recommendations
+      children:
+        # Hand-authored, agent-assisted proposals: one page per cookbook with
+        # the specific, verified-where-possible actions that would move it
+        # toward the publication criteria. The overview is the landing page;
+        # per-cookbook pages are picked up by the pattern, so adding one needs
+        # no toc edit. These are proposals to inform a future PR, not applied
+        # changes -- see recommendations.md.
+        - file: recommendations.md
+        - pattern: recommendations/*.md
     - title: Method
       children:
         - file: docs/criteria.md
