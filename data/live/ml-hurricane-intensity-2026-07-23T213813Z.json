@@ -1,0 +1,199 @@
+{
+  "cookbook": "ml-hurricane-intensity",
+  "env_injection": {
+    "attempted": false
+  },
+  "started_at": "2026-07-23T21:34:04.031531+00:00",
+  "hub": "https://binder.projectpythia.org",
+  "ref": "main",
+  "toc_notebooks": [
+    "notebooks/Model.ipynb",
+    "notebooks/era5_preprocessing.ipynb",
+    "notebooks/ibtrack_preprocessing.ipynb"
+  ],
+  "build": {
+    "hub": "https://binder.projectpythia.org",
+    "ref": "main",
+    "seconds": 249.34,
+    "exit_code": 1,
+    "failed": true,
+    "image_cached": false,
+    "log": [
+      {
+        "t": 1.59,
+        "line": "Waiting for build to start..."
+      },
+      {
+        "t": 148.86,
+        "line": "Unknown phase \"undefined\" from builder"
+      },
+      {
+        "t": 229.04,
+        "line": "HEAD is now at 2f121838 Fix dataset path in era5_preprocessing notebook"
+      },
+      {
+        "t": 229.2,
+        "line": "Building conda environment for python=3.10"
+      },
+      {
+        "t": 229.2,
+        "line": "Using CondaBuildPack builder"
+      },
+      {
+        "t": 234.11,
+        "line": "#0 building with \"default\" instance using docker driver"
+      },
+      {
+        "t": 234.59,
+        "line": "#2 DONE 0.6s"
+      },
+      {
+        "t": 234.71,
+        "line": "#3 transferring context: 2B done"
+      },
+      {
+        "t": 234.71,
+        "line": "#3 DONE 0.1s"
+      },
+      {
+        "t": 234.81,
+        "line": "#4 resolve docker.io/library/buildpack-deps:24.04@sha256:cfb30ff3856780c63b00ec3ad2e4aed77ae6afce5975ebb8ad9525ec45354e2e 0.1s done"
+      },
+      {
+        "t": 234.91,
+        "line": "#4 sha256:9db0886ccf5850c0c68896c294b3b26adc5d4833caee4a06afa43da29a1d1b53 2.68kB / 2.68kB done"
+      },
+      {
+        "t": 234.91,
+        "line": "#4 sha256:ca2678b20700c15185707964d9211b1a6406196114bf675f568b6025d37b3888 0B / 29.74MB 0.1s"
+      },
+      {
+        "t": 234.91,
+        "line": "#4 sha256:76a991c6bfc1738367d1f726699924445e25d762cea07820a5069de2e0ffb806 0B / 13.58MB 0.1s"
+      },
+      {
+        "t": 235.01,
+        "line": "#4 sha256:76a991c6bfc1738367d1f726699924445e25d762cea07820a5069de2e0ffb806 13.58MB / 13.58MB 0.2s"
+      },
+      {
+        "t": 235.01,
+        "line": "#4 sha256:992bb70ed221ae6468bafbde091d782eb827cfa9afae6267256a2d2737b8619f 3.15MB / 47.77MB 0.2s"
+      },
+      {
+        "t": 235.14,
+        "line": "#4 sha256:ca2678b20700c15185707964d9211b1a6406196114bf675f568b6025d37b3888 29.74MB / 29.74MB 0.2s done"
+      },
+      {
+        "t": 235.14,
+        "line": "#4 sha256:76a991c6bfc1738367d1f726699924445e25d762cea07820a5069de2e0ffb806 13.58MB / 13.58MB 0.2s done"
+      },
+      {
+        "t": 235.24,
+        "line": "#4 sha256:992bb70ed221ae6468bafbde091d782eb827cfa9afae6267256a2d2737b8619f 47.77MB / 47.77MB 0.4s done"
+      },
+      {
+        "t": 235.24,
+        "line": "#4 sha256:13f2c3e911f50d01ad2d490a0fa0c8921ce491b3365589e1fe21c2a07de011c3 41.54MB / 185.48MB 0.5s"
+      },
+      {
+        "t": 235.36,
+        "line": "#4 sha256:13f2c3e911f50d01ad2d490a0fa0c8921ce491b3365589e1fe21c2a07de011c3 71.71MB / 185.48MB 0.6s"
+      },
+      {
+        "t": 235.6,
+        "line": "#4 sha256:13f2c3e911f50d01ad2d490a0fa0c8921ce491b3365589e1fe21c2a07de011c3 134.22MB / 185.48MB 0.8s"
+      },
+      {
+        "t": 235.8,
+        "line": "#4 sha256:13f2c3e911f50d01ad2d490a0fa0c8921ce491b3365589e1fe21c2a07de011c3 185.48MB / 185.48MB 1.0s"
+      },
+      {
+        "t": 236.15,
+        "line": "#4 extracting sha256:ca2678b20700c15185707964d9211b1a6406196114bf675f568b6025d37b3888 1.0s done"
+      },
+      {
+        "t": 238.99,
+        "line": "#4 extracting sha256:992bb70ed221ae6468bafbde091d782eb827cfa9afae6267256a2d2737b8619f 1.9s done"
+      },
+      {
+        "t": 244.13,
+        "line": "#4 extracting sha256:13f2c3e911f50d01ad2d490a0fa0c8921ce491b3365589e1fe21c2a07de011c3 5.1s"
+      },
+      {
+        "t": 244.66,
+        "line": ""
+      },
+      {
+        "t": 244.77,
+        "line": "#5 ..."
+      },
+      {
+        "t": 244.77,
+        "line": "#4 [ 1/19] FROM docker.io/library/buildpack-deps:24.04@sha256:cfb30ff3856780c63b00ec3ad2e4aed77ae6afce5975ebb8ad9525ec45354e2e"
+      },
+      {
+        "t": 245.69,
+        "line": ""
+      },
+      {
+        "t": 245.69,
+        "line": "#5 [internal] load build context"
+      },
+      {
+        "t": 245.69,
+        "line": "#5 transferring context: 2.24GB 10.9s done"
+      },
+      {
+        "t": 245.69,
+        "line": "#4 [ 1/19] FROM docker.io/library/buildpack-deps:24.04@sha256:cfb30ff3856780c63b00ec3ad2e4aed77ae6afce5975ebb8ad9525ec45354e2e"
+      },
+      {
+        "t": 249.34,
+        "line": "/home/jmunroe/.nvm/versions/node/v22.22.0/lib/node_modules/binderbot/dist/main.cjs:4283"
+      },
+      {
+        "t": 249.34,
+        "line": "        logError(data.message.trimEnd());"
+      },
+      {
+        "t": 249.34,
+        "line": "                              ^"
+      },
+      {
+        "t": 249.34,
+        "line": ""
+      },
+      {
+        "t": 249.34,
+        "line": "TypeError: Cannot read properties of undefined (reading 'trimEnd')"
+      },
+      {
+        "t": 249.34,
+        "line": "    at _Command.startSession (/home/jmunroe/.nvm/versions/node/v22.22.0/lib/node_modules/binderbot/dist/main.cjs:4283:31)"
+      },
+      {
+        "t": 249.34,
+        "line": "    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+      },
+      {
+        "t": 249.34,
+        "line": ""
+      },
+      {
+        "t": 249.34,
+        "line": "Node.js v22.22.0"
+      }
+    ],
+    "log_lines_total": 41,
+    "log_truncated": false
+  },
+  "execution": null,
+  "resources": null,
+  "errors": [],
+  "finished_at": "2026-07-23T21:38:13.375338+00:00",
+  "build_artifacts": {
+    "path": "/home/jmunroe/src/projectpythia/ml-hurricane-intensity/_build",
+    "bytes": 0,
+    "kept_because": "run failed"
+  }
+}

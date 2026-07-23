@@ -42,7 +42,9 @@ Moving those four to the conda dependency list leaves pip with only the three ge
 Wien packages plus the local one — a smaller, faster, more reliable pip step, and better alignment
 with the [criteria](../docs/criteria.md)'s "prefer conda-forge over pip."
 
-**First action, though: re-run the live check** — the env builds locally, so a retry may simply pass.
+**Note (2026-07-23):** a plain re-run is no longer a safe bet on its own — the live check has now
+failed three times at the same point (successful solve, then an rpc-EOF registry-push error). Shrinking
+the image is the durable lever; see *What was verified*.
 
 ## Secondary
 
@@ -62,10 +64,17 @@ with the [criteria](../docs/criteria.md)'s "prefer conda-forge over pip."
 - Full env builds locally with `mamba` — conda solve + the complete pip step (exit 0); all pip
   packages import.
 - Four of the seven pip packages confirmed present on conda-forge (versions above).
-- **Not verified:** the exact trigger of the Binder failure — it does not reproduce locally, which
-  itself points to transient infrastructure. Confirm with a re-run.
+- **Live re-check 2026-07-23 confirms the transient diagnosis.** The build failed a third time — but
+  the log shows the conda solve running to completion (it printed the full transaction plan, 783 MB
+  download) and then dying with `failed to receive status: rpc error: code = Unavailable … EOF`. That
+  is a **registry-push failure after a successful solve**, not a dependency error: the environment
+  resolves reproducibly, and nothing in the cookbook is broken.
+- **Not verified:** a green Binder build. The failure is downstream of the environment, on Pythia's
+  build/registry path. Because it has now recurred at the same point, the "shrink the pip step /
+  image" fix below is the durable lever — a smaller image is less likely to stall the push — even
+  though a plain re-run may also pass.
 
 ---
-*Agent-assisted analysis, updated 2026-07-23 with a full local rebuild (supersedes the earlier
-partial note). A proposal to confirm in a real build and open with the community, not an applied
-change.*
+*Agent-assisted analysis, updated 2026-07-23 after a live re-check (third build failure, same
+transient rpc-EOF-after-successful-solve signature; supersedes the earlier partial note). A proposal
+to confirm in a real build and open with the community, not an applied change.*

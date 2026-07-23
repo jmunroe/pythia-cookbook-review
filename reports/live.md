@@ -12,33 +12,33 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 | Outcome | Cookbooks |
 |---|---|
-| build failed | 7 |
-| execution failed | 11 |
+| build failed | 6 |
+| execution failed | 12 |
 | ran with errors | 22 |
 | ran clean | 28 |
 
 ## Results
 
-### build failed — 7
+### build failed — 6
 
 The Binder image would not build, so the launch button gives a learner nothing. The most direct failure there is.
 
 | Cookbook | Static tier | Session | Execution | Peak memory | Errors | Checked |
 |---|---|---|---|---|---|---|
-| [arm-field-site-cookbook](live/arm-field-site-cookbook.md) | `incubating` | 2m 18s | — | — | 0 | 2026-07-23 |
 | [AtmosCol-2023](live/AtmosCol-2023.md) | `incubating` | 1m 36s | — | — | 0 | 2026-07-22 |
-| [eo-datascience-cookbook](live/eo-datascience-cookbook.md) | `healthy` | 11m 28s | — | — | 0 | 2026-07-22 |
+| [eo-datascience-cookbook](live/eo-datascience-cookbook.md) | `healthy` | 5m 51s | — | — | 0 | 2026-07-23 |
 | [esgf-cookbook](live/esgf-cookbook.md) | `stale` | 6m 57s | — | — | 0 | 2026-07-21 |
 | [kerchunk-cookbook](live/kerchunk-cookbook.md) | `healthy` | 9m 28s | — | — | 0 | 2026-07-23 |
-| [ml-hurricane-intensity](live/ml-hurricane-intensity.md) | `incubating` | 5m 28s | — | — | 0 | 2026-07-22 |
+| [ml-hurricane-intensity](live/ml-hurricane-intensity.md) | `incubating` | 4m 09s | — | — | 0 | 2026-07-23 |
 | [mrms-cookbook](live/mrms-cookbook.md) | `incubating` | 10m 45s (cached) | — | — | 0 | 2026-07-23 |
 
-### execution failed — 11
+### execution failed — 12
 
 The build succeeded but `myst build --execute` itself did not complete -- a timeout, a dead kernel, or a crash rather than a cell error.
 
 | Cookbook | Static tier | Session | Execution | Peak memory | Errors | Checked |
 |---|---|---|---|---|---|---|
+| [arm-field-site-cookbook](live/arm-field-site-cookbook.md) | `incubating` | 22m 20s | 13.45s | 0.11 of 8.6 GB | 0 | 2026-07-23 |
 | [armss2024-sail-cookbook](live/armss2024-sail-cookbook.md) | `incubating` | 8m 09s | 6.79s | 0.10 of 8.6 GB | 0 | 2026-07-22 |
 | [cmip6-cookbook](live/cmip6-cookbook.md) | `healthy` | 15m 30s | 41.57s | 7.32 of 8.6 GB | 0 | 2026-07-22 |
 | [dask-cookbook](live/dask-cookbook.md) | `healthy` | 6m 43s | 56.09s | 8.23 of 8.6 GB | 0 | 2026-07-22 |

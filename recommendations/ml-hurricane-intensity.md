@@ -22,6 +22,17 @@ Reproduced locally with `mamba`:
 So nothing in the repo is wrong. **Action: re-run the live check**; it should succeed. Only a
 second failure at the same point would indicate a real problem.
 
+:::{note} 2026-07-23 re-check was inconclusive (tooling, not the cookbook)
+A third live attempt on 2026-07-23 did **not** produce a verdict: `binderbot` crashed on the client
+side partway through uploading the ~2.2 GB build context —
+`TypeError: Cannot read properties of undefined (reading 'trimEnd')` in `binderbot/dist/main.cjs` —
+so the Binder build never ran to completion. This is a `binderbot` robustness bug on a malformed
+progress line, **not** a cookbook or environment problem, and it says nothing either way about the
+build. The transient hypothesis therefore still stands on the local evidence below, unconfirmed by a
+green build. (The oversized ~2.2 GB context that tripped binderbot is itself a hint that a slimmer
+image — see the note on TensorFlow below — would make the build more robust.)
+:::
+
 ## The environment is appropriate as-is
 
 Unlike some ML cookbooks that carry an unused TensorFlow stack, here every heavy dependency is
@@ -46,11 +57,18 @@ learning cookbook.
 - **Pip block installs:** `visualkeras` and `global-land-mask` resolve and install from PyPI with
   prebuilt wheels.
 - **Every heavy dependency is used** by at least one notebook.
-- **Not verified:** a clean Binder rebuild (the failure was on Pythia's infrastructure). The local
-  evidence points firmly to transient infrastructure, so re-running is the right first step.
+- **Not verified:** a clean Binder rebuild. The original failure was on Pythia's infrastructure, and
+  the 2026-07-23 re-check was aborted by a client-side `binderbot` crash before the build finished
+  (see the note above), so a green build is still outstanding. The local evidence points firmly to
+  transient infrastructure, so re-running — ideally with a `binderbot` that survives the large build
+  context — is the right first step.
 
 ## Secondary (minor)
 
+- **One latent non-standard kernelspec.** `notebooks/JS2_S3_example.ipynb` carries the kernel name
+  `local`, which would fail execution the way it does in sister cookbooks — but it is **not** in the
+  executed `myst.yml` toc, so it is harmless today. Reset it to standard `python3` before adding it to
+  the toc, so it does not become a time-bomb later.
 - `environment.yml` is missing a trailing newline after `visualkeras` — cosmetic; tidy when the PR
   lands.
 - Consider pinning `tensorflow` to a major line (e.g. `tensorflow>=2.16,<3`) with a one-line note,
