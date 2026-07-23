@@ -1,0 +1,216 @@
+{
+  "cookbook": "unstructured-grid-viz-cookbook",
+  "env_injection": {
+    "attempted": false
+  },
+  "started_at": "2026-07-23T14:10:34.005243+00:00",
+  "hub": "https://binder.projectpythia.org",
+  "ref": "main",
+  "toc_notebooks": [
+    "notebooks/01-foundations/plotting-libs.ipynb",
+    "notebooks/01-foundations/rendering-techniques.ipynb",
+    "notebooks/01-foundations/unstructured-grids.ipynb",
+    "notebooks/02-intro-to-uxarray/grid.ipynb",
+    "notebooks/02-intro-to-uxarray/overview.ipynb",
+    "notebooks/02-intro-to-uxarray/selection.ipynb",
+    "notebooks/02-intro-to-uxarray/uxds-uxda.ipynb",
+    "notebooks/03-plotting-with-uxarray/compare-xarray.ipynb",
+    "notebooks/03-plotting-with-uxarray/customization.ipynb",
+    "notebooks/03-plotting-with-uxarray/data-viz.ipynb",
+    "notebooks/03-plotting-with-uxarray/geo.ipynb",
+    "notebooks/03-plotting-with-uxarray/grid-viz.ipynb",
+    "notebooks/03-plotting-with-uxarray/high-res.ipynb",
+    "notebooks/04-recipes/e3sm.ipynb",
+    "notebooks/04-recipes/mpas-atmo.ipynb",
+    "notebooks/04-recipes/mpas-ocean.ipynb",
+    "notebooks/04-recipes/mpas-regional.ipynb",
+    "notebooks/05-viz-packages/datashader.ipynb",
+    "notebooks/05-viz-packages/lonboard.ipynb",
+    "notebooks/05-viz-packages/matplotlib.ipynb"
+  ],
+  "build": {
+    "hub": "https://binder.projectpythia.org",
+    "ref": "main",
+    "seconds": 592.98,
+    "exit_code": 0,
+    "failed": false,
+    "image_cached": false,
+    "log": [
+      {
+        "t": 1.5,
+        "line": "Server requested"
+      },
+      {
+        "t": 2.48,
+        "line": "2026-07-23T14:10:35.694997Z [Normal] Successfully assigned binderhub/jupyter-projectpythia-u-id-viz-cookbook-g81vurzj to binder-pythia-cluster-d7vpq4idy5va-user-m3-large-fdpj2-7kpv4"
+      },
+      {
+        "t": 2.48,
+        "line": "2026-07-23T14:10:36Z [Normal] Container image \"quay.io/jupyterhub/k8s-network-tools:4.3.3\" already present on machine"
+      },
+      {
+        "t": 2.48,
+        "line": "2026-07-23T14:10:36Z [Normal] Started container block-cloud-metadata"
+      },
+      {
+        "t": 3.49,
+        "line": "2026-07-23T14:10:37Z [Normal] Container image \"quay.io/jupyterhub/k8s-network-tools:4.1.0\" already present on machine"
+      },
+      {
+        "t": 3.49,
+        "line": "2026-07-23T14:10:37Z [Normal] Created container: block-nfs-access"
+      },
+      {
+        "t": 3.49,
+        "line": "2026-07-23T14:10:37Z [Normal] Started container block-nfs-access"
+      },
+      {
+        "t": 4.49,
+        "line": "2026-07-23T14:10:38Z [Normal] Pulling image \"quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2dunstructured-2dgrid-2dviz-2dcookbook-bfecde:52809e8b01e8dc8387a6d4281298ba5b4783e765\""
+      },
+      {
+        "t": 175.64,
+        "line": "2026-07-23T14:13:29Z [Normal] Successfully pulled image \"quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2dunstructured-2dgrid-2dviz-2dcookbook-bfecde:52809e8b01e8dc8387a6d4281298ba5b4783e765\" in 2m51.175s (2m51.175s including waiting). Image size: 2726720128 bytes."
+      },
+      {
+        "t": 175.64,
+        "line": "2026-07-23T14:13:29Z [Normal] Created container: notebook"
+      },
+      {
+        "t": 175.64,
+        "line": "2026-07-23T14:13:29Z [Normal] Stopping container notebook"
+      },
+      {
+        "t": 579.42,
+        "line": "Server requested"
+      },
+      {
+        "t": 580.37,
+        "line": "2026-07-23T14:20:13.595852Z [Normal] Successfully assigned binderhub/jupyter-projectpythia-u-id-viz-cookbook-elk0hawm to binder-pythia-cluster-d7vpq4idy5va-user-m3-large-fdpj2-7kpv4"
+      },
+      {
+        "t": 584.34,
+        "line": "2026-07-23T14:20:18Z [Normal] Successfully pulled image \"quay.io/jupyterhub/k8s-network-tools:4.3.3\" in 4.278s (4.278s including waiting). Image size: 3896334 bytes."
+      },
+      {
+        "t": 585.34,
+        "line": "2026-07-23T14:20:18Z [Normal] Started container block-cloud-metadata"
+      },
+      {
+        "t": 585.34,
+        "line": "2026-07-23T14:20:19Z [Normal] Started container block-nfs-access"
+      },
+      {
+        "t": 586.32,
+        "line": "2026-07-23T14:20:20Z [Normal] Container image \"quay.io/imagebuilding-non-gcp-hubs/jetstream2-projectpythia-pythia-binder-projectpythia-2dunstructured-2dgrid-2dviz-2dcookbook-bfecde:52809e8b01e8dc8387a6d4281298ba5b4783e765\" already present on machine"
+      },
+      {
+        "t": 586.32,
+        "line": "2026-07-23T14:20:20Z [Normal] Created container: notebook"
+      },
+      {
+        "t": 586.32,
+        "line": "2026-07-23T14:20:20Z [Normal] Started container notebook"
+      },
+      {
+        "t": 592.98,
+        "line": "server running at https://hub.projectpythia.org/user/projectpythia-u-id-viz-cookbook-elk0hawm/"
+      }
+    ],
+    "log_lines_total": 20,
+    "log_truncated": false
+  },
+  "execution": {
+    "seconds": 206.69,
+    "exit_code": 0,
+    "failed": false,
+    "cache_cleared": false,
+    "page_seconds": [
+      {
+        "page": "notebooks/01-foundations/plotting-libs.ipynb",
+        "seconds": 0.16
+      },
+      {
+        "page": "notebooks/02-intro-to-uxarray/overview.ipynb",
+        "seconds": 0.16
+      },
+      {
+        "page": "myst.yml#site.parts.footer",
+        "seconds": 0.09
+      },
+      {
+        "page": "notebooks/how-to-cite.md",
+        "seconds": 1.21
+      },
+      {
+        "page": "README.md",
+        "seconds": 1.8
+      },
+      {
+        "page": "notebooks/01-foundations/rendering-techniques.ipynb",
+        "seconds": 3.61
+      },
+      {
+        "page": "notebooks/01-foundations/unstructured-grids.ipynb",
+        "seconds": 9.97
+      },
+      {
+        "page": "notebooks/02-intro-to-uxarray/uxds-uxda.ipynb",
+        "seconds": 11.0
+      },
+      {
+        "page": "notebooks/02-intro-to-uxarray/selection.ipynb",
+        "seconds": 15.0
+      },
+      {
+        "page": "notebooks/02-intro-to-uxarray/grid.ipynb",
+        "seconds": 21.0
+      },
+      {
+        "page": "notebooks/03-plotting-with-uxarray/grid-viz.ipynb",
+        "seconds": 40.0
+      },
+      {
+        "page": "notebooks/03-plotting-with-uxarray/compare-xarray.ipynb",
+        "seconds": 40.0
+      },
+      {
+        "page": "notebooks/03-plotting-with-uxarray/customization.ipynb",
+        "seconds": 40.0
+      },
+      {
+        "page": "notebooks/03-plotting-with-uxarray/data-viz.ipynb",
+        "seconds": 53.0
+      },
+      {
+        "page": "notebooks/04-recipes/e3sm.ipynb",
+        "seconds": 58.0
+      }
+    ],
+    "stdout_tail": "pythia.org/user/projectpythia-u-id-viz-cookbook-elk0hawm/api/kernels/ac9bc0d1-4136-413f-a14e-c78b21d896f4\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-u-id-viz-cookbook-elk0hawm/api/kernels/186a1b03-63e2-4ccc-bbff-0c46acd4a862\nStarting WebSocket: wss://hub.projectpythia.org/user/projectpythia-u-id-viz-cookbook-elk0hawm/api/kernels/1b58133b-210b-42f8-ab30-6f4985405113\n\ud83d\udcd6 Built notebooks/how-to-cite.md in 1.21 s.\n\ud83e\ude84  Linked 1 DOI from doi.org in 1.53 s for README.md\n\ud83d\udcd6 Built README.md in 1.8 s.\n\ud83d\udcd6 Built notebooks/01-foundations/rendering-techniques.ipynb in 3.61 s.\n\ud83d\udcd6 Built notebooks/01-foundations/unstructured-grids.ipynb in 9.97 s.\n\ud83d\udcd6 Built notebooks/02-intro-to-uxarray/uxds-uxda.ipynb in 11 s.\n\ud83d\udcd6 Built notebooks/02-intro-to-uxarray/selection.ipynb in 15 s.\n\ud83d\udcd6 Built notebooks/02-intro-to-uxarray/grid.ipynb in 21 s.\n\ud83d\udcd6 Built notebooks/03-plotting-with-uxarray/grid-viz.ipynb in 40 s.\n\ud83d\udcd6 Built notebooks/03-plotting-with-uxarray/compare-xarray.ipynb in 40 s.\n\ud83d\udcd6 Built notebooks/03-plotting-with-uxarray/customization.ipynb in 40 s.\n\ud83d\udcd6 Built notebooks/03-plotting-with-uxarray/data-viz.ipynb in 53 s.\n\ud83d\udcd6 Built notebooks/04-recipes/e3sm.ipynb in 58 s.\n\ud83d\udcd6 Built notebooks/03-plotting-with-uxarray/geo.ipynb in 1.07 min.\n\ud83d\udcd6 Built notebooks/04-recipes/mpas-ocean.ipynb in 1.25 min.\n\ud83d\udcd6 Built notebooks/03-plotting-with-uxarray/high-res.ipynb in 1.83 min.\n\ud83d\udcd6 Built notebooks/04-recipes/mpas-atmo.ipynb in 3.22 min.\n\ud83d\udcda Built 18 pages for project in 3.27 min.\n\n\n\t\u2728\u2728\u2728  Starting Book Theme  \u2728\u2728\u2728\n\n\n\n\ud83d\udd0c Server started on port 3000!  \ud83e\udd73 \ud83c\udf89\n\n\n\t\ud83d\udc49  http://localhost:3000  \ud83d\udc48\n\n\n\ud83d\udc8c GET  / 200 - - 68.701 ms\n\ud83d\udc8c GET  /notebooks/foundations/rendering-techniques 200 - - 23.253 ms\n\ud83d\udc8c GET  /notebooks/how-to-cite 200 - - 93.678 ms\n\ud83d\udc8c GET  /notebooks/intro-to-uxarray/overview 200 - - 31.092 ms\n\ud83d\udc8c GET  /notebooks/foundations/plotting-libs 200 - - 96.682 ms\n\ud83d\udc8c GET  /notebooks/foundations/unstructured-grids 200 - - 66.039 ms\nGET /notebooks/intro-to-uxarray/uxds-uxda 200 - - 32.859 ms\n\ud83d\udc8c GET  /notebooks/intro-to-uxarray/grid 200 - - 44.124 ms\n\ud83d\udc8c GET  /notebooks/intro-to-uxarray/selection 200 - - 44.354 ms\nGET /notebooks/plotting-with-uxarray/grid-viz 200 - - 35.516 ms\n\ud83d\udc8c GET  /notebooks/plotting-with-uxarray/data-viz 200 - - 28.642 ms\n\ud83d\udc8c GET  /notebooks/plotting-with-uxarray/geo 200 - - 34.748 ms\n\ud83d\udc8c GET  /notebooks/plotting-with-uxarray/customization 200 - - 38.158 ms\nGET /notebooks/plotting-with-uxarray/high-res 200 - - 45.266 ms\n\ud83d\udc8c GET  /notebooks/plotting-with-uxarray/compare-xarray 200 - - 39.999 ms\nGET /notebooks/recipes/mpas-atmo 200 - - 24.492 ms\n\ud83d\udc8c GET  /notebooks/recipes/mpas-ocean 200 - - 35.153 ms\n\ud83d\udc8c GET  /index.json 200 - - 15.010 ms\n\ud83d\udc8c GET  /notebooks/recipes/e3sm 200 - - 34.937 ms\n\ud83d\udc8c GET  /notebooks.how-to-cite.json 200 - - 18.080 ms\n\ud83d\udc8c GET  /notebooks.foundations.unstructured-grids.json 200 - - 18.759 ms\n\ud83d\udc8c GET  /notebooks.foundations.rendering-techniques.json 200 - - 9.085 ms\nGET /notebooks.foundations.plotting-libs.json 200 - - 9.440 ms\n\ud83d\udc8c GET  /notebooks.intro-to-uxarray.overview.json 200 - - 7.872 ms\n\ud83d\udc8c GET  /notebooks.intro-to-uxarray.grid.json 200 - - 8.126 ms\n\ud83d\udc8c GET  /notebooks.intro-to-uxarray.uxds-uxda.json 200 - - 9.349 ms\n\ud83d\udc8c GET  /notebooks.intro-to-uxarray.selection.json 200 - - 8.303 ms\n\ud83d\udc8c GET  /notebooks.plotting-with-uxarray.data-viz.json 200 - - 8.427 ms\n\ud83d\udc8c GET  /notebooks.plotting-with-uxarray.grid-viz.json 200 - - 13.450 ms\n\ud83d\udc8c GET  /notebooks.plotting-with-uxarray.geo.json 200 - - 12.233 ms\n\ud83d\udc8c GET  /notebooks.plotting-with-uxarray.customization.json 200 - - 11.400 ms\n\ud83d\udc8c GET  /notebooks.plotting-with-uxarray.high-res.json 200 - - 10.101 ms\nGET /notebooks.plotting-with-uxarray.compare-xarray.json 200 - - 11.300 ms\n\ud83d\udc8c GET  /robots.txt 200 - - 0.576 ms\nGET /notebooks.recipes.mpas-ocean.json 200 - - 12.417 ms\n\ud83d\udc8c GET  /notebooks.recipes.mpas-atmo.json 200 - - 11.166 ms\n\ud83d\udc8c GET  /notebooks.recipes.e3sm.json 200 - - 10.700 ms\n\ud83d\udc8c GET  /myst-theme.css 200 - - 5.437 ms\n\ud83d\udc8c GET  /sitemap_style.xsl 200 - - 0.583 ms\n\ud83d\udc8c GET  /sitemap.xml 200 - - 4.393 ms\n\ud83d\udc8c GET  /favicon.ico 200 - - 5.641 ms\n",
+    "stderr_tail": "essors.py:740\u001b[0m, in \u001b[0;36mOpts._base_opts\u001b[0;34m(self, *args, **kwargs)\u001b[0m\n\u001b[1;32m    737\u001b[0m     \u001b[38;5;28;01mreturn\u001b[39;00m opts\u001b[38;5;241m.\u001b[39mapply_groups(\u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_obj, \u001b[38;5;241m*\u001b[39m\u001b[38;5;241m*\u001b[39m\u001b[38;5;28mdict\u001b[39m(kwargs, \u001b[38;5;241m*\u001b[39m\u001b[38;5;241m*\u001b[39mnew_kwargs))\n\u001b[1;32m    739\u001b[0m kwargs[\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mclone\u001b[39m\u001b[38;5;124m\"\u001b[39m] \u001b[38;5;241m=\u001b[39m \u001b[38;5;28;01mFalse\u001b[39;00m \u001b[38;5;28;01mif\u001b[39;00m clone \u001b[38;5;129;01mis\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m \u001b[38;5;28;01melse\u001b[39;00m clone\n\u001b[0;32m--> 740\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_obj\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43moptions\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;241;43m*\u001b[39;49m\u001b[43mnew_args\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;241;43m*\u001b[39;49m\u001b[38;5;241;43m*\u001b[39;49m\u001b[43mkwargs\u001b[49m\u001b[43m)\u001b[49m\n\nFile \u001b[0;32m/srv/conda/envs/notebook/lib/python3.10/site-packages/holoviews/core/dimension.py:1476\u001b[0m, in \u001b[0;36mDimensioned.options\u001b[0;34m(self, clone, *args, **kwargs)\u001b[0m\n\u001b[1;32m   1474\u001b[0m     expanded_backends \u001b[38;5;241m=\u001b[39m opts\u001b[38;5;241m.\u001b[39m_expand_by_backend(options, backend)\n\u001b[1;32m   1475\u001b[0m \u001b[38;5;28;01melse\u001b[39;00m:\n\u001b[0;32m-> 1476\u001b[0m     expanded_backends \u001b[38;5;241m=\u001b[39m [(backend, \u001b[43mopts\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_expand_options\u001b[49m\u001b[43m(\u001b[49m\u001b[43moptions\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mbackend\u001b[49m\u001b[43m)\u001b[49m)]\n\u001b[1;32m   1478\u001b[0m obj \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mself\u001b[39m\n\u001b[1;32m   1479\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m backend, expanded \u001b[38;5;129;01min\u001b[39;00m expanded_backends:\n\nFile \u001b[0;32m/srv/conda/envs/notebook/lib/python3.10/site-packages/holoviews/util/__init__.py:353\u001b[0m, in \u001b[0;36mopts._expand_options\u001b[0;34m(cls, options, backend)\u001b[0m\n\u001b[1;32m    350\u001b[0m current_backend \u001b[38;5;241m=\u001b[39m Store\u001b[38;5;241m.\u001b[39mcurrent_backend\n\u001b[1;32m    352\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;129;01mnot\u001b[39;00m Store\u001b[38;5;241m.\u001b[39mrenderers:\n\u001b[0;32m--> 353\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m \u001b[38;5;167;01mValueError\u001b[39;00m(\n\u001b[1;32m    354\u001b[0m         \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mNo plotting extension is currently loaded. \u001b[39m\u001b[38;5;124m\"\u001b[39m\n\u001b[1;32m    355\u001b[0m         \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mEnsure you load an plotting extension with \u001b[39m\u001b[38;5;124m\"\u001b[39m\n\u001b[1;32m    356\u001b[0m         \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mhv.extension or import it explicitly from \u001b[39m\u001b[38;5;124m\"\u001b[39m\n\u001b[1;32m    357\u001b[0m         \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mholoviews.plotting before applying any \u001b[39m\u001b[38;5;124m\"\u001b[39m\n\u001b[1;32m    358\u001b[0m         \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124moptions.\u001b[39m\u001b[38;5;124m\"\u001b[39m\n\u001b[1;32m    359\u001b[0m     )\n\u001b[1;32m    360\u001b[0m \u001b[38;5;28;01melif\u001b[39;00m current_backend \u001b[38;5;129;01mnot\u001b[39;00m \u001b[38;5;129;01min\u001b[39;00m Store\u001b[38;5;241m.\u001b[39mrenderers:\n\u001b[1;32m    361\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m \u001b[38;5;167;01mValueError\u001b[39;00m(\n\u001b[1;32m    362\u001b[0m         \u001b[38;5;124mf\u001b[39m\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mCurrently selected plotting extension \u001b[39m\u001b[38;5;132;01m{\u001b[39;00mcurrent_backend\u001b[38;5;132;01m!r}\u001b[39;00m\u001b[38;5;124m \u001b[39m\u001b[38;5;124m\"\u001b[39m\n\u001b[1;32m    363\u001b[0m         \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mhas not been loaded, ensure you load it \u001b[39m\u001b[38;5;124m\"\u001b[39m\n\u001b[1;32m    364\u001b[0m         \u001b[38;5;124mf\u001b[39m\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mwith hv.extension(\u001b[39m\u001b[38;5;132;01m{\u001b[39;00mcurrent_backend\u001b[38;5;132;01m!r}\u001b[39;00m\u001b[38;5;124m) before setting \u001b[39m\u001b[38;5;124m\"\u001b[39m\n\u001b[1;32m    365\u001b[0m         \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124moptions\u001b[39m\u001b[38;5;124m\"\u001b[39m\n\u001b[1;32m    366\u001b[0m     )\n\n\u001b[0;31mValueError\u001b[0m: No plotting extension is currently loaded. Ensure you load an plotting extension with hv.extension or import it explicitly from holoviews.plotting before applying any options.\n\u26a0\ufe0f  notebooks/01-foundations/plotting-libs.ipynb:3 Linking \"rendering-techniques\" to an implicit heading reference, best practice is to create an explicit reference.\n   Explicit references do not break when you update the title to a section, they are preferred over using the implicit HTML ID created for headers.\n"
+  },
+  "resources": {
+    "available": true,
+    "sample_count": 63,
+    "sample_seconds": 3,
+    "peak_rss_bytes": 7086129152,
+    "peak_pss_bytes": 6004454400,
+    "limit_basis": "pss",
+    "peak_against_limit_bytes": 6004454400,
+    "memory_limit_bytes": 8589934592,
+    "peak_fraction_of_limit": 0.699,
+    "peak_cpu_percent": null,
+    "cpu_count": null
+  },
+  "errors": [
+    {
+      "source": "site/content/notebooks.intro-to-uxarray.selection.json",
+      "ename": "ValueError",
+      "evalue": "No plotting extension is currently loaded. Ensure you load an plotting extension with hv.extension or import it explicitly from holoviews.plotting before applying any options.",
+      "traceback": "---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\nCell In[2], line 3\n      1 plot_opts = {\"width\": 700, \"height\": 350}\n----> 3 features = gf.coastline(\n      4     projection=ccrs.PlateCarree(), line_width=0.4, scale=\"50m\"\n      5 ) * gf.states(projection=ccrs.PlateCarree(), line_width=0.4, scale=\"50m\")\n      7 clim = (uxda.values.min(), uxda.values.max())\n      9 uxda.plot(\n     10     rasterize=True, periodic_elements=\"exclude\", title=\"Global Grid\", **plot_opts\n     11 ) * features\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/geoviews/element/geo.py:188, in Feature.__call__(self, *args, **kwargs)\n    187 def __call__(self, *args, **kwargs):\n--> 188     return self.clone().opts(*args, **kwargs)\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/holoviews/core/accessors.py:39, in AccessorPipelineMeta.pipelined.<locals>.pipelined_call(*args, **kwargs)\n     35 inst = args[0]\n     37 if not hasattr(inst._obj, \"_pipeline\"):\n     38     # Wrapped object doesn't support the pipeline property\n---> 39     return __call__(*args, **kwargs)\n     41 inst_pipeline = copy.copy(inst._obj._pipeline)\n     42 in_method = inst._obj._in_method\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/holoviews/core/accessors.py:651, in Opts.__call__(self, *args, **kwargs)\n    643         msg = (\n    644             \"Calling the .opts method with options broken down by options \"\n    645             \"group (i.e. separate plot, style and norm groups) has been removed. \"\n    646             \"Use the .options method converting to the simplified format \"\n    647             \"instead or use hv.opts.apply_groups for backward compatibility.\"\n    648         )\n    649         raise ValueError(msg)\n--> 651 return self._dispatch_opts(*args, **kwargs)\n\nFile /srv/conda/envs/notebook/lib/python3.10/site-packages/holoviews/core/accessors.py:655, in Opts._dispatch_opts(self, *"
+    }
+  ],
+  "finished_at": "2026-07-23T14:23:53.979276+00:00",
+  "build_artifacts": null
+}

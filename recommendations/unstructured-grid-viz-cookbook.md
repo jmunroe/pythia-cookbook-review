@@ -1,23 +1,55 @@
 # unstructured-grid-viz-cookbook — Recommendations
 
-Live outcome: **build failed** (30m 00s — hit the timeout). [← All recommendations](../recommendations.md) · [Live check](../reports/live/unstructured-grid-viz-cookbook.md) · [Repository](https://github.com/ProjectPythia/unstructured-grid-viz-cookbook)
+Live outcome: **ran with errors** (after re-check — the earlier build timeout was transient). [← All recommendations](../recommendations.md) · [Live check](../reports/live/unstructured-grid-viz-cookbook.md) · [Repository](https://github.com/ProjectPythia/unstructured-grid-viz-cookbook)
 
-Static tier `healthy`. **The environment is fast and healthy; the 30-minute timeout was not a dependency problem.**
+Static tier `healthy`. **The build timeout was transient; on re-check the book builds and runs, and one notebook fails on an unloaded plotting extension.**
 
-## What this failure is not
+## The earlier timeout was transient — confirmed
 
-Reproduced locally with `mamba`:
+An earlier live check hit the 30-minute build timeout. A fresh re-check on **2026-07-23** built the
+image cleanly (**593 s fresh build**, then **207 s execution**, peak 6.0 GB of the 8.59 GB pod) — so
+the timeout was infrastructure, not the environment, exactly as the local `mamba` reproduction
+predicted (solves in ~15 s, builds in ~52 s locally). No environment change is needed for the build.
 
-- `mamba env create --dry-run` **solves in ~15 seconds** (368 packages, 312 MB).
-- A full `mamba env create` **builds end-to-end in ~52 seconds**, exit 0, including the pip step.
+## The one thing that matters: load a plotting extension in `selection.ipynb`
 
-An environment that resolves in 15 s and builds in under a minute did not cause a 30-minute build
-timeout. The most likely culprit is infrastructure — a slow or stalled repo2docker/image-push on
-BinderHub, of exactly the kind seen elsewhere in these checks. (During the local build one package,
-`panel-core`, even returned a transient partial-download that auto-retried — the same flakiness that
-can compound into a timeout on a shared builder.)
+With the build working, the re-check surfaced a single real execution error, in
+`notebooks/02-intro-to-uxarray/selection.ipynb` (cell `In[2]`):
 
-**First action: re-run the live check.** It will very likely build well within the limit.
+```
+ValueError: No plotting extension is currently loaded. Ensure you load a plotting extension with
+hv.extension or import it explicitly from holoviews.plotting before applying any options.
+```
+
+The cell builds its map features *before* it draws any uxarray plot:
+
+```python
+features = gf.coastline(projection=ccrs.PlateCarree(), ...) * gf.states(...)   # <- fails here
+...
+uxda.plot(rasterize=True, ...) * features
+```
+
+`gf.coastline(...)` applies HoloViews `.opts()` internally (`geoviews … Feature.__call__ → .opts()`),
+and that runs first — before `uxda.plot()` (which is what normally auto-loads the Bokeh backend on its
+first call). The notebook imports `geoviews.feature as gf` but never calls `gv.extension('bokeh')`, so
+at that first `.opts()` no backend is loaded. Sibling notebooks avoid this only by accident of
+ordering (their first plotting op is `uxda.plot()`).
+
+The fix is to load the extension explicitly at the top of the notebook — the canonical HoloViews/
+GeoViews idiom and exactly what the error asks for:
+
+```diff
+  import cartopy.crs as ccrs
+  import geoviews.feature as gf
++ import geoviews as gv
+  import uxarray as ux
++
++ gv.extension("bokeh")
+```
+
+(`hv.extension("bokeh")` is equivalent.) This makes the notebook robust regardless of which plotting
+call comes first, and is worth adding to any notebook here that mixes bare `geoviews` features with
+uxarray plots.
 
 ## Durable improvements (worth doing regardless)
 
@@ -58,13 +90,17 @@ Even though the env is healthy, three items reduce risk and align with the
 
 ## What was verified
 
-- **Env solves in ~15 s and builds in ~52 s locally** (`mamba`, exit 0) — not the cause of the
-  30-minute timeout.
+- **The build timeout was transient — verified by re-check.** A live re-check on 2026-07-23 built the
+  fresh image (593 s) and executed all 20 notebooks (207 s, peak 6.0 GB), so the environment is not
+  responsible. Local `mamba` also solves in ~15 s and builds in ~52 s (exit 0).
+- **The `selection.ipynb` error and its cause** read from the re-check record: the failing cell is
+  `In[2]`, and the traceback is `geoviews … Feature.__call__ → .opts()` raising before any backend is
+  loaded; the notebook has no `gv.extension`/`hv.extension`/`import hvplot` call.
 - **`pathlib` on conda-forge/PyPI is the `1.0.1` stdlib backport**, confirmed by querying both
-  indices; it is safe to remove.
-- **`antimeridian` is on conda-forge** (`0.4.8`), so it can move out of pip.
-- **Not verified:** the exact reason the Binder build reached 30 minutes (no access to that build's
-  full logs). The local evidence says the environment is not responsible.
+  indices; it is safe to remove. **`antimeridian` is on conda-forge** (`0.4.8`), so it can move out
+  of pip.
+- **Not verified:** that adding `gv.extension("bokeh")` alone clears the error end-to-end (not
+  re-run with the edit) — but it is the direct, documented remedy for this exact message.
 
 ## Secondary
 
