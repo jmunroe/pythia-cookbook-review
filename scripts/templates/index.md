@@ -111,9 +111,32 @@ so the published page is silently truncated.
 
 Results and method: [](reports/live.md) · [](docs/live-assessment.md)
 
+## Recommendations
+
+The tiers and live checks say *what* is wrong. A companion [Recommendations](recommendations.md)
+section says *what to do about it* — one page per cookbook, each a short, prioritised list of
+concrete actions that would move it toward the criteria above. Every page leads with **the single
+change that matters most** — the fix that gets a broken cookbook most of the way back to working —
+then lists secondary items. Where a fix was reproduced on a local clone, the page shows the exact
+diff and says so; where it could not be (an upstream outage, a credential, a multi-gigabyte
+download), it is labelled a proposal to confirm in a real build.
+
+Every live-checked cookbook now has one, from build failures down to clean-bill-of-health pages for
+those with nothing to change.
+
+:::{caution} Proposals, not verdicts — and not reviews
+A recommendation is a hypothesis about the smallest useful change, formed by reading the repo and
+reproducing its failure. Consistent with the rest of this project, **nothing here has been applied**
+to a cookbook — each page is written to inform a single future pull request, taken *with* the
+Project Pythia community. And a recommendation is not a judgment of whether a cookbook *teaches*
+well; that lives in the human-written notes.
+:::
+
+Start here: [](recommendations.md)
+
 ## Read the findings
 
-::::{grid} 1 1 3 3
+::::{grid} 1 1 2 4
 
 :::{card} Cookbooks by tier
 :link: reports/by-tier.md
@@ -128,6 +151,11 @@ Every cookbook, one row each.
 :::{card} Cross-cutting gaps
 :link: reports/gaps.md
 Patterns spanning the whole collection.
+:::
+
+:::{card} Recommendations
+:link: recommendations.md
+What to do about each cookbook, one page each.
 :::
 
 ::::
