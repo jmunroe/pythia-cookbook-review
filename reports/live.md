@@ -12,14 +12,14 @@ Each row links to that cookbook's own page, where its measures, notebook timings
 
 | Outcome | Cookbooks |
 |---|---|
-| build failed | 13 |
+| build failed | 12 |
 | execution failed | 11 |
 | ran with errors | 19 |
-| ran clean | 25 |
+| ran clean | 26 |
 
 ## Results
 
-### build failed — 13
+### build failed — 12
 
 The Binder image would not build, so the launch button gives a learner nothing. The most direct failure there is.
 
@@ -36,7 +36,6 @@ The Binder image would not build, so the launch button gives a learner nothing. 
 | [mpas-jedi-cookbook](live/mpas-jedi-cookbook.md) | `healthy` | 2m 45s | — | — | 0 | 2026-07-22 |
 | [mrms-cookbook](live/mrms-cookbook.md) | `incubating` | 9m 26s (cached) | — | — | 0 | 2026-07-22 |
 | [osdf-cookbook](live/osdf-cookbook.md) | `healthy` | 1m 44s | — | — | 0 | 2026-07-22 |
-| [snow-observations-cookbook](live/snow-observations-cookbook.md) | `healthy` | 1m 03s | — | — | 0 | 2026-07-22 |
 | [unstructured-grid-viz-cookbook](live/unstructured-grid-viz-cookbook.md) | `healthy` | 30m 00s | — | — | 0 | 2026-07-22 |
 
 ### execution failed — 11
@@ -83,7 +82,7 @@ The book built and ran, but at least one notebook cell raised. Read the per-cook
 | [vapor-python-cookbook](live/vapor-python-cookbook.md) | `healthy` | 2m 41s | 14.09s | 0.69 of 8.6 GB | 15 | 2026-07-22 |
 | [xbatcher-ML-1-cookbook](live/xbatcher-ML-1-cookbook.md) | `stale` | 9m 40s | 1m 22s | 0.70 of 8.6 GB | 1 | 2026-07-22 |
 
-### ran clean — 25
+### ran clean — 26
 
 Built and ran with no cell errors on this sample. Not a verdict -- a cached image never re-solves the environment, and one green run of a network-dependent notebook is a sample, not a guarantee.
 
@@ -110,6 +109,7 @@ Built and ran with no cell errors on this sample. Not a verdict -- a cached imag
 | [packaging-cookbook](live/packaging-cookbook.md) | `incubating` | 6m 14s | 10.75s | 0.10 of 8.6 GB | 0 | 2026-07-22 |
 | [paleoPCA-cookbook](live/paleoPCA-cookbook.md) | `healthy` | 7m 49s | 43.08s | 0.77 of 8.6 GB | 0 | 2026-07-22 |
 | [ptype-ml-cookbook](live/ptype-ml-cookbook.md) | `incubating` | 5m 44s (cached) | 26.11s | 0.43 of 8.6 GB | 0 | 2026-07-22 |
+| [snow-observations-cookbook](live/snow-observations-cookbook.md) | `healthy` | 16m 21s (cached) | 4m 25s | 7.03 of 8.6 GB | 0 | 2026-07-23 |
 | [Stage-IV-Cookbook](live/Stage-IV-Cookbook.md) | `incubating` | 6m 38s | 0.67s | 0.11 of 8.6 GB | 0 | 2026-07-22 |
 | [thermodynamic-budgets](live/thermodynamic-budgets.md) | `incubating` | 9m 55s | 10.55s | 0.22 of 8.6 GB | 0 | 2026-07-22 |
 | [wavelet-cookbook](live/wavelet-cookbook.md) | `healthy` | 3m 38s | 23.59s | 1.77 of 8.6 GB | 0 | 2026-07-22 |

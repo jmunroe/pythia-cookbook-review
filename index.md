@@ -115,10 +115,10 @@ run until a learner's kernel dies.
 
 | Outcome | Cookbooks |
 |---|---|
-| build failed | 13 |
+| build failed | 12 |
 | execution failed | 11 |
 | ran with errors | 19 |
-| ran clean | 25 |
+| ran clean | 26 |
 
 :::{danger} A passing badge does not mean the notebooks ran
 Chasing a discrepancy the live checks turned up, we read Project Pythia's own nightly logs:
