@@ -2,13 +2,13 @@
 
 Live outcome: **build failed**. [← All live checks](../live.md) · [Repository](https://github.com/ProjectPythia/kerchunk-cookbook)
 
-Run 2026-07-22 05:32:41 UTC against [https://binder.projectpythia.org](https://binder.projectpythia.org), building [kerchunk-cookbook](https://github.com/ProjectPythia/kerchunk-cookbook) at ref [`main`](https://github.com/ProjectPythia/kerchunk-cookbook/tree/main).
+Run 2026-07-23 00:57:11 UTC against [https://binder.projectpythia.org](https://binder.projectpythia.org), building [kerchunk-cookbook](https://github.com/ProjectPythia/kerchunk-cookbook) at ref [`main`](https://github.com/ProjectPythia/kerchunk-cookbook/tree/main).
 
 | Measure | Value |
 |---|---|
 | Live outcome | **build failed** |
 | Static tier | `healthy` |
-| Time to a ready session | 9m 38s (fresh build) |
+| Time to a ready session | 9m 28s (fresh build) |
 | Build succeeded | no |
 | Resource metrics | unavailable: unknown |
 | Errors raised | 0 |
@@ -18,30 +18,30 @@ Executed 12 notebook(s) from the project toc: [`notebooks/advanced/Parquet_Refer
 ### Build log (tail)
 
 ```
-[  574.64s] #20 565.4
-[  574.64s] #20 565.4   Upgrade:
-[  574.64s] #20 565.4 ────────────────────────────────────────────────────────────────────────────────────────────────────
-[  574.64s] #20 565.4
-[  574.64s] #20 565.4   - brotli-python                            1.1.0  py310hea6c23e_4          conda-forge     354kB
-[  574.64s] #20 565.4   + brotli-python                            1.2.0  py310hba01987_1          conda-forge     367kB
-[  574.64s] #20 565.4   - cryptography                            46.0.2  py310hed992bd_0          conda-forge       2MB
-[  574.64s] #20 565.4   + cryptography                            49.0.0  py310hb288b08_0          conda-forge       2MB
-[  574.64s] #20 565.4   - icu                                       75.1  he02047a_0               conda-forge      12MB
-[  574.64s] #20 565.4   - libexpat                                 2.7.1  hecca717_0               conda-forge      75kB
-[  574.64s] #20 565.4   - libsodium                               1.0.20  h4ab18f5_0               conda-forge     206kB
-[  574.64s] #20 565.4   + libsodium                               1.0.22  h280c20c_1               conda-forge     269kB
-[  574.64s] #20 565.4   - libsqlite                               3.50.4  h0c1763c_0               conda-forge     933kB
-[  574.64s] #20 565.4   + libsqlite                               3.53.3  h0c1763c_0               conda-forge     962kB
-[  574.64s] #20 565.4   - libuuid                                 2.41.2  he9a06e4_0               conda-forge      37kB
-[  574.64s] #20 565.4   + libzlib                                  1.3.2  h25fd6f3_2               conda-forge      64kB
-[  574.64s] #20 565.4   - nodejs                                 20.19.5  hf7ee748_0               conda-forge      17MB
-[  574.64s] #20 565.4   + nodejs                                  26.0.0  he4ff34a_0               conda-forge      19MB
-[  574.64s] #20 565.4   - openssl                                  3.5.4  h26f9b46_0               conda-forge       3MB
-[  574.64s] #20 565.4   + openssl                                  3.6.3  h35e630c_0               conda-forge       3MB
-[  574.64s] #20 565.4   - zlib                                     1.3.1  hb9d3cd8_2               conda-forge      92kB
-[  574.64s] #20 565.4   Upgrade: 14 packages
-[  574.64s] #20 565.4
-[  574.64s] #20 565.4 Confirm changes: [Y/n]
-[  574.64s] #20 565.4 Transaction starting
+[  552.57s] #20 560.8 Linking libarrow-dataset-24.0.0-h635bf11_9_cpu
+[  552.57s] #20 560.8 Linking aiosignal-1.4.0-pyhd8ed1ab_0
+[  552.57s] #20 560.8 Linking distributed-2026.7.1-pyhc364b38_0
+[  552.57s] #20 560.8 Linking identify-2.6.19-pyhd8ed1ab_0
+[  552.71s] #20 561.1 Linking tifffile-2020.6.3-py_0
+[  552.89s] #20 561.1 Linking h5netcdf-1.8.1-pyhd8ed1ab_0
+[  552.89s] #20 561.1 Linking pre-commit-4.6.1-pyha770c72_0
+[  552.91s] #20 561.3 Linking jupyter_bokeh-4.1.0-pyhcf101f3_0
+[  553.02s] #20 561.3 Linking dask-2026.7.1-pyhc364b38_0
+[  553.02s] #20 561.3 Linking virtualizarr-1.3.0-pyhd8ed1ab_0
+[  553.02s] #20 561.3 Linking datashader-0.19.1-pyhd8ed1ab_0
+[  553.02s] #20 561.3 Linking cfgrib-0.9.15.1-pyhd8ed1ab_0
+[  553.02s] #20 561.3 Linking panel-material-ui-0.14.0-pyhd8ed1ab_0
+[  553.15s] #20 561.4 Linking aiohttp-3.14.2-py310h31b6992_0
+[  553.15s] #20 561.5
+[  553.28s] #20 561.7 warning  libmamba You are using 'pip' as an additional package manager.
+[  553.43s] #20 561.7
+[  566.57s] #20 575.4 critical libmamba pip failed to update packages
+[  567.29s] #20 ERROR: process "/bin/sh -c TIMEFORMAT='time: %3R' bash -c 'time ${MAMBA_EXE} env update -p ${NB_PYTHON_PREFIX} --file \"environment.yml\" && time ${MAMBA_EXE} clean --all -f -y && ${MAMBA_EXE} list -p ${NB_PYTHON_PREFIX} '" did not complete successfully: exit code: 1
+[  567.95s] ------
+[  567.95s] 561.5
+[  567.95s] 561.7     Be aware that packages installed with 'pip' are managed independently from 'conda-forge' channel.
+[  567.95s] 561.7
+[  567.95s] 561.7 Updating pip packages: git+https://github.com/carbonplan/xrefcoord.git, git+https://github.com/fsspec/kerchunk
+[  567.99s] ERROR: failed to solve: process "/bin/sh -c TIMEFORMAT='time: %3R' bash -c 'time ${MAMBA_EXE} env update -p ${NB_PYTHON_PREFIX} --file \"environment.yml\" && time ${MAMBA_EXE} clean --all -f -y && ${MAMBA_EXE} list -p ${NB_PYTHON_PREFIX} '" did not complete successfully: exit code: 1
 ```
 
